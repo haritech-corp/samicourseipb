@@ -6,266 +6,250 @@
 <title>The 9th SAMI Summer Course — IPB University</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --primary:#2596BE; --primary-dark:#1A6B8A; --primary-darker:#0D4F6A;
-  --primary-light:#50B8D4; --primary-lighter:#8BD1E3; --primary-pale:#E8F4F8;
-  --accent:#2596BE; --accent-dark:#1A6B8A; --accent-pale:#E8F4F8;
-  --bg:#F4F7F9; --paper:#FFFFFF; --ink:#1A2B3E; --ink-soft:#4A5B6E;
-  --ink-faint:#8A9BAE; --line:#DEE5ED;
+  --forest:#0D723B; --forest-2:#128A49; --forest-3:#1A9F56; --leaf:#27AE60;
+  --leaf-light:#6FCF97; --leaf-pale:#E9F7EF; --harvest:#E2942F; --harvest-dark:#C2711A;
+  --harvest-pale:#FBEBD4; --cream:#F7F3E7; --paper:#FFFFFF; --ink:#1B2A1F;
+  --ink-soft:#516155; --ink-faint:#8B978C; --line:#E3DCC8;
   --font-display:'Fraunces',serif; --font-body:'Inter',sans-serif; --font-mono:'IBM Plex Mono',monospace;
-  --container:1140px; --radius-s:10px; --radius-m:18px; --radius-l:28px;
-  --shadow-sm:0 1px 3px rgba(37,150,190,0.08); --shadow-md:0 4px 16px rgba(37,150,190,0.12);
-  --shadow-lg:0 12px 40px -8px rgba(37,150,190,0.2); --shadow-xl:0 24px 60px -12px rgba(37,150,190,0.25);
-  --glass:rgba(255,255,255,0.12); --glass-border:rgba(255,255,255,0.2);
+  --container:1180px; --radius-s:8px; --radius-m:16px; --radius-l:28px;
+  --shadow-card:0 1px 2px rgba(13,114,59,0.06), 0 12px 28px -14px rgba(13,114,59,0.18);
 }
 *,*::before,*::after{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:0.001ms!important;animation-iteration-count:1!important;transition-duration:0.001ms!important}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.001ms!important;animation-iteration-count:1!important;transition-duration:0.001ms!important;}
+}
 body{
-  margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);
+  margin:0;background:var(--cream);color:var(--ink);font-family:var(--font-body);
   font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;
 }
 a{color:inherit;text-decoration:none;}
 ul{margin:0;padding:0;list-style:none;}
-h1,h2,h3,h4{margin:0;font-family:var(--font-display);font-weight:600;letter-spacing:-0.02em;}
+h1,h2,h3,h4{margin:0;font-family:var(--font-display);font-weight:600;letter-spacing:-0.01em;}
 p{margin:0;}
-button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;}
-:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:6px;}
-::selection{background:var(--primary);color:#fff;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+:focus-visible{outline:2.5px solid var(--harvest);outline-offset:3px;border-radius:4px;}
 .container{max-width:var(--container);margin:0 auto;padding:0 20px;}
 .eyebrow{
-  display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);
-  font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);font-weight:500;
+  display:inline-flex;align-items:center;gap:10px;font-family:var(--font-mono);
+  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--leaf);font-weight:500;
 }
-.eyebrow::before{content:"";width:18px;height:2px;background:var(--primary);border-radius:2px;}
-.section-head{max-width:640px;margin-bottom:24px;}
-.section-head h2{font-size:clamp(24px,3.4vw,36px);color:var(--primary-darker);margin-top:8px;line-height:1.15;}
-.section-head p{margin-top:8px;color:var(--ink-soft);font-size:14.5px;}
+.eyebrow::before{content:"";width:20px;height:1px;background:var(--leaf);display:inline-block;}
+.section-head{max-width:680px;margin-bottom:28px;}
+.section-head h2{font-size:clamp(22px,3.6vw,36px);color:var(--forest);margin-top:10px;}
+.section-head p{margin-top:10px;color:var(--ink-soft);font-size:15px;max-width:560px;}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  padding:11px 22px;border-radius:50px;font-family:var(--font-body);font-weight:600;font-size:13.5px;
-  border:1.5px solid transparent;transition:all .25s cubic-bezier(.4,0,.2,1);white-space:nowrap;
+  padding:12px 22px;border-radius:100px;font-family:var(--font-body);font-weight:600;font-size:14px;
+  border:1.5px solid transparent;transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease, color .18s ease;
+  white-space:nowrap;
 }
-.btn svg{width:14px;height:14px;flex-shrink:0;}
-.btn-primary{background:var(--primary);color:#fff;box-shadow:0 4px 14px rgba(37,150,190,0.3);}
-.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,150,190,0.35);}
-.btn-accent{background:var(--accent);color:#fff;box-shadow:0 4px 14px rgba(37,150,190,0.3);}
-.btn-accent:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,150,190,0.35);}
-.btn-outline-light{border-color:rgba(255,255,255,.4);color:#fff;}
-.btn-outline-light:hover{border-color:#fff;background:rgba(255,255,255,.12);transform:translateY(-2px);}
-.btn-ghost{border-color:var(--line);color:var(--ink-soft);}
-.btn-ghost:hover{border-color:var(--primary);color:var(--primary);}
-.btn-sm{padding:8px 16px;font-size:12px;}
-.icon{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
+.btn svg{width:15px;height:15px;flex-shrink:0;}
+.btn-primary{background:var(--harvest);color:var(--paper);}
+.btn-primary:hover{background:#EEA13F;transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(226,148,47,.55);}
+.btn-outline{border-color:rgba(255,255,255,.4);color:#fff;}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.15);transform:translateY(-2px);}
+.btn-ghost{border-color:var(--line);color:var(--forest);}
+.btn-ghost:hover{border-color:var(--leaf);color:var(--leaf);}
+.icon{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
 
 /* ===== HEADER ===== */
 .site-header{
   position:sticky;top:0;left:0;right:0;z-index:100;
-  background:rgba(13,79,106,0.88);backdrop-filter:blur(16px) saturate(1.4);
-  border-bottom:1px solid rgba(255,255,255,0.1);
+  background:rgba(13,114,59,0.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.15);
 }
-.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;max-width:var(--container);margin:0 auto;}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 20px;max-width:var(--container);margin:0 auto;
+}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;}
-.brand-mark{width:32px;height:32px;flex-shrink:0;}
+.brand-mark{width:34px;height:34px;flex-shrink:0;}
 .brand-text{display:flex;flex-direction:column;line-height:1.15;}
-.brand-text b{font-family:var(--font-display);font-size:16px;font-weight:700;letter-spacing:-.01em;}
-.brand-text span{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--primary-lighter);}
+.brand-text b{font-family:var(--font-display);font-size:16px;font-weight:700;}
+.brand-text span{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf-light);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
 
-/* ===== HERO ===== */
+/* ===== HERO (compact) ===== */
 .hero{
   position:relative;overflow:hidden;
-  background:linear-gradient(155deg,rgba(13,79,106,0.88) 0%,rgba(26,107,138,0.75) 40%,rgba(37,150,190,0.65) 100%),
-              url('https://images.unsplash.com/photo-EjetrYcgMhk?w=1400&q=80');
-  background-size:cover;background-position:center;
-  color:#fff;padding:44px 0 48px;
+  background:radial-gradient(120% 140% at 14% -10%, #128A49 0%, var(--forest) 46%, #084924 100%);
+  color:#fff;padding:48px 0 50px;
 }
-.hero-pattern{position:absolute;inset:0;opacity:.15;pointer-events:none;}
-.hero-pattern svg{width:100%;height:100%;}
+.hero-veins{position:absolute;inset:0;opacity:.4;pointer-events:none;}
 .hero-inner{position:relative;z-index:1;max-width:var(--container);margin:0 auto;padding:0 20px;}
 .hero-badge{
-  display:inline-flex;align-items:center;gap:6px;padding:5px 12px 5px 6px;border-radius:50px;
-  background:var(--glass);border:1px solid var(--glass-border);
-  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--primary-lighter);
+  display:inline-flex;align-items:center;gap:7px;padding:6px 12px 6px 7px;border-radius:100px;
+  background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);
+  font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;color:var(--leaf-pale);
 }
-.hero-badge .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(37,150,190,.25);}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--harvest);box-shadow:0 0 0 3px rgba(226,148,47,.25);}
 .hero-title{
   font-family:var(--font-display);font-weight:300;
-  font-size:clamp(32px,6.5vw,68px);line-height:.92;margin-top:14px;color:#fff;letter-spacing:-.03em;
+  font-size:clamp(36px,7vw,72px);line-height:.94;margin-top:16px;color:#fff;letter-spacing:-.02em;
 }
-.hero-title em{font-style:italic;font-weight:600;color:var(--accent);}
-.hero-sub{margin-top:10px;max-width:520px;color:rgba(255,255,255,.85);font-size:14px;line-height:1.6;}
-.hero-cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+.hero-title em{font-style:italic;font-weight:600;color:var(--harvest);}
+.hero-sub{margin-top:10px;max-width:540px;color:rgba(255,255,255,.85);font-size:14.5px;line-height:1.6;}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
 
-/* ===== MENU ===== */
-.menu-section{padding:28px 0 0;}
-.menu-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:16px;}
+/* ===== MENU GRID ===== */
+.menu-section{padding:32px 0 0;}
+.menu-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:18px;
+}
 .menu-item{
   background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius-m);
-  padding:12px 6px;text-align:center;cursor:pointer;
-  transition:all .25s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;
+  padding:14px 8px;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);
+  transition:all .2s ease;position:relative;overflow:hidden;
 }
-.menu-item::after{content:'';position:absolute;bottom:0;left:10%;right:10%;height:3px;background:var(--primary);border-radius:3px;transform:scaleX(0);transition:transform .3s ease;}
-.menu-item:hover{border-color:var(--primary-light);transform:translateY(-3px);box-shadow:var(--shadow-md);}
-.menu-item.active{border-color:var(--primary);background:var(--primary-pale);box-shadow:var(--shadow-sm);}
+.menu-item::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:var(--harvest);transform:scaleX(0);transition:transform .25s ease;
+}
+.menu-item:hover{border-color:var(--leaf);transform:translateY(-3px);}
+.menu-item.active{border-color:var(--harvest);background:var(--harvest-pale);}
 .menu-item.active::after{transform:scaleX(1);}
-.menu-item .emoji{font-size:22px;display:block;margin-bottom:3px;line-height:1.2;}
-.menu-item .mlabel{font-size:11px;font-weight:600;color:var(--ink-soft);line-height:1.2;display:block;}
-.menu-item.active .mlabel{color:var(--primary-dark);}
-@media(max-width:820px){.menu-grid{grid-template-columns:repeat(3,1fr);}}
-@media(max-width:500px){.menu-grid{grid-template-columns:repeat(2,1fr);}}
+.menu-item .emoji{font-size:24px;display:block;margin-bottom:4px;line-height:1.2;}
+.menu-item .mlabel{font-size:11.5px;font-weight:600;color:var(--ink-soft);line-height:1.2;display:block;}
+.menu-item.active .mlabel{color:var(--harvest-dark);}
+@media (max-width:820px){.menu-grid{grid-template-columns:repeat(3,1fr);}}
+@media (max-width:500px){.menu-grid{grid-template-columns:repeat(2,1fr);}}
 
-/* ===== ZOOM BAR ===== */
+/* ===== ZOOM + VBG BAR ===== */
 .zoom-bar{
   display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;
-  padding:14px 20px;background:linear-gradient(135deg,var(--primary-darker),var(--primary-dark));
-  border-radius:var(--radius-m);margin-top:18px;box-shadow:0 4px 20px rgba(37,150,190,0.2);
+  padding:16px 22px;background:var(--forest);color:#fff;
+  border-radius:var(--radius-m);margin-top:22px;
 }
-.zoom-bar-left{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
-.zoom-item{display:flex;align-items:center;gap:7px;font-size:13px;}
-.zoom-item .icon{color:var(--primary-lighter);width:15px;height:15px;}
+.zoom-bar-left{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.zoom-item{display:flex;align-items:center;gap:8px;font-size:13.5px;}
+.zoom-item .icon{color:var(--leaf-light);width:16px;height:16px;}
 .zoom-item b{font-weight:600;color:#fff;}
-@media(max-width:600px){.zoom-bar{flex-direction:column;align-items:stretch;text-align:center;}}
+.zoom-bar .btn{font-size:12.5px;padding:9px 18px;}
+@media (max-width:600px){.zoom-bar{flex-direction:column;align-items:stretch;text-align:center;}}
 
 /* ===== CONTENT PANEL ===== */
 .content-panel{
-  margin-top:18px;background:var(--paper);border:1px solid var(--line);
-  border-radius:var(--radius-m);padding:22px 24px;min-height:150px;box-shadow:var(--shadow-sm);
+  margin-top:22px;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius-m);padding:24px 26px;min-height:160px;box-shadow:var(--shadow-card);
 }
-.section-content{display:none;animation:fadeSlide .35s ease;}
+.section-content{display:none;animation:fadein .3s ease;}
 .section-content.active{display:block;}
-@keyframes fadeSlide{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
-.section-content h3{font-size:20px;color:var(--primary-darker);margin-bottom:10px;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.section-content h3{font-size:20px;color:var(--forest);margin-bottom:12px;}
 .section-content p{color:var(--ink-soft);font-size:14px;line-height:1.7;margin-bottom:10px;}
-.panel-stack{display:flex;flex-direction:column;gap:12px;}
-.panel{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden;}
-.panel-head{padding:11px 16px;background:var(--primary);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px;}
-.panel-head .icon{color:rgba(255,255,255,.8);}
-.panel-head.alt{background:var(--primary-dark);}
-.panel-body{padding:12px 16px;}
-.check-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--ink);padding:5px 0;border-bottom:1px dashed var(--line);}
+.content-panel .panel-stack{display:flex;flex-direction:column;gap:14px;}
+.content-panel .panel{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden;}
+.content-panel .panel-head{
+  padding:12px 16px;background:var(--forest);color:#fff;
+  font-family:var(--font-display);font-weight:700;font-size:15px;
+  display:flex;align-items:center;gap:8px;
+}
+.content-panel .panel-head .icon{color:var(--leaf-light);}
+.content-panel .panel-body{padding:14px 16px;}
+.check-list li{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;color:var(--ink);padding:6px 0;border-bottom:1px dashed var(--line);}
 .check-list li:last-child{border-bottom:none;}
-.check-list .icon{color:var(--primary);margin-top:2px;width:14px;height:14px;}
+.check-list .icon{color:var(--leaf);margin-top:2px;width:15px;height:15px;}
 
-/* ===== SPEAKERS ===== */
-.speakers-mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;}
-.speaker-mini{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 10px;text-align:center;}
-.sp-avatar{width:38px;height:38px;border-radius:50%;margin:0 auto 6px;background:linear-gradient(150deg,var(--primary),var(--primary-darker));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:13px;}
-.sp-name{font-size:12px;font-weight:700;color:var(--primary-darker);line-height:1.3;}
-.sp-affil{font-size:10.5px;color:var(--ink-faint);margin-top:3px;}
+/* ===== SPEAKERS IN PANEL ===== */
+.speakers-mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;}
+.speaker-mini{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:14px 12px;text-align:center;
+}
+.sp-avatar{
+  width:42px;height:42px;border-radius:50%;margin:0 auto 8px;
+  background:linear-gradient(150deg,var(--forest-2),var(--forest));
+  color:var(--harvest);display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-weight:700;font-size:14px;margin-bottom:8px;
+}
+.sp-name{font-size:13px;font-weight:700;color:var(--forest);line-height:1.3;}
+.sp-affil{font-size:11px;color:var(--ink-faint);margin-top:4px;}
 
-/* ===== SCHEDULE ===== */
-.day-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px;}
-.day-tab{flex:0 0 auto;padding:7px 13px;border-radius:10px;border:1px solid var(--line);background:var(--paper);font-size:11.5px;font-weight:600;color:var(--ink-soft);white-space:nowrap;display:flex;flex-direction:column;gap:1px;transition:all .15s;}
-.day-tab span{font-family:var(--font-mono);font-weight:500;font-size:9.5px;color:var(--ink-faint);}
-.day-tab.active{background:var(--primary);border-color:var(--primary);color:#fff;}
-.day-tab.active span{color:var(--primary-lighter);}
+/* ===== SCHEDULE TABS IN PANEL ===== */
+.day-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px;}
+.day-tab{
+  flex:0 0 auto;padding:8px 14px;border-radius:10px;border:1px solid var(--line);
+  background:var(--paper);font-size:12px;font-weight:600;color:var(--ink-soft);white-space:nowrap;
+  display:flex;flex-direction:column;gap:1px;transition:all .15s;
+}
+.day-tab span{font-family:var(--font-mono);font-weight:500;font-size:10px;color:var(--ink-faint);}
+.day-tab.active{background:var(--forest);border-color:var(--forest);color:#fff;}
+.day-tab.active span{color:var(--leaf-pale);}
 .day-panel{display:none;}
-.day-panel.active{display:block;animation:fadeSlide .25s ease;}
-.session-mini{padding:9px 12px;border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:6px;background:var(--bg);}
-.session-mini .s-time{font-family:var(--font-mono);font-size:10.5px;color:var(--primary);font-weight:600;}
-.session-mini .s-code{font-family:var(--font-mono);font-size:9.5px;color:var(--primary);font-weight:600;text-transform:uppercase;}
-.session-mini .s-title{font-family:var(--font-display);font-size:14px;font-weight:600;color:var(--primary-darker);margin-top:2px;}
-.session-mini .s-speaker{font-size:12px;color:var(--ink-soft);margin-top:3px;}
+.day-panel.active{display:block;animation:fadein .25s ease;}
+.session-mini{
+  padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius-s);
+  margin-bottom:8px;background:var(--cream);
+}
+.session-mini .s-time{font-family:var(--font-mono);font-size:11px;color:var(--harvest-dark);font-weight:600;}
+.session-mini .s-code{font-family:var(--font-mono);font-size:10px;color:var(--leaf);font-weight:600;text-transform:uppercase;}
+.session-mini .s-title{font-family:var(--font-display);font-size:15px;font-weight:600;color:var(--forest);margin-top:2px;}
+.session-mini .s-speaker{font-size:12.5px;color:var(--ink-soft);margin-top:4px;}
 
-/* ===== COURSE CARDS ===== */
-.course-section{padding:36px 0;}
-.course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:16px;}
-.course-card{
-  background:var(--paper);border-radius:var(--radius-m);overflow:hidden;
-  box-shadow:var(--shadow-sm);border:1px solid var(--line);
-  transition:all .35s cubic-bezier(.4,0,.2,1);cursor:pointer;
-}
-.course-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent;}
-.course-card:active{transform:translateY(-2px);}
-.card-img{height:120px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.4));}
-.card-emoji{font-size:36px;position:relative;z-index:1;filter:drop-shadow(0 2px 8px rgba(0,0,0,.15));}
-.card-badge{
-  position:absolute;top:10px;left:10px;z-index:2;
-  padding:3px 9px;border-radius:6px;background:rgba(255,255,255,.9);backdrop-filter:blur(4px);
-  font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--primary-dark);text-transform:uppercase;
-}
-.card-body{padding:14px 16px 12px;}
-.card-body h4{font-size:14px;color:var(--primary-darker);line-height:1.3;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-.card-speaker{font-size:12px;color:var(--ink-soft);display:flex;align-items:center;gap:5px;margin-bottom:4px;}
-.card-speaker .icon{color:var(--primary-light);width:13px;height:13px;}
-.card-time{font-family:var(--font-mono);font-size:10.5px;color:var(--ink-faint);display:flex;align-items:center;gap:5px;}
-.card-time .icon{color:var(--accent);width:13px;height:13px;}
-.card-footer{padding:0 16px 14px;}
-.card-footer .btn{width:100%;justify-content:center;font-size:12px;padding:9px;}
-@media(max-width:600px){.course-grid{grid-template-columns:1fr;}}
-
-/* ===== MODAL ===== */
-.modal-overlay{
-  display:none;position:fixed;inset:0;z-index:200;
-  background:rgba(13,79,106,0.5);backdrop-filter:blur(8px);
-  justify-content:center;align-items:center;padding:20px;
-}
-.modal-overlay.open{display:flex;}
-@keyframes modalIn{from{opacity:0;transform:scale(.95) translateY(20px);}to{opacity:1;transform:scale(1) translateY(0);}}
-.modal-box{
-  background:var(--paper);border-radius:var(--radius-l);max-width:580px;width:100%;
-  max-height:90vh;overflow-y:auto;padding:0;box-shadow:var(--shadow-xl);
-  animation:modalIn .35s cubic-bezier(.4,0,.2,1);
-}
-.modal-header{
-  padding:36px 28px 20px;position:relative;
-  background:linear-gradient(135deg,var(--primary-pale),var(--paper));
-  border-bottom:1px solid var(--line);
-}
-.modal-header .m-emoji{font-size:44px;display:block;margin-bottom:10px;}
-.modal-header h3{font-size:20px;color:var(--primary-darker);}
-.modal-header .m-code{font-family:var(--font-mono);font-size:10px;color:var(--primary);font-weight:600;text-transform:uppercase;margin-bottom:4px;display:block;}
-.modal-close{
-  position:absolute;top:16px;right:18px;width:36px;height:36px;border-radius:50%;
-  background:var(--bg);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
-  font-size:20px;color:var(--ink-soft);transition:all .2s;
-}
-.modal-close:hover{background:var(--primary-pale);color:var(--primary);}
-.modal-body{padding:20px 28px 28px;}
-.modal-body .m-section{margin-bottom:18px;}
-.modal-body .m-section:last-child{margin-bottom:0;}
-.modal-body .m-label{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:600;margin-bottom:6px;}
-.modal-body .m-info{font-size:14px;color:var(--ink-soft);line-height:1.6;}
-.modal-body .m-info b{color:var(--ink);}
-.m-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;}
-.m-tags span{padding:4px 10px;background:var(--primary-pale);color:var(--primary-dark);border-radius:6px;font-size:12px;font-weight:500;}
+/* ===== COURSE TABLE ===== */
+.course-section{padding:40px 0;}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-s);}
+.course-table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:700px;}
+.course-table thead{background:var(--forest);color:#fff;}
+.course-table th{padding:10px 12px;text-align:left;font-weight:600;white-space:nowrap;}
+.course-table td{padding:9px 12px;border-bottom:1px solid var(--line);color:var(--ink-soft);}
+.course-table tbody tr{background:var(--paper);transition:background .15s;}
+.course-table tbody tr:hover{background:var(--leaf-pale);}
+.course-table a{color:var(--forest-2);font-weight:600;cursor:pointer;}
+.course-table a:hover{color:var(--harvest);}
+.course-table .act-link{display:inline-block;padding:2px 8px;border-radius:6px;background:var(--leaf-pale);color:var(--forest-3);font-family:var(--font-mono);font-size:10.5px;font-weight:600;text-transform:uppercase;}
 
 /* ===== RESOURCES ===== */
-.resources-section{padding:0 0 36px;}
-.resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:14px;}
+.resources-section{padding:0 0 40px;}
+.resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;}
 .resource-card{
-  display:flex;align-items:center;gap:10px;padding:12px 14px;
+  display:flex;align-items:center;gap:12px;padding:14px 16px;
   background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-s);
-  transition:all .25s ease;
+  box-shadow:var(--shadow-card);transition:all .2s;
 }
-.resource-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow-sm);}
-.resource-card .r-icon{font-size:22px;flex-shrink:0;}
-.resource-card .r-name{font-size:12px;font-weight:600;color:var(--primary-darker);}
-.resource-card .r-desc{font-size:10.5px;color:var(--ink-faint);margin-top:1px;}
+.resource-card:hover{border-color:var(--leaf);transform:translateY(-2px);}
+.resource-card .r-icon{font-size:24px;flex-shrink:0;}
+.resource-card .r-name{font-size:13px;font-weight:600;color:var(--forest);}
+.resource-card .r-desc{font-size:11px;color:var(--ink-faint);margin-top:2px;}
 
 /* ===== FAQ ===== */
-.faq-section{padding:0 0 36px;}
-.faq-item{border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:6px;overflow:hidden;background:var(--paper);}
-.faq-q{padding:11px 14px;font-weight:600;font-size:13.5px;color:var(--primary-darker);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .15s;}
-.faq-q:hover{background:var(--primary-pale);}
-.faq-q .arrow{font-size:11px;transition:transform .25s ease;color:var(--ink-faint);}
+.faq-section{padding:0 0 40px;}
+.faq-item{
+  border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:8px;
+  overflow:hidden;background:var(--paper);
+}
+.faq-q{
+  padding:12px 16px;font-weight:600;font-size:14px;color:var(--forest);
+  cursor:pointer;display:flex;justify-content:space-between;align-items:center;
+  transition:background .15s;
+}
+.faq-q:hover{background:var(--leaf-pale);}
+.faq-q .arrow{font-size:12px;transition:transform .25s ease;color:var(--ink-faint);}
 .faq-item.open .faq-q .arrow{transform:rotate(180deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;font-size:13px;color:var(--ink-soft);line-height:1.7;}
-.faq-item.open .faq-a{max-height:400px;padding:2px 14px 12px;}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .3s ease, padding .3s ease;
+  font-size:13.5px;color:var(--ink-soft);line-height:1.7;
+}
+.faq-item.open .faq-a{max-height:400px;padding:4px 16px 14px;}
 
 /* ===== FOOTER ===== */
-.site-footer{background:var(--primary-darker);color:rgba(255,255,255,.8);padding:32px 0 18px;}
-.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.1);}
-.footer-brand p{font-size:12px;line-height:1.6;color:rgba(255,255,255,.6);max-width:240px;margin-top:6px;}
-.footer-links{display:flex;gap:28px;}
-.footer-col h5{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:8px;}
-.footer-col ul{display:flex;flex-direction:column;gap:6px;}
-.footer-col a{font-size:12.5px;color:rgba(255,255,255,.85);}
-.footer-col a:hover{color:var(--accent);}
-.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding-top:14px;font-size:11.5px;color:rgba(255,255,255,.5);}
+.site-footer{background:#084924;color:rgba(255,255,255,.8);padding:36px 0 20px;}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.15);}
+.footer-brand p{font-size:12.5px;line-height:1.6;color:rgba(255,255,255,.65);max-width:260px;margin-top:8px;}
+.footer-links{display:flex;gap:32px;}
+.footer-col h5{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px;}
+.footer-col ul{display:flex;flex-direction:column;gap:8px;}
+.footer-col a{font-size:13px;color:rgba(255,255,255,.85);}
+.footer-col a:hover{color:var(--harvest);}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-top:16px;font-size:12px;color:rgba(255,255,255,.55);}
+/* ===== UTILITY ===== */
+.text-center{text-align:center;}
+.mt-8{margin-top:8px;}
 </style>
 </head>
 <body>
@@ -274,15 +258,15 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
   <nav class="nav">
     <a href="#top" class="brand">
       <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
-        <circle cx="20" cy="20" r="19" stroke="rgba(37,150,190,0.5)" stroke-width="1.4"/>
-        <path d="M20 30V15" stroke="#8BD1E3" stroke-width="1.8" stroke-linecap="round"/>
-        <path d="M20 18C20 12 15 10 11 10C11 15 14 19 20 19" fill="#50B8D4"/>
-        <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#50B8D4"/>
+        <circle cx="20" cy="20" r="19" stroke="#E2942F" stroke-width="1.4" opacity="0.5"/>
+        <path d="M20 30V15" stroke="#6FCF97" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M20 18C20 12 15 10 11 10C11 15 14 19 20 19" fill="#27AE60"/>
+        <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#E2942F"/>
       </svg>
       <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
     </a>
-    <div>
-      <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent" style="padding:7px 14px;font-size:12px;">
+    <div class="nav-actions">
+      <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary" style="padding:8px 16px;font-size:12.5px;">
         Join Now
         <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
@@ -291,26 +275,22 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 </header>
 
 <main>
-  <!-- HERO -->
+  <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-pattern">
-      <svg viewBox="0 0 1200 500" preserveAspectRatio="none">
-        <path d="M-50 380 C 200 280, 350 430, 600 340 S 950 200, 1250 280" stroke="#8BD1E3" stroke-width="0.8" fill="none" opacity="0.3"/>
-        <path d="M-50 460 C 300 400, 400 500, 650 420 S 1000 320, 1250 400" stroke="#50B8D4" stroke-width="0.8" fill="none" opacity="0.25"/>
-        <circle cx="1050" cy="140" r="180" fill="url(#hg)"/>
-        <defs><radialGradient id="hg"><stop offset="0%" stop-color="#50B8D4" stop-opacity="0.2"/><stop offset="100%" stop-color="#50B8D4" stop-opacity="0"/></radialGradient></defs>
-      </svg>
-    </div>
+    <svg class="hero-veins" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-50 400 C 200 300, 300 450, 550 360 S 900 200, 1250 280" stroke="#6FCF97" stroke-width="1" fill="none" opacity="0.45"/>
+      <path d="M-50 480 C 250 420, 380 520, 620 440 S 950 320, 1250 400" stroke="#E2942F" stroke-width="1" fill="none" opacity="0.4"/>
+    </svg>
     <div class="hero-inner">
       <span class="hero-badge"><span class="dot"></span>Registration open · Apr 28 – Jul 20, 2026</span>
       <h1 class="hero-title">The 9<sup style="font-size:0.4em;">th</sup> <em>SAMI</em> Summer Course</h1>
-      <p class="hero-sub">Sustainable Agrifood Management in Indonesia — Building Climate Resilience and Sustainable Agrifood Management through ESG. 14 expert-led sessions, essay competition, and site visits.</p>
+      <p class="hero-sub">Sustainable Agrifood Management in Indonesia — Building Climate Resilience and Sustainable Agrifood Management through ESG. 14 expert-led sessions, essay competition, and site visits across Bogor &amp; Garut.</p>
       <div class="hero-cta-row">
-        <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent">
+        <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary">
           Apply Now
           <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
         </a>
-        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light">
+        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-outline">
           Guideline
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
         </a>
@@ -318,12 +298,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
     </div>
   </section>
 
-  <!-- MENU -->
+  <!-- ===== MENU GRID ===== -->
   <section class="menu-section" id="menuSection">
     <div class="container">
       <div class="menu-grid" id="menuGrid"></div>
 
-      <!-- ZOOM + VBG -->
+      <!-- ===== ZOOM + VBG ===== -->
       <div class="zoom-bar">
         <div class="zoom-bar-left">
           <div class="zoom-item">
@@ -335,13 +315,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
             <span><b>VBG Guide:</b> Virtual Background &amp; Technical Guide</span>
           </div>
         </div>
-        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light" style="font-size:12px;padding:8px 16px;">
+        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-ghost on-dark" style="border-color:rgba(255,255,255,.35);color:#fff;">
           Download VBG
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
         </a>
       </div>
 
-      <!-- CONTENT PANEL -->
+      <!-- ===== CONTENT PANEL ===== -->
       <div class="content-panel" id="contentPanel">
         <div class="section-content active" id="sec-about"></div>
         <div class="section-content" id="sec-ready"></div>
@@ -357,19 +337,33 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
     </div>
   </section>
 
-  <!-- COURSE CARDS -->
-  <section class="course-section" id="courselist">
+  <!-- ===== COURSE TABLE ===== -->
+  <section class="course-section" id="coursetable">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Course details</span>
-        <h2>Explore All Courses</h2>
-        <p>Click on any course card to view details, Zoom access, and materials.</p>
+        <h2>Complete Course Overview</h2>
+        <p>Browse all sessions — click on course codes or topic titles for details.</p>
       </div>
-      <div class="course-grid" id="courseGrid"></div>
+      <div class="table-wrap">
+        <table class="course-table" id="courseTable">
+          <thead>
+            <tr>
+              <th>Activity</th>
+              <th>Topic</th>
+              <th>Location</th>
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Start Time</th>
+            </tr>
+          </thead>
+          <tbody id="courseTableBody"></tbody>
+        </table>
+      </div>
     </div>
   </section>
 
-  <!-- RESOURCES -->
+  <!-- ===== RESOURCES ===== -->
   <section class="resources-section" id="resources">
     <div class="container">
       <div class="section-head">
@@ -381,7 +375,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- ===== FAQ ===== -->
   <section class="faq-section" id="faq">
     <div class="container">
       <div class="section-head">
@@ -393,29 +387,16 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
   </section>
 </main>
 
-<!-- MODAL -->
-<div class="modal-overlay" id="courseModal">
-  <div class="modal-box">
-    <div class="modal-header">
-      <button class="modal-close" id="modalClose">&times;</button>
-      <span class="m-emoji" id="modalEmoji">📊</span>
-      <span class="m-code" id="modalCode">Course 1</span>
-      <h3 id="modalTitle">Course Title</h3>
-    </div>
-    <div class="modal-body" id="modalBody"></div>
-  </div>
-</div>
-
 <footer class="site-footer">
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="#top" class="brand" style="color:#fff;">
           <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="19" stroke="rgba(37,150,190,0.5)" stroke-width="1.4"/>
-            <path d="M20 30V15" stroke="#8BD1E3" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M20 18C20 12 15 10 11 10C11 15 14 19 20 19" fill="#50B8D4"/>
-            <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#50B8D4"/>
+            <circle cx="20" cy="20" r="19" stroke="#E2942F" stroke-width="1.4" opacity="0.5"/>
+            <path d="M20 30V15" stroke="#6FCF97" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M20 18C20 12 15 10 11 10C11 15 14 19 20 19" fill="#27AE60"/>
+            <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#E2942F"/>
           </svg>
           <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
         </a>
@@ -440,12 +421,14 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 SAMI — IPB University</span>
+      <span>© 2026 SAMI — IPB University</span>
+      <span>Built with care for the 9th SAMI Summer Course</span>
     </div>
   </div>
 </footer>
 
 <script>
+/* ============================= DATA ============================= */
 const scheduleData = [
   { day:"Day 1", date:"Monday, July 27, 2026", mode:"online", sessions:[
     { time:"09.00–10.00 AM", opening:true, title:"Opening of SAMI Summer Course Program" },
@@ -522,234 +505,374 @@ const menuItems = [
   { id:'agenda', icon:'🗓️', label:'Agenda' },
   { id:'essay', icon:'🏆', label:'Essay Contest' },
   { id:'programbook', icon:'📘', label:'Program Book' },
-  { id:'speakers', icon:'👥', label:"Speaker's Profile" },
+  { id:'speakers', icon:'👥', label:'Speaker\'s Profile' },
   { id:'participants', icon:'✅', label:'Participants' },
   { id:'partners', icon:'🤝', label:'Supporting Partners' },
   { id:'gallery', icon:'🖼️', label:'Gallery' }
 ];
 
-const courseImgs = {
-  'Course 1':'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80',
-  'Course 2':'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&q=80',
-  'Course 3':'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&q=80',
-  'Course 4':'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80',
-  'Course 5':'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=80',
-  'Course 6':'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80',
-  'Course 7':'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80',
-  'Course 8':'https://images.unsplash.com/photo-1511497584788-876760111969?w=400&q=80',
-  'Course 9':'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80',
-  'Course 10':'https://images.unsplash.com/photo-1545167622-3a6ac2af0c10?w=400&q=80',
-  'Course 11':'https://images.unsplash.com/photo-1456406644174-8ddd4cd52f06?w=400&q=80',
-  'Course 12':'https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=400&q=80',
-  'Course 13':'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&q=80',
-  'Course 14':'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=400&q=80'
-};
-
+/* ============================= ICONS ============================= */
 const ICON_CHECK = '<svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>';
+const ICON_GLOBE = '<svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>';
+const ICON_BUILDING = '<svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>';
+const ICON_PIN = '<svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>';
 
 function initials(name){
   return name.replace(/^(Prof\.|Dr\.|Assoc\.|Ir\.)\s*/gi,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
 }
 
-// ===== MENU =====
-document.getElementById('menuGrid').innerHTML = menuItems.map(m =>
-  `<div class="menu-item${m.id==='about'?' active':''}" data-section="${m.id}">
+/* ============================= RENDER: MENU ============================= */
+const menuGrid = document.getElementById('menuGrid');
+menuGrid.innerHTML = menuItems.map(m => `
+  <div class="menu-item${m.id==='about'?' active':''}" data-section="${m.id}">
     <span class="emoji">${m.icon}</span>
     <span class="mlabel">${m.label}</span>
-  </div>`
-).join('');
+  </div>
+`).join('');
 
-// ===== SECTION RENDERERS =====
+/* ============================= SECTION CONTENT ============================= */
 function renderAbout(){
-  return `<div class="panel-stack">
-    <div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>About SAMI Summer Course</div><div class="panel-body"><p style="margin-bottom:10px;">The 9th Sustainable Agrifood Management in Indonesia (SAMI) Summer Course is organized by the Department of Management, FEM IPB University. The program runs in two formats: 12 live online courses (2 credits) and an extended track with 2 hybrid on-campus courses plus a 4-day site visit (4 credits).</p><p>Theme: <strong>"Building Climate Resilience and Sustainable Agrifood Management through ESG"</strong></p></div></div>
-    <div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>Activities &amp; Benefits</div><div class="panel-body"><ul class="check-list">${["12 Topics Online Course","2 Topic Hybrid Course","Essay Competition","Group Discussion & Project Assignment","Site Visit — Bogor & Garut","4 Academic Credits & E-Certificate","International Networking"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="https://ipb.link/submission-sami-2026" target="_blank" class="btn btn-primary">Apply Now</a><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-ghost">Download Guideline</a></div>
-  </div>`;
-}
-function renderReady(){
-  return `<h3>Getting Ready for SAMI 2026</h3><p>Prepare yourself for an amazing summer course experience. Here's what you need to know and prepare before the program starts.</p><div class="panel-stack" style="margin-top:12px;">
-    <div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5H5v14h14V9"/><path d="M21 3 12 12"/><path d="M15 3h6v6"/></svg>Prerequisites</div><div class="panel-body"><ul class="check-list">${["Basic understanding of sustainability and agribusiness","English proficiency (all sessions in English)","Stable internet connection for online sessions","Valid passport/ID for site visit participants"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div>
-    <div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M22 12h-6l-2 3H8l-1-2H2v5h20Z"/><path d="M5 10V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/></svg>What to Bring</div><div class="panel-body"><ul class="check-list">${["Laptop/tablet for online sessions","Notebook and pen for notes","Comfortable clothes for site visit (outdoor)","Camera for documentation"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div>
-  </div>`;
-}
-function renderAccom(){
-  return `<h3>Accommodations</h3><p>Recommended places to stay near IPB University, Bogor.</p><div class="panel-stack" style="margin-top:12px;">
-    <div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>Near IPB Dramaga Campus</div><div class="panel-body"><ul class="check-list">${["<b>IPB International Convention Center</b> — On-campus","<b>Hotel Salak The Heritage</b> — 15 min drive","<b>Royal Hotel Bogor</b> — 20 min drive","<b>Bogor Valley Hotel</b> — 10 min drive"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div>
-    <div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Near Garut Site Visit</div><div class="panel-body"><ul class="check-list">${["<b>Hotel Santika Garut</b> — Central location","<b>Kamojang Green Hotel & Resort</b> — Near Papandayan"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div>
-  </div>`;
-}
-function renderAgenda(){
-  const tabs = scheduleData.map((d,i)=>`<button class="day-tab ${i===0?'active':''}" data-idx="${i}">${d.day}<span>${d.mode==='online'?'Online':'Hybrid'}</span></button>`).join('');
-  const panels = scheduleData.map((d,i)=>`<div class="day-panel ${i===0?'active':''}" data-idx="${i}"><div style="font-family:var(--font-mono);font-size:11px;color:var(--accent-dark);font-weight:600;margin-bottom:6px;">${d.date}${d.location?' · '+d.location:''}</div>${d.sessions.map(s=>s.opening?`<div class="session-mini" style="background:var(--primary);color:#fff;"><div class="s-time" style="color:var(--primary-lighter);">${s.time}</div><div class="s-title" style="color:#fff;">${s.title}</div></div>`:`<div class="session-mini"><div class="s-time">${s.time}</div><span class="s-code">${s.code}</span><div class="s-title">${s.title}</div><div class="s-speaker">👤 ${s.speaker} — ${s.affil}</div></div>`).join('')}</div>`).join('');
-  return `<h3>Full Agenda</h3><p>Browse the complete schedule day by day.</p><div class="day-tabs" id="agendaTabs">${tabs}</div><div id="agendaPanels">${panels}</div>`;
-}
-function renderEssay(){
-  return `<h3>Essay Contest</h3><p>Sharpen your critical thinking on agrifood sustainability. The essay competition is open to all SAMI participants.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>Details</div><div class="panel-body"><ul class="check-list"><li>${ICON_CHECK}<b>Deadline:</b> August 12, 2026</li><li>${ICON_CHECK}<b>Presentation:</b> August 14–15, 2026 at IPB</li><li>${ICON_CHECK}<b>Theme:</b> ESG & climate resilience</li><li>${ICON_CHECK}<b>Rewards:</b> Certificate, prize, publication</li></ul></div></div><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-ghost" style="align-self:flex-start;">Download Guidelines</a></div>`;
-}
-function renderProgramBook(){
-  return `<h3>Program Book</h3><p>Download the complete SAMI 2026 Program Book.</p><div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding:28px;text-align:center;"><span style="font-size:56px;">📘</span><div style="font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--primary-darker);">The 9th SAMI Program Book</div><p style="max-width:380px;color:var(--ink-soft);font-size:13px;">Comprehensive guide covering all aspects of the summer course program.</p><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-primary">Download (PDF) <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a></div>`;
-}
-function renderSpeakers(){
-  return `<h3>Speaker's Profile</h3><p>Meet our 14 distinguished speakers from around the world.</p><div class="speakers-mini">${speakersData.map(sp=>`<div class="speaker-mini"><div class="sp-avatar">${initials(sp.name)}</div><div class="sp-name">${sp.name}</div><div class="sp-affil">${sp.affil}</div><span style="display:inline-block;margin-top:5px;font-family:var(--font-mono);font-size:8.5px;padding:2px 7px;border-radius:6px;background:var(--primary-pale);color:var(--primary-dark);font-weight:600;">${sp.course}</span></div>`).join('')}</div>`;
-}
-function renderParticipants(){
-  return `<h3>Participants</h3><p>Registered participants for the 9th SAMI Summer Course 2026.</p><div style="padding:24px;text-align:center;"><span style="font-size:36px;display:block;margin-bottom:10px;">✅</span><p style="font-size:14px;font-weight:600;color:var(--primary-darker);">Participant list will be announced after registration closes on July 20, 2026.</p><p style="margin-top:4px;color:var(--ink-faint);font-size:13px;">Stay tuned!</p></div>`;
-}
-function renderPartners(){
-  return `<h3>Supporting Partners</h3><p>Supported by leading organizations committed to sustainability.</p><div style="margin-top:14px;padding:24px 32px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;display:inline-block;"><div style="font-family:var(--font-display);font-weight:800;font-size:26px;color:var(--primary-darker);">PERTAMINA</div><div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px;">Trading &amp; Services</div></div>`;
-}
-const galleryImgs = [
-  'https://images.unsplash.com/photo-EjetrYcgMhk?w=400&q=80',
-  'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&q=80',
-  'https://images.unsplash.com/photo-1511497584788-876760111969?w=400&q=80',
-  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80',
-  'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&q=80',
-  'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=400&q=80'
-];
-function renderGallery(){
-  return `<h3>Gallery</h3><p>Photos and memories from SAMI Summer Course programs.</p><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:14px;">${galleryImgs.map(u=>`<div style="aspect-ratio:4/3;border-radius:var(--radius-s);overflow:hidden;border:1px solid var(--line);"><img src="${u}" alt="SAMI Gallery" style="width:100%;height:100%;object-fit:cover;"></div>`).join('')}</div>`;
+  return `
+    <div class="panel-stack">
+      <div class="panel">
+        <div class="panel-head">
+          <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          About SAMI Summer Course
+        </div>
+        <div class="panel-body">
+          <p style="margin-bottom:12px;">The 9th Sustainable Agrifood Management in Indonesia (SAMI) Summer Course is organized by the Department of Management, Faculty of Economics and Management, IPB University. The program runs in two formats: 12 live online courses (2 credits) and an extended track with 2 hybrid on-campus courses plus a 4-day site visit (4 credits).</p>
+          <p>Theme: <strong>"Building Climate Resilience and Sustainable Agrifood Management through ESG"</strong></p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head alt">
+          <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>
+          Activities &amp; Benefits
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}12 Topics Online Course</li>
+            <li>${ICON_CHECK}2 Topic Hybrid Course</li>
+            <li>${ICON_CHECK}Essay Competition</li>
+            <li>${ICON_CHECK}Group Discussion &amp; Project Assignment</li>
+            <li>${ICON_CHECK}Site Visit — Bogor &amp; Garut</li>
+            <li>${ICON_CHECK}4 Academic Credits &amp; E-Certificate</li>
+            <li>${ICON_CHECK}International Networking</li>
+          </ul>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary">Apply Now</a>
+        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-ghost">Download Guideline</a>
+      </div>
+    </div>
+  `;
 }
 
-const sectionRenderers = { about:renderAbout, ready:renderReady, accom:renderAccom, agenda:renderAgenda, essay:renderEssay, programbook:renderProgramBook, speakers:renderSpeakers, participants:renderParticipants, partners:renderPartners, gallery:renderGallery };
+function renderReady(){
+  return `
+    <h3>Getting Ready for SAMI 2026</h3>
+    <p>Prepare yourself for an amazing summer course experience. Here's what you need to know and prepare before the program starts.</p>
+    <div class="panel-stack" style="margin-top:14px;">
+      <div class="panel">
+        <div class="panel-head alt">
+          <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5H5v14h14V9"/><path d="M21 3 12 12"/><path d="M15 3h6v6"/></svg>
+          Prerequisites
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}Basic understanding of sustainability and agribusiness</li>
+            <li>${ICON_CHECK}English proficiency (all sessions in English)</li>
+            <li>${ICON_CHECK}Stable internet connection for online sessions</li>
+            <li>${ICON_CHECK}Valid passport/ID for site visit participants</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M22 12h-6l-2 3H8l-1-2H2v5h20Z"/><path d="M5 10V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/></svg>
+          What to Bring
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}Laptop/tablet for online sessions</li>
+            <li>${ICON_CHECK}Notebook and pen for notes</li>
+            <li>${ICON_CHECK}Comfortable clothes for site visit (outdoor)</li>
+            <li>${ICON_CHECK}Camera for documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderAccom(){
+  return `
+    <h3>Accommodations</h3>
+    <p>Recommended places to stay near IPB University, Bogor. We suggest booking early as August is peak season.</p>
+    <div class="panel-stack" style="margin-top:14px;">
+      <div class="panel">
+        <div class="panel-head">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>
+          Near IPB Dramaga Campus
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}<b>IPB International Convention Center</b> — On-campus, convenient for site visit</li>
+            <li>${ICON_CHECK}<b>Hotel Salak The Heritage</b> — 15 min drive, historic hotel in Bogor city center</li>
+            <li>${ICON_CHECK}<b>Royal Hotel Bogor</b> — 20 min drive, modern facilities</li>
+            <li>${ICON_CHECK}<b>Bogor Valley Hotel</b> — 10 min drive, budget-friendly option</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head alt">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          Near Garut Site Visit
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}<b>Hotel Santika Garut</b> — Central location, close to visit points</li>
+            <li>${ICON_CHECK}<b>Kamojang Green Hotel & Resort</b> — Near Mount Papandayan area</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderAgenda(){
+  const tabs = scheduleData.map((d,i) => `
+    <button class="day-tab ${i===0?'active':''}" data-idx="${i}">
+      ${d.day}<span>${d.mode === 'online' ? 'Online' : 'Hybrid'}</span>
+    </button>
+  `).join('');
+  const panels = scheduleData.map((d,i) => `
+    <div class="day-panel ${i===0?'active':''}" data-idx="${i}">
+      <div style="font-family:var(--font-mono);font-size:11.5px;color:var(--harvest-dark);font-weight:600;margin-bottom:8px;">${d.date} ${d.location?'· '+d.location:''}</div>
+      ${d.sessions.map(s => {
+        if(s.opening) return `<div class="session-mini" style="background:var(--forest);color:#fff;"><div class="s-time" style="color:var(--leaf-light);">${s.time}</div><div class="s-title" style="color:#fff;">${s.title}</div></div>`;
+        return `<div class="session-mini"><div class="s-time">${s.time}</div><span class="s-code">${s.code}</span><div class="s-title">${s.title}</div><div class="s-speaker">👤 ${s.speaker} — ${s.affil}</div></div>`;
+      }).join('')}
+    </div>
+  `).join('');
+  return `
+    <h3>Full Agenda</h3>
+    <p>Browse the complete schedule day by day.</p>
+    <div class="day-tabs" id="agendaTabs">${tabs}</div>
+    <div id="agendaPanels">${panels}</div>
+  `;
+}
+
+function renderEssay(){
+  return `
+    <h3>Essay Contest</h3>
+    <p>Sharpen your critical thinking on agrifood sustainability. The essay competition is open to all SAMI participants with exciting rewards.</p>
+    <div class="panel-stack" style="margin-top:14px;">
+      <div class="panel">
+        <div class="panel-head">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>
+          Details
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}<b>Submission Deadline:</b> August 12, 2026</li>
+            <li>${ICON_CHECK}<b>Presentation &amp; Award:</b> August 14–15, 2026 at IPB University</li>
+            <li>${ICON_CHECK}<b>Theme:</b> Aligned with SAMI's focus on ESG and climate resilience</li>
+            <li>${ICON_CHECK}<b>Rewards:</b> Certificate, prize, and publication opportunity</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-ghost" style="align-self:flex-start;">Download Essay Guidelines</a>
+    </div>
+  `;
+}
+
+function renderProgramBook(){
+  return `
+    <h3>Program Book</h3>
+    <p>Download the complete SAMI 2026 Program Book for full details on sessions, speakers, schedule, and site visit itinerary.</p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding:32px;text-align:center;">
+      <span style="font-size:64px;">📘</span>
+      <div style="font-family:var(--font-display);font-size:20px;font-weight:600;color:var(--forest);">The 9th SAMI Program Book</div>
+      <p style="max-width:400px;color:var(--ink-soft);">Comprehensive guide covering all aspects of the summer course program.</p>
+      <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-primary">
+        Download Program Book (PDF)
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+      </a>
+    </div>
+  `;
+}
+
+function renderSpeakers(){
+  return `
+    <h3>Speaker's Profile</h3>
+    <p>Meet our 14 distinguished speakers from Indonesia, Germany, Malaysia, South Korea, Thailand, and beyond.</p>
+    <div class="speakers-mini">
+      ${speakersData.map(sp => `
+        <div class="speaker-mini">
+          <div class="sp-avatar">${initials(sp.name)}</div>
+          <div class="sp-name">${sp.name}</div>
+          <div class="sp-affil">${sp.affil}</div>
+          <span style="display:inline-block;margin-top:6px;font-family:var(--font-mono);font-size:9px;padding:2px 8px;border-radius:100px;background:var(--leaf-pale);color:var(--forest-3);font-weight:600;">${sp.course}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderParticipants(){
+  return `
+    <h3>Participants</h3>
+    <p>List of registered participants for the 9th SAMI Summer Course 2026.</p>
+    <div style="padding:28px;text-align:center;color:var(--ink-faint);">
+      <span style="font-size:40px;display:block;margin-bottom:12px;">✅</span>
+      <p style="font-size:15px;font-weight:600;color:var(--forest);">Participant list will be announced after registration closes on July 20, 2026.</p>
+      <p style="margin-top:6px;">Stay tuned for updates!</p>
+    </div>
+  `;
+}
+
+function renderPartners(){
+  return `
+    <h3>Supporting Partners</h3>
+    <p>We are proud to be supported by leading organizations committed to sustainability.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;">
+      <div style="flex:1;min-width:200px;padding:28px 36px;background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;">
+        <div style="font-family:var(--font-display);font-weight:800;font-size:28px;color:var(--forest);">PERTAMINA</div>
+        <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:6px;">Trading &amp; Services</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderGallery(){
+  return `
+    <h3>Gallery</h3>
+    <p>Photos and memories from SAMI Summer Course programs.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:16px;">
+      ${[1,2,3,4,5,6].map(i => `
+        <div style="aspect-ratio:4/3;background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-s);display:flex;align-items:center;justify-content:center;font-size:32px;color:var(--ink-faint);">
+          🖼️
+        </div>
+      `).join('')}
+    </div>
+    <p style="text-align:center;margin-top:12px;color:var(--ink-faint);font-size:13px;">Gallery photos will be updated soon.</p>
+  `;
+}
+
+/* ============================= CONTENT MANAGER ============================= */
+const sectionRenderers = {
+  about: renderAbout,
+  ready: renderReady,
+  accom: renderAccom,
+  agenda: renderAgenda,
+  essay: renderEssay,
+  programbook: renderProgramBook,
+  speakers: renderSpeakers,
+  participants: renderParticipants,
+  partners: renderPartners,
+  gallery: renderGallery
+};
+
 let activeSection = 'about';
 
 function showSection(id){
-  if(id===activeSection) return;
+  if(id === activeSection) return;
   activeSection = id;
-  document.querySelectorAll('.menu-item').forEach(el=>el.classList.toggle('active',el.dataset.section===id));
-  document.querySelectorAll('.section-content').forEach(el=>el.classList.remove('active'));
+  document.querySelectorAll('.menu-item').forEach(el => el.classList.toggle('active', el.dataset.section === id));
+  document.querySelectorAll('.section-content').forEach(el => el.classList.remove('active'));
   const target = document.getElementById('sec-'+id);
   if(target){
     if(!target.innerHTML) target.innerHTML = sectionRenderers[id]();
     target.classList.add('active');
-    if(id==='agenda') setTimeout(bindAgendaTabs,50);
+    if(id === 'agenda') bindAgendaTabs();
   }
 }
-document.querySelectorAll('.menu-item').forEach(el=>el.addEventListener('click',()=>showSection(el.dataset.section)));
 
+document.querySelectorAll('.menu-item').forEach(el => {
+  el.addEventListener('click', () => showSection(el.dataset.section));
+});
+
+/* ============================= AGENDA TABS ============================= */
 function bindAgendaTabs(){
   const tabs = document.getElementById('agendaTabs');
   const panels = document.getElementById('agendaPanels');
   if(!tabs) return;
-  tabs.querySelectorAll('.day-tab').forEach(tab=>{
-    tab.addEventListener('click',()=>{
-      tabs.querySelectorAll('.day-tab').forEach(t=>t.classList.remove('active'));
+  tabs.querySelectorAll('.day-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
-      panels.querySelectorAll('.day-panel').forEach(p=>p.classList.toggle('active',p.dataset.idx===tab.dataset.idx));
+      const idx = tab.dataset.idx;
+      panels.querySelectorAll('.day-panel').forEach(p => p.classList.toggle('active', p.dataset.idx === idx));
     });
   });
 }
 
-// ===== COURSE CARDS =====
-function buildCourseCards(){
-  const grid = document.getElementById('courseGrid');
-  const cards = [];
+/* ============================= BUILD COURSE TABLE ============================= */
+function buildCourseTable(){
+  const tbody = document.getElementById('courseTableBody');
+  const rows = [];
   scheduleData.forEach(day => {
     day.sessions.forEach(s => {
       if(s.opening) return;
-      const img = courseImgs[s.code]||'';
-      const loc = day.location||(day.mode==='online'?'Online':'Hybrid · IPB');
-      cards.push({code:s.code,title:s.title,speaker:s.speaker,affil:s.affil,time:`${day.date} · ${s.time}`,location:loc,img,topics:s.topics,day:day});
+      rows.push({
+        activity: s.code || '—',
+        topic: s.title,
+        location: day.location || (day.mode==='online' ? 'Online' : 'Hybrid · IPB University'),
+        speaker: s.speaker || '—',
+        title: s.title,
+        startTime: `${day.date} · ${s.time}`
+      });
     });
   });
-  grid.innerHTML = cards.map((c,i) => `
-    <div class="course-card" onclick="openCourseDetail(${i})">
-      <div class="card-img" style="background-image:url('${c.img}');background-size:cover;background-position:center;">
-        <span class="card-badge">${c.code}</span>
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td><a class="act-link" onclick="showSection('agenda')">${r.activity}</a></td>
+      <td><a onclick="showSection('agenda')" style="font-weight:600;">${r.topic}</a></td>
+      <td>${r.location}</td>
+      <td>${r.speaker}</td>
+      <td>${r.title}</td>
+      <td style="font-family:var(--font-mono);font-size:11px;">${r.startTime}</td>
+    </tr>
+  `).join('');
+}
+
+/* ============================= BUILD RESOURCES ============================= */
+function buildResources(){
+  const grid = document.getElementById('resourcesGrid');
+  grid.innerHTML = resourcesData.map(r => `
+    <a class="resource-card" href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener">
+      <span class="r-icon">${r.icon}</span>
+      <div>
+        <div class="r-name">${r.name}</div>
+        <div class="r-desc">${r.desc}</div>
       </div>
-      <div class="card-body">
-        <h4>${c.title}</h4>
-        <div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div>
-        <div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div>
+    </a>
+  `).join('');
+}
+
+/* ============================= BUILD FAQ ============================= */
+function buildFAQ(){
+  const container = document.getElementById('faqContainer');
+  container.innerHTML = faqData.map((f,i) => `
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        ${f.q}
+        <span class="arrow">▾</span>
       </div>
-      <div class="card-footer"><button class="btn btn-ghost btn-sm">View Details →</button></div>
+      <div class="faq-a">${f.a}</div>
     </div>
   `).join('');
-  window._courseCards = cards;
 }
 
-function openCourseDetail(idx){
-  const c = window._courseCards[idx];
-  if(!c) return;
-  document.getElementById('modalEmoji').textContent = '📚';
-  document.getElementById('modalCode').textContent = c.code;
-  document.getElementById('modalTitle').textContent = c.title;
-  const body = document.getElementById('modalBody');
-  body.innerHTML = `
-    <div class="m-section">
-      <div class="m-label">Speaker</div>
-      <div class="m-info"><b>${c.speaker}</b> — ${c.affil}</div>
-    </div>
-    <div class="m-section">
-      <div class="m-label">Schedule</div>
-      <div class="m-info"><b>${c.time}</b></div>
-    </div>
-    <div class="m-section">
-      <div class="m-label">Location</div>
-      <div class="m-info">${c.location}</div>
-    </div>
-    ${c.topics && c.topics.length ? `
-    <div class="m-section">
-      <div class="m-label">Topics</div>
-      <div class="m-tags">${c.topics.map(t => `<span>${t}</span>`).join('')}</div>
-    </div>` : ''}
-    <div class="m-section">
-      <div class="m-label">Zoom Access</div>
-      <div class="m-info" style="background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 14px;margin-top:4px;">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
-          <svg class="icon" viewBox="0 0 24 24" style="color:var(--primary);width:18px;height:18px;"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>
-          <b style="font-size:14px;">Join Zoom Meeting</b>
-        </div>
-        <div style="font-size:13px;line-height:1.8;color:var(--ink-soft);">
-          <b>ID:</b> 123 456 789${idx+1}<br>
-          <b>Passcode:</b> sami${c.code.toLowerCase().replace(' ','')}
-        </div>
-      </div>
-    </div>
-    <div class="m-section">
-      <div class="m-label">Materials</div>
-      <a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-primary btn-sm" style="margin-top:4px;">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
-        Download ${c.code} Materials
-      </a>
-    </div>
-  `;
-  document.getElementById('courseModal').classList.add('open');
-  document.body.style.overflow = 'hidden';
+function toggleFaq(el){
+  el.parentElement.classList.toggle('open');
 }
 
-document.getElementById('modalClose').addEventListener('click',()=>{
-  document.getElementById('courseModal').classList.remove('open');
-  document.body.style.overflow = '';
-});
-document.getElementById('courseModal').addEventListener('click',e=>{
-  if(e.target===e.currentTarget){
-    document.getElementById('courseModal').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-});
-
-// ===== RESOURCES =====
-function buildResources(){
-  document.getElementById('resourcesGrid').innerHTML = resourcesData.map(r =>
-    `<a class="resource-card" href="https://ipb.link/application-form-sami-2026" target="_blank">
-      <span class="r-icon">${r.icon}</span>
-      <div><div class="r-name">${r.name}</div><div class="r-desc">${r.desc}</div></div>
-    </a>`
-  ).join('');
-}
-
-// ===== FAQ =====
-function buildFAQ(){
-  document.getElementById('faqContainer').innerHTML = faqData.map(f =>
-    `<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${f.q}<span class="arrow">▾</span></div><div class="faq-a">${f.a}</div></div>`
-  ).join('');
-}
-
-// ===== INIT =====
+/* ============================= INIT ============================= */
 showSection('about');
-buildCourseCards();
+buildCourseTable();
 buildResources();
 buildFAQ();
 </script>
