@@ -3,464 +3,253 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The 9th SAMI Summer Course Program — IPB University</title>
-<meta name="description" content="The 9th Sustainable Agrifood Management in Indonesia (SAMI) Summer Course Program — Building Climate Resilience and Sustainable Agrifood Management through ESG. July–August 2026, IPB University.">
-
+<title>The 9th SAMI Summer Course — IPB University</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
 <style>
-/* ============================= TOKENS ============================= */
 :root{
-  --forest:#0D723B;
-  --forest-2:#128A49;
-  --forest-3:#1A9F56;
-  --leaf:#27AE60;
-  --leaf-light:#6FCF97;
-  --leaf-pale:#E9F7EF;
-  --harvest:#E2942F;
-  --harvest-dark:#C2711A;
-  --harvest-pale:#FBEBD4;
-  --cream:#F7F3E7;
-  --paper:#FFFFFF;
-  --ink:#1B2A1F;
-  --ink-soft:#516155;
-  --ink-faint:#8B978C;
-  --line:#E3DCC8;
-  --line-dark:#457857;
-
-  --font-display:'Fraunces', serif;
-  --font-body:'Inter', sans-serif;
-  --font-mono:'IBM Plex Mono', monospace;
-
-  --container:1180px;
-  --radius-s:8px;
-  --radius-m:16px;
-  --radius-l:28px;
+  --forest:#0D723B; --forest-2:#128A49; --forest-3:#1A9F56; --leaf:#27AE60;
+  --leaf-light:#6FCF97; --leaf-pale:#E9F7EF; --harvest:#E2942F; --harvest-dark:#C2711A;
+  --harvest-pale:#FBEBD4; --cream:#F7F3E7; --paper:#FFFFFF; --ink:#1B2A1F;
+  --ink-soft:#516155; --ink-faint:#8B978C; --line:#E3DCC8;
+  --font-display:'Fraunces',serif; --font-body:'Inter',sans-serif; --font-mono:'IBM Plex Mono',monospace;
+  --container:1180px; --radius-s:8px; --radius-m:16px; --radius-l:28px;
   --shadow-card:0 1px 2px rgba(13,114,59,0.06), 0 12px 28px -14px rgba(13,114,59,0.18);
 }
-
 *,*::before,*::after{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-@media (prefers-reduced-motion: reduce){
+@media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto;}
-  *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  *{animation-duration:0.001ms!important;animation-iteration-count:1!important;transition-duration:0.001ms!important;}
 }
 body{
-  margin:0;
-  background:var(--cream);
-  color:var(--ink);
-  font-family:var(--font-body);
-  font-size:16px;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
+  margin:0;background:var(--cream);color:var(--ink);font-family:var(--font-body);
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;
 }
-img{max-width:100%;display:block;}
 a{color:inherit;text-decoration:none;}
 ul{margin:0;padding:0;list-style:none;}
 h1,h2,h3,h4{margin:0;font-family:var(--font-display);font-weight:600;letter-spacing:-0.01em;}
 p{margin:0;}
-button{font-family:inherit;cursor:pointer;}
-:focus-visible{outline:2.5px solid var(--harvest);outline-offset:3px;}
-
-.container{max-width:var(--container);margin:0 auto;padding:0 24px;}
-.section{padding:104px 0;}
-@media (max-width:720px){ .section{padding:72px 0;} }
-
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+:focus-visible{outline:2.5px solid var(--harvest);outline-offset:3px;border-radius:4px;}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px;}
 .eyebrow{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:var(--font-mono);
-  font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--leaf);
-  font-weight:500;
+  display:inline-flex;align-items:center;gap:10px;font-family:var(--font-mono);
+  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--leaf);font-weight:500;
 }
 .eyebrow::before{content:"";width:20px;height:1px;background:var(--leaf);display:inline-block;}
-
-.section-head{max-width:680px;margin-bottom:48px;}
-.section-head h2{font-size:clamp(28px,4vw,42px);color:var(--forest);margin-top:14px;}
-.section-head p{margin-top:16px;color:var(--ink-soft);font-size:17px;max-width:560px;}
-
+.section-head{max-width:680px;margin-bottom:28px;}
+.section-head h2{font-size:clamp(22px,3.6vw,36px);color:var(--forest);margin-top:10px;}
+.section-head p{margin-top:10px;color:var(--ink-soft);font-size:15px;max-width:560px;}
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 26px;border-radius:100px;
-  font-family:var(--font-body);font-weight:600;font-size:15px;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 22px;border-radius:100px;font-family:var(--font-body);font-weight:600;font-size:14px;
   border:1.5px solid transparent;transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease, color .18s ease;
   white-space:nowrap;
 }
-.btn svg{width:16px;height:16px;flex-shrink:0;}
+.btn svg{width:15px;height:15px;flex-shrink:0;}
 .btn-primary{background:var(--harvest);color:var(--paper);}
 .btn-primary:hover{background:#EEA13F;transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(226,148,47,.55);}
 .btn-outline{border-color:rgba(255,255,255,.4);color:#fff;}
 .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.15);transform:translateY(-2px);}
-.btn-ghost{border-color:var(--line-dark, var(--line));color:var(--forest);}
-.btn-ghost.on-dark{border-color:rgba(255,255,255,.35);color:#fff;}
+.btn-ghost{border-color:var(--line);color:var(--forest);}
 .btn-ghost:hover{border-color:var(--leaf);color:var(--leaf);}
-.btn-ghost.on-dark:hover{background:rgba(255,255,255,.15);border-color:#fff;color:#fff;}
-.btn-block{width:100%;}
+.icon{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
 
-/* icons */
-.icon{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
-
-/* ============================= HEADER / NAV ============================= */
+/* ===== HEADER ===== */
 .site-header{
   position:sticky;top:0;left:0;right:0;z-index:100;
-  background:rgba(13,114,59,0.92);
-  backdrop-filter:blur(10px);
+  background:rgba(13,114,59,0.92);backdrop-filter:blur(10px);
   border-bottom:1px solid rgba(255,255,255,0.15);
 }
 .nav{
   display:flex;align-items:center;justify-content:space-between;
-  padding:14px 24px;max-width:var(--container);margin:0 auto;
+  padding:10px 20px;max-width:var(--container);margin:0 auto;
 }
-.brand{display:flex;align-items:center;gap:11px;color:#fff;}
-.brand-mark{width:38px;height:38px;flex-shrink:0;}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;}
+.brand-mark{width:34px;height:34px;flex-shrink:0;}
 .brand-text{display:flex;flex-direction:column;line-height:1.15;}
-.brand-text b{font-family:var(--font-display);font-size:17px;font-weight:700;letter-spacing:.01em;}
-.brand-text span{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf-light);}
+.brand-text b{font-family:var(--font-display);font-size:16px;font-weight:700;}
+.brand-text span{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf-light);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
 
-.nav-links{display:flex;align-items:center;gap:2px;}
-.nav-links a{
-  padding:9px 14px;border-radius:100px;color:rgba(255,255,255,.9);
-  font-size:14.5px;font-weight:500;transition:background-color .15s, color .15s;
-}
-.nav-links a:hover{background:rgba(255,255,255,.15);color:#fff;}
-.nav-cta{margin-left:10px;}
-
-.nav-toggle{
-  display:none;width:42px;height:42px;border-radius:10px;border:1px solid rgba(255,255,255,.3);
-  background:transparent;color:#fff;align-items:center;justify-content:center;
-}
-.nav-toggle .icon{width:20px;height:20px;}
-.nav-toggle .icon-close{display:none;}
-.nav-toggle.is-open .icon-menu{display:none;}
-.nav-toggle.is-open .icon-close{display:block;}
-
-.mobile-panel{
-  display:none;flex-direction:column;gap:2px;
-  padding:8px 20px 24px;background:var(--forest);
-  border-top:1px solid rgba(255,255,255,.15);
-}
-.mobile-panel a{
-  padding:13px 6px;color:rgba(255,255,255,.9);font-size:15.5px;font-weight:500;
-  border-bottom:1px solid rgba(255,255,255,.15);
-}
-.mobile-panel .nav-cta{margin:14px 0 0;}
-
-@media (max-width:900px){
-  .nav-links{display:none;}
-  .nav-cta.desktop-only{display:none;}
-  .nav-toggle{display:flex;}
-  .mobile-panel.is-open{display:flex;}
-}
-
-/* ============================= HERO ============================= */
+/* ===== HERO (compact) ===== */
 .hero{
   position:relative;overflow:hidden;
   background:radial-gradient(120% 140% at 14% -10%, #128A49 0%, var(--forest) 46%, #084924 100%);
-  color:#fff;padding:88px 0 100px;
+  color:#fff;padding:48px 0 50px;
 }
-.hero-veins{position:absolute;inset:0;opacity:.5;pointer-events:none;}
-.hero-inner{position:relative;z-index:1;max-width:var(--container);margin:0 auto;padding:0 24px;}
+.hero-veins{position:absolute;inset:0;opacity:.4;pointer-events:none;}
+.hero-inner{position:relative;z-index:1;max-width:var(--container);margin:0 auto;padding:0 20px;}
 .hero-badge{
-  display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 8px;border-radius:100px;
+  display:inline-flex;align-items:center;gap:7px;padding:6px 12px 6px 7px;border-radius:100px;
   background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);
-  font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;color:var(--leaf-pale);
+  font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;color:var(--leaf-pale);
 }
-.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--harvest);box-shadow:0 0 0 3px rgba(226,148,47,.25);}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--harvest);box-shadow:0 0 0 3px rgba(226,148,47,.25);}
 .hero-title{
-  font-family:var(--font-display);
-  font-weight:300;
-  font-size:clamp(46px,9vw,104px);
-  line-height:.94;
-  margin-top:26px;color:#fff;letter-spacing:-.02em;
+  font-family:var(--font-display);font-weight:300;
+  font-size:clamp(36px,7vw,72px);line-height:.94;margin-top:16px;color:#fff;letter-spacing:-.02em;
 }
 .hero-title em{font-style:italic;font-weight:600;color:var(--harvest);}
-.hero-quote{
-  margin-top:26px;max-width:600px;font-family:var(--font-display);font-style:italic;font-weight:500;
-  font-size:clamp(19px,2.4vw,24px);color:#EDE7D6;line-height:1.5;
-}
-.hero-sub{margin-top:18px;max-width:540px;color:rgba(255,255,255,.85);font-size:16.5px;line-height:1.7;}
-.hero-cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;}
+.hero-sub{margin-top:10px;max-width:540px;color:rgba(255,255,255,.85);font-size:14.5px;line-height:1.6;}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
 
-.hero-facts{
-  margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);
-  border-top:1px solid rgba(255,255,255,.25);padding-top:28px;gap:20px;
+/* ===== MENU GRID ===== */
+.menu-section{padding:32px 0 0;}
+.menu-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:18px;
 }
-.hero-fact b{display:block;font-family:var(--font-display);font-size:30px;font-weight:600;color:#fff;}
-.hero-fact span{display:block;margin-top:4px;font-size:13px;color:rgba(255,255,255,.75);}
-@media (max-width:760px){
-  .hero-facts{grid-template-columns:repeat(2,1fr);row-gap:26px;}
+.menu-item{
+  background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius-m);
+  padding:14px 8px;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);
+  transition:all .2s ease;position:relative;overflow:hidden;
 }
+.menu-item::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:var(--harvest);transform:scaleX(0);transition:transform .25s ease;
+}
+.menu-item:hover{border-color:var(--leaf);transform:translateY(-3px);}
+.menu-item.active{border-color:var(--harvest);background:var(--harvest-pale);}
+.menu-item.active::after{transform:scaleX(1);}
+.menu-item .emoji{font-size:24px;display:block;margin-bottom:4px;line-height:1.2;}
+.menu-item .mlabel{font-size:11.5px;font-weight:600;color:var(--ink-soft);line-height:1.2;display:block;}
+.menu-item.active .mlabel{color:var(--harvest-dark);}
+@media (max-width:820px){.menu-grid{grid-template-columns:repeat(3,1fr);}}
+@media (max-width:500px){.menu-grid{grid-template-columns:repeat(2,1fr);}}
 
-/* ============================= ABOUT ============================= */
-.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;}
-@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px;}}
-.about-copy p{color:var(--ink-soft);font-size:16.5px;line-height:1.85;}
-.about-copy p+p{margin-top:16px;}
-.about-format{
-  margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;
+/* ===== ZOOM + VBG BAR ===== */
+.zoom-bar{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;
+  padding:16px 22px;background:var(--forest);color:#fff;
+  border-radius:var(--radius-m);margin-top:22px;
 }
-.format-pill{
-  display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:var(--radius-s);
-  background:var(--paper);border:1px solid var(--line);
-}
-.format-pill .icon{color:var(--leaf);width:20px;height:20px;}
-.format-pill b{display:block;font-size:14.5px;color:var(--forest);}
-.format-pill span{display:block;font-size:12.5px;color:var(--ink-faint);margin-top:1px;}
+.zoom-bar-left{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.zoom-item{display:flex;align-items:center;gap:8px;font-size:13.5px;}
+.zoom-item .icon{color:var(--leaf-light);width:16px;height:16px;}
+.zoom-item b{font-weight:600;color:#fff;}
+.zoom-bar .btn{font-size:12.5px;padding:9px 18px;}
+@media (max-width:600px){.zoom-bar{flex-direction:column;align-items:stretch;text-align:center;}}
 
-.panel-stack{display:flex;flex-direction:column;gap:20px;}
-.panel{background:var(--paper);border-radius:var(--radius-m);border:1px solid var(--line);overflow:hidden;box-shadow:var(--shadow-card);}
-.panel-head{
-  padding:16px 22px;background:var(--harvest);color:var(--paper);
-  font-family:var(--font-display);font-weight:700;font-size:17px;
-  display:flex;align-items:center;gap:10px;
+/* ===== CONTENT PANEL ===== */
+.content-panel{
+  margin-top:22px;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius-m);padding:24px 26px;min-height:160px;box-shadow:var(--shadow-card);
 }
-.panel-head.alt{background:var(--forest);color:#fff;}
-.panel-body{padding:20px 22px 22px;}
-.check-list li{display:flex;align-items:flex-start;gap:11px;font-size:15px;color:var(--ink);padding:8px 0;border-bottom:1px dashed var(--line);}
+.section-content{display:none;animation:fadein .3s ease;}
+.section-content.active{display:block;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.section-content h3{font-size:20px;color:var(--forest);margin-bottom:12px;}
+.section-content p{color:var(--ink-soft);font-size:14px;line-height:1.7;margin-bottom:10px;}
+.content-panel .panel-stack{display:flex;flex-direction:column;gap:14px;}
+.content-panel .panel{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden;}
+.content-panel .panel-head{
+  padding:12px 16px;background:var(--forest);color:#fff;
+  font-family:var(--font-display);font-weight:700;font-size:15px;
+  display:flex;align-items:center;gap:8px;
+}
+.content-panel .panel-head .icon{color:var(--leaf-light);}
+.content-panel .panel-body{padding:14px 16px;}
+.check-list li{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;color:var(--ink);padding:6px 0;border-bottom:1px dashed var(--line);}
 .check-list li:last-child{border-bottom:none;}
-.check-list .icon{color:var(--leaf);margin-top:2px;width:17px;height:17px;}
+.check-list .icon{color:var(--leaf);margin-top:2px;width:15px;height:15px;}
 
-/* ============================= TIMELINE ============================= */
-.timeline-section{background:var(--forest);color:#fff;position:relative;}
-.timeline-section .section-head p{color:rgba(255,255,255,.85);}
-.timeline-section .eyebrow{color:var(--leaf-light);}
-.timeline-section .eyebrow::before{background:var(--leaf-light);}
-.timeline-section .section-head h2{color:#fff;}
-
-.vine{position:relative;padding-left:34px;}
-.vine::before{
-  content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;
-  background:linear-gradient(to bottom, var(--leaf-light), var(--harvest) 60%, var(--leaf-light));
-  opacity:.75;
+/* ===== SPEAKERS IN PANEL ===== */
+.speakers-mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;}
+.speaker-mini{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:14px 12px;text-align:center;
 }
-.vine-item{position:relative;padding:0 0 40px 26px;}
-.vine-item:last-child{padding-bottom:0;}
-.vine-node{
-  position:absolute;left:-34px;top:2px;width:20px;height:20px;border-radius:50%;
-  background:var(--forest);border:2px solid var(--harvest);display:flex;align-items:center;justify-content:center;
-}
-.vine-node .icon{width:10px;height:10px;stroke:var(--harvest);}
-.vine-item.is-current .vine-node{background:var(--harvest);border-color:var(--harvest);}
-.vine-item.is-current .vine-node .icon{stroke:var(--forest);}
-.vine-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 18px;}
-.vine-date{font-family:var(--font-mono);font-size:13px;color:var(--harvest);letter-spacing:.03em;white-space:nowrap;}
-.vine-label{font-family:var(--font-display);font-size:20px;font-weight:600;color:#fff;}
-.vine-desc{margin-top:6px;font-size:14.5px;color:rgba(255,255,255,.75);max-width:520px;}
-
-/* ============================= PRICING ============================= */
-.pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}
-@media (max-width:760px){.pricing-grid{grid-template-columns:1fr;}}
-.price-card{
-  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-l);
-  padding:34px 30px;position:relative;box-shadow:var(--shadow-card);
-}
-.price-card.featured{border-color:var(--harvest);background:linear-gradient(180deg,#FFFDF8,var(--paper) 30%);}
-.price-tag{
-  position:absolute;top:-13px;right:28px;background:var(--harvest);color:var(--paper);
-  font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
-  padding:6px 13px;border-radius:100px;font-weight:600;
-}
-.price-card h3{font-size:22px;color:var(--forest);}
-.price-value{display:flex;align-items:baseline;gap:8px;margin-top:14px;}
-.price-value b{font-family:var(--font-display);font-size:46px;color:var(--forest);font-weight:600;}
-.price-value span{color:var(--ink-faint);font-size:14px;}
-.price-credits{
-  display:inline-flex;margin-top:12px;padding:5px 12px;border-radius:100px;
-  background:var(--leaf-pale);color:var(--forest-3);font-size:12.5px;font-weight:600;font-family:var(--font-mono);
-}
-.price-list{margin-top:22px;display:flex;flex-direction:column;gap:11px;}
-.price-list li{display:flex;gap:10px;font-size:14.5px;color:var(--ink-soft);align-items:flex-start;}
-.price-list .icon{color:var(--leaf);width:16px;height:16px;margin-top:3px;}
-.price-card .btn{margin-top:26px;}
-
-/* ============================= SCHEDULE ============================= */
-.schedule-controls{display:flex;flex-direction:column;gap:16px;margin-bottom:34px;}
-.day-tabs{
-  display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;
-  scrollbar-width:thin;
-}
-.day-tabs::-webkit-scrollbar{height:5px;}
-.day-tabs::-webkit-scrollbar-thumb{background:var(--line);border-radius:10px;}
-.day-tab{
-  flex:0 0 auto;padding:11px 18px;border-radius:12px;border:1px solid var(--line);
-  background:var(--paper);font-size:13.5px;font-weight:600;color:var(--ink-soft);white-space:nowrap;
-  display:flex;flex-direction:column;gap:2px;transition:border-color .15s,background-color .15s,color .15s;
-}
-.day-tab span{font-family:var(--font-mono);font-weight:500;font-size:11px;color:var(--ink-faint);}
-.day-tab.active{background:var(--forest);border-color:var(--forest);color:#fff;}
-.day-tab.active span{color:var(--leaf-pale);}
-.day-tab:hover:not(.active){border-color:var(--leaf);color:var(--forest);}
-
-.mode-filters{display:flex;gap:8px;}
-.mode-chip{
-  padding:8px 15px;border-radius:100px;border:1px solid var(--line);background:var(--paper);
-  font-size:13px;font-weight:600;color:var(--ink-soft);
-}
-.mode-chip.active{background:var(--harvest-pale);border-color:var(--harvest);color:var(--harvest-dark);}
-
-.day-panel{display:none;}
-.day-panel.active{display:block;animation:fadein .35s ease;}
-@keyframes fadein{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
-
-.day-meta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:22px;}
-.day-meta h3{font-size:22px;color:var(--forest);}
-.mode-pill{
-  display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border-radius:100px;
-  font-size:12.5px;font-weight:600;font-family:var(--font-mono);
-}
-.mode-pill.online{background:var(--leaf-pale);color:var(--forest-3);}
-.mode-pill.hybrid{background:var(--harvest-pale);color:var(--harvest-dark);}
-.mode-pill .icon{width:13px;height:13px;}
-
-.session-list{display:flex;flex-direction:column;gap:14px;}
-.session-card{
-  display:grid;grid-template-columns:150px 1fr;gap:22px;
-  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);
-  padding:22px 24px;box-shadow:var(--shadow-card);
-}
-.session-card.is-opening{background:var(--forest);color:#fff;border-color:var(--forest);}
-.session-card.is-opening .session-time{color:var(--leaf-light);}
-@media (max-width:680px){
-  .session-card{grid-template-columns:1fr;gap:10px;}
-}
-.session-time{
-  font-family:var(--font-mono);font-size:13px;color:var(--harvest-dark);font-weight:600;
-  border-right:1px solid var(--line);padding-right:18px;
-}
-.session-card.is-opening .session-time{border-right-color:rgba(255,255,255,.25);}
-@media (max-width:680px){.session-time{border-right:none;border-bottom:1px solid var(--line);padding:0 0 10px;}}
-.session-code{
-  display:inline-block;margin-bottom:8px;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;
-  color:var(--leaf);text-transform:uppercase;font-weight:600;
-}
-.session-card.is-opening .session-code{color:var(--leaf-light);}
-.session-title{font-family:var(--font-display);font-size:18.5px;font-weight:600;color:var(--forest);line-height:1.3;}
-.session-card.is-opening .session-title{color:#fff;}
-.session-speaker{margin-top:9px;display:flex;align-items:center;gap:9px;font-size:14px;color:var(--ink);}
-.session-speaker b{font-weight:600;}
-.session-speaker-affil{color:var(--ink-faint);font-size:13px;}
-.session-topics{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);display:flex;flex-direction:column;gap:6px;}
-.session-topics li{font-size:13.5px;color:var(--ink-soft);padding-left:16px;position:relative;}
-.session-topics li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--leaf-light);}
-
-/* ============================= SITE VISIT ============================= */
-.sitevisit-section{background:var(--paper);}
-.sv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
-@media (max-width:820px){.sv-grid{grid-template-columns:1fr;}}
-.sv-card{
-  border:1px solid var(--line);border-radius:var(--radius-m);padding:26px;background:var(--cream);
-}
-.sv-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:16px;}
-.sv-card-head h3{font-size:19px;color:var(--forest);}
-.sv-loc{
-  display:flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11.5px;
-  color:var(--harvest-dark);background:var(--harvest-pale);padding:5px 10px;border-radius:100px;white-space:nowrap;
-}
-.sv-loc .icon{width:12px;height:12px;}
-.sv-date{font-size:13px;color:var(--ink-faint);margin-bottom:16px;font-family:var(--font-mono);}
-.sv-items{display:flex;flex-direction:column;gap:14px;}
-.sv-item{display:grid;grid-template-columns:118px 1fr;gap:14px;}
-@media (max-width:480px){.sv-item{grid-template-columns:1fr;gap:4px;}}
-.sv-item-time{font-family:var(--font-mono);font-size:12px;color:var(--forest-3);font-weight:600;padding-top:2px;}
-.sv-item-title{font-size:15px;font-weight:600;color:var(--ink);}
-.sv-item-desc{font-size:13.5px;color:var(--ink-soft);margin-top:2px;}
-
-.closing-banner{
-  margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;
-  background:var(--forest);color:#fff;border-radius:var(--radius-m);padding:26px 30px;
-}
-.closing-banner h4{font-size:19px;font-family:var(--font-display);}
-.closing-banner p{font-size:13.5px;color:rgba(255,255,255,.85);margin-top:4px;}
-
-/* ============================= SPEAKERS ============================= */
-.speakers-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
-@media (max-width:980px){.speakers-grid{grid-template-columns:repeat(3,1fr);}}
-@media (max-width:700px){.speakers-grid{grid-template-columns:repeat(2,1fr);}}
-@media (max-width:460px){.speakers-grid{grid-template-columns:1fr;}}
-.speaker-card{
-  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-m);
-  padding:22px 18px;text-align:center;box-shadow:var(--shadow-card);
-}
-.speaker-avatar{
-  width:58px;height:58px;border-radius:50%;margin:0 auto 14px;
+.sp-avatar{
+  width:42px;height:42px;border-radius:50%;margin:0 auto 8px;
   background:linear-gradient(150deg,var(--forest-2),var(--forest));
   color:var(--harvest);display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-display);font-weight:700;font-size:19px;
+  font-family:var(--font-display);font-weight:700;font-size:14px;margin-bottom:8px;
 }
-.speaker-name{font-size:14.5px;font-weight:700;color:var(--forest);line-height:1.35;}
-.speaker-affil{font-size:12px;color:var(--ink-faint);margin-top:6px;line-height:1.4;min-height:32px;}
-.speaker-course{
-  display:inline-block;margin-top:12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;
-  padding:4px 10px;border-radius:100px;background:var(--leaf-pale);color:var(--forest-3);text-transform:uppercase;font-weight:600;
-}
+.sp-name{font-size:13px;font-weight:700;color:var(--forest);line-height:1.3;}
+.sp-affil{font-size:11px;color:var(--ink-faint);margin-top:4px;}
 
-/* ============================= PARTNERS ============================= */
-.partners-section{background:var(--cream);text-align:center;}
-.partner-badge{
-  display:inline-flex;flex-direction:column;align-items:center;gap:14px;margin-top:10px;
-  padding:38px 56px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-l);
+/* ===== SCHEDULE TABS IN PANEL ===== */
+.day-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px;}
+.day-tab{
+  flex:0 0 auto;padding:8px 14px;border-radius:10px;border:1px solid var(--line);
+  background:var(--paper);font-size:12px;font-weight:600;color:var(--ink-soft);white-space:nowrap;
+  display:flex;flex-direction:column;gap:1px;transition:all .15s;
 }
-.partner-badge .ptw{font-family:var(--font-display);font-weight:800;font-size:30px;color:var(--forest);letter-spacing:-.01em;}
-.partner-badge .pts{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);}
+.day-tab span{font-family:var(--font-mono);font-weight:500;font-size:10px;color:var(--ink-faint);}
+.day-tab.active{background:var(--forest);border-color:var(--forest);color:#fff;}
+.day-tab.active span{color:var(--leaf-pale);}
+.day-panel{display:none;}
+.day-panel.active{display:block;animation:fadein .25s ease;}
+.session-mini{
+  padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius-s);
+  margin-bottom:8px;background:var(--cream);
+}
+.session-mini .s-time{font-family:var(--font-mono);font-size:11px;color:var(--harvest-dark);font-weight:600;}
+.session-mini .s-code{font-family:var(--font-mono);font-size:10px;color:var(--leaf);font-weight:600;text-transform:uppercase;}
+.session-mini .s-title{font-family:var(--font-display);font-size:15px;font-weight:600;color:var(--forest);margin-top:2px;}
+.session-mini .s-speaker{font-size:12.5px;color:var(--ink-soft);margin-top:4px;}
 
-/* ============================= REGISTER / CONTACT ============================= */
-.cta-section{
-  background:linear-gradient(160deg,var(--forest) 0%, #084924 100%);color:#fff;position:relative;overflow:hidden;
-}
-.cta-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;}
-@media (max-width:900px){.cta-grid{grid-template-columns:1fr;gap:38px;}}
-.cta-copy .eyebrow{color:var(--leaf-light);}
-.cta-copy .eyebrow::before{background:var(--leaf-light);}
-.cta-copy h2{font-size:clamp(28px,4vw,40px);margin-top:14px;color:#fff;}
-.cta-copy p{margin-top:16px;color:rgba(255,255,255,.85);font-size:16px;max-width:480px;}
-.cta-links{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;}
-.link-list{margin-top:36px;display:flex;flex-direction:column;gap:12px;}
-.link-row{display:flex;align-items:center;gap:11px;font-size:14.5px;color:rgba(255,255,255,.9);}
-.link-row .icon{color:var(--leaf-light);width:17px;height:17px;}
-.link-row a:hover{color:var(--harvest);}
+/* ===== COURSE TABLE ===== */
+.course-section{padding:40px 0;}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-s);}
+.course-table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:700px;}
+.course-table thead{background:var(--forest);color:#fff;}
+.course-table th{padding:10px 12px;text-align:left;font-weight:600;white-space:nowrap;}
+.course-table td{padding:9px 12px;border-bottom:1px solid var(--line);color:var(--ink-soft);}
+.course-table tbody tr{background:var(--paper);transition:background .15s;}
+.course-table tbody tr:hover{background:var(--leaf-pale);}
+.course-table a{color:var(--forest-2);font-weight:600;cursor:pointer;}
+.course-table a:hover{color:var(--harvest);}
+.course-table .act-link{display:inline-block;padding:2px 8px;border-radius:6px;background:var(--leaf-pale);color:var(--forest-3);font-family:var(--font-mono);font-size:10.5px;font-weight:600;text-transform:uppercase;}
 
-.contact-card{
-  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius-l);
-  padding:32px;backdrop-filter:blur(6px);
+/* ===== RESOURCES ===== */
+.resources-section{padding:0 0 40px;}
+.resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;}
+.resource-card{
+  display:flex;align-items:center;gap:12px;padding:14px 16px;
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-s);
+  box-shadow:var(--shadow-card);transition:all .2s;
 }
-.contact-card .eyebrow{color:var(--leaf-light);margin-bottom:16px;}
-.contact-card .eyebrow::before{background:var(--leaf-light);}
-.contact-person{display:flex;align-items:center;gap:14px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.2);}
-.contact-avatar{
-  width:52px;height:52px;border-radius:50%;background:var(--harvest);color:var(--paper);
-  display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:18px;flex-shrink:0;
-}
-.contact-person b{display:block;font-size:16px;color:#fff;}
-.contact-person span{display:block;font-size:12.5px;color:rgba(255,255,255,.75);margin-top:2px;}
-.contact-detail{display:flex;align-items:center;gap:11px;padding:10px 0;font-size:14.5px;color:rgba(255,255,255,.95);}
-.contact-detail .icon{color:var(--harvest);width:17px;height:17px;flex-shrink:0;}
-.contact-detail a:hover{color:var(--harvest);}
+.resource-card:hover{border-color:var(--leaf);transform:translateY(-2px);}
+.resource-card .r-icon{font-size:24px;flex-shrink:0;}
+.resource-card .r-name{font-size:13px;font-weight:600;color:var(--forest);}
+.resource-card .r-desc{font-size:11px;color:var(--ink-faint);margin-top:2px;}
 
-/* ============================= FOOTER ============================= */
-.site-footer{background:#084924;color:rgba(255,255,255,.8);padding:64px 0 28px;}
-.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.2);}
-@media (max-width:820px){.footer-top{grid-template-columns:1fr 1fr;row-gap:36px;}}
-@media (max-width:520px){.footer-top{grid-template-columns:1fr;}}
-.footer-brand .brand{margin-bottom:14px;}
-.footer-brand p{font-size:14px;line-height:1.7;color:rgba(255,255,255,.7);max-width:280px;}
-.footer-col h5{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:16px;}
-.footer-col ul{display:flex;flex-direction:column;gap:11px;}
-.footer-col a{font-size:14px;color:rgba(255,255,255,.9);}
+/* ===== FAQ ===== */
+.faq-section{padding:0 0 40px;}
+.faq-item{
+  border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:8px;
+  overflow:hidden;background:var(--paper);
+}
+.faq-q{
+  padding:12px 16px;font-weight:600;font-size:14px;color:var(--forest);
+  cursor:pointer;display:flex;justify-content:space-between;align-items:center;
+  transition:background .15s;
+}
+.faq-q:hover{background:var(--leaf-pale);}
+.faq-q .arrow{font-size:12px;transition:transform .25s ease;color:var(--ink-faint);}
+.faq-item.open .faq-q .arrow{transform:rotate(180deg);}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .3s ease, padding .3s ease;
+  font-size:13.5px;color:var(--ink-soft);line-height:1.7;
+}
+.faq-item.open .faq-a{max-height:400px;padding:4px 16px 14px;}
+
+/* ===== FOOTER ===== */
+.site-footer{background:#084924;color:rgba(255,255,255,.8);padding:36px 0 20px;}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.15);}
+.footer-brand p{font-size:12.5px;line-height:1.6;color:rgba(255,255,255,.65);max-width:260px;margin-top:8px;}
+.footer-links{display:flex;gap:32px;}
+.footer-col h5{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px;}
+.footer-col ul{display:flex;flex-direction:column;gap:8px;}
+.footer-col a{font-size:13px;color:rgba(255,255,255,.85);}
 .footer-col a:hover{color:var(--harvest);}
-.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:26px;font-size:13px;color:rgba(255,255,255,.6);}
-.footer-social{display:flex;gap:10px;}
-.footer-social a{
-  width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.3);
-  display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);
-}
-.footer-social a:hover{border-color:var(--harvest);color:var(--harvest);}
-.footer-social .icon{width:16px;height:16px;}
-
-/* reveal-on-scroll (subtle, disabled if reduced motion) */
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease;}
-.reveal.is-visible{opacity:1;transform:translateY(0);}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-top:16px;font-size:12px;color:rgba(255,255,255,.55);}
+/* ===== UTILITY ===== */
+.text-center{text-align:center;}
+.mt-8{margin-top:8px;}
 </style>
 </head>
 <body>
@@ -476,307 +265,133 @@ button{font-family:inherit;cursor:pointer;}
       </svg>
       <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
     </a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#sitevisit">Site Visit</a>
-      <a href="#speakers">Speakers</a>
-      <a href="#register">Contact</a>
+    <div class="nav-actions">
+      <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary" style="padding:8px 16px;font-size:12.5px;">
+        Join Now
+        <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
     </div>
-    <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary nav-cta desktop-only">
-      Join Now
-      <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <svg class="icon icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      <svg class="icon icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
-    </button>
   </nav>
-  <div class="mobile-panel" id="mobilePanel">
-    <a href="#about">About</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#schedule">Schedule</a>
-    <a href="#sitevisit">Site Visit</a>
-    <a href="#speakers">Speakers</a>
-    <a href="#register">Contact</a>
-    <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary nav-cta">
-      Join Now
-      <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
-    </a>
-  </div>
 </header>
 
-<main id="top">
-
+<main>
+  <!-- ===== HERO ===== -->
   <section class="hero">
-    <svg class="hero-veins" viewBox="0 0 1200 700" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M-50 600 C 200 500, 300 650, 550 560 S 900 400, 1250 480" stroke="#6FCF97" stroke-width="1" fill="none" opacity="0.45"/>
-      <path d="M-50 680 C 250 620, 380 720, 620 640 S 950 520, 1250 600" stroke="#E2942F" stroke-width="1" fill="none" opacity="0.4"/>
-      <circle cx="1080" cy="120" r="220" fill="url(#g1)"/>
-      <defs>
-        <radialGradient id="g1"><stop offset="0%" stop-color="#27AE60" stop-opacity="0.3"/><stop offset="100%" stop-color="#27AE60" stop-opacity="0"/></radialGradient>
-      </defs>
+    <svg class="hero-veins" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-50 400 C 200 300, 300 450, 550 360 S 900 200, 1250 280" stroke="#6FCF97" stroke-width="1" fill="none" opacity="0.45"/>
+      <path d="M-50 480 C 250 420, 380 520, 620 440 S 950 320, 1250 400" stroke="#E2942F" stroke-width="1" fill="none" opacity="0.4"/>
     </svg>
     <div class="hero-inner">
       <span class="hero-badge"><span class="dot"></span>Registration open · Apr 28 – Jul 20, 2026</span>
-      <h1 class="hero-title">The 9<sup style="font-size:0.4em;">th</sup> <em>SAMI</em><br>Summer Course</h1>
-      <p class="hero-quote">"Building Climate Resilience and Sustainable Agrifood Management through ESG."</p>
-      <p class="hero-sub">Sustainable Agrifood Management in Indonesia (SAMI) — an international summer course by the Department of Management, Faculty of Economics and Management, IPB University. Fourteen expert-led sessions, an essay competition, and hands-on site visits across Bogor and Garut.</p>
+      <h1 class="hero-title">The 9<sup style="font-size:0.4em;">th</sup> <em>SAMI</em> Summer Course</h1>
+      <p class="hero-sub">Sustainable Agrifood Management in Indonesia — Building Climate Resilience and Sustainable Agrifood Management through ESG. 14 expert-led sessions, essay competition, and site visits across Bogor &amp; Garut.</p>
       <div class="hero-cta-row">
         <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary">
-          Join Now — ipb.link/submission-sami-2026
+          Apply Now
           <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
         </a>
         <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-outline">
-          Download Guideline
+          Guideline
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
         </a>
       </div>
-      <div class="hero-facts">
-        <div class="hero-fact"><b>14</b><span>Online &amp; hybrid course topics</span></div>
-        <div class="hero-fact"><b>4</b><span>Academic credits available</span></div>
-        <div class="hero-fact"><b>2</b><span>Site visit regions — Bogor &amp; Garut</span></div>
-        <div class="hero-fact"><b>10+</b><span>Countries represented by speakers</span></div>
-      </div>
     </div>
   </section>
 
-  <section class="section" id="about">
+  <!-- ===== MENU GRID ===== -->
+  <section class="menu-section" id="menuSection">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">About the program</span>
-        <h2>A summer course built around real agrifood challenges</h2>
-        <p>Held every July–August, SAMI brings together students and young professionals from across the world to study how climate resilience, ESG practice, and sustainable agrifood systems intersect — through live online sessions, a hybrid on-campus week, and a guided site visit.</p>
-      </div>
+      <div class="menu-grid" id="menuGrid"></div>
 
-      <div class="about-grid">
-        <div class="about-copy">
-          <p>The program runs in two connected formats. Everyone joins twelve live online courses covering ESG fundamentals, supply chain sustainability, and climate-smart agriculture, taught by academics and practitioners from Indonesia, Europe, and Asia Pacific. Participants who choose the extended track then travel to IPB University in Bogor and on to Garut for two hybrid courses and four days of field learning.</p>
-          <p>Alongside the coursework, an essay competition sharpens participants' critical thinking on agrifood sustainability, with results announced at the closing ceremony in Bogor.</p>
-          <div class="about-format">
-            <div class="format-pill">
-              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>
-              <span><b>Online course</b><span>12 live topics · 2 credits</span></span>
-            </div>
-            <div class="format-pill">
-              <svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>
-              <span><b>Hybrid + Site visit</b><span>2 topics onsite · 4 credits</span></span>
-            </div>
+      <!-- ===== ZOOM + VBG ===== -->
+      <div class="zoom-bar">
+        <div class="zoom-bar-left">
+          <div class="zoom-item">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>
+            <span><b>Zoom Meeting:</b> ID 123 456 7890 · Passcode: sami2026</span>
+          </div>
+          <div class="zoom-item">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+            <span><b>VBG Guide:</b> Virtual Background &amp; Technical Guide</span>
           </div>
         </div>
-
-        <div class="panel-stack">
-          <div class="panel reveal">
-            <div class="panel-head">
-              <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-              Activities
-            </div>
-            <div class="panel-body">
-              <ul class="check-list">
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>12 Topics Online Course</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>2 Topic Hybrid Course</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Essay Competition</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Group Discussion</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Project Assignment</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Site Visit — Bogor &amp; Garut</li>
-              </ul>
-            </div>
-          </div>
-          <div class="panel reveal">
-            <div class="panel-head alt">
-              <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>
-              Benefits
-            </div>
-            <div class="panel-body">
-              <ul class="check-list">
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>4 Academic Credits</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>E-Certificate of Completion</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Valuable Course Material</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>International Networking</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Local Culture Immersion Experience</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Reward Opportunities</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section timeline-section" id="timeline">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Program timeline</span>
-        <h2>From registration to closing ceremony</h2>
-        <p>Every milestone of the 9th SAMI cycle, July–August 2026 — mark your calendar and don't miss the payment and essay deadlines.</p>
-      </div>
-      <div class="vine" id="timelineVine"></div>
-    </div>
-  </section>
-
-  <section class="section" id="pricing">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Program fee</span>
-        <h2>Choose your track</h2>
-        <p>Fees cover course access, e-certificate, materials, and — for the extended track — the full hybrid and site visit program.</p>
-      </div>
-      <div class="pricing-grid">
-        <div class="price-card">
-          <h3>Online Course Only</h3>
-          <div class="price-value"><b>$150</b><span>USD</span></div>
-          <span class="price-credits">2 CREDITS</span>
-          <ul class="price-list">
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Access to all 12 online course topics</li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Asynchronous &amp; online mentoring week</li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Essay competition eligibility</li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>E-certificate of completion</li>
-          </ul>
-          <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-ghost btn-block">Select this track</a>
-        </div>
-        <div class="price-card featured">
-          <span class="price-tag">Most complete</span>
-          <h3>Online Course + Site Visit</h3>
-          <div class="price-value"><b>$200</b><span>USD</span></div>
-          <span class="price-credits">4 CREDITS</span>
-          <ul class="price-list">
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Everything in the online track</li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>2 hybrid on-campus course topics at IPB</li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>4-day site visit across Bogor &amp; Garut</li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Local culture immersion &amp; closing ceremony</li>
-          </ul>
-          <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary btn-block">Select this track</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="schedule">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Full agenda</span>
-        <h2>Course schedule, day by day</h2>
-        <p>Fourteen sessions across seven course days — browse by day, or filter to see only online or hybrid on-campus sessions.</p>
-      </div>
-
-      <div class="schedule-controls">
-        <div class="mode-filters" id="modeFilters">
-          <button class="mode-chip active" data-mode="all">All days</button>
-          <button class="mode-chip" data-mode="online">Online only</button>
-          <button class="mode-chip" data-mode="hybrid">Hybrid / on-campus</button>
-        </div>
-        <div class="day-tabs" id="dayTabs"></div>
-      </div>
-
-      <div id="dayPanels"></div>
-    </div>
-  </section>
-
-  <section class="section sitevisit-section" id="sitevisit">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Field program</span>
-        <h2>Four days across Bogor &amp; Garut</h2>
-        <p>The extended track closes with a guided site visit — from IPB's own campus to breeding centers, leather workshops, and a volcanic ecotourism area in Garut.</p>
-      </div>
-      <div class="sv-grid" id="siteVisitGrid"></div>
-      <div class="closing-banner">
-        <div>
-          <h4>Essay Contest &amp; Closing Ceremony</h4>
-          <p>August 14–15, 2026 · IPB University, Bogor</p>
-        </div>
-        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-ghost on-dark">
-          Essay guideline
-          <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-ghost on-dark" style="border-color:rgba(255,255,255,.35);color:#fff;">
+          Download VBG
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
         </a>
       </div>
+
+      <!-- ===== CONTENT PANEL ===== -->
+      <div class="content-panel" id="contentPanel">
+        <div class="section-content active" id="sec-about"></div>
+        <div class="section-content" id="sec-ready"></div>
+        <div class="section-content" id="sec-accom"></div>
+        <div class="section-content" id="sec-agenda"></div>
+        <div class="section-content" id="sec-essay"></div>
+        <div class="section-content" id="sec-programbook"></div>
+        <div class="section-content" id="sec-speakers"></div>
+        <div class="section-content" id="sec-participants"></div>
+        <div class="section-content" id="sec-partners"></div>
+        <div class="section-content" id="sec-gallery"></div>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="speakers">
+  <!-- ===== COURSE TABLE ===== -->
+  <section class="course-section" id="coursetable">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Faculty &amp; practitioners</span>
-        <h2>Meet the speakers</h2>
-        <p>Fourteen academics, executives, and policy practitioners from Indonesia, Germany, Malaysia, South Korea, Thailand, and beyond.</p>
+        <span class="eyebrow">Course details</span>
+        <h2>Complete Course Overview</h2>
+        <p>Browse all sessions — click on course codes or topic titles for details.</p>
       </div>
-      <div class="speakers-grid" id="speakersGrid"></div>
+      <div class="table-wrap">
+        <table class="course-table" id="courseTable">
+          <thead>
+            <tr>
+              <th>Activity</th>
+              <th>Topic</th>
+              <th>Location</th>
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Start Time</th>
+            </tr>
+          </thead>
+          <tbody id="courseTableBody"></tbody>
+        </table>
+      </div>
     </div>
   </section>
 
-  <section class="section partners-section" id="partners">
+  <!-- ===== RESOURCES ===== -->
+  <section class="resources-section" id="resources">
     <div class="container">
-      <span class="eyebrow" style="justify-content:center;">Supported by</span>
-      <div class="partner-badge">
-        <span class="ptw">PERTAMINA</span>
-        <span class="pts">Trading &amp; Services</span>
+      <div class="section-head">
+        <span class="eyebrow">Course materials</span>
+        <h2>Resources</h2>
+        <p>Download session materials, presentations, and supporting documents.</p>
       </div>
+      <div class="resources-grid" id="resourcesGrid"></div>
     </div>
   </section>
 
-  <section class="section cta-section" id="register">
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section" id="faq">
     <div class="container">
-      <div class="cta-grid">
-        <div class="cta-copy">
-          <span class="eyebrow">Ready to join?</span>
-          <h2>Register for the 9th SAMI Summer Course</h2>
-          <p>Registration is open from April 28 to July 20, 2026. Read the full guideline before applying, then submit your form through the official IPB link.</p>
-          <div class="cta-links">
-            <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary">
-              Join Now
-              <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
-            </a>
-            <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-outline">
-              Read Guideline
-              <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
-            </a>
-          </div>
-          <div class="link-list">
-            <div class="link-row"><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></div>
-            <div class="link-row"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">sami.ipb.ac.id</a></div>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <span class="eyebrow">Program contact</span>
-          <div class="contact-person">
-            <div class="contact-avatar">DA</div>
-            <div>
-              <b>Diki Akhwan Mulya</b>
-              <span>SAMI Program Coordinator</span>
-            </div>
-          </div>
-          <a class="contact-detail" href="tel:+6285363335000">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
-            +62 853-6333-5000
-          </a>
-          <a class="contact-detail" href="mailto:dikiakhwan@apps.ipb.ac.id">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg>
-            dikiakhwan@apps.ipb.ac.id
-          </a>
-          <a class="contact-detail" href="https://instagram.com/samiipb" target="_blank" rel="noopener">
-            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-            @samiipb
-          </a>
-          <a class="contact-detail" href="#">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>
-            Department of Management, FEM — IPB University
-          </a>
-        </div>
+      <div class="section-head">
+        <span class="eyebrow">Got questions?</span>
+        <h2>Frequently Asked Questions</h2>
       </div>
+      <div id="faqContainer"></div>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
+    <div class="footer-inner">
       <div class="footer-brand">
-        <a href="#top" class="brand">
+        <a href="#top" class="brand" style="color:#fff;">
           <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
             <circle cx="20" cy="20" r="19" stroke="#E2942F" stroke-width="1.4" opacity="0.5"/>
             <path d="M20 30V15" stroke="#6FCF97" stroke-width="1.8" stroke-linecap="round"/>
@@ -785,42 +400,29 @@ button{font-family:inherit;cursor:pointer;}
           </svg>
           <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
         </a>
-        <p>Sustainable Agrifood Management in Indonesia — Department of Management, Faculty of Economics and Management, IPB University.</p>
+        <p>Department of Management, Faculty of Economics and Management, IPB University.</p>
       </div>
-      <div class="footer-col">
-        <h5>Program</h5>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#timeline">Timeline</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>More</h5>
-        <ul>
-          <li><a href="#sitevisit">Site Visit</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener">Guideline</a></li>
-          <li><a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener">Registration</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></li>
-          <li><a href="tel:+6285363335000">+62 853-6333-5000</a></li>
-          <li><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">sami.ipb.ac.id</a></li>
-        </ul>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Program</h5>
+          <ul>
+            <li><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></li>
+            <li><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">sami.ipb.ac.id</a></li>
+            <li><a href="https://instagram.com/samiipb" target="_blank" rel="noopener">@samiipb</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener">Registration</a></li>
+            <li><a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener">Guideline</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 SAMI — IPB University. All rights reserved.</span>
-      <div class="footer-social">
-        <a href="https://instagram.com/samiipb" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-        <a href="mailto:sami@apps.ipb.ac.id" aria-label="Email"><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg></a>
-        <a href="https://sami.ipb.ac.id" target="_blank" rel="noopener" aria-label="Website"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg></a>
-      </div>
+      <span>© 2026 SAMI — IPB University</span>
+      <span>Built with care for the 9th SAMI Summer Course</span>
     </div>
   </div>
 </footer>
@@ -830,64 +432,33 @@ button{font-family:inherit;cursor:pointer;}
 const scheduleData = [
   { day:"Day 1", date:"Monday, July 27, 2026", mode:"online", sessions:[
     { time:"09.00–10.00 AM", opening:true, title:"Opening of SAMI Summer Course Program" },
-    { time:"10.00–11.30 AM", code:"Course 1", title:"ESG Reporting and The Importance of ESG in Modern Business", speaker:"Prof. Dr. Jutta Geldermann", affil:"University of Duisburg-Essen, Germany", topics:["The role, background and definition of ESG","ESG, Triple Bottom Line and SDGs","The role of ESG in sustainable business","International sustainability standards","Sustainability report landscape"] },
-    { time:"01.00–02.30 PM", code:"Course 2", title:"ESG and Sustainability Report in Media", speaker:"Andy Budiman Kumala", affil:"CEO, KG Media Indonesia", topics:["ESG governance models for media","Best practices ESG at media","Sustainability report and compliance for media"] }
+    { time:"10.00–11.30 AM", code:"Course 1", title:"ESG Reporting and The Importance of ESG in Modern Business", speaker:"Prof. Dr. Jutta Geldermann", affil:"University of Duisburg-Essen, Germany", topics:["ESG, Triple Bottom Line and SDGs","International sustainability standards","Sustainability report landscape"] },
+    { time:"01.00–02.30 PM", code:"Course 2", title:"ESG and Sustainability Report in Media", speaker:"Andy Budiman Kumala", affil:"CEO, KG Media Indonesia", topics:["ESG governance models for media","Best practices ESG at media"] }
   ]},
   { day:"Day 2", date:"Tuesday, July 28, 2026", mode:"online", sessions:[
-    { time:"08.00–09.30 AM", code:"Course 3", title:"Sustainable Agrifood Management in Emerging Economies", speaker:"Aretha Aprilia", affil:"United Nations Development Programme (UNDP) Indonesia", topics:["Agrifood system challenges in the Global South","Sustainability trade-offs: productivity vs resilience","Case overview: Indonesia's food system"] },
+    { time:"08.00–09.30 AM", code:"Course 3", title:"Sustainable Agrifood Management in Emerging Economies", speaker:"Aretha Aprilia", affil:"UNDP Indonesia", topics:["Agrifood system challenges","Sustainability trade-offs","Case: Indonesia's food system"] },
     { time:"10.30 AM–12.00 PM", code:"Course 4", title:"Circular Economy Approaches", speaker:"Wirastanto", affil:"Country Head, RIZE", topics:["Waste reduction","Renewable energy use","Sustainable packaging"] }
   ]},
   { day:"Day 3", date:"Wednesday, July 29, 2026", mode:"online", sessions:[
-    { time:"08.00–09.30 AM", code:"Course 6", title:"Geopolitics and Supply Chain Sustainability among MSMEs in Agriculture Sector", speaker:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia (UPM)", topics:[] },
+    { time:"08.00–09.30 AM", code:"Course 6", title:"Geopolitics and Supply Chain Sustainability among MSMEs in Agriculture Sector", speaker:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia", topics:[] },
     { time:"10.30 AM–12.00 PM", code:"Course 7", title:"Geopark Tourism Support on Food Sustainability", speaker:"Assoc. Prof. Pongsak", affil:"Songkhla Rajabhat University, Thailand", topics:[] }
   ]},
   { day:"Day 4", date:"Thursday, July 30, 2026", mode:"online", sessions:[
-    { time:"08.00–09.30 AM", code:"Course 9", title:"ESG Governance, Policy Alignment and Agrifood Regulation", speaker:"Dr. M. Windrawan Inantha", affil:"Regional Director, Malaysian Export Academy Sdn Bhd", topics:["ESG governance models","Indonesia's ESG-related policies","Trade, certification and compliance"] },
-    { time:"10.30 AM–12.00 PM", code:"Course 10", title:"ESG Strategies for Sustainable Supply Chain Value", speaker:"Dr. Eko Ruddy Cahyadi", affil:"IPB University, Indonesia", topics:["Materiality and risk assessments, public commitments, regulations and benchmarking in shaping supply chain sustainability strategies","ESG initiatives in supply chain that contribute to organizational accountability"] },
-    { time:"01.00–02.30 PM", code:"Course 8", title:"Nature-Based Solution for Environmental Conservation and Development of Agrofood through International Cooperation", speaker:"Prof. Ho Sang Kang", affil:"Seoul National University, South Korea", topics:[] }
+    { time:"08.00–09.30 AM", code:"Course 9", title:"ESG Governance, Policy Alignment and Agrifood Regulation", speaker:"Dr. M. Windrawan Inantha", affil:"Malaysian Export Academy Sdn Bhd", topics:["ESG governance models","Indonesia's ESG-related policies","Trade, certification and compliance"] },
+    { time:"10.30 AM–12.00 PM", code:"Course 10", title:"ESG Strategies for Sustainable Supply Chain Value", speaker:"Dr. Eko Ruddy Cahyadi", affil:"IPB University, Indonesia", topics:["Materiality and risk assessments","ESG initiatives in supply chain"] },
+    { time:"01.00–02.30 PM", code:"Course 8", title:"Nature-Based Solution for Environmental Conservation", speaker:"Prof. Ho Sang Kang", affil:"Seoul National University, South Korea", topics:[] }
   ]},
   { day:"Day 5", date:"Friday, July 31, 2026", mode:"online", sessions:[
-    { time:"09.00–10.30 AM", code:"Course 11", title:"ESG-Driven Business Models & Innovation in Agrifood", speaker:"Dr. Indra R. Sembiring", affil:"IPB University, Indonesia", topics:["Regenerative agribusiness models","Blockchain & AI for agrifood traceability","Preparation for site visit & field assignment"] },
-    { time:"01.30–03.00 PM", code:"Course 12", title:"Governance Strategies for Climate Resilience", speaker:"Prof. Carola Jungwirth", affil:"University of Passau, Germany", topics:["ESG governance models","Indonesia's ESG-related policies","Trade, certification and compliance"] },
-    { time:"03.30–05.00 PM", code:"Course 5", title:"Climate-Smart Agriculture and Scope 3 Emissions Management", speaker:"Rezza F. Prisandy", affil:"Otoritas Jasa Keuangan (OJK) Indonesia", topics:["Scope 1, 2 & 3 emissions in agrifood","Decarbonizing agrifood value chains","Carbon farming & MRV systems"] }
+    { time:"09.00–10.30 AM", code:"Course 11", title:"ESG-Driven Business Models & Innovation in Agrifood", speaker:"Dr. Indra R. Sembiring", affil:"IPB University, Indonesia", topics:["Regenerative agribusiness models","Blockchain & AI for traceability"] },
+    { time:"01.30–03.00 PM", code:"Course 12", title:"Governance Strategies for Climate Resilience", speaker:"Prof. Carola Jungwirth", affil:"University of Passau, Germany", topics:["ESG governance models","Climate adaptation strategies"] },
+    { time:"03.30–05.00 PM", code:"Course 5", title:"Climate-Smart Agriculture and Scope 3 Emissions Management", speaker:"Rezza F. Prisandy", affil:"OJK Indonesia", topics:["Scope 1, 2 & 3 emissions","Decarbonizing agrifood value chains"] }
   ]},
   { day:"Day 6", date:"Monday, August 10, 2026", mode:"hybrid", location:"Hybrid · IPB University", sessions:[
-    { time:"09.00–10.30 AM", code:"Course 13", title:"Building Sustainable Agrifood Systems: Environmental Challenges and Policy Solutions", speaker:"Prof. Hermann Waibel", affil:"University of Hannover, Germany", topics:[] }
+    { time:"09.00–10.30 AM", code:"Course 13", title:"Building Sustainable Agrifood Systems", speaker:"Prof. Hermann Waibel", affil:"University of Hannover, Germany", topics:[] }
   ]},
   { day:"Day 7", date:"Friday, August 14, 2026", mode:"hybrid", location:"Hybrid · IPB University", sessions:[
     { time:"08.30–10.00 AM", code:"Course 14", title:"Halal Supply Chain Management and ESG Principles", speaker:"Dr. Marco Tieman", affil:"CEO, HSC Alliance Sdn Bhd", topics:[] }
   ]}
-];
-
-const siteVisitData = [
-  { day:"Site Visit — Day 1", date:"August 10, 2026", location:"IPB Dramaga Campus, Bogor", items:[
-    { time:"11.00 AM–04.00 PM", title:"IPB Campus Tour", desc:"Museum & Galeri IPB Future · Agribusiness and Technology Park (ATP) · LSI IPB" }
-  ]},
-  { day:"Site Visit — Day 2", date:"August 11, 2026", location:"Garut, West Java", items:[
-    { time:"10.30 AM–12.00 PM", title:"Traditional Food Industry", desc:"Dodol Garut production process" },
-    { time:"01.30–04.30 PM", title:"Eptilu Farm, Garut", desc:"Sustainable livestock and agribusiness practice" }
-  ]},
-  { day:"Site Visit — Day 3", date:"August 12, 2026", location:"Garut, West Java", items:[
-    { time:"08.00–11.00 AM", title:"Margawati Breeding Center, Garut", desc:"Animal breeding and livestock development" },
-    { time:"01.00–03.00 PM", title:"Sukaregang Leather Center, Garut", desc:"Leather industry and creative economy development" },
-    { time:"03.30–05.30 PM", title:"Cangkuang Temple, Garut", desc:"Culture heritage and community-based tourism" }
-  ]},
-  { day:"Site Visit — Day 4", date:"August 13, 2026", location:"Garut, West Java", items:[
-    { time:"07.00–11.00 AM", title:"Mount Papandayan Area, Garut", desc:"Ecotourism and natural resource conservation" },
-    { time:"01.00–02.30 PM", title:"Sumber Rezeki Souvenir Center, Garut", desc:"Local products and entrepreneurship development" }
-  ]}
-];
-
-const timelineData = [
-  { date:"Apr 28 – Jul 20", label:"Registration Open", desc:"Apply via ipb.link/submission-sami-2026" },
-  { date:"Jul 21", label:"Payment Deadline", desc:"Complete your program fee payment" },
-  { date:"Jul 22", label:"Announcement", desc:"Selected participants are announced" },
-  { date:"Jul 27 – 31", label:"12 Topics Online Course", desc:"Week one — five days of live online sessions" },
-  { date:"Aug 3 – 7", label:"Asynchronous & Online Mentoring", desc:"Self-paced mentoring and project assignment work" },
-  { date:"Aug 10 & 14", label:"2 Topic Hybrid Course", desc:"On-campus sessions at IPB University" },
-  { date:"Aug 10 – 13", label:"Site Visit", desc:"Field visits across Bogor and Garut" },
-  { date:"Aug 12", label:"Essay Submission Deadline", desc:"Submit your essay competition entry" },
-  { date:"Aug 14 – 15", label:"Essay Contest & Closing Ceremony", desc:"Final presentations and program closing at IPB University" }
 ];
 
 const speakersData = [
@@ -896,7 +467,7 @@ const speakersData = [
   { name:"Aretha Aprilia", affil:"UNDP Indonesia", course:"Course 3" },
   { name:"Wirastanto", affil:"Country Head, RIZE", course:"Course 4" },
   { name:"Rezza F. Prisandy", affil:"OJK Indonesia", course:"Course 5" },
-  { name:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia (UPM)", course:"Course 6" },
+  { name:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia", course:"Course 6" },
   { name:"Assoc. Prof. Pongsak", affil:"Songkhla Rajabhat University", course:"Course 7" },
   { name:"Prof. Ho Sang Kang", affil:"Seoul National University", course:"Course 8" },
   { name:"Dr. M. Windrawan Inantha", affil:"Malaysian Export Academy Sdn Bhd", course:"Course 9" },
@@ -907,164 +478,403 @@ const speakersData = [
   { name:"Dr. Marco Tieman", affil:"CEO, HSC Alliance Sdn Bhd", course:"Course 14" }
 ];
 
+const faqData = [
+  { q:"What is the SAMI Summer Course?", a:"SAMI (Sustainable Agrifood Management in Indonesia) is an international summer course organized by the Department of Management, FEM IPB University. It features 14 expert-led sessions, an essay competition, and optional site visits in Bogor and Garut." },
+  { q:"Who can participate?", a:"The program is open to undergraduate and postgraduate students, as well as young professionals interested in sustainable agrifood management, ESG, and climate resilience." },
+  { q:"What are the fees?", a:"The Online Course Only track is $150 USD (2 credits). The Online Course + Site Visit track is $200 USD (4 credits). Fees cover course access, e-certificate, and materials." },
+  { q:"When is the registration deadline?", a:"Registration is open from April 28 to July 20, 2026. Payment must be completed by July 21, 2026." },
+  { q:"How do I apply?", a:"Submit your application via ipb.link/submission-sami-2026. You'll also need to read the guideline at ipb.link/application-form-sami-2026 before applying." },
+  { q:"Will I receive a certificate?", a:"Yes, all participants who complete the program will receive an E-Certificate of Completion." },
+  { q:"Is the site visit mandatory?", a:"No, you can choose the Online Course Only track. The site visit is part of the extended track for those who want 4 credits and hands-on field experience." },
+  { q:"What is the language of instruction?", a:"All sessions are conducted in English." }
+];
+
+const resourcesData = [
+  { icon:"📄", name:"Program Guidebook", desc:"Complete program information and guidelines" },
+  { icon:"📋", name:"Registration Form", desc:"Application submission form" },
+  { icon:"📺", name:"Zoom Backgrounds", desc:"Official SAMI virtual backgrounds" },
+  { icon:"📘", name:"Course Materials", desc:"Session presentations and readings" },
+  { icon:"📝", name:"Essay Guidelines", desc:"Essay competition rules and themes" },
+  { icon:"🗺️", name:"Site Visit Map", desc:"Maps and itinerary for Bogor & Garut" }
+];
+
+const menuItems = [
+  { id:'about', icon:'☀️', label:'About Program' },
+  { id:'ready', icon:'🧳', label:'Getting Ready' },
+  { id:'accom', icon:'🗺️', label:'Accomodations' },
+  { id:'agenda', icon:'🗓️', label:'Agenda' },
+  { id:'essay', icon:'🏆', label:'Essay Contest' },
+  { id:'programbook', icon:'📘', label:'Program Book' },
+  { id:'speakers', icon:'👥', label:'Speaker\'s Profile' },
+  { id:'participants', icon:'✅', label:'Participants' },
+  { id:'partners', icon:'🤝', label:'Supporting Partners' },
+  { id:'gallery', icon:'🖼️', label:'Gallery' }
+];
+
 /* ============================= ICONS ============================= */
 const ICON_CHECK = '<svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>';
 const ICON_GLOBE = '<svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>';
 const ICON_BUILDING = '<svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>';
 const ICON_PIN = '<svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>';
-const ICON_LEAF = '<svg class="icon" viewBox="0 0 24 24"><path d="M4 20c8 0 16-6 16-16C10 4 4 12 4 20Z"/></svg>';
 
 function initials(name){
   return name.replace(/^(Prof\.|Dr\.|Assoc\.|Ir\.)\s*/gi,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
 }
 
-/* ============================= RENDER: TIMELINE ============================= */
-const vine = document.getElementById('timelineVine');
-vine.innerHTML = timelineData.map((t,i)=>`
-  <div class="vine-item">
-    <span class="vine-node">${ICON_LEAF}</span>
-    <div class="vine-row">
-      <span class="vine-date">${t.date}, 2026</span>
-      <span class="vine-label">${t.label}</span>
-    </div>
-    <p class="vine-desc">${t.desc}</p>
+/* ============================= RENDER: MENU ============================= */
+const menuGrid = document.getElementById('menuGrid');
+menuGrid.innerHTML = menuItems.map(m => `
+  <div class="menu-item${m.id==='about'?' active':''}" data-section="${m.id}">
+    <span class="emoji">${m.icon}</span>
+    <span class="mlabel">${m.label}</span>
   </div>
 `).join('');
 
-/* ============================= RENDER: SCHEDULE ============================= */
-const dayTabs = document.getElementById('dayTabs');
-const dayPanels = document.getElementById('dayPanels');
-let currentMode = 'all';
-
-function sessionCardHTML(s){
-  if(s.opening){
-    return `
-    <div class="session-card is-opening">
-      <div class="session-time">${s.time}</div>
-      <div>
-        <span class="session-code">Opening Ceremony</span>
-        <div class="session-title">${s.title}</div>
-      </div>
-    </div>`;
-  }
-  const topics = (s.topics && s.topics.length) ? `<ul class="session-topics">${s.topics.map(t=>`<li>${t}</li>`).join('')}</ul>` : '';
+/* ============================= SECTION CONTENT ============================= */
+function renderAbout(){
   return `
-  <div class="session-card">
-    <div class="session-time">${s.time}</div>
-    <div>
-      <span class="session-code">${s.code}</span>
-      <div class="session-title">${s.title}</div>
-      <div class="session-speaker">${ICON_PIN.replace('icon"','icon" style="width:15px;height:15px;color:var(--harvest-dark)"')} <b>${s.speaker}</b><span class="session-speaker-affil">— ${s.affil}</span></div>
-      ${topics}
+    <div class="panel-stack">
+      <div class="panel">
+        <div class="panel-head">
+          <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          About SAMI Summer Course
+        </div>
+        <div class="panel-body">
+          <p style="margin-bottom:12px;">The 9th Sustainable Agrifood Management in Indonesia (SAMI) Summer Course is organized by the Department of Management, Faculty of Economics and Management, IPB University. The program runs in two formats: 12 live online courses (2 credits) and an extended track with 2 hybrid on-campus courses plus a 4-day site visit (4 credits).</p>
+          <p>Theme: <strong>"Building Climate Resilience and Sustainable Agrifood Management through ESG"</strong></p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head alt">
+          <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>
+          Activities &amp; Benefits
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}12 Topics Online Course</li>
+            <li>${ICON_CHECK}2 Topic Hybrid Course</li>
+            <li>${ICON_CHECK}Essay Competition</li>
+            <li>${ICON_CHECK}Group Discussion &amp; Project Assignment</li>
+            <li>${ICON_CHECK}Site Visit — Bogor &amp; Garut</li>
+            <li>${ICON_CHECK}4 Academic Credits &amp; E-Certificate</li>
+            <li>${ICON_CHECK}International Networking</li>
+          </ul>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary">Apply Now</a>
+        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-ghost">Download Guideline</a>
+      </div>
     </div>
-  </div>`;
+  `;
 }
 
-function buildSchedule(){
-  dayTabs.innerHTML = scheduleData.map((d,i)=>`
-    <button class="day-tab ${i===0?'active':''}" data-index="${i}" data-mode="${d.mode}">
+function renderReady(){
+  return `
+    <h3>Getting Ready for SAMI 2026</h3>
+    <p>Prepare yourself for an amazing summer course experience. Here's what you need to know and prepare before the program starts.</p>
+    <div class="panel-stack" style="margin-top:14px;">
+      <div class="panel">
+        <div class="panel-head alt">
+          <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5H5v14h14V9"/><path d="M21 3 12 12"/><path d="M15 3h6v6"/></svg>
+          Prerequisites
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}Basic understanding of sustainability and agribusiness</li>
+            <li>${ICON_CHECK}English proficiency (all sessions in English)</li>
+            <li>${ICON_CHECK}Stable internet connection for online sessions</li>
+            <li>${ICON_CHECK}Valid passport/ID for site visit participants</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M22 12h-6l-2 3H8l-1-2H2v5h20Z"/><path d="M5 10V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/></svg>
+          What to Bring
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}Laptop/tablet for online sessions</li>
+            <li>${ICON_CHECK}Notebook and pen for notes</li>
+            <li>${ICON_CHECK}Comfortable clothes for site visit (outdoor)</li>
+            <li>${ICON_CHECK}Camera for documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderAccom(){
+  return `
+    <h3>Accommodations</h3>
+    <p>Recommended places to stay near IPB University, Bogor. We suggest booking early as August is peak season.</p>
+    <div class="panel-stack" style="margin-top:14px;">
+      <div class="panel">
+        <div class="panel-head">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>
+          Near IPB Dramaga Campus
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}<b>IPB International Convention Center</b> — On-campus, convenient for site visit</li>
+            <li>${ICON_CHECK}<b>Hotel Salak The Heritage</b> — 15 min drive, historic hotel in Bogor city center</li>
+            <li>${ICON_CHECK}<b>Royal Hotel Bogor</b> — 20 min drive, modern facilities</li>
+            <li>${ICON_CHECK}<b>Bogor Valley Hotel</b> — 10 min drive, budget-friendly option</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head alt">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          Near Garut Site Visit
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}<b>Hotel Santika Garut</b> — Central location, close to visit points</li>
+            <li>${ICON_CHECK}<b>Kamojang Green Hotel & Resort</b> — Near Mount Papandayan area</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderAgenda(){
+  const tabs = scheduleData.map((d,i) => `
+    <button class="day-tab ${i===0?'active':''}" data-idx="${i}">
       ${d.day}<span>${d.mode === 'online' ? 'Online' : 'Hybrid'}</span>
     </button>
   `).join('');
-
-  dayPanels.innerHTML = scheduleData.map((d,i)=>`
-    <div class="day-panel ${i===0?'active':''}" data-index="${i}" data-mode="${d.mode}">
-      <div class="day-meta">
-        <h3>${d.day} — ${d.date}</h3>
-        <span class="mode-pill ${d.mode}">${d.mode==='online'?ICON_GLOBE:ICON_BUILDING} ${d.mode==='online'?'Online session':(d.location||'Hybrid')}</span>
-      </div>
-      <div class="session-list">
-        ${d.sessions.map(sessionCardHTML).join('')}
-      </div>
+  const panels = scheduleData.map((d,i) => `
+    <div class="day-panel ${i===0?'active':''}" data-idx="${i}">
+      <div style="font-family:var(--font-mono);font-size:11.5px;color:var(--harvest-dark);font-weight:600;margin-bottom:8px;">${d.date} ${d.location?'· '+d.location:''}</div>
+      ${d.sessions.map(s => {
+        if(s.opening) return `<div class="session-mini" style="background:var(--forest);color:#fff;"><div class="s-time" style="color:var(--leaf-light);">${s.time}</div><div class="s-title" style="color:#fff;">${s.title}</div></div>`;
+        return `<div class="session-mini"><div class="s-time">${s.time}</div><span class="s-code">${s.code}</span><div class="s-title">${s.title}</div><div class="s-speaker">👤 ${s.speaker} — ${s.affil}</div></div>`;
+      }).join('')}
     </div>
   `).join('');
-
-  dayTabs.querySelectorAll('.day-tab').forEach(tab=>{
-    tab.addEventListener('click', ()=>{
-      dayTabs.querySelectorAll('.day-tab').forEach(t=>t.classList.remove('active'));
-      tab.classList.add('active');
-      const idx = tab.getAttribute('data-index');
-      dayPanels.querySelectorAll('.day-panel').forEach(p=>p.classList.toggle('active', p.getAttribute('data-index')===idx));
-    });
-  });
+  return `
+    <h3>Full Agenda</h3>
+    <p>Browse the complete schedule day by day.</p>
+    <div class="day-tabs" id="agendaTabs">${tabs}</div>
+    <div id="agendaPanels">${panels}</div>
+  `;
 }
-buildSchedule();
 
-document.getElementById('modeFilters').addEventListener('click', (e)=>{
-  const chip = e.target.closest('.mode-chip');
-  if(!chip) return;
-  currentMode = chip.getAttribute('data-mode');
-  document.querySelectorAll('.mode-chip').forEach(c=>c.classList.remove('active'));
-  chip.classList.add('active');
-
-  const tabs = Array.from(dayTabs.querySelectorAll('.day-tab'));
-  let firstVisible = null;
-  tabs.forEach(t=>{
-    const match = currentMode==='all' || t.getAttribute('data-mode')===currentMode;
-    t.style.display = match ? 'flex' : 'none';
-    if(match && !firstVisible) firstVisible = t;
-  });
-  if(firstVisible && !tabs.find(t=>t.classList.contains('active') && t.style.display!=='none')){
-    tabs.forEach(t=>t.classList.remove('active'));
-    firstVisible.classList.add('active');
-    const idx = firstVisible.getAttribute('data-index');
-    dayPanels.querySelectorAll('.day-panel').forEach(p=>p.classList.toggle('active', p.getAttribute('data-index')===idx));
-  }
-});
-
-/* ============================= RENDER: SITE VISIT ============================= */
-document.getElementById('siteVisitGrid').innerHTML = siteVisitData.map(sv=>`
-  <div class="sv-card">
-    <div class="sv-card-head">
-      <h3>${sv.day}</h3>
-      <span class="sv-loc">${ICON_PIN} ${sv.location}</span>
+function renderEssay(){
+  return `
+    <h3>Essay Contest</h3>
+    <p>Sharpen your critical thinking on agrifood sustainability. The essay competition is open to all SAMI participants with exciting rewards.</p>
+    <div class="panel-stack" style="margin-top:14px;">
+      <div class="panel">
+        <div class="panel-head">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>
+          Details
+        </div>
+        <div class="panel-body">
+          <ul class="check-list">
+            <li>${ICON_CHECK}<b>Submission Deadline:</b> August 12, 2026</li>
+            <li>${ICON_CHECK}<b>Presentation &amp; Award:</b> August 14–15, 2026 at IPB University</li>
+            <li>${ICON_CHECK}<b>Theme:</b> Aligned with SAMI's focus on ESG and climate resilience</li>
+            <li>${ICON_CHECK}<b>Rewards:</b> Certificate, prize, and publication opportunity</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-ghost" style="align-self:flex-start;">Download Essay Guidelines</a>
     </div>
-    <div class="sv-date">${sv.date}</div>
-    <div class="sv-items">
-      ${sv.items.map(it=>`
-        <div class="sv-item">
-          <span class="sv-item-time">${it.time}</span>
-          <div>
-            <div class="sv-item-title">${it.title}</div>
-            <div class="sv-item-desc">${it.desc}</div>
-          </div>
+  `;
+}
+
+function renderProgramBook(){
+  return `
+    <h3>Program Book</h3>
+    <p>Download the complete SAMI 2026 Program Book for full details on sessions, speakers, schedule, and site visit itinerary.</p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding:32px;text-align:center;">
+      <span style="font-size:64px;">📘</span>
+      <div style="font-family:var(--font-display);font-size:20px;font-weight:600;color:var(--forest);">The 9th SAMI Program Book</div>
+      <p style="max-width:400px;color:var(--ink-soft);">Comprehensive guide covering all aspects of the summer course program.</p>
+      <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-primary">
+        Download Program Book (PDF)
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+      </a>
+    </div>
+  `;
+}
+
+function renderSpeakers(){
+  return `
+    <h3>Speaker's Profile</h3>
+    <p>Meet our 14 distinguished speakers from Indonesia, Germany, Malaysia, South Korea, Thailand, and beyond.</p>
+    <div class="speakers-mini">
+      ${speakersData.map(sp => `
+        <div class="speaker-mini">
+          <div class="sp-avatar">${initials(sp.name)}</div>
+          <div class="sp-name">${sp.name}</div>
+          <div class="sp-affil">${sp.affil}</div>
+          <span style="display:inline-block;margin-top:6px;font-family:var(--font-mono);font-size:9px;padding:2px 8px;border-radius:100px;background:var(--leaf-pale);color:var(--forest-3);font-weight:600;">${sp.course}</span>
         </div>
       `).join('')}
     </div>
-  </div>
-`).join('');
-
-/* ============================= RENDER: SPEAKERS ============================= */
-document.getElementById('speakersGrid').innerHTML = speakersData.map(sp=>`
-  <div class="speaker-card">
-    <div class="speaker-avatar">${initials(sp.name)}</div>
-    <div class="speaker-name">${sp.name}</div>
-    <div class="speaker-affil">${sp.affil}</div>
-    <span class="speaker-course">${sp.course}</span>
-  </div>
-`).join('');
-
-/* ============================= NAV TOGGLE ============================= */
-const navToggle = document.getElementById('navToggle');
-const mobilePanel = document.getElementById('mobilePanel');
-navToggle.addEventListener('click', ()=>{
-  const open = mobilePanel.classList.toggle('is-open');
-  navToggle.classList.toggle('is-open', open);
-  navToggle.setAttribute('aria-expanded', open);
-});
-mobilePanel.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
-  mobilePanel.classList.remove('is-open');
-  navToggle.classList.remove('is-open');
-  navToggle.setAttribute('aria-expanded', false);
-}));
-
-/* ============================= REVEAL ON SCROLL ============================= */
-if('IntersectionObserver' in window){
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('is-visible'); io.unobserve(en.target); } });
-  }, { threshold:0.12 });
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  `;
 }
+
+function renderParticipants(){
+  return `
+    <h3>Participants</h3>
+    <p>List of registered participants for the 9th SAMI Summer Course 2026.</p>
+    <div style="padding:28px;text-align:center;color:var(--ink-faint);">
+      <span style="font-size:40px;display:block;margin-bottom:12px;">✅</span>
+      <p style="font-size:15px;font-weight:600;color:var(--forest);">Participant list will be announced after registration closes on July 20, 2026.</p>
+      <p style="margin-top:6px;">Stay tuned for updates!</p>
+    </div>
+  `;
+}
+
+function renderPartners(){
+  return `
+    <h3>Supporting Partners</h3>
+    <p>We are proud to be supported by leading organizations committed to sustainability.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;">
+      <div style="flex:1;min-width:200px;padding:28px 36px;background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;">
+        <div style="font-family:var(--font-display);font-weight:800;font-size:28px;color:var(--forest);">PERTAMINA</div>
+        <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:6px;">Trading &amp; Services</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderGallery(){
+  return `
+    <h3>Gallery</h3>
+    <p>Photos and memories from SAMI Summer Course programs.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:16px;">
+      ${[1,2,3,4,5,6].map(i => `
+        <div style="aspect-ratio:4/3;background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-s);display:flex;align-items:center;justify-content:center;font-size:32px;color:var(--ink-faint);">
+          🖼️
+        </div>
+      `).join('')}
+    </div>
+    <p style="text-align:center;margin-top:12px;color:var(--ink-faint);font-size:13px;">Gallery photos will be updated soon.</p>
+  `;
+}
+
+/* ============================= CONTENT MANAGER ============================= */
+const sectionRenderers = {
+  about: renderAbout,
+  ready: renderReady,
+  accom: renderAccom,
+  agenda: renderAgenda,
+  essay: renderEssay,
+  programbook: renderProgramBook,
+  speakers: renderSpeakers,
+  participants: renderParticipants,
+  partners: renderPartners,
+  gallery: renderGallery
+};
+
+let activeSection = 'about';
+
+function showSection(id){
+  if(id === activeSection) return;
+  activeSection = id;
+  document.querySelectorAll('.menu-item').forEach(el => el.classList.toggle('active', el.dataset.section === id));
+  document.querySelectorAll('.section-content').forEach(el => el.classList.remove('active'));
+  const target = document.getElementById('sec-'+id);
+  if(target){
+    if(!target.innerHTML) target.innerHTML = sectionRenderers[id]();
+    target.classList.add('active');
+    if(id === 'agenda') bindAgendaTabs();
+  }
+}
+
+document.querySelectorAll('.menu-item').forEach(el => {
+  el.addEventListener('click', () => showSection(el.dataset.section));
+});
+
+/* ============================= AGENDA TABS ============================= */
+function bindAgendaTabs(){
+  const tabs = document.getElementById('agendaTabs');
+  const panels = document.getElementById('agendaPanels');
+  if(!tabs) return;
+  tabs.querySelectorAll('.day-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const idx = tab.dataset.idx;
+      panels.querySelectorAll('.day-panel').forEach(p => p.classList.toggle('active', p.dataset.idx === idx));
+    });
+  });
+}
+
+/* ============================= BUILD COURSE TABLE ============================= */
+function buildCourseTable(){
+  const tbody = document.getElementById('courseTableBody');
+  const rows = [];
+  scheduleData.forEach(day => {
+    day.sessions.forEach(s => {
+      if(s.opening) return;
+      rows.push({
+        activity: s.code || '—',
+        topic: s.title,
+        location: day.location || (day.mode==='online' ? 'Online' : 'Hybrid · IPB University'),
+        speaker: s.speaker || '—',
+        title: s.title,
+        startTime: `${day.date} · ${s.time}`
+      });
+    });
+  });
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td><a class="act-link" onclick="showSection('agenda')">${r.activity}</a></td>
+      <td><a onclick="showSection('agenda')" style="font-weight:600;">${r.topic}</a></td>
+      <td>${r.location}</td>
+      <td>${r.speaker}</td>
+      <td>${r.title}</td>
+      <td style="font-family:var(--font-mono);font-size:11px;">${r.startTime}</td>
+    </tr>
+  `).join('');
+}
+
+/* ============================= BUILD RESOURCES ============================= */
+function buildResources(){
+  const grid = document.getElementById('resourcesGrid');
+  grid.innerHTML = resourcesData.map(r => `
+    <a class="resource-card" href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener">
+      <span class="r-icon">${r.icon}</span>
+      <div>
+        <div class="r-name">${r.name}</div>
+        <div class="r-desc">${r.desc}</div>
+      </div>
+    </a>
+  `).join('');
+}
+
+/* ============================= BUILD FAQ ============================= */
+function buildFAQ(){
+  const container = document.getElementById('faqContainer');
+  container.innerHTML = faqData.map((f,i) => `
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        ${f.q}
+        <span class="arrow">▾</span>
+      </div>
+      <div class="faq-a">${f.a}</div>
+    </div>
+  `).join('');
+}
+
+function toggleFaq(el){
+  el.parentElement.classList.toggle('open');
+}
+
+/* ============================= INIT ============================= */
+showSection('about');
+buildCourseTable();
+buildResources();
+buildFAQ();
 </script>
 </body>
 </html>
