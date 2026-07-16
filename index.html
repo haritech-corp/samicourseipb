@@ -11,7 +11,7 @@
 :root{
   --primary:#2596BE; --primary-dark:#1A6B8A; --primary-darker:#0D4F6A;
   --primary-light:#50B8D4; --primary-lighter:#8BD1E3; --primary-pale:#E8F4F8;
-  --accent:#F5A623; --accent-dark:#D4891A; --accent-pale:#FEF0D5;
+  --accent:#2596BE; --accent-dark:#1A6B8A; --accent-pale:#E8F4F8;
   --bg:#F4F7F9; --paper:#FFFFFF; --ink:#1A2B3E; --ink-soft:#4A5B6E;
   --ink-faint:#8A9BAE; --line:#DEE5ED;
   --font-display:'Fraunces',serif; --font-body:'Inter',sans-serif; --font-mono:'IBM Plex Mono',monospace;
@@ -51,8 +51,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .btn svg{width:14px;height:14px;flex-shrink:0;}
 .btn-primary{background:var(--primary);color:#fff;box-shadow:0 4px 14px rgba(37,150,190,0.3);}
 .btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,150,190,0.35);}
-.btn-accent{background:var(--accent);color:#fff;box-shadow:0 4px 14px rgba(245,166,35,0.3);}
-.btn-accent:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,166,35,0.35);}
+.btn-accent{background:var(--accent);color:#fff;box-shadow:0 4px 14px rgba(37,150,190,0.3);}
+.btn-accent:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,150,190,0.35);}
 .btn-outline-light{border-color:rgba(255,255,255,.4);color:#fff;}
 .btn-outline-light:hover{border-color:#fff;background:rgba(255,255,255,.12);transform:translateY(-2px);}
 .btn-ghost{border-color:var(--line);color:var(--ink-soft);}
@@ -76,7 +76,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 /* ===== HERO ===== */
 .hero{
   position:relative;overflow:hidden;
-  background:linear-gradient(155deg,#0D4F6A 0%,#1A6B8A 35%,#2596BE 70%,#1A6B8A 100%);
+  background:linear-gradient(155deg,rgba(13,79,106,0.88) 0%,rgba(26,107,138,0.75) 40%,rgba(37,150,190,0.65) 100%),
+              url('https://images.unsplash.com/photo-EjetrYcgMhk?w=1400&q=80');
+  background-size:cover;background-position:center;
   color:#fff;padding:44px 0 48px;
 }
 .hero-pattern{position:absolute;inset:0;opacity:.15;pointer-events:none;}
@@ -87,7 +89,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
   background:var(--glass);border:1px solid var(--glass-border);
   font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--primary-lighter);
 }
-.hero-badge .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(245,166,35,.25);}
+.hero-badge .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(37,150,190,.25);}
 .hero-title{
   font-family:var(--font-display);font-weight:300;
   font-size:clamp(32px,6.5vw,68px);line-height:.92;margin-top:14px;color:#fff;letter-spacing:-.03em;
@@ -149,7 +151,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 /* ===== SPEAKERS ===== */
 .speakers-mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;}
 .speaker-mini{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 10px;text-align:center;}
-.sp-avatar{width:38px;height:38px;border-radius:50%;margin:0 auto 6px;background:linear-gradient(150deg,var(--primary),var(--primary-darker));color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:13px;}
+.sp-avatar{width:38px;height:38px;border-radius:50%;margin:0 auto 6px;background:linear-gradient(150deg,var(--primary),var(--primary-darker));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:13px;}
 .sp-name{font-size:12px;font-weight:700;color:var(--primary-darker);line-height:1.3;}
 .sp-affil{font-size:10.5px;color:var(--ink-faint);margin-top:3px;}
 
@@ -162,7 +164,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .day-panel{display:none;}
 .day-panel.active{display:block;animation:fadeSlide .25s ease;}
 .session-mini{padding:9px 12px;border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:6px;background:var(--bg);}
-.session-mini .s-time{font-family:var(--font-mono);font-size:10.5px;color:var(--accent-dark);font-weight:600;}
+.session-mini .s-time{font-family:var(--font-mono);font-size:10.5px;color:var(--primary);font-weight:600;}
 .session-mini .s-code{font-family:var(--font-mono);font-size:9.5px;color:var(--primary);font-weight:600;text-transform:uppercase;}
 .session-mini .s-title{font-family:var(--font-display);font-size:14px;font-weight:600;color:var(--primary-darker);margin-top:2px;}
 .session-mini .s-speaker{font-size:12px;color:var(--ink-soft);margin-top:3px;}
@@ -272,10 +274,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
   <nav class="nav">
     <a href="#top" class="brand">
       <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
-        <circle cx="20" cy="20" r="19" stroke="rgba(245,166,35,0.5)" stroke-width="1.4"/>
+        <circle cx="20" cy="20" r="19" stroke="rgba(37,150,190,0.5)" stroke-width="1.4"/>
         <path d="M20 30V15" stroke="#8BD1E3" stroke-width="1.8" stroke-linecap="round"/>
         <path d="M20 18C20 12 15 10 11 10C11 15 14 19 20 19" fill="#50B8D4"/>
-        <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#F5A623"/>
+        <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#50B8D4"/>
       </svg>
       <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
     </a>
@@ -294,7 +296,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
     <div class="hero-pattern">
       <svg viewBox="0 0 1200 500" preserveAspectRatio="none">
         <path d="M-50 380 C 200 280, 350 430, 600 340 S 950 200, 1250 280" stroke="#8BD1E3" stroke-width="0.8" fill="none" opacity="0.3"/>
-        <path d="M-50 460 C 300 400, 400 500, 650 420 S 1000 320, 1250 400" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.25"/>
+        <path d="M-50 460 C 300 400, 400 500, 650 420 S 1000 320, 1250 400" stroke="#50B8D4" stroke-width="0.8" fill="none" opacity="0.25"/>
         <circle cx="1050" cy="140" r="180" fill="url(#hg)"/>
         <defs><radialGradient id="hg"><stop offset="0%" stop-color="#50B8D4" stop-opacity="0.2"/><stop offset="100%" stop-color="#50B8D4" stop-opacity="0"/></radialGradient></defs>
       </svg>
@@ -410,10 +412,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
       <div class="footer-brand">
         <a href="#top" class="brand" style="color:#fff;">
           <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="19" stroke="rgba(245,166,35,0.5)" stroke-width="1.4"/>
+            <circle cx="20" cy="20" r="19" stroke="rgba(37,150,190,0.5)" stroke-width="1.4"/>
             <path d="M20 30V15" stroke="#8BD1E3" stroke-width="1.8" stroke-linecap="round"/>
             <path d="M20 18C20 12 15 10 11 10C11 15 14 19 20 19" fill="#50B8D4"/>
-            <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#F5A623"/>
+            <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#50B8D4"/>
           </svg>
           <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
         </a>
@@ -526,26 +528,21 @@ const menuItems = [
   { id:'gallery', icon:'🖼️', label:'Gallery' }
 ];
 
-const courseEmojis = {
-  'Course 1':'📊','Course 2':'📺','Course 3':'🌱','Course 4':'♻️','Course 5':'🌾',
-  'Course 6':'🌍','Course 7':'🏔️','Course 8':'🌿','Course 9':'⚖️','Course 10':'📈',
-  'Course 11':'💡','Course 12':'🏛️','Course 13':'🌏','Course 14':'🕌'
-};
-const courseGradients = {
-  'Course 1':'linear-gradient(135deg,#2596BE,#1A6B8A)',
-  'Course 2':'linear-gradient(135deg,#2596BE,#7C3AED)',
-  'Course 3':'linear-gradient(135deg,#2596BE,#059669)',
-  'Course 4':'linear-gradient(135deg,#2596BE,#D97706)',
-  'Course 5':'linear-gradient(135deg,#1A6B8A,#DC2626)',
-  'Course 6':'linear-gradient(135deg,#2596BE,#4F46E5)',
-  'Course 7':'linear-gradient(135deg,#2596BE,#DB2777)',
-  'Course 8':'linear-gradient(135deg,#0D4F6A,#2596BE)',
-  'Course 9':'linear-gradient(135deg,#2596BE,#0891B2)',
-  'Course 10':'linear-gradient(135deg,#2596BE,#EA580C)',
-  'Course 11':'linear-gradient(135deg,#2596BE,#7C3AED)',
-  'Course 12':'linear-gradient(135deg,#1A6B8A,#BE185D)',
-  'Course 13':'linear-gradient(135deg,#0D4F6A,#047857)',
-  'Course 14':'linear-gradient(135deg,#2596BE,#CA8A04)'
+const courseImgs = {
+  'Course 1':'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80',
+  'Course 2':'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&q=80',
+  'Course 3':'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&q=80',
+  'Course 4':'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80',
+  'Course 5':'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=80',
+  'Course 6':'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80',
+  'Course 7':'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80',
+  'Course 8':'https://images.unsplash.com/photo-1511497584788-876760111969?w=400&q=80',
+  'Course 9':'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80',
+  'Course 10':'https://images.unsplash.com/photo-1545167622-3a6ac2af0c10?w=400&q=80',
+  'Course 11':'https://images.unsplash.com/photo-1456406644174-8ddd4cd52f06?w=400&q=80',
+  'Course 12':'https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=400&q=80',
+  'Course 13':'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&q=80',
+  'Course 14':'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=400&q=80'
 };
 
 const ICON_CHECK = '<svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>';
@@ -602,8 +599,16 @@ function renderParticipants(){
 function renderPartners(){
   return `<h3>Supporting Partners</h3><p>Supported by leading organizations committed to sustainability.</p><div style="margin-top:14px;padding:24px 32px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;display:inline-block;"><div style="font-family:var(--font-display);font-weight:800;font-size:26px;color:var(--primary-darker);">PERTAMINA</div><div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px;">Trading &amp; Services</div></div>`;
 }
+const galleryImgs = [
+  'https://images.unsplash.com/photo-EjetrYcgMhk?w=400&q=80',
+  'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&q=80',
+  'https://images.unsplash.com/photo-1511497584788-876760111969?w=400&q=80',
+  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80',
+  'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&q=80',
+  'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=400&q=80'
+];
 function renderGallery(){
-  return `<h3>Gallery</h3><p>Photos and memories from SAMI Summer Course programs.</p><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:14px;">${[1,2,3,4,5,6].map(()=>`<div style="aspect-ratio:4/3;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--ink-faint);">🖼️</div>`).join('')}</div><p style="text-align:center;margin-top:10px;color:var(--ink-faint);font-size:12px;">Gallery photos will be updated soon.</p>`;
+  return `<h3>Gallery</h3><p>Photos and memories from SAMI Summer Course programs.</p><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:14px;">${galleryImgs.map(u=>`<div style="aspect-ratio:4/3;border-radius:var(--radius-s);overflow:hidden;border:1px solid var(--line);"><img src="${u}" alt="SAMI Gallery" style="width:100%;height:100%;object-fit:cover;"></div>`).join('')}</div>`;
 }
 
 const sectionRenderers = { about:renderAbout, ready:renderReady, accom:renderAccom, agenda:renderAgenda, essay:renderEssay, programbook:renderProgramBook, speakers:renderSpeakers, participants:renderParticipants, partners:renderPartners, gallery:renderGallery };
@@ -643,16 +648,14 @@ function buildCourseCards(){
   scheduleData.forEach(day => {
     day.sessions.forEach(s => {
       if(s.opening) return;
-      const emoji = courseEmojis[s.code]||'📚';
-      const grad = courseGradients[s.code]||'linear-gradient(135deg,#2596BE,#1A6B8A)';
+      const img = courseImgs[s.code]||'';
       const loc = day.location||(day.mode==='online'?'Online':'Hybrid · IPB');
-      cards.push({code:s.code,title:s.title,speaker:s.speaker,affil:s.affil,time:`${day.date} · ${s.time}`,location:loc,emoji,grad,topics:s.topics,day:day});
+      cards.push({code:s.code,title:s.title,speaker:s.speaker,affil:s.affil,time:`${day.date} · ${s.time}`,location:loc,img,topics:s.topics,day:day});
     });
   });
   grid.innerHTML = cards.map((c,i) => `
     <div class="course-card" onclick="openCourseDetail(${i})">
-      <div class="card-img" style="background:${c.grad}">
-        <span class="card-emoji">${c.emoji}</span>
+      <div class="card-img" style="background-image:url('${c.img}');background-size:cover;background-position:center;">
         <span class="card-badge">${c.code}</span>
       </div>
       <div class="card-body">
@@ -669,7 +672,7 @@ function buildCourseCards(){
 function openCourseDetail(idx){
   const c = window._courseCards[idx];
   if(!c) return;
-  document.getElementById('modalEmoji').textContent = c.emoji;
+  document.getElementById('modalEmoji').textContent = '📚';
   document.getElementById('modalCode').textContent = c.code;
   document.getElementById('modalTitle').textContent = c.title;
   const body = document.getElementById('modalBody');
