@@ -9,11 +9,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --primary:#2596BE; --primary-dark:#1A6B8A; --primary-darker:#0D4F6A;
-  --primary-light:#50B8D4; --primary-lighter:#8BD1E3; --primary-pale:#E8F4F8;
-  --accent:#2596BE; --accent-dark:#1A6B8A; --accent-pale:#E8F4F8;
-  --bg:#F4F7F9; --paper:#FFFFFF; --ink:#1A2B3E; --ink-soft:#4A5B6E;
-  --ink-faint:#8A9BAE; --line:#DEE5ED;
+  --primary:#5B9700; --primary-dark:#5B9700; --primary-darker:#5B9700;
+  --primary-light:#5B9700; --primary-lighter:#84DB00; --primary-pale:#DBFFA6;
+  --accent:#F68D23; --accent-dark:#497900; --accent-pale:#EAFFC9;
+  --bg:#F4F7F9; --paper:#FFFFFF; --ink:#5B9700; --ink-soft:#5B9700;
+  --ink-faint:#5B9700; --line:#EAFFC9;
   --font-display:'Fraunces',serif; --font-body:'Inter',sans-serif; --font-mono:'IBM Plex Mono',monospace;
   --container:1140px; --radius-s:10px; --radius-m:18px; --radius-l:28px;
   --shadow-sm:0 1px 3px rgba(37,150,190,0.08); --shadow-md:0 4px 16px rgba(37,150,190,0.12);
@@ -50,7 +50,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .icon{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
 
 /* HEADER */
-.site-header{position:sticky;top:0;left:0;right:0;z-index:100;background:rgba(13,79,106,0.88);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,0.1);}
+.site-header{position:sticky;top:0;left:0;right:0;z-index:100;background:rgba(73, 163, 0, 0.88);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,0.1);}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;max-width:var(--container);margin:0 auto;}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;}
 .brand-mark{width:32px;height:32px;flex-shrink:0;}
@@ -59,7 +59,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .brand-text span{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--primary-lighter);}
 
 /* HERO */
-.hero{position:relative;overflow:hidden;background:linear-gradient(155deg,rgba(13,79,106,0.88) 0%,rgba(26,107,138,0.75) 40%,rgba(37,150,190,0.65) 100%),url('https://images.unsplash.com/photo-1730697897470-0efaee4922de?w=1400&q=80');background-size:cover;background-position:center;color:#fff;padding:44px 0 48px;}
+.hero{position:relative;overflow:hidden;background:linear-gradient(155deg,rgba(73, 163, 0, 0.88) 0%,rgba(64, 122, 32, 0.75) 40%,rgba(255, 234, 127, 0.65) 100%),url('https://images.unsplash.com/photo-1730697897470-0efaee4922de?w=1400&q=80');background-size:cover;background-position:center;color:#fff;padding:44px 0 48px;}
 .hero-pattern{position:absolute;inset:0;opacity:.12;pointer-events:none;}
 .hero-pattern svg{width:100%;height:100%;}
 .hero-inner{position:relative;z-index:1;max-width:var(--container);margin:0 auto;padding:0 20px;}
