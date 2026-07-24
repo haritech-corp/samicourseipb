@@ -115,6 +115,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .sp-avatar{width:38px;height:38px;border-radius:50%;margin:0 auto 6px;background:linear-gradient(150deg,var(--primary),var(--primary-darker));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:13px;}
 .sp-name{font-size:12px;font-weight:700;color:var(--primary-darker);line-height:1.3;}
 .sp-affil{font-size:10.5px;color:var(--ink-faint);margin-top:3px;}
+.sp-course{display:inline-block;margin-top:5px;font-family:var(--font-mono);font-size:8.5px;padding:2px 7px;border-radius:6px;background:var(--primary-pale);color:var(--primary-dark);font-weight:600;}
 
 /* SCHEDULE */
 .day-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px;}
@@ -127,6 +128,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .session-mini{padding:9px 12px;border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:6px;background:var(--bg);}
 .session-mini .s-time{font-family:var(--font-mono);font-size:10.5px;color:var(--primary);font-weight:600;}
 .session-mini .s-code{font-family:var(--font-mono);font-size:9.5px;color:var(--primary);font-weight:600;text-transform:uppercase;}
+.session-mini .s-title{font-size:13px;font-weight:600;color:var(--ink);margin-top:2px;}
+.session-mini .s-speaker{font-size:11.5px;color:var(--ink-soft);margin-top:3px;}
+.session-mini.sitevisit{background:var(--primary-pale);border-color:var(--primary-light);}
+.session-mini.sitevisit .s-code{color:var(--accent-dark);}
+.day-loc{font-family:var(--font-mono);font-size:11px;color:var(--primary);font-weight:600;margin-bottom:6px;}
 
 /* COURSE CARDS */
 .course-section{padding:36px 0;}
@@ -237,9 +243,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
       </svg>
     </div>
     <div class="hero-inner">
-      <span class="hero-badge"><span class="dot"></span>Registration open · Apr 28 – Jul 20, 2026</span>
+      <span class="hero-badge"><span class="dot"></span>Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20</span>
       <h1 class="hero-title">The 9<sup style="font-size:0.4em;">th</sup> <em>SAMI</em> Summer Course</h1>
-      <p class="hero-sub">Sustainable Agrifood Management in Indonesia — Building Climate Resilience and Sustainable Agrifood Management through ESG. 14 expert-led sessions, essay competition, and site visits.</p>
+      <p class="hero-sub">Sustainable Agrifood Management in Indonesia — Building Climate Resilience and Sustainable Agrifood Management through ESG. Hybrid program, 26 July – 15 August 2026, IPB Campus Dramaga, Bogor &amp; Garut, West Java. 14 expert-led courses, essay contest, and site visits across Bogor and Garut.</p>
       <div class="hero-cta-row">
         <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent">Apply Now<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
         <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light">Guideline<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
@@ -254,10 +260,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
       <!-- ZOOM BAR -->
       <div class="zoom-bar">
         <div class="zoom-bar-left">
-          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg><span><b>Zoom Meeting:</b> ID 123 456 7890 · Passcode: sami2026</span></div>
-          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg><span><b>VBG Guide:</b> Virtual Background &amp; Technical Guide</span></div>
+          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg><span><b>Meeting Link:</b> ipb.link/SAMI2026 · Learning portal: samiipb.ac.id/course</span></div>
+          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg><span><b>VBG:</b> Virtual Background &amp; Technical Guide</span></div>
         </div>
-        <a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light" style="font-size:12px;padding:8px 16px;">Download VBG<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
+        <a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light" style="font-size:12px;padding:8px 16px;">Download VBG<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
       </div>
       <!-- CONTENT PANEL -->
       <div class="content-panel" id="contentPanel">
@@ -280,8 +286,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Course details</span>
-        <h2>Explore All Courses</h2>
-        <p>Click any course card to view details, Zoom access, and module materials.</p>
+        <h2>Explore All 14 Courses</h2>
+        <p>12 online courses (27–31 July) plus 2 hybrid on-campus courses (10 &amp; 14 August). Click any course card to view details, meeting link, and learning outcomes covered.</p>
       </div>
       <div class="course-grid" id="courseGrid"></div>
     </div>
@@ -293,7 +299,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
       <div class="section-head">
         <span class="eyebrow">Course materials</span>
         <h2>Resources</h2>
-        <p>Download session materials, presentations, and supporting documents.</p>
+        <p>Quick links to the essentials for the 9th SAMI Summer Course.</p>
       </div>
       <div class="resources-grid" id="resourcesGrid"></div>
     </div>
@@ -339,11 +345,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
           </svg>
           <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
         </a>
-        <p>Department of Management, Faculty of Economics and Management, IPB University.</p>
+        <p>Department of Management, Faculty of Economics and Management, IPB University. Held annually since 2017.</p>
       </div>
       <div class="footer-links">
-        <div class="footer-col"><h5>Program</h5><ul><li><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></li><li><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">sami.ipb.ac.id</a></li><li><a href="https://instagram.com/samiipb" target="_blank" rel="noopener">@samiipb</a></li></ul></div>
-        <div class="footer-col"><h5>Links</h5><ul><li><a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener">Registration</a></li><li><a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener">Guideline</a></li></ul></div>
+        <div class="footer-col"><h5>Program</h5><ul><li><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></li><li><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">samiipb.ac.id</a></li><li><a href="https://instagram.com/samiipb" target="_blank" rel="noopener">@samiipb</a></li></ul></div>
+        <div class="footer-col"><h5>Links</h5><ul><li><a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener">Registration</a></li><li><a href="https://ipb.link/application-form-sami-2026" target="_blank" rel="noopener">Guideline</a></li><li><a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener">Virtual Background</a></li></ul></div>
       </div>
     </div>
     <div class="footer-bottom"><span>&copy; 2026 SAMI — IPB University</span></div>
@@ -351,73 +357,109 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 </footer>
 
 <script>
+// ===== SCHEDULE DATA (from SAMI 2026 Program Book) =====
 const scheduleData = [
-  { day:"Day 1", date:"Monday, July 27, 2026", mode:"online", sessions:[
-    { time:"09.00–10.00 AM", opening:true, title:"Opening of SAMI Summer Course Program" },
-    { time:"10.00–11.30 AM", code:"Course 1", title:"ESG Reporting and The Importance of ESG in Modern Business", speaker:"Prof. Dr. Jutta Geldermann", affil:"University of Duisburg-Essen, Germany", topics:["ESG, Triple Bottom Line and SDGs","International sustainability standards","Sustainability report landscape"] },
-    { time:"01.00–02.30 PM", code:"Course 2", title:"ESG and Sustainability Report in Media", speaker:"Andy Budiman Kumala", affil:"CEO, KG Media Indonesia", topics:["ESG governance models for media","Best practices ESG at media"] }
+  { day:"Day 1", date:"Monday, July 27, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
+    { time:"07.25–09.00 AM", type:"opening", title:"Opening Ceremony — Institution Profiles, SAMI Course Report, Welcoming & Opening Remarks" },
+    { time:"09.00–10.15 AM", type:"course", code:"Course 1", title:"Nature-Based Solution for Environmental Conservation and Development of Agrifood through International Cooperation", speaker:"Prof. Ho Sang Kang", affil:"Seoul National University (SNU), South Korea", los:[5] },
+    { time:"01.00–02.15 PM", type:"course", code:"Course 2", title:"The Role of Media in Driving Sustainability: Empowering Impact and Sharing for the Viewers", speaker:"Andy Budiman Kumala", affil:"CEO, KG Media Indonesia (Kompas Gramedia)", los:[1,3,7] }
   ]},
-  { day:"Day 2", date:"Tuesday, July 28, 2026", mode:"online", sessions:[
-    { time:"08.00–09.30 AM", code:"Course 3", title:"Sustainable Agrifood Management in Emerging Economies", speaker:"Aretha Aprilia", affil:"UNDP Indonesia", topics:["Agrifood system challenges","Sustainability trade-offs","Case: Indonesia's food system"] },
-    { time:"10.30 AM–12.00 PM", code:"Course 4", title:"Circular Economy Approaches", speaker:"Wirastanto", affil:"Country Head, RIZE", topics:["Waste reduction","Renewable energy use","Sustainable packaging"] }
+  { day:"Day 2", date:"Tuesday, July 28, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
+    { time:"08.00–09.15 AM", type:"course", code:"Course 3", title:"Ecolabels and Climate Resilience in Blue Food Systems: Shrimp Aquaculture Case Study", speaker:"Ita Sualia", affil:"Director, People Fish and Forest / School of Environment, University of Queensland, Australia", los:[1,4] },
+    { time:"10.30–11.45 AM", type:"course", code:"Course 4", title:"Circular Economy Approaches", speaker:"Wirastanto", affil:"Country Head, RIZE", los:[2,5] },
+    { time:"01.00–02.15 PM", type:"course", code:"Course 5", title:"ESG Reporting and The Importance of ESG in Modern Business", speaker:"Prof. Dr. Jutta Geldermann", affil:"University of Duisburg-Essen, Germany", los:[1,2] }
   ]},
-  { day:"Day 3", date:"Wednesday, July 29, 2026", mode:"online", sessions:[
-    { time:"08.00–09.30 AM", code:"Course 6", title:"Geopolitics and Supply Chain Sustainability among MSMEs in Agriculture Sector", speaker:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia", topics:[] },
-    { time:"10.30 AM–12.00 PM", code:"Course 7", title:"Geopark Tourism Support on Food Sustainability", speaker:"Assoc. Prof. Pongsak", affil:"Songkhla Rajabhat University, Thailand", topics:[] }
+  { day:"Day 3", date:"Wednesday, July 29, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
+    { time:"08.00–09.15 AM", type:"course", code:"Course 6", title:"Geopolitics and Supply Chain Sustainability among MSMEs in Agriculture Sector", speaker:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia (UPM)", los:[5,6,7] },
+    { time:"10.30–11.45 AM", type:"course", code:"Course 7", title:"Geopark Tourism Support on Food Sustainability", speaker:"Assoc. Prof. Pongsak Thongnueakhaeng", affil:"Dean, Faculty of Management Sciences, Songkhla Rajabhat University (SKRU), Thailand", los:[4,5] }
   ]},
-  { day:"Day 4", date:"Thursday, July 30, 2026", mode:"online", sessions:[
-    { time:"08.00–09.30 AM", code:"Course 9", title:"ESG Governance, Policy Alignment and Agrifood Regulation", speaker:"Dr. M. Windrawan Inantha", affil:"Malaysian Export Academy Sdn Bhd", topics:["ESG governance models","Indonesia's ESG-related policies","Trade, certification and compliance"] },
-    { time:"10.30 AM–12.00 PM", code:"Course 10", title:"ESG Strategies for Sustainable Supply Chain Value", speaker:"Dr. Eko Ruddy Cahyadi", affil:"IPB University, Indonesia", topics:["Materiality and risk assessments","ESG initiatives in supply chain"] },
-    { time:"01.00–02.30 PM", code:"Course 8", title:"Nature-Based Solution for Environmental Conservation", speaker:"Prof. Ho Sang Kang", affil:"Seoul National University, South Korea", topics:[] }
+  { day:"Day 4", date:"Thursday, July 30, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
+    { time:"08.00–09.15 AM", type:"course", code:"Course 8", title:"ESG Governance, Policy, Alignment, and Agrifood Regulation", speaker:"Dr. M. Windrawan Inantha", affil:"Strategic Advisor, Center for Entrepreneurship, Change, and Third Sector, Trisakti University", los:[3] },
+    { time:"10.30–11.45 AM", type:"course", code:"Course 9", title:"ESG Strategies for Sustainable Supply Chain Value", speaker:"Dr. Eko Ruddy Cahyadi, S.Hut., M.M.", affil:"Head of Department of Management FEM, IPB University", los:[4,6] }
   ]},
-  { day:"Day 5", date:"Friday, July 31, 2026", mode:"online", sessions:[
-    { time:"09.00–10.30 AM", code:"Course 11", title:"ESG-Driven Business Models & Innovation in Agrifood", speaker:"Dr. Indra R. Sembiring", affil:"IPB University, Indonesia", topics:["Regenerative agribusiness models","Blockchain & AI for traceability"] },
-    { time:"01.30–03.00 PM", code:"Course 12", title:"Governance Strategies for Climate Resilience", speaker:"Prof. Carola Jungwirth", affil:"University of Passau, Germany", topics:["ESG governance models","Climate adaptation strategies"] },
-    { time:"03.30–05.00 PM", code:"Course 5", title:"Climate-Smart Agriculture and Scope 3 Emissions Management", speaker:"Rezza F. Prisandy", affil:"OJK Indonesia", topics:["Scope 1, 2 & 3 emissions","Decarbonizing agrifood value chains"] }
+  { day:"Day 5", date:"Friday, July 31, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
+    { time:"09.00–10.15 AM", type:"course", code:"Course 10", title:"ESG-Driven Business Models & Innovation in Agrifood", speaker:"Dr. Indra R. Sembiring", affil:"IPB University, Indonesia", los:[4,5] },
+    { time:"01.30–02.45 PM", type:"course", code:"Course 11", title:"Rules, Culture, and Responsibility: Governance Strategies for Climate-Resilient Agrifood Systems", speaker:"Prof. Carola Jungwirth", affil:"University of Passau, Germany", los:[1,2] },
+    { time:"03.30–04.45 PM", type:"course", code:"Course 12", title:"Sustainable Finance for Agriculture Sector", speaker:"Rezza F. Prisandy", affil:"OJK Indonesia (Financial Services Authority)", los:[3] }
   ]},
-  { day:"Day 6", date:"Monday, August 10, 2026", mode:"hybrid", location:"Hybrid · IPB University", sessions:[
-    { time:"09.00–10.30 AM", code:"Course 13", title:"Building Sustainable Agrifood Systems", speaker:"Prof. Hermann Waibel", affil:"University of Hannover, Germany", topics:[] }
+  { day:"Day 6", date:"Monday, August 10, 2026", mode:"hybrid", location:"Hybrid · Bogor → Garut", sessions:[
+    { time:"09.00–10.30 AM", type:"course", code:"Course 13", title:"Building Sustainable Agrifood Systems: Environmental Challenges and Policy Solutions", speaker:"Prof. Hermann Waibel", affil:"University of Hannover, Germany", los:[3] },
+    { time:"10.30–11.00 AM", type:"sitevisit", code:"Site Visit 1", title:"IPB University Campus Tour — Dramaga Campus, Bogor" }
   ]},
-  { day:"Day 7", date:"Friday, August 14, 2026", mode:"hybrid", location:"Hybrid · IPB University", sessions:[
-    { time:"08.30–10.00 AM", code:"Course 14", title:"Halal Supply Chain Management and ESG Principles", speaker:"Dr. Marco Tieman", affil:"CEO, HSC Alliance Sdn Bhd", topics:[] }
+  { day:"Day 7", date:"Tuesday, August 11, 2026", mode:"hybrid", location:"Garut", sessions:[
+    { time:"10.00–11.00 AM", type:"sitevisit", code:"Site Visit 2", title:"Eptilu: Education and Agritourism — Mekarsari, Cikajang, Garut" },
+    { time:"01.00–03.00 PM", type:"sitevisit", code:"Site Visit 3", title:"Mandalagiri: Coffee Planting and Processing Education — Cikandang, Cikajang, Garut" }
+  ]},
+  { day:"Day 8", date:"Wednesday, August 12, 2026", mode:"hybrid", location:"Garut", sessions:[
+    { time:"09.00–11.00 AM", type:"sitevisit", code:"Site Visit 4", title:"Margawati: Center for Sheep & Goat Breeding Development — Sukanegla, Garut" },
+    { time:"01.30–03.30 PM", type:"sitevisit", code:"Site Visit 5", title:"Bestory: Home Industry Production \"Dodol Garut\" — Muara Sanding, Garut" },
+    { time:"04.00–05.30 PM", type:"sitevisit", code:"Site Visit 6", title:"Sukaregang Market: Local Creative Economy (Leather Products) — Garut Kota" }
+  ]},
+  { day:"Day 9", date:"Thursday, August 13, 2026", mode:"hybrid", location:"Garut → Bogor", sessions:[
+    { time:"08.45–10.00 AM", type:"sitevisit", code:"Site Visit 7", title:"Cangkuang Temple — Heritage Tourism, Kec. Leles, Garut" }
+  ]},
+  { day:"Day 10", date:"Friday, August 14, 2026", mode:"hybrid", location:"Bogor · Start Up Science Technopark, IPB", sessions:[
+    { time:"08.00–11.00 AM", type:"sitevisit", code:"Essay Contest", title:"SAMI Essay Contest Final Presentation — Ballroom Start Up Science Technopark" },
+    { time:"01.30–03.00 PM", type:"course", code:"Course 14", title:"Halal Supply Chain Management and ESG Principles", speaker:"Dr. Marco Tieman", affil:"CEO, HSC Alliance Sdn Bhd", los:[4] },
+    { time:"03.00–04.30 PM", type:"sitevisit", code:"Site Visit 8", title:"Science and Technology Park (STP), IPB University" },
+    { time:"03.00–06.30 PM", type:"sitevisit", code:"Closing", title:"SAMI 2026 Closing Ceremony" }
+  ]},
+  { day:"Day 11", date:"Saturday, August 15, 2026", mode:"hybrid", location:"Bogor", sessions:[
+    { time:"09.00–11.00 AM", type:"sitevisit", code:"Site Visit 9", title:"Bogor Botanical Garden (Optional) — followed by free program" }
+  ]},
+  { day:"Day 12", date:"Sunday, August 16, 2026", mode:"hybrid", location:"Bogor → Soekarno-Hatta Airport", sessions:[
+    { time:"08.00–10.00 AM", type:"sitevisit", code:"Departure", title:"Participants' Departure to Soekarno-Hatta International Airport" }
   ]}
 ];
 
+const learningOutcomes = {
+  1:"Theoretical Understanding", 2:"Analysis & Evaluation", 3:"Managerial & Implementation Skills",
+  4:"Data-Driven Decision Making", 5:"Ethics & Leadership", 6:"Collaboration & Networking", 7:"Global & Local Awareness"
+};
+
 const speakersData = [
-  { name:"Prof. Dr. Jutta Geldermann", affil:"University of Duisburg-Essen, Germany", course:"Course 1" },
+  { name:"Prof. Ho Sang Kang", affil:"Seoul National University (SNU), South Korea", course:"Course 1" },
   { name:"Andy Budiman Kumala", affil:"CEO, KG Media Indonesia", course:"Course 2" },
-  { name:"Aretha Aprilia", affil:"UNDP Indonesia", course:"Course 3" },
+  { name:"Ita Sualia", affil:"People Fish and Forest / Univ. of Queensland, Australia", course:"Course 3" },
   { name:"Wirastanto", affil:"Country Head, RIZE", course:"Course 4" },
-  { name:"Rezza F. Prisandy", affil:"OJK Indonesia", course:"Course 5" },
-  { name:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia", course:"Course 6" },
-  { name:"Assoc. Prof. Pongsak", affil:"Songkhla Rajabhat University", course:"Course 7" },
-  { name:"Prof. Ho Sang Kang", affil:"Seoul National University", course:"Course 8" },
-  { name:"Dr. M. Windrawan Inantha", affil:"Malaysian Export Academy Sdn Bhd", course:"Course 9" },
-  { name:"Dr. Eko Ruddy Cahyadi", affil:"IPB University, Indonesia", course:"Course 10" },
-  { name:"Dr. Indra R. Sembiring", affil:"IPB University, Indonesia", course:"Course 11" },
-  { name:"Prof. Carola Jungwirth", affil:"University of Passau, Germany", course:"Course 12" },
+  { name:"Prof. Dr. Jutta Geldermann", affil:"University of Duisburg-Essen, Germany", course:"Course 5" },
+  { name:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia (UPM)", course:"Course 6" },
+  { name:"Assoc. Prof. Pongsak Thongnueakhaeng", affil:"Songkhla Rajabhat University, Thailand", course:"Course 7" },
+  { name:"Dr. M. Windrawan Inantha", affil:"Trisakti University, Indonesia", course:"Course 8" },
+  { name:"Dr. Eko Ruddy Cahyadi", affil:"IPB University, Indonesia", course:"Course 9" },
+  { name:"Dr. Indra R. Sembiring", affil:"IPB University, Indonesia", course:"Course 10" },
+  { name:"Prof. Carola Jungwirth", affil:"University of Passau, Germany", course:"Course 11" },
+  { name:"Rezza F. Prisandy", affil:"OJK Indonesia", course:"Course 12" },
   { name:"Prof. Hermann Waibel", affil:"University of Hannover, Germany", course:"Course 13" },
   { name:"Dr. Marco Tieman", affil:"CEO, HSC Alliance Sdn Bhd", course:"Course 14" }
 ];
 
+const essayReviewers = [
+  { room:"Room 1", people:["Dr. Indra R. Sembiring (IPB University)","Dr. Noor Azlin Ismail (Universiti Putra Malaysia)"] },
+  { room:"Room 2", people:["Prof. Hermann Waibel (University of Hannover)","Aries Setiadi (Center for Indonesian Policy Studies)"] },
+  { room:"Room 3", people:["Dr. Eko Ruddy Cahyadi (IPB University)","Syazwani Arbaiyah M. S. (FELCRA College, Malaysia)"] },
+  { room:"Room 4", people:["Nisa Zahra, S.T.P., M.Si. (IPB University)","Dr. Ketwadee Madden (Songkhla Rajabhat University)"] }
+];
+
 const faqData = [
-  { q:"What is the SAMI Summer Course?", a:"SAMI (Sustainable Agrifood Management in Indonesia) is an international summer course organized by the Department of Management, FEM IPB University. It features 14 expert-led sessions, an essay competition, and optional site visits in Bogor and Garut." },
-  { q:"Who can participate?", a:"The program is open to undergraduate and postgraduate students, as well as young professionals interested in sustainable agrifood management, ESG, and climate resilience." },
-  { q:"What are the fees?", a:"The Online Course Only track is $150 USD (2 credits). The Online Course + Site Visit track is $200 USD (4 credits)." },
-  { q:"When is the registration deadline?", a:"Registration is open from April 28 to July 20, 2026. Payment must be completed by July 21, 2026." },
-  { q:"How do I apply?", a:"Submit your application via ipb.link/submission-sami-2026. Read the guideline at ipb.link/application-form-sami-2026." },
-  { q:"Will I receive a certificate?", a:"Yes, all participants who complete the program will receive an E-Certificate of Completion." },
-  { q:"Is the site visit mandatory?", a:"No, you can choose the Online Course Only track. The site visit is part of the extended track for 4 credits." },
-  { q:"What is the language of instruction?", a:"All sessions are conducted in English." }
+  { q:"What is the SAMI Summer Course?", a:"SAMI (Sustainable Agrifood Management in Indonesia) is an international summer course held annually since 2017 by the Department of Management, Faculty of Economics and Management, IPB University. The 9th edition (2026) runs hybrid from 27 July to 15 August, offering 14 courses on sustainable agrifood management, an essay contest, and site visits in Bogor and Garut." },
+  { q:"What tracks are available?", a:"There are two program types: the Online Course track (12 live online courses, 2 academic credits) and the Online + Site Visit track (12 online courses plus 2 hybrid on-campus courses and a multi-day site visit in Bogor & Garut, 4 academic credits)." },
+  { q:"When is the registration period?", a:"Registration is open from April 28 to July 17, 2026, with an announcement on July 17 and payment deadline on July 20, 2026. For the exact fee structure, please refer to the official guideline at ipb.link/application-form-sami-2026." },
+  { q:"How do I apply?", a:"Submit your application via ipb.link/submission-sami-2026. Read the full guideline at ipb.link/application-form-sami-2026." },
+  { q:"When are the online courses held?", a:"The 12 online courses run July 27–31, 2026, on Zoom. Session slides are shared via the participants' WhatsApp group one day before each course, and also on the learning portal at samiipb.ac.id/course." },
+  { q:"What happens during the on-site part of the program?", a:"Offline participants arrive in Bogor on August 9, attend 2 hybrid courses (Aug 10 & 14), and join 9 site visits across Bogor and Garut from August 10–15, including IPB Dramaga Campus, Eptilu agrotourism, Mandalagiri coffee cooperative, Margawati sheep & goat breeding center, Bestory dodol Garut production, Sukaregang leather market, Cangkuang Temple, IPB Science Technopark, and Bogor Botanical Garden." },
+  { q:"Will I receive a certificate?", a:"Yes. Participants who complete the program receive a Certificate of Completion, a Certificate of Participation in the SAMI Essay Contest, and a credit-earning transcript (4 credits for the full program, 2 credits for the online-only track) issued by IPB University's Department of Management." },
+  { q:"Is the essay contest mandatory?", a:"The essay contest is part of the program's project assignment component. Groups submit a written essay (max. 3,000 words) plus a presentation, with the final presentation held on August 14 at the Start Up Science Technopark, Bogor. Top 3 essays receive certificates and cash prizes (1st: IDR 3,000,000, 2nd: IDR 2,000,000, 3rd: IDR 1,000,000), and all accepted essays are published in the SAMI Proceeding with ISBN." },
+  { q:"What is the language of instruction?", a:"All sessions and essay submissions are conducted in English." }
 ];
 
 const resourcesData = [
-  { icon:"📄", name:"Program Guidebook", desc:"Complete program information" },
-  { icon:"📋", name:"Registration Form", desc:"Application submission form" },
-  { icon:"📺", name:"Zoom Backgrounds", desc:"Official SAMI virtual backgrounds" },
-  { icon:"📘", name:"Course Materials", desc:"Session presentations and readings" },
-  { icon:"📝", name:"Essay Guidelines", desc:"Competition rules and themes" },
-  { icon:"🗺️", name:"Site Visit Map", desc:"Maps for Bogor & Garut" }
+  { icon:"📄", name:"Application Guideline", desc:"Full program guideline & fee info", url:"https://ipb.link/application-form-sami-2026" },
+  { icon:"📋", name:"Registration Form", desc:"Submit your application here", url:"https://ipb.link/submission-sami-2026" },
+  { icon:"📺", name:"Virtual Background", desc:"Official SAMI Zoom backgrounds", url:"https://ipb.link/vbg-sami-2026" },
+  { icon:"🌐", name:"Learning Portal", desc:"samiipb.ac.id/course — course materials", url:"https://samiipb.ac.id/course" },
+  { icon:"📝", name:"Essay Contest Guideline", desc:"Topics, rules & submission format", url:"https://ipb.link/application-form-sami-2026" },
+  { icon:"📷", name:"Instagram @samiipb", desc:"Updates and program highlights", url:"https://instagram.com/samiipb" }
 ];
 
 const menuItems = [
@@ -429,110 +471,41 @@ const menuItems = [
 ];
 
 const courseImgs = {
-  'Course 1':'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&q=80',
+  'Course 1':'https://images.unsplash.com/photo-1511497584788-876760111969?w=500&q=80',
   'Course 2':'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80',
-  'Course 3':'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500&q=80',
+  'Course 3':'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=500&q=80',
   'Course 4':'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&q=80',
-  'Course 5':'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&q=80',
+  'Course 5':'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&q=80',
   'Course 6':'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80',
   'Course 7':'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80',
-  'Course 8':'https://images.unsplash.com/photo-1511497584788-876760111969?w=500&q=80',
-  'Course 9':'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&q=80',
-  'Course 10':'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&q=80',
-  'Course 11':'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80',
-  'Course 12':'https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=500&q=80',
-  'Course 13':'https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&q=80',
+  'Course 8':'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&q=80',
+  'Course 9':'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&q=80',
+  'Course 10':'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80',
+  'Course 11':'https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=500&q=80',
+  'Course 12':'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&q=80',
+  'Course 13':'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500&q=80',
   'Course 14':'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=500&q=80'
 };
 
-const courseZoom = {
-  'Course 1':{url:'https://zoom.us/j/1234567891',id:'123 456 7891',pass:'crs1esg'},
-  'Course 2':{url:'https://zoom.us/j/1234567892',id:'123 456 7892',pass:'crs2media'},
-  'Course 3':{url:'https://zoom.us/j/1234567893',id:'123 456 7893',pass:'crs3agri'},
-  'Course 4':{url:'https://zoom.us/j/1234567894',id:'123 456 7894',pass:'crs4circ'},
-  'Course 5':{url:'https://zoom.us/j/1234567895',id:'123 456 7895',pass:'crs5climate'},
-  'Course 6':{url:'https://zoom.us/j/1234567896',id:'123 456 7896',pass:'crs6geo'},
-  'Course 7':{url:'https://zoom.us/j/1234567897',id:'123 456 7897',pass:'crs7tourism'},
-  'Course 8':{url:'https://zoom.us/j/1234567898',id:'123 456 7898',pass:'crs8nbs'},
-  'Course 9':{url:'https://zoom.us/j/1234567899',id:'123 456 7899',pass:'crs9gov'},
-  'Course 10':{url:'https://zoom.us/j/1234567810',id:'123 456 7810',pass:'crs10strategy'},
-  'Course 11':{url:'https://zoom.us/j/1234567811',id:'123 456 7811',pass:'crs11biz'},
-  'Course 12':{url:'https://zoom.us/j/1234567812',id:'123 456 7812',pass:'crs12gov'},
-  'Course 13':{url:'https://zoom.us/j/1234567813',id:'123 456 7813',pass:'crs13system'},
-  'Course 14':{url:'https://zoom.us/j/1234567814',id:'123 456 7814',pass:'crs14halal'}
+const courseMeeting = {
+  default:{url:'https://ipb.link/SAMI2026', portal:'https://samiipb.ac.id/course'}
 };
 
 const courseModules = {
-  'Course 1':[
-    {icon:'📄',name:'Session Slides — ESG Reporting',url:'#'},
-    {icon:'📖',name:'Reading: ESG Standards Overview',url:'#'},
-    {icon:'📝',name:'Worksheet: Triple Bottom Line',url:'#'}
-  ],
-  'Course 2':[
-    {icon:'📄',name:'Session Slides — ESG in Media',url:'#'},
-    {icon:'📖',name:'Reading: Media & Sustainability',url:'#'},
-    {icon:'🔗',name:'Case Study: KG Media',url:'#'}
-  ],
-  'Course 3':[
-    {icon:'📄',name:'Session Slides — Agrifood Management',url:'#'},
-    {icon:'📖',name:'Reading: Emerging Economies',url:'#'},
-    {icon:'📊',name:'Dataset: Indonesia Food System',url:'#'}
-  ],
-  'Course 4':[
-    {icon:'📄',name:'Session Slides — Circular Economy',url:'#'},
-    {icon:'📖',name:'Reading: Circular Agrifood',url:'#'},
-    {icon:'♻️',name:'Template: Circular Audit',url:'#'}
-  ],
-  'Course 5':[
-    {icon:'📄',name:'Session Slides — Climate-Smart Ag',url:'#'},
-    {icon:'📖',name:'Reading: Scope 3 Emissions',url:'#'},
-    {icon:'📊',name:'Calculator: Carbon Footprint',url:'#'}
-  ],
-  'Course 6':[
-    {icon:'📄',name:'Session Slides — Geopolitics & Supply Chain',url:'#'},
-    {icon:'📖',name:'Reading: MSME Sustainability',url:'#'},
-    {icon:'🗺️',name:'Case Study: ASEAN Supply Chains',url:'#'}
-  ],
-  'Course 7':[
-    {icon:'📄',name:'Session Slides — Geopark Tourism',url:'#'},
-    {icon:'📖',name:'Reading: Food Sustainability Tourism',url:'#'},
-    {icon:'🗺️',name:'Guide: Geopark Thailand',url:'#'}
-  ],
-  'Course 8':[
-    {icon:'📄',name:'Session Slides — Nature-Based Solutions',url:'#'},
-    {icon:'📖',name:'Reading: NBS for Conservation',url:'#'},
-    {icon:'🌿',name:'Case Study: Seoul NBS',url:'#'}
-  ],
-  'Course 9':[
-    {icon:'📄',name:'Session Slides — ESG Governance',url:'#'},
-    {icon:'📖',name:'Reading: Policy Alignment',url:'#'},
-    {icon:'⚖️',name:'Handbook: ESG Compliance',url:'#'}
-  ],
-  'Course 10':[
-    {icon:'📄',name:'Session Slides — Supply Chain ESG',url:'#'},
-    {icon:'📖',name:'Reading: Sustainable Value Chain',url:'#'},
-    {icon:'📊',name:'Tool: Materiality Matrix',url:'#'}
-  ],
-  'Course 11':[
-    {icon:'📄',name:'Session Slides — ESG Business Models',url:'#'},
-    {icon:'📖',name:'Reading: Innovation in Agrifood',url:'#'},
-    {icon:'💡',name:'Template: Business Model Canvas',url:'#'}
-  ],
-  'Course 12':[
-    {icon:'📄',name:'Session Slides — Climate Governance',url:'#'},
-    {icon:'📖',name:'Reading: Adaptation Strategies',url:'#'},
-    {icon:'📋',name:'Framework: Climate Risk Matrix',url:'#'}
-  ],
-  'Course 13':[
-    {icon:'📄',name:'Session Slides — Sustainable Systems',url:'#'},
-    {icon:'📖',name:'Reading: Agrifood Policy',url:'#'},
-    {icon:'🌾',name:'Report: Waibel Research',url:'#'}
-  ],
-  'Course 14':[
-    {icon:'📄',name:'Session Slides — Halal Supply Chain',url:'#'},
-    {icon:'📖',name:'Reading: Halal & ESG',url:'#'},
-    {icon:'🕌',name:'Standard: Halal Certification',url:'#'}
-  ]
+  'Course 1':[{icon:'📄',name:'Session Slides — Nature-Based Solutions',url:'#'},{icon:'📖',name:'Reading: International Cooperation in Agrifood',url:'#'}],
+  'Course 2':[{icon:'📄',name:'Session Slides — Media & Sustainability',url:'#'},{icon:'📖',name:'Reading: Driving Impact through Media',url:'#'}],
+  'Course 3':[{icon:'📄',name:'Session Slides — Ecolabels & Blue Food Systems',url:'#'},{icon:'📖',name:'Case Study: Shrimp Aquaculture',url:'#'}],
+  'Course 4':[{icon:'📄',name:'Session Slides — Circular Economy',url:'#'},{icon:'♻️',name:'Reading: Circular Approaches in Agrifood',url:'#'}],
+  'Course 5':[{icon:'📄',name:'Session Slides — ESG Reporting',url:'#'},{icon:'📖',name:'Reading: ESG Standards Overview',url:'#'}],
+  'Course 6':[{icon:'📄',name:'Session Slides — Geopolitics & Supply Chain',url:'#'},{icon:'📖',name:'Reading: MSME Sustainability in Agriculture',url:'#'}],
+  'Course 7':[{icon:'📄',name:'Session Slides — Geopark Tourism',url:'#'},{icon:'📖',name:'Reading: Food Sustainability Tourism',url:'#'}],
+  'Course 8':[{icon:'📄',name:'Session Slides — ESG Governance & Policy',url:'#'},{icon:'⚖️',name:'Reading: Agrifood Regulation',url:'#'}],
+  'Course 9':[{icon:'📄',name:'Session Slides — Supply Chain ESG Strategy',url:'#'},{icon:'📖',name:'Reading: Sustainable Value Chain',url:'#'}],
+  'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'#'},{icon:'💡',name:'Reading: Innovation in Agrifood',url:'#'}],
+  'Course 11':[{icon:'📄',name:'Session Slides — Climate Governance',url:'#'},{icon:'📋',name:'Reading: Governance Strategies',url:'#'}],
+  'Course 12':[{icon:'📄',name:'Session Slides — Sustainable Finance',url:'#'},{icon:'📊',name:'Reading: Finance for Agriculture',url:'#'}],
+  'Course 13':[{icon:'📄',name:'Session Slides — Sustainable Agrifood Systems',url:'#'},{icon:'🌾',name:'Reading: Environmental Challenges & Policy',url:'#'}],
+  'Course 14':[{icon:'📄',name:'Session Slides — Halal Supply Chain',url:'#'},{icon:'🕌',name:'Reading: Halal & ESG Principles',url:'#'}]
 };
 
 const ICON_CHECK = '<svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>';
@@ -543,15 +516,43 @@ function initials(name){return name.replace(/^(Prof\.|Dr\.|Assoc\.|Ir\.)\s*/gi,'
 document.getElementById('menuGrid').innerHTML = menuItems.map(m => `<div class="menu-item${m.id==='about'?' active':''}" data-section="${m.id}"><span class="emoji">${m.icon}</span><span class="mlabel">${m.label}</span></div>`).join('');
 
 // ===== SECTION RENDERERS =====
-function renderAbout(){return `<div class="panel-stack"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>About SAMI Summer Course</div><div class="panel-body"><p style="margin-bottom:10px;">The 9th Sustainable Agrifood Management in Indonesia (SAMI) Summer Course is organized by the Department of Management, FEM IPB University. The program runs in two formats: 12 live online courses (2 credits) and an extended track with 2 hybrid on-campus courses plus a 4-day site visit (4 credits).</p><p>Theme: <strong>"Building Climate Resilience and Sustainable Agrifood Management through ESG"</strong></p></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>Activities &amp; Benefits</div><div class="panel-body"><ul class="check-list">${["12 Topics Online Course","2 Topic Hybrid Course","Essay Competition","Group Discussion & Project Assignment","Site Visit — Bogor & Garut","4 Academic Credits & E-Certificate","International Networking"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="https://ipb.link/submission-sami-2026" target="_blank" class="btn btn-primary">Apply Now</a><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-ghost">Download Guideline</a></div></div>`;}
-function renderReady(){return `<h3>Getting Ready for SAMI 2026</h3><p>Prepare yourself for an amazing summer course experience.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5H5v14h14V9"/><path d="M21 3 12 12"/><path d="M15 3h6v6"/></svg>Prerequisites</div><div class="panel-body"><ul class="check-list">${["Basic understanding of sustainability and agribusiness","English proficiency","Stable internet connection","Valid passport/ID for site visit"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M22 12h-6l-2 3H8l-1-2H2v5h20Z"/><path d="M5 10V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/></svg>What to Bring</div><div class="panel-body"><ul class="check-list">${["Laptop/tablet","Notebook and pen","Comfortable outdoor clothes","Camera"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div></div>`;}
-function renderAccom(){return `<h3>Accommodations</h3><p>Recommended places to stay near IPB University, Bogor.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>Near IPB Dramaga Campus</div><div class="panel-body"><ul class="check-list">${["<b>IPB International Convention Center</b> — On-campus","<b>Hotel Salak The Heritage</b> — 15 min","<b>Royal Hotel Bogor</b> — 20 min","<b>Bogor Valley Hotel</b> — 10 min"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Near Garut</div><div class="panel-body"><ul class="check-list">${["<b>Hotel Santika Garut</b>","<b>Kamojang Green Hotel & Resort</b>"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div></div>`;}
-function renderAgenda(){const tabs = scheduleData.map((d,i)=>`<button class="day-tab ${i===0?'active':''}" data-idx="${i}">${d.day}<span>${d.mode==='online'?'Online':'Hybrid'}</span></button>`).join('');const panels = scheduleData.map((d,i)=>`<div class="day-panel ${i===0?'active':''}" data-idx="${i}"><div style="font-family:var(--font-mono);font-size:11px;color:var(--primary);font-weight:600;margin-bottom:6px;">${d.date}${d.location?' · '+d.location:''}</div>${d.sessions.map(s=>s.opening?`<div class="session-mini" style="background:var(--primary);color:#fff;"><div class="s-time" style="color:var(--primary-lighter);">${s.time}</div><div class="s-title" style="color:#fff;">${s.title}</div></div>`:`<div class="session-mini"><div class="s-time">${s.time}</div><span class="s-code">${s.code}</span><div class="s-title">${s.title}</div><div class="s-speaker">👤 ${s.speaker} — ${s.affil}</div></div>`).join('')}</div>`).join('');return `<h3>Full Agenda</h3><p>Browse the complete schedule day by day.</p><div class="day-tabs" id="agendaTabs">${tabs}</div><div id="agendaPanels">${panels}</div>`;}
-function renderEssay(){return `<h3>Essay Contest</h3><p>Sharpen your critical thinking on agrifood sustainability.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>Details</div><div class="panel-body"><ul class="check-list"><li>${ICON_CHECK}<b>Deadline:</b> August 12, 2026</li><li>${ICON_CHECK}<b>Presentation:</b> August 14–15 at IPB</li><li>${ICON_CHECK}<b>Rewards:</b> Certificate, prize, publication</li></ul></div></div><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-ghost" style="align-self:flex-start;">Download Guidelines</a></div>`;}
-function renderProgramBook(){return `<h3>Program Book</h3><p>Download the complete SAMI 2026 Program Book.</p><div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding:28px;text-align:center;"><span style="font-size:56px;">📘</span><div style="font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--primary-darker);">The 9th SAMI Program Book</div><p style="max-width:380px;color:var(--ink-soft);font-size:13px;">Comprehensive guide covering all aspects of the summer course.</p><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-primary">Download (PDF) <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a></div>`;}
-function renderSpeakers(){return `<h3>Speaker's Profile</h3><p>Meet our 14 distinguished speakers from around the world.</p><div class="speakers-mini">${speakersData.map(sp=>`<div class="speaker-mini"><div class="sp-avatar">${initials(sp.name)}</div><div class="sp-name">${sp.name}</div><div class="sp-affil">${sp.affil}</div><span style="display:inline-block;margin-top:5px;font-family:var(--font-mono);font-size:8.5px;padding:2px 7px;border-radius:6px;background:var(--primary-pale);color:var(--primary-dark);font-weight:600;">${sp.course}</span></div>`).join('')}</div>`;}
-function renderParticipants(){return `<h3>Participants</h3><p>Registered participants list will be announced after registration closes.</p><div style="padding:24px;text-align:center;"><span style="font-size:36px;display:block;margin-bottom:10px;">✅</span><p style="font-size:14px;font-weight:600;color:var(--primary-darker);">List announced after July 20, 2026.</p></div>`;}
-function renderPartners(){return `<h3>Supporting Partners</h3><p>Supported by leading organizations committed to sustainability.</p><div style="margin-top:14px;padding:24px 32px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;display:inline-block;"><div style="font-family:var(--font-display);font-weight:800;font-size:26px;color:var(--primary-darker);">PERTAMINA</div><div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px;">Trading &amp; Services</div></div>`;}
+function renderAbout(){return `<div class="panel-stack"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>About SAMI Summer Course</div><div class="panel-body"><p style="margin-bottom:10px;">The SAMI Summer Course is an international academic program held since 2017 to improve the competitiveness and reputation of educational institutions, expand global networks, and provide cross-cultural learning experiences that support the internationalization of education through cross-country collaboration.</p><p style="margin-bottom:10px;">The 9th edition runs hybrid from <strong>July 27 – August 15, 2026</strong>, with its main location at IPB Campus, Dramaga, Bogor, West Java, Indonesia, and offers <strong>14 courses</strong> on sustainable agrifood management, delivered as 12 online courses (2 credits) and an extended track adding 2 hybrid on-campus courses plus an offline site visit (4 credits). An essay contest is also included to sharpen participants' critical thinking.</p><p>Theme: <strong>"Building Climate Resilience and Sustainable Agrifood Management through ESG"</strong></p></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 20V10M18 20V4M6 20v-6"/></svg>Program Objectives</div><div class="panel-body"><ul class="check-list">${["Improve participants' knowledge and skills in certain scientific fields","Provide interactive learning experiences with a collaborative approach","Expand international networks for participants and host institutions","Introduce local culture to international participants and strengthen cultural diplomacy"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/><circle cx="12" cy="9" r="4"/></svg>Learning Outcomes</div><div class="panel-body"><ul class="check-list">${["Theoretical Understanding — explain sustainability principles in agrifood supply chains","Analysis & Evaluation — analyze challenges and evaluate sustainability policies","Managerial & Implementation Skills — design sustainable agrifood management plans","Data-Driven Decision Making — apply data-driven approaches to agrifood decisions","Ethics & Leadership — demonstrate responsibility in sustainable food businesses","Collaboration & Networking — work in multidisciplinary, international teams","Global & Local Awareness — recognize cultural diversity and policy contexts"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="https://ipb.link/submission-sami-2026" target="_blank" class="btn btn-primary">Apply Now</a><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-ghost">Download Guideline</a></div></div>`;}
+
+function renderReady(){return `<h3>Getting Ready for SAMI 2026</h3><p>Prepare yourself for both the online sessions and the on-site experience in Bogor &amp; Garut.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>Before the Online Courses</div><div class="panel-body"><ul class="check-list">${["Test your Zoom setup beforehand to avoid technical issues","Stay muted when not speaking and use your full name for easy identification","Slides are shared on WhatsApp group one day before, or via samiipb.ac.id/course","Use the Q&A box or start your chat message with \"[ASK]\" to ask the speaker","Keep your camera on and use the official virtual background (ipb.link/vbg-sami-2026)"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5H5v14h14V9"/><path d="M21 3 12 12"/><path d="M15 3h6v6"/></svg>Travel Essentials for Site Visit</div><div class="panel-body"><ul class="check-list">${["Passport & travel documents (keep a copy on phone, wallet, bag, and luggage)","Universal plug adapter — Indonesia uses Type C/F plugs, 220V, 50Hz","Personal medication/allergy needs (committee provides general medicine only)","Cash (IDR) plus a local SIM card or travel WiFi for internet access","Lightweight breathable clothes, hat/cap, umbrella or raincoat, comfortable shoes"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Good to Know Before Traveling to Indonesia</div><div class="panel-body"><ul class="check-list">${["Currency: Indonesian Rupiah (IDR). Digital wallets (GoPay, OVO) widely used in cities","Local SIM cards available at airports — major providers: Telkomsel, XL, Indosat","Use ride-hailing apps (Gojek, Grab) for safe local transport","August is dry season — hot, sunny and humid, 27–33°C, rain is rare","Bring sunscreen, insect repellent, and keep an eye on your belongings"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div></div>`;}
+
+function renderAccom(){return `<h3>Accommodations</h3><p>Official accommodations for SAMI 2026 lecturer and student participants in Bogor &amp; Garut.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>Bogor — Arrival (Aug 9–10)</div><div class="panel-body"><ul class="check-list">${["<b>Sienna Residence Bogor</b> (Lecturers) — Jl. Letjen Ibrahim Adjie No. 8, Ciherang, Dramaga, Bogor Regency","<b>Cordova Apartment</b> (Students) — Jl. Cilubang Raya No. 1, Balungbangjaya, Bogor Barat, ~1.6 km from IPB Dramaga Campus"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Garut — Site Visit (Aug 10–13)</div><div class="panel-body"><ul class="check-list">${["<b>Hotel Harmoni Garut</b> (Lecturers & Students) — Jl. Cipanas Baru No. 78, Pananjung, Tarogong Kaler, Garut","Near Sabda Alam Water Park & Nagara Hot Spring, and Abah Otje Grilled Lamb & Beef Restaurant"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-8h6v8"/></svg>Bogor — Closing (Aug 13–16)</div><div class="panel-body"><ul class="check-list">${["<b>Fave Hotel Bogor</b> (Lecturers) — Jl. Cidangiang No. 1, Tegallega, Bogor","<b>Bianco Hotel Bogor</b> (Students) — 15 min walk from Bogor Botanical Garden, near Bogor Square Mall"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Transportation</div><div class="panel-body"><ul class="check-list">${["2 Regular Buses (Alpha), 33-seat, for group site-visit travel","IPB Bus (33-seat) and IPB HIACE (14-seat) for campus transfers"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div></div>`;}
+
+function renderAgenda(){
+  const tabs = scheduleData.map((d,i)=>`<button class="day-tab ${i===0?'active':''}" data-idx="${i}">${d.day}<span>${d.date.split(', ')[1]||d.date}</span></button>`).join('');
+  const panels = scheduleData.map((d,i)=>{
+    const items = d.sessions.map(s=>{
+      if(s.type==='opening'){
+        return `<div class="session-mini" style="background:var(--primary);color:#fff;"><div class="s-time" style="color:var(--primary-lighter);">${s.time}</div><div class="s-title" style="color:#fff;">${s.title}</div></div>`;
+      }
+      if(s.type==='sitevisit'){
+        return `<div class="session-mini sitevisit"><div class="s-time">${s.time}</div><span class="s-code">${s.code}</span><div class="s-title">${s.title}</div></div>`;
+      }
+      return `<div class="session-mini"><div class="s-time">${s.time}</div><span class="s-code">${s.code}</span><div class="s-title">${s.title}</div><div class="s-speaker">👤 ${s.speaker} — ${s.affil}</div></div>`;
+    }).join('');
+    return `<div class="day-panel ${i===0?'active':''}" data-idx="${i}"><div class="day-loc">${d.date} · ${d.location}</div>${items}</div>`;
+  }).join('');
+  return `<h3>Full Agenda — 12 Days, Bogor &amp; Garut</h3><p>Browse the complete schedule day by day, from opening on July 27 through departure on August 16.</p><div class="day-tabs" id="agendaTabs">${tabs}</div><div id="agendaPanels">${panels}</div>`;
+}
+
+function renderEssay(){
+  const topics = ["ESG Financial Risk in Agrifood","Green Marketing for Sustainable Agrifood","Sustainable Production under Climate Change","HR Readiness for Climate Resilience","ESG Financing and Supply Chain Sustainability","Consumer Behavior toward ESG Products","Low-Carbon Agrifood Operations","ESG Leadership and Organizational Culture","Sustainable Cost and Profit Management","Digital Marketing for ESG Agrifood","Circular Economy in Agrifood Operations","Green HRM and Employee Engagement","ESG Performance and Financial Sustainability","ESG and Agrifood Market Competitiveness","Climate-Resilient Agrifood Supply Chains","Integrated ESG Management in Agrifood"];
+  const reviewers = essayReviewers.map(r=>`<div class="panel"><div class="panel-head alt">${r.room}</div><div class="panel-body"><ul class="check-list">${r.people.map(p=>`<li>${ICON_CHECK}${p}</li>`).join('')}</ul></div></div>`).join('');
+  return `<h3>SAMI Essay Contest</h3><p>The 9th annual SAMI Student Essay Contest, open to all SAMI Summer Course 2026 participants.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>Theme & Key Details</div><div class="panel-body"><p style="margin-bottom:8px;"><b>Theme:</b> Building Climate Resilience and Sustainable Agrifood Management through ESG</p><ul class="check-list"><li>${ICON_CHECK}<b>Submission deadline:</b> essays due by August 9, 2026, 10:00 PM Jakarta Time (agenda also lists Aug 12 as the essay milestone — check the official guideline for the final date)</li><li>${ICON_CHECK}<b>Final presentation:</b> August 14, 2026 at Start Up Science Technopark, Bogor</li><li>${ICON_CHECK}<b>Format:</b> max. 3,000 words (English), MS Word, Times New Roman 12pt, 1.5 spacing, submitted by group with a max. 10-slide presentation (15 min presentation + 15 min Q&A)</li><li>${ICON_CHECK}<b>Rewards:</b> up to 3 winning essays receive certificates &amp; cash prizes, and are published in the SAMI Proceeding 2026 (ISBN)</li></ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>Problem Focus Topics</div><div class="panel-body"><div class="m-tags">${topics.map(t=>`<span>${t}</span>`).join('')}</div></div></div><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2 2 22h20L12 2Z"/></svg>Award</div><div class="panel-body"><ul class="check-list"><li>${ICON_CHECK}<b>1st Prize:</b> e-Certificate + IDR 3,000,000</li><li>${ICON_CHECK}<b>2nd Prize:</b> e-Certificate + IDR 2,000,000</li><li>${ICON_CHECK}<b>3rd Prize:</b> e-Certificate + IDR 1,000,000</li></ul></div></div><div class="section-head" style="margin:6px 0 0;"><span class="eyebrow">Reviewers</span><h2 style="font-size:18px;">Essay Contest Reviewers</h2></div><div class="panel-stack">${reviewers}</div><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-ghost" style="align-self:flex-start;">Download Full Guidelines</a></div>`;
+}
+
+function renderProgramBook(){return `<h3>Program Book</h3><p>Download the complete SAMI 2026 Program Book — agenda, site visit profiles, speaker &amp; reviewer profiles, essay contest rules, accommodation and travel information.</p><div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding:28px;text-align:center;"><span style="font-size:56px;">📘</span><div style="font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--primary-darker);">The 9th SAMI Program Book</div><p style="max-width:380px;color:var(--ink-soft);font-size:13px;">Comprehensive guide covering the full 26 July – 15 August 2026 program in Bogor &amp; Garut.</p><a href="https://ipb.link/application-form-sami-2026" target="_blank" class="btn btn-primary">Download (PDF) <svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a></div>`;}
+
+function renderSpeakers(){return `<h3>Speaker's Profile</h3><p>Meet the 14 speakers of the 9th SAMI Summer Course, joining from institutions across Indonesia, Germany, South Korea, Malaysia, Thailand and beyond.</p><div class="speakers-mini">${speakersData.map(sp=>`<div class="speaker-mini"><div class="sp-avatar">${initials(sp.name)}</div><div class="sp-name">${sp.name}</div><div class="sp-affil">${sp.affil}</div><span class="sp-course">${sp.course}</span></div>`).join('')}</div>`;}
+
+function renderParticipants(){return `<h3>Participants</h3><p>The 9th SAMI Summer Course brought together participants from 27 universities across 16 countries.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>Overview</div><div class="panel-body"><ul class="check-list"><li>${ICON_CHECK}<b>Total participants:</b> 110, from 27 universities in 16 countries</li><li>${ICON_CHECK}<b>Online track:</b> 76 participants, 25 universities, 12 countries — including Indonesia, Malaysia, Thailand, Jordan, Nigeria, Tunisia, India, Kenya, Tanzania, Burkina Faso, Cameroon, Myanmar, Timor-Leste and Rwanda</li><li>${ICON_CHECK}<b>Offline (site visit) track:</b> 34 participants, 7 universities, 6 countries — including Indonesia, Malaysia, Oman, Yemen, Tunisia and Pakistan</li></ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 4 4-8"/></svg>Participating Institutions</div><div class="panel-body"><ul class="check-list">${["IPB University (Indonesia)","Universiti Putra Malaysia (UPM)","Felcra College Malaysia","Universiti Tun Hussein Onn Malaysia (UTHM)","UITM Shah Alam","Songkhla Rajabhat University (Thailand)","Mutah University (Jordan)","Sultan Qaboos University (Oman)","Aube Nouvelle University (Burkina Faso)","Yezin Agricultural University (Myanmar)","Kenyatta University (Kenya)","Gombe State University (Nigeria)","Institut Teknologi Bandung, Universitas Gunadarma (Indonesia)","and 14 more universities across Tunisia, India & Cameroon"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div></div>`;}
+
+function renderPartners(){return `<h3>Supporting Partners</h3><p>The 9th SAMI Summer Course is supported by leading organizations and government partners committed to sustainable agrifood development.</p><div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;"><div style="padding:24px 32px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;"><div style="font-family:var(--font-display);font-weight:800;font-size:26px;color:var(--primary-darker);">PERTAMINA</div><div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px;">Trading &amp; Services</div></div><div style="padding:24px 32px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;"><div style="font-family:var(--font-display);font-weight:800;font-size:22px;color:var(--primary-darker);">Kabupaten Garut</div><div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px;">Local Government Partner</div></div></div><p style="margin-top:14px;font-size:12.5px;color:var(--ink-faint);">Additional media partners are listed in the official Program Book.</p>`;}
+
 const galleryImgs = ['https://images.unsplash.com/photo-1730697897470-0efaee4922de?w=400&q=80','https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&q=80','https://images.unsplash.com/photo-1511497584788-876760111969?w=400&q=80','https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80','https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&q=80','https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=400&q=80'];
 function renderGallery(){return `<h3>Gallery</h3><p>Photos and memories from SAMI Summer Course programs.</p><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:14px;">${galleryImgs.map(u=>`<div style="aspect-ratio:4/3;border-radius:var(--radius-s);overflow:hidden;border:1px solid var(--line);"><img src="${u}" alt="SAMI Gallery" style="width:100%;height:100%;object-fit:cover;"></div>`).join('')}</div>`;}
 
@@ -577,9 +578,9 @@ function buildCourseCards(){
   const grid = document.getElementById('courseGrid'), cards = [];
   scheduleData.forEach(day => {
     day.sessions.forEach(s => {
-      if(s.opening) return;
-      const img = courseImgs[s.code]||'', loc = day.location||(day.mode==='online'?'Online':'Hybrid · IPB');
-      cards.push({code:s.code,title:s.title,speaker:s.speaker,affil:s.affil,time:`${day.date} · ${s.time}`,location:loc,img,topics:s.topics,day:day});
+      if(s.type!=='course') return;
+      const img = courseImgs[s.code]||'';
+      cards.push({code:s.code,title:s.title,speaker:s.speaker,affil:s.affil,time:`${day.date} · ${s.time}`,location:day.location,img,los:s.los||[],day:day});
     });
   });
   grid.innerHTML = cards.map((c,i) => `<div class="course-card" onclick="openCourseDetail(${i})"><div class="card-img" style="background-image:url('${c.img}');"><span class="card-badge">${c.code}</span></div><div class="card-body"><h4>${c.title}</h4><div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div><div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div></div><div class="card-footer"><button class="btn btn-ghost btn-sm">View Details →</button></div></div>`).join('');
@@ -589,8 +590,9 @@ function buildCourseCards(){
 function openCourseDetail(idx){
   const c = window._courseCards[idx];
   if(!c) return;
-  const zoom = courseZoom[c.code]||{url:'#',id:'-',pass:'-'};
+  const meeting = courseMeeting.default;
   const mods = courseModules[c.code]||[];
+  const loTags = (c.los||[]).map(n=>learningOutcomes[n]).filter(Boolean);
   document.getElementById('modalImg').style.backgroundImage = "url('"+c.img+"')";
   document.getElementById('modalEmoji').textContent = '📚';
   document.getElementById('modalCode').textContent = c.code;
@@ -608,15 +610,15 @@ function openCourseDetail(idx){
       <div class="m-label">Location</div>
       <div class="m-info">${c.location}</div>
     </div>
-    ${c.topics&&c.topics.length?`<div class="m-section"><div class="m-label">Topics</div><div class="m-tags">${c.topics.map(t=>`<span>${t}</span>`).join('')}</div></div>`:''}
+    ${loTags.length?`<div class="m-section"><div class="m-label">Learning Outcomes Covered</div><div class="m-tags">${loTags.map(t=>`<span>${t}</span>`).join('')}</div></div>`:''}
     <div class="m-section">
-      <div class="m-label">Zoom Link</div>
-      <a href="${zoom.url}" target="_blank" rel="noopener" class="zoom-btn">
+      <div class="m-label">Meeting Link</div>
+      <a href="${meeting.url}" target="_blank" rel="noopener" class="zoom-btn">
         <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>
-        Join Zoom Meeting
+        Join via ipb.link/SAMI2026
         <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <div class="zoom-details">ID: ${zoom.id} · Passcode: ${zoom.pass}</div>
+      <div class="zoom-details">Slides shared via WhatsApp group & samiipb.ac.id/course one day before the session</div>
     </div>
     ${mods.length?`<div class="m-section"><div class="m-label">Module Materials</div><div class="module-list">${mods.map(m=>`<a class="module-item" href="${m.url}" target="_blank"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">Download →</span></a>`).join('')}</div></div>`:''}
   `;
@@ -628,7 +630,7 @@ document.getElementById('modalClose').addEventListener('click',()=>{document.get
 document.getElementById('courseModal').addEventListener('click',e=>{if(e.target===e.currentTarget){document.getElementById('courseModal').classList.remove('open');document.body.style.overflow='';}});
 
 // ===== RESOURCES =====
-function buildResources(){document.getElementById('resourcesGrid').innerHTML = resourcesData.map(r => `<a class="resource-card" href="https://ipb.link/application-form-sami-2026" target="_blank"><span class="r-icon">${r.icon}</span><div><div class="r-name">${r.name}</div><div class="r-desc">${r.desc}</div></div></a>`).join('');}
+function buildResources(){document.getElementById('resourcesGrid').innerHTML = resourcesData.map(r => `<a class="resource-card" href="${r.url}" target="_blank"><span class="r-icon">${r.icon}</span><div><div class="r-name">${r.name}</div><div class="r-desc">${r.desc}</div></div></a>`).join('');}
 function buildFAQ(){document.getElementById('faqContainer').innerHTML = faqData.map(f => `<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${f.q}<span class="arrow">▾</span></div><div class="faq-a">${f.a}</div></div>`).join('');}
 
 showSection('about');
