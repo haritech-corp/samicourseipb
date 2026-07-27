@@ -215,6 +215,37 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .footer-col a{font-size:12.5px;color:rgba(255,255,255,.85);}
 .footer-col a:hover{color:var(--primary);}
 .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding-top:14px;font-size:11.5px;color:rgba(255,255,255,.5);}
+
+/* TIMELINE */
+.tl-section{margin-top:16px;margin-bottom:2px;}
+.tl-scroll{display:flex;gap:4px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:thin;scroll-behavior:smooth;}
+.tl-scroll::-webkit-scrollbar{height:4px;}
+.tl-scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px;}
+.tl-phase{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 9px;border-radius:var(--radius-s);border:1.5px solid var(--line);background:var(--paper);min-width:64px;transition:all .3s ease;position:relative;cursor:default;}
+.tl-phase.done{border-color:var(--primary);background:var(--primary-pale);}
+.tl-phase.done::after{content:'✓';position:absolute;top:-5px;right:-5px;width:18px;height:18px;border-radius:50%;background:var(--primary);color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 2px 6px rgba(91,151,0,.3);}
+.tl-phase.active{border-color:var(--accent);background:linear-gradient(135deg,#fff,#FFF3E0);box-shadow:0 0 0 3px rgba(246,141,35,.15),0 4px 12px rgba(246,141,35,.15);animation:tlPulse 2s ease-in-out infinite;}
+@keyframes tlPulse{0%,100%{box-shadow:0 0 0 3px rgba(246,141,35,.15),0 4px 12px rgba(246,141,35,.15);}50%{box-shadow:0 0 0 7px rgba(246,141,35,.08),0 4px 18px rgba(246,141,35,.22);}}
+.tl-phase .tl-icon{font-size:17px;line-height:1;}
+.tl-phase .tl-label{font-size:9px;font-weight:700;color:var(--ink-soft);white-space:nowrap;text-align:center;line-height:1.2;}
+.tl-phase .tl-date{font-family:var(--font-mono);font-size:7.5px;color:var(--ink-faint);white-space:nowrap;margin-top:1px;}
+.tl-phase.active .tl-label{color:var(--accent-dark);}
+.tl-phase.active .tl-date{color:var(--accent);font-weight:600;}
+.tl-phase.done .tl-label{color:var(--primary-darker);}
+.tl-today-card{margin-top:10px;padding:12px 16px;background:linear-gradient(135deg,var(--primary-pale),#fff);border:1.5px solid var(--primary);border-radius:var(--radius-s);animation:fadeSlide .4s ease;}
+.tl-today-head{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
+.tl-today-head .tl-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:tlPulse 2s ease-in-out infinite;}
+.tl-today-head .tl-today-label{font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--primary-dark);text-transform:uppercase;letter-spacing:.06em;}
+.tl-today-head .tl-today-date{font-size:12px;color:var(--ink-soft);font-weight:600;}
+.tl-today-body{display:flex;flex-direction:column;gap:3px;padding-left:16px;}
+.tl-session{display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;font-size:12px;color:var(--ink);}
+.tl-session .s-time{font-family:var(--font-mono);font-size:10px;color:var(--primary);font-weight:600;min-width:88px;flex-shrink:0;}
+.tl-session .s-badge{font-family:var(--font-mono);font-size:8px;padding:1px 5px;border-radius:4px;background:var(--primary-pale);color:var(--primary-dark);font-weight:600;text-transform:uppercase;flex-shrink:0;}
+.tl-session.sitevisit{background:var(--primary-pale);border-radius:6px;}
+.tl-session.sitevisit .s-badge{background:var(--accent);color:#fff;}
+.tl-session.opening{background:var(--primary);border-radius:6px;color:#fff;}
+.tl-session.opening .s-time{color:var(--primary-lighter);}
+.tl-session.opening .s-badge{background:rgba(255,255,255,.15);color:#fff;}
 </style>
 </head>
 <body>
@@ -222,12 +253,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 <header class="site-header">
   <nav class="nav">
     <a href="#top" class="brand">
-      <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
-        <circle cx="20" cy="20" r="19" stroke="rgba(37,150,190,0.5)" stroke-width="1.4"/>
-        <path d="M20 30V15" stroke="#8BD1E3" stroke-width="1.8" stroke-linecap="round"/>
-        <path d="M20 18C20 12 15 10 11 10C11 15 14 19 20 19" fill="#50B8D4"/>
-        <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#50B8D4"/>
-      </svg>
+      <img class="brand-mark" src="logosami2026.png" alt="SAMI Logo">
       <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
     </a>
     <div>
@@ -267,6 +293,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
           <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg><span><b>VBG:</b> Virtual Background &amp; Technical Guide</span></div>
         </div>
         <a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light" style="font-size:12px;padding:8px 16px;">Download VBG<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
+      </div>
+      <!-- TIMELINE -->
+      <div class="tl-section" id="timelineSection">
+        <div class="tl-scroll" id="tlScroll"></div>
+        <div class="tl-today-card" id="tlTodayCard"></div>
       </div>
       <!-- CONTENT PANEL -->
       <div class="content-panel" id="contentPanel">
@@ -340,12 +371,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="#top" class="brand" style="color:#fff;">
-          <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="19" stroke="rgba(37,150,190,0.5)" stroke-width="1.4"/>
-            <path d="M20 30V15" stroke="#8BD1E3" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M20 18C20 12 15 10 11 10C11 15 14 19 20 19" fill="#50B8D4"/>
-            <path d="M20 15C20 10 25 8 29 9C28.5 14 25 17 20 17" fill="#50B8D4"/>
-          </svg>
+          <img class="brand-mark" src="logosami2026.png" alt="SAMI Logo">
           <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
         </a>
         <p>Department of Management, Faculty of Economics and Management, IPB University. Held annually since 2017.</p>
@@ -629,10 +655,60 @@ document.getElementById('courseModal').addEventListener('click',e=>{if(e.target=
 function buildResources(){document.getElementById('resourcesGrid').innerHTML = resourcesData.map(r => `<a class="resource-card" href="${r.url}" target="_blank"><span class="r-icon">${r.icon}</span><div><div class="r-name">${r.name}</div><div class="r-desc">${r.desc}</div></div></a>`).join('');}
 function buildFAQ(){document.getElementById('faqContainer').innerHTML = faqData.map(f => `<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${f.q}<span class="arrow">▾</span></div><div class="faq-a">${f.a}</div></div>`).join('');}
 
+// ===== TIMELINE =====
+const tlPhases = [
+  {id:'pre',   label:'Pre-Program',    start:'2026-04-28', end:'2026-07-26', icon:'📋'},
+  {id:'day1',  label:'Day 1: Opening', start:'2026-07-27', end:'2026-07-27', icon:'🚀'},
+  {id:'day2',  label:'Day 2',          start:'2026-07-28', end:'2026-07-28', icon:'💻'},
+  {id:'day3',  label:'Day 3',          start:'2026-07-29', end:'2026-07-29', icon:'💻'},
+  {id:'day4',  label:'Day 4',          start:'2026-07-30', end:'2026-07-30', icon:'💻'},
+  {id:'day5',  label:'Day 5',          start:'2026-07-31', end:'2026-07-31', icon:'💻'},
+  {id:'essay', label:'Essay Prep',     start:'2026-08-01', end:'2026-08-09', icon:'📝'},
+  {id:'day6',  label:'Day 6: Hybrid',  start:'2026-08-10', end:'2026-08-10', icon:'🏛️'},
+  {id:'day7',  label:'Day 7',          start:'2026-08-11', end:'2026-08-11', icon:'🏞️'},
+  {id:'day8',  label:'Day 8',          start:'2026-08-12', end:'2026-08-12', icon:'🏞️'},
+  {id:'day9',  label:'Day 9',          start:'2026-08-13', end:'2026-08-13', icon:'🏛️'},
+  {id:'day10', label:'Day 10: Closing',start:'2026-08-14', end:'2026-08-14', icon:'🏆'},
+  {id:'day11', label:'Day 11',         start:'2026-08-15', end:'2026-08-15', icon:'🌿'},
+  {id:'dep',   label:'Departure',      start:'2026-08-16', end:'2026-08-16', icon:'✈️'}
+];
+
+function getCurrentPhaseIdx(){
+  const now = new Date(); now.setHours(0,0,0,0);
+  const first = new Date(tlPhases[0].start+'T00:00:00');
+  if(now<first) return -1;
+  for(let i=tlPhases.length-1;i>=0;i--){
+    if(now>=new Date(tlPhases[i].start+'T00:00:00')) return i;
+  }
+  return -1;
+}
+
+function parseScheduleDate(dateStr){return new Date(dateStr.split(', ').slice(1).join(', '));}
+
+function renderTodayInfo(idx){const card=document.getElementById('tlTodayCard');const phase=tlPhases[idx];if(!phase||idx<0){card.innerHTML='<div class="tl-today-head"><span class="tl-today-label">Program akan dimulai</span><span class="tl-today-date">28 April 2026</span></div><div class="tl-today-body"><div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Pendaftaran belum dibuka. Pantau terus informasinya!</div></div>';return;}
+  const now=new Date();const todayStr=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+  const todaySchedule=scheduleData.find(d=>{const dd=parseScheduleDate(d.date);return dd.toDateString()===now.toDateString();});
+  let html=`<div class="tl-today-head"><span class="tl-dot"></span><span class="tl-today-label">${idx===tlPhases.length-1?'Program Selesai':'Hari Ini'}</span><span class="tl-today-date">${todayStr}</span></div><div class="tl-today-body">`;
+  if(todaySchedule){html+=todaySchedule.sessions.map(s=>{const isSV=s.type==='sitevisit';const isOpen=s.type==='opening';const code=s.code||(isOpen?'Opening':'');return`<div class="tl-session${isSV?' sitevisit':''}${isOpen?' opening':''}"><span class="s-time">${s.time}</span>${code?`<span class="s-badge">${code}</span>`:''}<span>${s.title}</span></div>`;}).join('');}
+  else if(phase.id==='pre'){html+=`<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Persiapan program — pendaftaran & pengumuman peserta</div>`;}
+  else if(phase.id==='essay'){html+=`<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Periode persiapan & pengumpulan esai — submit sebelum 9 Agustus!</div>`;}
+  else if(phase.id==='dep'){html+=`<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Program selesai — peserta kembali ke negara masing-masing</div>`;}
+  else{html+=`<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Tidak ada sesi hari ini — persiapkan diri untuk sesi berikutnya</div>`;}
+  html+='</div>';card.innerHTML=html;
+}
+
+function buildTimeline(){
+  const idx=getCurrentPhaseIdx();const scroll=document.getElementById('tlScroll');
+  scroll.innerHTML=tlPhases.map((p,i)=>{let cls='tl-phase';if(i<idx)cls+=' done';else if(i===idx)cls+=' active';return`<div class="${cls}"><span class="tl-icon">${p.icon}</span><span class="tl-label">${p.label}</span><span class="tl-date">${p.start.split('-').slice(1).join('/')}</span></div>`;}).join('');
+  setTimeout(()=>{const a=scroll.querySelector('.tl-phase.active');if(a)a.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});},120);
+  renderTodayInfo(idx);
+}
+
 showSection('about');
 buildCourseCards();
 buildResources();
 buildFAQ();
+buildTimeline();
 </script>
 </body>
 </html>
