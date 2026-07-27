@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>All Courses — The 9th SAMI Summer Course | IPB University</title>
+<link rel="icon" type="image/png" href="../logosami2026.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#5B9700;--primary-dark:#5B9700;--primary-darker:#5B9700;--primary-light:#5B9700;--primary-lighter:#84DB00;--primary-pale:#DBFFA6;--accent:#F68D23;--accent-dark:#497900;--accent-pale:#EAFFC9;--bg:#F4F7F9;--paper:#FFFFFF;--ink:#5B9700;--ink-soft:#5B9700;--ink-faint:#5B9700;--line:#EAFFC9;--font-display:'Fraunces',serif;--font-body:'Inter',sans-serif;--font-mono:'IBM Plex Mono',monospace;--container:1140px;--radius-s:10px;--radius-m:18px;--radius-l:28px;--shadow-sm:0 1px 3px rgba(37,150,190,0.08);--shadow-md:0 4px 16px rgba(37,150,190,0.12);--shadow-lg:0 12px 40px -8px rgba(37,150,190,0.2);}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{margin:0;font-family:var(--font-display);font-weight:600;letter-spacing:-0.02em;}
+p{margin:0;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;}
+:focus-visible{outline:2.5px solid var(--primary);outline-offset:3px;border-radius:6px;}
+::selection{background:var(--primary);color:#fff;}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 22px;border-radius:50px;font-family:var(--font-body);font-weight:600;font-size:13.5px;border:1.5px solid transparent;transition:all .25s cubic-bezier(.4,0,.2,1);white-space:nowrap;}
+.btn svg{width:14px;height:14px;flex-shrink:0;}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 4px 14px rgba(37,150,190,0.3);}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,150,190,0.35);}
+.btn-accent{background:var(--accent);color:#fff;box-shadow:0 4px 14px rgba(37,150,190,0.3);}
+.btn-accent:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,150,190,0.35);}
+.btn-outline-light{border-color:rgba(255,255,255,.4);color:#fff;}
+.btn-outline-light:hover{border-color:#fff;background:rgba(255,255,255,.12);transform:translateY(-2px);}
+.btn-ghost{border-color:var(--line);color:var(--ink-soft);}
+.btn-ghost:hover{border-color:var(--primary);color:var(--primary);}
+.btn-sm{padding:8px 16px;font-size:12px;}
+.icon{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
+
+.site-header{position:sticky;top:0;left:0;right:0;z-index:100;background:rgba(73,163,0,0.88);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,0.1);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;max-width:var(--container);margin:0 auto;}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;}
+.brand-mark{width:32px;height:32px;flex-shrink:0;border-radius:50%;object-fit:cover;}
+.brand-text{display:flex;flex-direction:column;line-height:1.15;}
+.brand-text b{font-family:var(--font-display);font-size:16px;font-weight:700;letter-spacing:-.01em;}
+.brand-text span{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--primary-lighter);}
+
+.hero{background:linear-gradient(155deg,rgba(73,163,0,0.88) 0%,rgba(64,122,32,0.75) 40%,rgba(255,234,127,0.65) 100%),url('https://images.unsplash.com/photo-1730697897470-0efaee4922de?w=1400&q=80');background-size:cover;background-position:center;color:#fff;padding:36px 0 40px;text-align:center;}
+.hero-title{font-family:var(--font-display);font-weight:300;font-size:clamp(28px,5vw,52px);line-height:.92;color:#fff;letter-spacing:-.03em;}
+.hero-title em{font-style:italic;font-weight:600;color:var(--accent);}
+.hero-sub{margin-top:8px;max-width:480px;margin-left:auto;margin-right:auto;color:rgba(255,255,255,.85);font-size:14px;line-height:1.5;}
+
+.search-bar{margin-top:20px;max-width:400px;margin-left:auto;margin-right:auto;}
+.search-bar input{width:100%;padding:10px 16px;border-radius:50px;border:1.5px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);color:#fff;font-family:var(--font-body);font-size:14px;outline:none;}
+.search-bar input::placeholder{color:rgba(255,255,255,.5);}
+.search-bar input:focus{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.18);}
+
+.course-section{padding:32px 0 48px;}
+.filter-bar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
+.filter-chip{padding:6px 14px;border-radius:50px;border:1px solid var(--line);background:var(--paper);font-size:11.5px;font-weight:600;color:var(--ink-soft);transition:all .2s;}
+.filter-chip:hover{border-color:var(--primary);color:var(--primary);}
+.filter-chip.active{background:var(--primary);border-color:var(--primary);color:#fff;}
+
+.course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+.course-card{background:var(--paper);border-radius:var(--radius-m);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);transition:all .35s cubic-bezier(.4,0,.2,1);cursor:pointer;}
+.course-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent;}
+.card-img{height:130px;position:relative;background-size:cover;background-position:center;}
+.card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(0,0,0,.5));}
+.card-badge{position:absolute;top:10px;left:10px;z-index:2;padding:3px 9px;border-radius:6px;background:rgba(255,255,255,.92);backdrop-filter:blur(4px);font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--primary-dark);text-transform:uppercase;}
+.card-body{padding:14px 16px 10px;}
+.card-body h4{font-size:14px;color:var(--primary-darker);line-height:1.3;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.card-speaker{font-size:12px;color:var(--ink-soft);display:flex;align-items:center;gap:5px;margin-bottom:4px;}
+.card-speaker .icon{color:var(--primary-light);width:13px;height:13px;}
+.card-time{font-family:var(--font-mono);font-size:10.5px;color:var(--ink-faint);display:flex;align-items:center;gap:5px;}
+.card-time .icon{color:var(--primary);width:13px;height:13px;}
+.card-footer{padding:0 16px 14px;}
+.card-footer .btn{width:100%;justify-content:center;font-size:12px;padding:9px;}
+
+.modal-overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(13,79,106,0.5);backdrop-filter:blur(8px);justify-content:center;align-items:center;padding:20px;}
+.modal-overlay.open{display:flex;}
+.modal-box{background:var(--paper);border-radius:var(--radius-l);max-width:580px;width:100%;max-height:90vh;overflow-y:auto;padding:0;box-shadow:0 24px 60px -12px rgba(37,150,190,0.25);animation:modalIn .35s cubic-bezier(.4,0,.2,1);}
+@keyframes modalIn{from{opacity:0;transform:scale(.95) translateY(20px);}to{opacity:1;transform:scale(1) translateY(0);}}
+.modal-img{height:160px;background-size:cover;background-position:center;position:relative;border-radius:var(--radius-l) var(--radius-l) 0 0;}
+.modal-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(0,0,0,.6));border-radius:var(--radius-l) var(--radius-l) 0 0;}
+.modal-img-content{position:absolute;bottom:16px;left:24px;z-index:2;}
+.modal-img-content .m-emoji{font-size:36px;display:block;margin-bottom:4px;}
+.modal-img-content .m-code{font-family:var(--font-mono);font-size:10px;color:var(--primary-lighter);font-weight:600;text-transform:uppercase;display:block;}
+.modal-img-content h3{font-size:18px;color:#fff;margin-top:4px;max-width:90%;}
+.modal-close{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);border:none;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--ink-soft);z-index:3;transition:all .2s;cursor:pointer;}
+.modal-close:hover{background:#fff;color:var(--primary);}
+.modal-body{padding:20px 24px 24px;}
+.m-section{margin-bottom:16px;}
+.m-label{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:600;margin-bottom:6px;}
+.m-info{font-size:14px;color:var(--ink-soft);line-height:1.6;}
+.m-info b{color:var(--ink);}
+.zoom-btn{display:flex;align-items:center;gap:10px;padding:12px 18px;background:var(--primary);color:#fff;border-radius:var(--radius-s);font-weight:600;font-size:13.5px;transition:all .2s;}
+.zoom-btn:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(37,150,190,0.3);}
+.zoom-btn .icon{width:18px;height:18px;}
+.zoom-details{font-size:12.5px;color:var(--ink-faint);margin-top:6px;font-family:var(--font-mono);}
+.module-list{display:flex;flex-direction:column;gap:6px;}
+.module-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);transition:all .2s;}
+.module-item:hover{border-color:var(--primary);background:var(--primary-pale);}
+.module-item .m-icon{font-size:20px;flex-shrink:0;}
+.module-item .m-name{font-size:13px;font-weight:600;color:var(--primary-darker);flex:1;}
+.module-item .m-dl{color:var(--primary);font-weight:600;font-size:12px;}
+.module-item.locked{opacity:.45;cursor:not-allowed;pointer-events:none;}
+.module-item.locked .m-dl{color:var(--ink-faint);}
+
+.site-footer{background:var(--primary-darker);color:rgba(255,255,255,.8);padding:32px 0 18px;text-align:center;}
+.site-footer a{color:var(--primary-lighter);}
+.site-footer a:hover{color:#fff;}
+.site-footer p{font-size:12px;color:rgba(255,255,255,.5);margin-top:8px;}
+
+@media(max-width:600px){.course-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../" class="brand">
+      <img class="brand-mark" src="../logosami2026.png" alt="SAMI Logo">
+      <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
+    </a>
+    <a href="../" class="btn btn-outline-light" style="font-size:12px;padding:7px 14px;">← Back<svg class="icon" viewBox="0 0 24 24"><path d="M19 12H5m0 0 7 7m-7-7 7-7"/></svg></a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">All <em>14 Courses</em></h1>
+    <p class="hero-sub">Jelajahi semua kursus SAMI 2026 — dari online course sampai hybrid session, dari berbagai ahli internasional.</p>
+    <div class="search-bar">
+      <input type="text" id="courseSearch" placeholder="Cari kursus atau pembicara..." oninput="filterCourses()">
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="container">
+    <div class="filter-bar" id="filterBar"></div>
+    <div class="course-grid" id="courseGrid"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="../"><img class="brand-mark" src="../logosami2026.png" alt="SAMI" style="margin-bottom:6px;"></a>
+    <p>&copy; 2026 SAMI — IPB University. <a href="../">Back to Home</a></p>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="courseModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-img" id="modalImg">
+      <div class="modal-img-content">
+        <span class="m-emoji" id="modalEmoji">📚</span>
+        <span class="m-code" id="modalCode"></span>
+        <h3 id="modalTitle"></h3>
+      </div>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+const scheduleData = [
+  { day:"Day 1", date:"Monday, July 27, 2026", location:"Online · Zoom Meeting", sessions:[
+    { time:"07.25–09.00 AM", type:"opening", title:"Opening Ceremony — Institution Profiles, SAMI Course Report, Welcoming & Opening Remarks" },
+    { time:"09.00–10.15 AM", type:"course", code:"Course 1", title:"Nature-Based Solution for Environmental Conservation and Development of Agrifood through International Cooperation", speaker:"Prof. Ho Sang Kang", affil:"Seoul National University (SNU), South Korea" },
+    { time:"01.00–02.15 PM", type:"course", code:"Course 2", title:"The Role of Media in Driving Sustainability: Empowering Impact and Sharing for the Viewers", speaker:"Andy Budiman Kumala", affil:"CEO, KG Media Indonesia (Kompas Gramedia)" }
+  ]},
+  { day:"Day 2", date:"Tuesday, July 28, 2026", location:"Online · Zoom Meeting", sessions:[
+    { time:"08.00–09.15 AM", type:"course", code:"Course 3", title:"Ecolabels and Climate Resilience in Blue Food Systems: Shrimp Aquaculture Case Study", speaker:"Ita Sualia", affil:"Director, People Fish and Forest / School of Environment, University of Queensland, Australia" },
+    { time:"10.30–11.45 AM", type:"course", code:"Course 4", title:"Circular Economy Approaches", speaker:"Wirastanto", affil:"Country Head, RIZE" },
+    { time:"01.00–02.15 PM", type:"course", code:"Course 5", title:"ESG Reporting and The Importance of ESG in Modern Business", speaker:"Prof. Dr. Jutta Geldermann", affil:"University of Duisburg-Essen, Germany" }
+  ]},
+  { day:"Day 3", date:"Wednesday, July 29, 2026", location:"Online · Zoom Meeting", sessions:[
+    { time:"08.00–09.15 AM", type:"course", code:"Course 6", title:"Geopolitics and Supply Chain Sustainability among MSMEs in Agriculture Sector", speaker:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia (UPM)" },
+    { time:"10.30–11.45 AM", type:"course", code:"Course 7", title:"Geopark Tourism Support on Food Sustainability", speaker:"Assoc. Prof. Pongsak Thongnueakhaeng", affil:"Dean, Faculty of Management Sciences, Songkhla Rajabhat University (SKRU), Thailand" }
+  ]},
+  { day:"Day 4", date:"Thursday, July 30, 2026", location:"Online · Zoom Meeting", sessions:[
+    { time:"08.00–09.15 AM", type:"course", code:"Course 8", title:"ESG Governance, Policy, Alignment, and Agrifood Regulation", speaker:"Dr. M. Windrawan Inantha", affil:"Strategic Advisor, Center for Entrepreneurship, Change, and Third Sector, Trisakti University" },
+    { time:"10.30–11.45 AM", type:"course", code:"Course 9", title:"ESG Strategies for Sustainable Supply Chain Value", speaker:"Dr. Eko Ruddy Cahyadi, S.Hut., M.M.", affil:"Head of Department of Management FEM, IPB University" }
+  ]},
+  { day:"Day 5", date:"Friday, July 31, 2026", location:"Online · Zoom Meeting", sessions:[
+    { time:"09.00–10.15 AM", type:"course", code:"Course 10", title:"ESG-Driven Business Models & Innovation in Agrifood", speaker:"Dr. Indra R. Sembiring", affil:"IPB University, Indonesia" },
+    { time:"01.30–02.45 PM", type:"course", code:"Course 11", title:"Rules, Culture, and Responsibility: Governance Strategies for Climate-Resilient Agrifood Systems", speaker:"Prof. Carola Jungwirth", affil:"University of Passau, Germany" },
+    { time:"03.30–04.45 PM", type:"course", code:"Course 12", title:"Sustainable Finance for Agriculture Sector", speaker:"Rezza F. Prisandy", affil:"OJK Indonesia (Financial Services Authority)" }
+  ]},
+  { day:"Day 6", date:"Monday, August 10, 2026", location:"Hybrid · Bogor → Garut", sessions:[
+    { time:"09.00–10.30 AM", type:"course", code:"Course 13", title:"Building Sustainable Agrifood Systems: Environmental Challenges and Policy Solutions", speaker:"Prof. Hermann Waibel", affil:"University of Hannover, Germany" }
+  ]},
+  { day:"Day 7", date:"Tuesday, August 11, 2026", location:"Garut", sessions:[
+    { time:"10.00–11.00 AM", type:"sitevisit", code:"Site Visit 2", title:"Eptilu: Education and Agritourism — Mekarsari, Cikajang, Garut" },
+    { time:"01.00–03.00 PM", type:"sitevisit", code:"Site Visit 3", title:"Mandalagiri: Coffee Planting and Processing Education — Cikandang, Cikajang, Garut" }
+  ]},
+  { day:"Day 8", date:"Wednesday, August 12, 2026", location:"Garut", sessions:[
+    { time:"09.00–11.00 AM", type:"sitevisit", code:"Site Visit 4", title:"Margawati: Center for Sheep & Goat Breeding Development — Sukanegla, Garut" },
+    { time:"01.30–03.30 PM", type:"sitevisit", code:"Site Visit 5", title:"Bestory: Home Industry Production \"Dodol Garut\" — Muara Sanding, Garut" },
+    { time:"04.00–05.30 PM", type:"sitevisit", code:"Site Visit 6", title:"Sukaregang Market: Local Creative Economy (Leather Products) — Garut Kota" }
+  ]},
+  { day:"Day 9", date:"Thursday, August 13, 2026", location:"Garut → Bogor", sessions:[
+    { time:"08.45–10.00 AM", type:"sitevisit", code:"Site Visit 7", title:"Cangkuang Temple — Heritage Tourism, Kec. Leles, Garut" }
+  ]},
+  { day:"Day 10", date:"Friday, August 14, 2026", location:"Bogor · Start Up Science Technopark, IPB", sessions:[
+    { time:"01.30–03.00 PM", type:"course", code:"Course 14", title:"Halal Supply Chain Management and ESG Principles", speaker:"Dr. Marco Tieman", affil:"CEO, HSC Alliance Sdn Bhd" },
+    { time:"03.00–04.30 PM", type:"sitevisit", code:"Site Visit 8", title:"Science and Technology Park (STP), IPB University" },
+    { time:"04.30–06.30 PM", type:"sitevisit", code:"Closing", title:"SAMI 2026 Closing Ceremony" }
+  ]}
+];
+
+const courseImgs = {
+  'Course 1':'https://images.unsplash.com/photo-1511497584788-876760111969?w=500&q=80',
+  'Course 2':'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80',
+  'Course 3':'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=500&q=80',
+  'Course 4':'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&q=80',
+  'Course 5':'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&q=80',
+  'Course 6':'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80',
+  'Course 7':'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80',
+  'Course 8':'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&q=80',
+  'Course 9':'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&q=80',
+  'Course 10':'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80',
+  'Course 11':'https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=500&q=80',
+  'Course 12':'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&q=80',
+  'Course 13':'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500&q=80',
+  'Course 14':'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=500&q=80'
+};
+
+const courseModules = {
+  'Course 1':[{icon:'📄',name:'Session Slides — Nature-Based Solutions',url:'https://docs.google.com/presentation/d/1pBnKAgKd-EF1Bv1DPfyBg9gjJAWyHG5e/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
+  'Course 2':[{icon:'📄',name:'Session Slides — Media & Sustainability',url:'https://drive.google.com/file/d/19tVmd2YGxa7DEbRc9wMk4kTfNA8bpszP/view?usp=drive_link'}],
+  'Course 3':[{icon:'📄',name:'Session Slides — Ecolabels & Blue Food Systems',url:'#',locked:true}],
+  'Course 4':[{icon:'📄',name:'Session Slides — Circular Economy',url:'#',locked:true}],
+  'Course 5':[{icon:'📄',name:'Session Slides — ESG Reporting',url:'#',locked:true}],
+  'Course 6':[{icon:'📄',name:'Session Slides — Geopolitics & Supply Chain',url:'#',locked:true}],
+  'Course 7':[{icon:'📄',name:'Session Slides — Geopark Tourism',url:'#',locked:true}],
+  'Course 8':[{icon:'📄',name:'Session Slides — ESG Governance & Policy',url:'#',locked:true}],
+  'Course 9':[{icon:'📄',name:'Session Slides — Supply Chain ESG Strategy',url:'#',locked:true}],
+  'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'#',locked:true}],
+  'Course 11':[{icon:'📄',name:'Session Slides — Climate Governance',url:'#',locked:true}],
+  'Course 12':[{icon:'📄',name:'Session Slides — Sustainable Finance',url:'#',locked:true}],
+  'Course 13':[{icon:'📄',name:'Session Slides — Sustainable Agrifood Systems',url:'#',locked:true}],
+  'Course 14':[{icon:'📄',name:'Session Slides — Halal Supply Chain',url:'#',locked:true}]
+};
+
+const courseMeeting = {default:{url:'https://ipb.link/SAMI2026', portal:'https://samiipb.site'}};
+
+let _cards = [];
+
+function buildCards(){
+  const grid = document.getElementById('courseGrid');
+  const allDays = scheduleData.filter(d => d.sessions.some(s => s.type === 'course'));
+  const cards = [];
+  allDays.forEach(day => {
+    day.sessions.forEach(s => {
+      if(s.type !== 'course') return;
+      cards.push({
+        code: s.code, title: s.title, speaker: s.speaker, affil: s.affil,
+        time: day.date + ' · ' + s.time, location: day.location,
+        img: courseImgs[s.code] || '', day: day
+      });
+    });
+  });
+  _cards = cards;
+  grid.innerHTML = cards.map((c,i) => `<div class="course-card" onclick="openDetail(${i})"><div class="card-img" style="background-image:url('${c.img}');"><span class="card-badge">${c.code}</span></div><div class="card-body"><h4>${c.title}</h4><div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div><div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div></div><div class="card-footer"><button class="btn btn-ghost btn-sm">View Details →</button></div></div>`).join('');
+}
+
+function filterCourses(){
+  const q = document.getElementById('courseSearch').value.toLowerCase();
+  const grid = document.getElementById('courseGrid');
+  const filtered = _cards.filter(c => c.title.toLowerCase().includes(q) || c.speaker.toLowerCase().includes(q) || c.code.toLowerCase().includes(q));
+  grid.innerHTML = filtered.map((c,i) => {
+    const origIdx = _cards.indexOf(c);
+    return `<div class="course-card" onclick="openDetail(${origIdx})"><div class="card-img" style="background-image:url('${c.img}');"><span class="card-badge">${c.code}</span></div><div class="card-body"><h4>${c.title}</h4><div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div><div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div></div><div class="card-footer"><button class="btn btn-ghost btn-sm">View Details →</button></div></div>`;
+  }).join('');
+}
+
+function openDetail(idx){
+  const c = _cards[idx]; if(!c) return;
+  const meeting = courseMeeting.default;
+  const mods = courseModules[c.code] || [];
+  document.getElementById('modalImg').style.backgroundImage = "url('"+c.img+"')";
+  document.getElementById('modalEmoji').textContent = '📚';
+  document.getElementById('modalCode').textContent = c.code;
+  document.getElementById('modalTitle').textContent = c.title;
+  document.getElementById('modalBody').innerHTML = `
+    <div class="m-section"><div class="m-label">Speaker</div><div class="m-info"><b>${c.speaker}</b> — ${c.affil}</div></div>
+    <div class="m-section"><div class="m-label">Schedule</div><div class="m-info"><b>${c.time}</b></div></div>
+    <div class="m-section"><div class="m-label">Location</div><div class="m-info">${c.location}</div></div>
+    <div class="m-section"><div class="m-label">Meeting Link</div>
+      <a href="${meeting.url}" target="_blank" rel="noopener" class="zoom-btn">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>
+        Join via ipb.link/SAMI2026
+        <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+      <div class="zoom-details">Slides dibagikan via WhatsApp group dan portal samiipb.site sehari sebelum sesi</div>
+    </div>
+    ${mods.length ? `<div class="m-section"><div class="m-label">Module Materials</div><div class="module-list">${mods.map(m => m.locked ? `<div class="module-item locked"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">🔒</span></div>` : `<a class="module-item" href="${m.url}" target="_blank"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">Download →</span></a>`).join('')}</div></div>` : ''}`;
+  document.getElementById('courseModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+document.getElementById('modalClose').addEventListener('click', () => { document.getElementById('courseModal').classList.remove('open'); document.body.style.overflow = ''; });
+document.getElementById('courseModal').addEventListener('click', e => { if(e.target === e.currentTarget) { document.getElementById('courseModal').classList.remove('open'); document.body.style.overflow = ''; }});
+document.addEventListener('keydown', e => { if(e.key === 'Escape') { document.getElementById('courseModal').classList.remove('open'); document.body.style.overflow = ''; }});
+
+buildCards();
+</script>
+</body>
+</html>
