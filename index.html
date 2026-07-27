@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The 9th SAMI Summer Course — IPB University</title>
+<title>The 9th SAMI Summer Course | IPB University</title>
+<link rel="icon" type="image/png" href="logosami2026.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -489,20 +490,20 @@ const courseMeeting = {
 };
 
 const courseModules = {
-  'Course 1':[{icon:'📄',name:'Session Slides — Nature-Based Solutions',url:'./9th SAMI_Hosang KANG.pptx'},{icon:'📖',name:'Reading: International Cooperation in Agrifood',url:'#'}],
-  'Course 2':[{icon:'📄',name:'Session Slides — Media & Sustainability',url:'./ANDY MATERIAL.pdf'},{icon:'📖',name:'Reading: Driving Impact through Media',url:'#'}],
-  'Course 3':[{icon:'📄',name:'Session Slides — Ecolabels & Blue Food Systems',url:'#',locked:true},{icon:'📖',name:'Case Study: Shrimp Aquaculture',url:'#',locked:true}],
-  'Course 4':[{icon:'📄',name:'Session Slides — Circular Economy',url:'#',locked:true},{icon:'♻️',name:'Reading: Circular Approaches in Agrifood',url:'#',locked:true}],
-  'Course 5':[{icon:'📄',name:'Session Slides — ESG Reporting',url:'#',locked:true},{icon:'📖',name:'Reading: ESG Standards Overview',url:'#',locked:true}],
-  'Course 6':[{icon:'📄',name:'Session Slides — Geopolitics & Supply Chain',url:'#',locked:true},{icon:'📖',name:'Reading: MSME Sustainability in Agriculture',url:'#',locked:true}],
-  'Course 7':[{icon:'📄',name:'Session Slides — Geopark Tourism',url:'#',locked:true},{icon:'📖',name:'Reading: Food Sustainability Tourism',url:'#',locked:true}],
-  'Course 8':[{icon:'📄',name:'Session Slides — ESG Governance & Policy',url:'#',locked:true},{icon:'⚖️',name:'Reading: Agrifood Regulation',url:'#',locked:true}],
-  'Course 9':[{icon:'📄',name:'Session Slides — Supply Chain ESG Strategy',url:'#',locked:true},{icon:'📖',name:'Reading: Sustainable Value Chain',url:'#',locked:true}],
-  'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'#',locked:true},{icon:'💡',name:'Reading: Innovation in Agrifood',url:'#',locked:true}],
-  'Course 11':[{icon:'📄',name:'Session Slides — Climate Governance',url:'#',locked:true},{icon:'📋',name:'Reading: Governance Strategies',url:'#',locked:true}],
-  'Course 12':[{icon:'📄',name:'Session Slides — Sustainable Finance',url:'#',locked:true},{icon:'📊',name:'Reading: Finance for Agriculture',url:'#',locked:true}],
-  'Course 13':[{icon:'📄',name:'Session Slides — Sustainable Agrifood Systems',url:'#',locked:true},{icon:'🌾',name:'Reading: Environmental Challenges & Policy',url:'#',locked:true}],
-  'Course 14':[{icon:'📄',name:'Session Slides — Halal Supply Chain',url:'#',locked:true},{icon:'🕌',name:'Reading: Halal & ESG Principles',url:'#',locked:true}]
+  'Course 1':[{icon:'📄',name:'Session Slides — Nature-Based Solutions',url:'https://docs.google.com/presentation/d/1pBnKAgKd-EF1Bv1DPfyBg9gjJAWyHG5e/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
+  'Course 2':[{icon:'📄',name:'Session Slides — Media & Sustainability',url:'https://drive.google.com/file/d/19tVmd2YGxa7DEbRc9wMk4kTfNA8bpszP/view?usp=drive_link'}],
+  'Course 3':[{icon:'📄',name:'Session Slides — Ecolabels & Blue Food Systems',url:'#',locked:true}],
+  'Course 4':[{icon:'📄',name:'Session Slides — Circular Economy',url:'#',locked:true}],
+  'Course 5':[{icon:'📄',name:'Session Slides — ESG Reporting',url:'#',locked:true}],
+  'Course 6':[{icon:'📄',name:'Session Slides — Geopolitics & Supply Chain',url:'#',locked:true}],
+  'Course 7':[{icon:'📄',name:'Session Slides — Geopark Tourism',url:'#',locked:true}],
+  'Course 8':[{icon:'📄',name:'Session Slides — ESG Governance & Policy',url:'#',locked:true}],
+  'Course 9':[{icon:'📄',name:'Session Slides — Supply Chain ESG Strategy',url:'#',locked:true}],
+  'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'#',locked:true}],
+  'Course 11':[{icon:'📄',name:'Session Slides — Climate Governance',url:'#',locked:true}],
+  'Course 12':[{icon:'📄',name:'Session Slides — Sustainable Finance',url:'#',locked:true}],
+  'Course 13':[{icon:'📄',name:'Session Slides — Sustainable Agrifood Systems',url:'#',locked:true}],
+  'Course 14':[{icon:'📄',name:'Session Slides — Halal Supply Chain',url:'#',locked:true}]
 };
 
 const ICON_CHECK = '<svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>';
@@ -546,7 +547,7 @@ function renderProgramBook(){return `<h3>Program Book</h3><p>Download the comple
 
 function renderSpeakers(){return `<h3>Speaker's Profile</h3><p>Kenalan sama 14 pembicara SAMI Summer Course tahun ini, dari Indonesia, Jerman, Korea Selatan, Malaysia, Thailand, dan negara lainnya.</p><div class="speakers-mini">${speakersData.map(sp=>`<div class="speaker-mini"><div class="sp-avatar">${initials(sp.name)}</div><div class="sp-name">${sp.name}</div><div class="sp-affil">${sp.affil}</div><span class="sp-course">${sp.course}</span></div>`).join('')}</div>`;}
 
-function renderParticipants(){return `<h3>Participants</h3><p>The 9th SAMI Summer Course brought together participants from 27 universities across 16 countries.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>Overview</div><div class="panel-body"><ul class="check-list"><li>${ICON_CHECK}<b>Total participants:</b> 110, from 27 universities in 16 countries</li><li>${ICON_CHECK}<b>Online track:</b> 76 participants, 25 universities, 12 countries — including Indonesia, Malaysia, Thailand, Jordan, Nigeria, Tunisia, India, Kenya, Tanzania, Burkina Faso, Cameroon, Myanmar, Timor-Leste and Rwanda</li><li>${ICON_CHECK}<b>Offline (site visit) track:</b> 34 participants, 7 universities, 6 countries — including Indonesia, Malaysia, Oman, Yemen, Tunisia and Pakistan</li></ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 4 4-8"/></svg>Participating Institutions</div><div class="panel-body"><ul class="check-list">${["IPB University (Indonesia)","Universiti Putra Malaysia (UPM)","Felcra College Malaysia","Universiti Tun Hussein Onn Malaysia (UTHM)","UITM Shah Alam","Songkhla Rajabhat University (Thailand)","Mutah University (Jordan)","Sultan Qaboos University (Oman)","Aube Nouvelle University (Burkina Faso)","Yezin Agricultural University (Myanmar)","Kenyatta University (Kenya)","Gombe State University (Nigeria)","Institut Teknologi Bandung, Universitas Gunadarma (Indonesia)","and 14 more universities across Tunisia, India & Cameroon"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div></div>`;}
+function renderParticipants(){return `<h3>Participants</h3><p>The 9th SAMI Summer Course brought together participants from 37 universities across 20 countries.</p><div class="panel-stack" style="margin-top:12px;"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>Overview</div><div class="panel-body"><ul class="check-list"><li>${ICON_CHECK}<b>Total participants:</b> 125, from 37 universities in 20 countries</li><li>${ICON_CHECK}<b>Online track:</b> 91 participants, 25 universities, 12 countries — including Indonesia, Malaysia, Thailand, Jordan, Nigeria, Tunisia, India, Kenya, Tanzania, Burkina Faso, Cameroon, Myanmar, Timor-Leste and Rwanda</li><li>${ICON_CHECK}<b>Offline (site visit) track:</b> 34 participants, 7 universities, 6 countries — including Indonesia, Malaysia, Oman, Yemen, Tunisia and Pakistan</li></ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 4 4-8"/></svg>Participating Institutions</div><div class="panel-body"><ul class="check-list">${["IPB University (Indonesia)","Universiti Putra Malaysia (UPM)","Felcra College Malaysia","Universiti Tun Hussein Onn Malaysia (UTHM)","UITM Shah Alam","Songkhla Rajabhat University (Thailand)","Mutah University (Jordan)","Sultan Qaboos University (Oman)","Aube Nouvelle University (Burkina Faso)","Yezin Agricultural University (Myanmar)","Kenyatta University (Kenya)","Gombe State University (Nigeria)","Institut Teknologi Bandung, Universitas Gunadarma (Indonesia)","and 24 more universities across Tunisia, India, Cameroon & other countries"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div></div>`;}
 
 function renderPartners(){return `<h3>Supporting Partners</h3><p>The 9th SAMI Summer Course is supported by leading organizations and government partners committed to sustainable agrifood development.</p><div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;"><div style="padding:24px 32px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;"><div style="font-family:var(--font-display);font-weight:800;font-size:26px;color:var(--primary-darker);">PERTAMINA</div><div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px;">Trading &amp; Services</div></div><div style="padding:24px 32px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-l);text-align:center;"><div style="font-family:var(--font-display);font-weight:800;font-size:22px;color:var(--primary-darker);">Kabupaten Garut</div><div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px;">Local Government Partner</div></div></div><p style="margin-top:14px;font-size:12.5px;color:var(--ink-faint);">Additional media partners are listed in the official Program Book.</p>`;}
 
