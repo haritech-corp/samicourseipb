@@ -39,8 +39,7 @@
     var s = document.createElement('style');
     s.id = 'sami-global-style';
     s.textContent = [
-      'html{scroll-behavior:smooth;overflow-x:hidden}',
-      'body{overflow-x:hidden}',
+      'html{scroll-behavior:smooth}',
       '.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,150,190,0.15)!important}',
       '.btn:active{transform:translateY(0);transition-duration:.05s}',
       '.course-card{transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s ease,border-color .35s ease!important}',

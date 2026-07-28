@@ -12,7 +12,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>All Courses — The 9th SAMI Summer Course | IPB University</title>
+<title>Course Library — The 9th SAMI Summer Course | IPB University</title>
 <link rel="icon" type="image/png" href="../logosami2026.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,18 +55,18 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .hero{background:linear-gradient(155deg,rgba(73,163,0,0.88) 0%,rgba(64,122,32,0.75) 40%,rgba(255,234,127,0.65) 100%),url('https://images.unsplash.com/photo-1730697897470-0efaee4922de?w=1400&q=80');background-size:cover;background-position:center;color:#fff;padding:36px 0 40px;text-align:center;}
 .hero-title{font-family:var(--font-display);font-weight:300;font-size:clamp(28px,5vw,52px);line-height:.92;color:#fff;letter-spacing:-.03em;}
 .hero-title em{font-style:italic;font-weight:600;color:var(--accent);}
-.hero-sub{margin-top:8px;max-width:480px;margin-left:auto;margin-right:auto;color:rgba(255,255,255,.85);font-size:14px;line-height:1.5;}
+.hero-sub{margin-top:8px;max-width:520px;margin-left:auto;margin-right:auto;color:rgba(255,255,255,.85);font-size:14px;line-height:1.5;}
 
-.search-bar{margin-top:20px;max-width:400px;margin-left:auto;margin-right:auto;}
-.search-bar input{width:100%;padding:10px 16px;border-radius:50px;border:1.5px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);color:#fff;font-family:var(--font-body);font-size:14px;outline:none;}
-.search-bar input::placeholder{color:rgba(255,255,255,.5);}
-.search-bar input:focus{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.18);}
-
-.course-section{padding:32px 0 48px;}
-.filter-bar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
-.filter-chip{padding:6px 14px;border-radius:50px;border:1px solid var(--line);background:var(--paper);font-size:11.5px;font-weight:600;color:var(--ink-soft);transition:all .2s;}
-.filter-chip:hover{border-color:var(--primary);color:var(--primary);}
+.filter-bar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;justify-content:center;}
+.filter-chip{padding:6px 14px;border-radius:50px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);font-size:11.5px;font-weight:600;color:rgba(255,255,255,.9);transition:all .2s;cursor:pointer;}
+.filter-chip:hover{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.18);}
 .filter-chip.active{background:var(--primary);border-color:var(--primary);color:#fff;}
+
+.library-section{padding:32px 0 48px;}
+.lib-sub-filter{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
+.lib-chip{padding:6px 14px;border-radius:50px;border:1px solid var(--line);background:var(--paper);font-size:11.5px;font-weight:600;color:var(--ink-soft);transition:all .2s;cursor:pointer;}
+.lib-chip:hover{border-color:var(--primary);color:var(--primary);}
+.lib-chip.active{background:var(--primary);border-color:var(--primary);color:#fff;}
 
 .course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
 .course-card{background:var(--paper);border-radius:var(--radius-m);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);transition:all .35s cubic-bezier(.4,0,.2,1);cursor:pointer;}
@@ -74,14 +74,24 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .card-img{height:130px;position:relative;background-size:cover;background-position:center;}
 .card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(0,0,0,.5));}
 .card-badge{position:absolute;top:10px;left:10px;z-index:2;padding:3px 9px;border-radius:6px;background:rgba(255,255,255,.92);backdrop-filter:blur(4px);font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--primary-dark);text-transform:uppercase;}
+.card-status{position:absolute;top:10px;right:10px;z-index:2;padding:3px 8px;border-radius:6px;font-family:var(--font-mono);font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;}
+.card-status.completed{background:#E8F5E9;color:#2E7D32;}
+.card-status.ongoing{background:#FFF3E0;color:#E65100;}
+.card-status.upcoming{background:#F3E5F5;color:#6A1B9A;}
 .card-body{padding:14px 16px 10px;}
 .card-body h4{font-size:14px;color:var(--primary-darker);line-height:1.3;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
 .card-speaker{font-size:12px;color:var(--ink-soft);display:flex;align-items:center;gap:5px;margin-bottom:4px;}
 .card-speaker .icon{color:var(--primary-light);width:13px;height:13px;}
-.card-time{font-family:var(--font-mono);font-size:10.5px;color:var(--ink-faint);display:flex;align-items:center;gap:5px;}
-.card-time .icon{color:var(--primary);width:13px;height:13px;}
+.card-meta{font-family:var(--font-mono);font-size:10.5px;color:var(--ink-faint);display:flex;align-items:center;gap:5px;flex-wrap:wrap;}
+.card-meta .icon{color:var(--primary);width:13px;height:13px;}
+.card-photo-count{display:inline-flex;align-items:center;gap:4px;background:var(--primary-pale);padding:2px 8px;border-radius:6px;color:var(--primary-dark);font-weight:600;font-size:10px;}
 .card-footer{padding:0 16px 14px;}
 .card-footer .btn{width:100%;justify-content:center;font-size:12px;padding:9px;}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
+.gallery-item{aspect-ratio:4/3;border-radius:var(--radius-s);overflow:hidden;border:2px solid var(--line);transition:all .25s;cursor:pointer;position:relative;}
+.gallery-item:hover{border-color:var(--primary);transform:scale(1.02);box-shadow:var(--shadow-md);}
+.gallery-item img{width:100%;height:100%;object-fit:cover;}
 
 .modal-overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(13,79,106,0.5);backdrop-filter:blur(8px);justify-content:center;align-items:center;padding:20px;}
 .modal-overlay.open{display:flex;}
@@ -96,30 +106,24 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .modal-close{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);border:none;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--ink-soft);z-index:3;transition:all .2s;cursor:pointer;}
 .modal-close:hover{background:#fff;color:var(--primary);}
 .modal-body{padding:20px 24px 24px;}
-.m-section{margin-bottom:16px;}
-.m-label{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:600;margin-bottom:6px;}
-.m-info{font-size:14px;color:var(--ink-soft);line-height:1.6;}
-.m-info b{color:var(--ink);}
-.zoom-btn{display:flex;align-items:center;gap:10px;padding:12px 18px;background:var(--primary);color:#fff;border-radius:var(--radius-s);font-weight:600;font-size:13.5px;transition:all .2s;}
-.zoom-btn:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(37,150,190,0.3);}
-.zoom-btn .icon{width:18px;height:18px;}
-.zoom-details{font-size:12.5px;color:var(--ink-faint);margin-top:6px;font-family:var(--font-mono);}
-.module-list{display:flex;flex-direction:column;gap:6px;}
-.module-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);transition:all .2s;}
-.module-item:hover{border-color:var(--primary);background:var(--primary-pale);}
-.module-item .m-icon{font-size:20px;flex-shrink:0;}
-.module-item .m-name{font-size:13px;font-weight:600;color:var(--primary-darker);flex:1;}
-.module-item .m-dl{color:var(--primary);font-weight:600;font-size:12px;}
-.module-item.locked{opacity:.45;cursor:not-allowed;pointer-events:none;}
-.module-item.locked .m-dl{color:var(--ink-faint);}
+
+/* Lightbox */
+.lightbox{display:none;position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.92);backdrop-filter:blur(12px);justify-content:center;align-items:center;flex-direction:column;padding:20px;}
+.lightbox.open{display:flex;}
+.lightbox-img{max-width:90vw;max-height:80vh;border-radius:var(--radius-m);object-fit:contain;}
+.lightbox-counter{color:rgba(255,255,255,.6);font-family:var(--font-mono);font-size:13px;margin-top:12px;}
+.lightbox-nav{display:flex;gap:12px;margin-top:12px;}
+.lightbox-nav button{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:18px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;}
+.lightbox-nav button:hover{background:rgba(255,255,255,.2);border-color:#fff;}
+.lightbox-close{position:absolute;top:20px;right:24px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;}
+.lightbox-close:hover{background:rgba(255,255,255,.2);border-color:#fff;}
 
 .site-footer{background:var(--primary-darker);color:rgba(255,255,255,.8);padding:32px 0 18px;text-align:center;}
 .site-footer a{color:var(--primary-lighter);}
 .site-footer a:hover{color:#fff;}
 .site-footer p{font-size:12px;color:rgba(255,255,255,.5);margin-top:8px;}
 
-@media(max-width:720px){.nav{flex-wrap:wrap;gap:6px;padding:8px 12px}.nav .brand{min-width:0;flex-shrink:1}.nav .brand-text span{display:none}.nav>div:last-child{gap:6px!important;flex-wrap:wrap;justify-content:flex-end}.nav .btn{font-size:11px!important;padding:5px 10px!important}.lang-switcher{padding:3px 8px!important}#langSwitcher{max-width:80px!important;font-size:11px!important}}
-@media(max-width:600px){.course-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.course-grid{grid-template-columns:1fr;}.gallery-grid{grid-template-columns:repeat(2,1fr);}.lightbox-img{max-width:100vw;max-height:60vh;}}
 #langSwitcher option { color: #000; }
 main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 </style>
@@ -158,36 +162,53 @@ main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:
           <option value="lo">ລາວ</option>
         </select>
       </div>
-      <a href="library.html" class="btn btn-outline-light" style="font-size:12px;padding:7px 14px;" data-i18n="coursePage.viewLibrary">View Library<svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg></a>
-      <a href="../" class="btn btn-outline-light" style="font-size:12px;padding:7px 14px;" data-i18n="header.back">← Back<svg class="icon" viewBox="0 0 24 24"><path d="M19 12H5m0 0 7 7m-7-7 7-7"/></svg></a>
+      <a href="../course/" class="btn btn-outline-light" style="font-size:12px;padding:7px 14px;" data-i18n="coursePage.viewDetails">All Courses<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <a href="../" class="btn btn-outline-light" style="font-size:12px;padding:7px 14px;" data-i18n="header.back">← Home<svg class="icon" viewBox="0 0 24 24"><path d="M19 12H5m0 0 7 7m-7-7 7-7"/></svg></a>
     </div>
   </nav>
 </header>
 
 <section class="hero">
   <div class="hero-inner">
-    <h1 class="hero-title" data-i18n="coursePage.title">All <em>14 Courses</em></h1>
-    <p class="hero-sub" data-i18n="coursePage.subtitle">Jelajahi semua kursus SAMI 2026 — dari online course sampai hybrid session, dari berbagai ahli internasional.</p>
-    <div class="search-bar">
-      <input type="text" id="courseSearch" data-i18n-placeholder="coursePage.searchPlaceholder" placeholder="Cari kursus atau pembicara..." oninput="filterCourses()">
+    <h1 class="hero-title" data-i18n="library.pageTitle">Course <em>Library</em></h1>
+    <p class="hero-sub" data-i18n="library.pageSubtitle">Browse course documentation, session photos, and materials from all SAMI 2026 courses — from completed, ongoing, to upcoming sessions.</p>
+    <div class="filter-bar" id="statusFilter">
+      <span class="filter-chip active" data-filter="all" data-i18n="library.filterAll">All</span>
+      <span class="filter-chip" data-filter="completed" data-i18n="library.filterCompleted">Completed</span>
+      <span class="filter-chip" data-filter="ongoing" data-i18n="library.filterOngoing">On Going</span>
+      <span class="filter-chip" data-filter="upcoming" data-i18n="library.filterUpcoming">Upcoming</span>
     </div>
   </div>
 </section>
 
-<section class="course-section">
+<section class="library-section">
   <div class="container">
-    <div class="filter-bar" id="filterBar"></div>
+    <div class="lib-sub-filter" id="dayFilter">
+      <span class="lib-chip active" data-day="all" data-i18n="library.filterAll">All Days</span>
+      <span class="lib-chip" data-day="1" data-i18n="library.filterDay">Day 1</span>
+      <span class="lib-chip" data-day="2" data-i18n="library.filterDay">Day 2</span>
+      <span class="lib-chip" data-day="3" data-i18n="library.filterDay">Day 3</span>
+      <span class="lib-chip" data-day="4" data-i18n="library.filterDay">Day 4</span>
+      <span class="lib-chip" data-day="5" data-i18n="library.filterDay">Day 5</span>
+      <span class="lib-chip" data-day="6" data-i18n="library.filterDay">Day 6</span>
+      <span class="lib-chip" data-day="10" data-i18n="library.filterDay">Day 10</span>
+    </div>
     <div class="course-grid" id="courseGrid"></div>
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <a href="../"><img class="brand-mark" src="../logosami2026.png" alt="SAMI" style="margin-bottom:6px;"></a>
-    <p><span data-i18n="footer.copyright">&copy; 2026 SAMI — IPB University</span>. <a href="../" data-i18n="coursePage.backToHome">Back to Home</a></p>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">✕</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <div class="lightbox-counter" id="lightboxCounter">1 / 5</div>
+  <div class="lightbox-nav">
+    <button id="lightboxPrev">←</button>
+    <button id="lightboxNext">→</button>
   </div>
-</footer>
+</div>
 
+<!-- COURSE DETAIL MODAL -->
 <div class="modal-overlay" id="courseModal">
   <div class="modal-box">
     <button class="modal-close" id="modalClose">✕</button>
@@ -202,50 +223,45 @@ main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:
   </div>
 </div>
 
+<footer class="site-footer">
+  <div class="container">
+    <a href="../"><img class="brand-mark" src="../logosami2026.png" alt="SAMI" style="margin-bottom:6px;"></a>
+    <p><span data-i18n="footer.copyright">&copy; 2026 SAMI — IPB University</span>. <a href="../" data-i18n="coursePage.backToHome">Back to Home</a></p>
+  </div>
+</footer>
+
 <script>
+function i18nT(key, fallback) { try { if (window.i18n && window.i18n.t) { var t = window.i18n.t(key); if (t !== key) return t; } } catch(e) {} return fallback; }
+
+// Schedule data same as course/index.html
 const scheduleData = [
-  { day:"Day 1", date:"Monday, July 27, 2026", location:"Online · Zoom Meeting", sessions:[
-    { time:"07.25–09.00 AM", type:"opening", title:"Opening Ceremony — Institution Profiles, SAMI Course Report, Welcoming & Opening Remarks" },
+  { day:"Day 1", date:"Monday, July 27, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
     { time:"09.00–10.15 AM", type:"course", code:"Course 1", title:"Nature-Based Solution for Environmental Conservation and Development of Agrifood through International Cooperation", speaker:"Prof. Ho Sang Kang", affil:"Seoul National University (SNU), South Korea" },
     { time:"01.00–02.15 PM", type:"course", code:"Course 2", title:"The Role of Media in Driving Sustainability: Empowering Impact and Sharing for the Viewers", speaker:"Andy Budiman Kumala", affil:"CEO, KG Media Indonesia (Kompas Gramedia)" }
   ]},
-  { day:"Day 2", date:"Tuesday, July 28, 2026", location:"Online · Zoom Meeting", sessions:[
+  { day:"Day 2", date:"Tuesday, July 28, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
     { time:"08.00–09.15 AM", type:"course", code:"Course 3", title:"Ecolabels and Climate Resilience in Blue Food Systems: Shrimp Aquaculture Case Study", speaker:"Ita Sualia", affil:"Director, People Fish and Forest / School of Environment, University of Queensland, Australia" },
     { time:"10.30–11.45 AM", type:"course", code:"Course 4", title:"Circular Economy Approaches", speaker:"Wirastanto", affil:"Country Head, RIZE" },
     { time:"01.00–02.15 PM", type:"course", code:"Course 5", title:"ESG Reporting and The Importance of ESG in Modern Business", speaker:"Prof. Dr. Jutta Geldermann", affil:"University of Duisburg-Essen, Germany" }
   ]},
-  { day:"Day 3", date:"Wednesday, July 29, 2026", location:"Online · Zoom Meeting", sessions:[
+  { day:"Day 3", date:"Wednesday, July 29, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
     { time:"08.00–09.15 AM", type:"course", code:"Course 6", title:"Geopolitics and Supply Chain Sustainability among MSMEs in Agriculture Sector", speaker:"Dr. Noor Azlin Ismail", affil:"Universiti Putra Malaysia (UPM)" },
     { time:"10.30–11.45 AM", type:"course", code:"Course 7", title:"Geopark Tourism Support on Food Sustainability", speaker:"Assoc. Prof. Pongsak Thongnueakhaeng", affil:"Dean, Faculty of Management Sciences, Songkhla Rajabhat University (SKRU), Thailand" }
   ]},
-  { day:"Day 4", date:"Thursday, July 30, 2026", location:"Online · Zoom Meeting", sessions:[
+  { day:"Day 4", date:"Thursday, July 30, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
     { time:"08.00–09.15 AM", type:"course", code:"Course 8", title:"ESG Governance, Policy, Alignment, and Agrifood Regulation", speaker:"Dr. M. Windrawan Inantha", affil:"Strategic Advisor, Center for Entrepreneurship, Change, and Third Sector, Trisakti University" },
     { time:"10.30–11.45 AM", type:"course", code:"Course 9", title:"ESG Strategies for Sustainable Supply Chain Value", speaker:"Dr. Eko Ruddy Cahyadi, S.Hut., M.M.", affil:"Head of Department of Management FEM, IPB University" }
   ]},
-  { day:"Day 5", date:"Friday, July 31, 2026", location:"Online · Zoom Meeting", sessions:[
+  { day:"Day 5", date:"Friday, July 31, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
     { time:"09.00–10.15 AM", type:"course", code:"Course 10", title:"ESG-Driven Business Models & Innovation in Agrifood", speaker:"Dr. Indra R. Sembiring", affil:"IPB University, Indonesia" },
     { time:"01.30–02.45 PM", type:"course", code:"Course 11", title:"Rules, Culture, and Responsibility: Governance Strategies for Climate-Resilient Agrifood Systems", speaker:"Prof. Carola Jungwirth", affil:"University of Passau, Germany" },
     { time:"03.30–04.45 PM", type:"course", code:"Course 12", title:"Sustainable Finance for Agriculture Sector", speaker:"Rezza F. Prisandy", affil:"OJK Indonesia (Financial Services Authority)" }
   ]},
-  { day:"Day 6", date:"Monday, August 10, 2026", location:"Hybrid · Bogor → Garut", sessions:[
+  { day:"Day 6", date:"Monday, August 10, 2026", mode:"hybrid", location:"Hybrid · Bogor → Garut", sessions:[
     { time:"09.00–10.30 AM", type:"course", code:"Course 13", title:"Building Sustainable Agrifood Systems: Environmental Challenges and Policy Solutions", speaker:"Prof. Hermann Waibel", affil:"University of Hannover, Germany" }
   ]},
-  { day:"Day 7", date:"Tuesday, August 11, 2026", location:"Garut", sessions:[
-    { time:"10.00–11.00 AM", type:"sitevisit", code:"Site Visit 2", title:"Eptilu: Education and Agritourism — Mekarsari, Cikajang, Garut" },
-    { time:"01.00–03.00 PM", type:"sitevisit", code:"Site Visit 3", title:"Mandalagiri: Coffee Planting and Processing Education — Cikandang, Cikajang, Garut" }
-  ]},
-  { day:"Day 8", date:"Wednesday, August 12, 2026", location:"Garut", sessions:[
-    { time:"09.00–11.00 AM", type:"sitevisit", code:"Site Visit 4", title:"Margawati: Center for Sheep & Goat Breeding Development — Sukanegla, Garut" },
-    { time:"01.30–03.30 PM", type:"sitevisit", code:"Site Visit 5", title:"Bestory: Home Industry Production \"Dodol Garut\" — Muara Sanding, Garut" },
-    { time:"04.00–05.30 PM", type:"sitevisit", code:"Site Visit 6", title:"Sukaregang Market: Local Creative Economy (Leather Products) — Garut Kota" }
-  ]},
-  { day:"Day 9", date:"Thursday, August 13, 2026", location:"Garut → Bogor", sessions:[
-    { time:"08.45–10.00 AM", type:"sitevisit", code:"Site Visit 7", title:"Cangkuang Temple — Heritage Tourism, Kec. Leles, Garut" }
-  ]},
-  { day:"Day 10", date:"Friday, August 14, 2026", location:"Bogor · Start Up Science Technopark, IPB", sessions:[
-    { time:"01.30–03.00 PM", type:"course", code:"Course 14", title:"Halal Supply Chain Management and ESG Principles", speaker:"Dr. Marco Tieman", affil:"CEO, HSC Alliance Sdn Bhd" },
-    { time:"03.00–04.30 PM", type:"sitevisit", code:"Site Visit 8", title:"Science and Technology Park (STP), IPB University" },
-    { time:"04.30–06.30 PM", type:"sitevisit", code:"Closing", title:"SAMI 2026 Closing Ceremony" }
+  { day:"Day 10", date:"Friday, August 14, 2026", mode:"hybrid", location:"Bogor · Start Up Science Technopark, IPB", sessions:[
+    { time:"01.30–03.00 PM", type:"course", code:"Course 14", title:"Halal Supply Chain Management and ESG Principles", speaker:"Dr. Marco Tieman", affil:"CEO, HSC Alliance Sdn Bhd" }
   ]}
 ];
 
@@ -285,71 +301,178 @@ const courseModules = {
 
 const courseMeeting = {default:{url:'https://ipb.link/SAMI2026', portal:'https://samiipb.site'}};
 
-function i18nT(key, fallback) { try { if (window.i18n && window.i18n.t) { var t = window.i18n.t(key); if (t !== key) return t; } } catch(e) {} return fallback; }
+// Library photos for completed courses
+const libraryPhotos = {
+  'Course 1': [
+    '../images/course1/photo-1.png','../images/course1/photo-2.png','../images/course1/photo-3.png',
+    '../images/course1/photo-4.png','../images/course1/photo-5.png','../images/course1/photo-6.png'
+  ],
+  'Course 2': [
+    '../images/course2/photo-1.png','../images/course2/photo-2.png','../images/course2/photo-3.png',
+    '../images/course2/photo-4.png','../images/course2/photo-5.png','../images/course2/photo-6.png'
+  ]
+};
+
+// Derive status from date
+function getCourseStatus(courseDate) {
+  const now = new Date(); now.setHours(0,0,0,0);
+  const cDate = new Date(courseDate);
+  const diff = (cDate - now) / (1000*60*60*24);
+  if (diff < 0) return 'completed';
+  if (diff === 0) return 'ongoing';
+  return 'upcoming';
+}
+
+function getDayNumber(code) {
+  for (const d of scheduleData) {
+    for (const s of d.sessions) {
+      if (s.code === code) return parseInt(d.day.replace('Day ',''));
+    }
+  }
+  return 0;
+}
 
 let _cards = [];
-
-function buildCards(){
+function buildCards() {
   const grid = document.getElementById('courseGrid');
-  const allDays = scheduleData.filter(d => d.sessions.some(s => s.type === 'course'));
   const cards = [];
-  allDays.forEach(day => {
+  scheduleData.forEach(day => {
     day.sessions.forEach(s => {
-      if(s.type !== 'course') return;
+      if (s.type !== 'course') return;
+      const photos = libraryPhotos[s.code] || [];
+      const status = getCourseStatus(day.date);
+      const dayNum = getDayNumber(s.code);
       cards.push({
         code: s.code, title: s.title, speaker: s.speaker, affil: s.affil,
         time: day.date + ' · ' + s.time, location: day.location,
-        img: courseImgs[s.code] || '', day: day
+        img: courseImgs[s.code] || '', day: day,
+        dayNum: dayNum, status: status,
+        photos: photos
       });
     });
   });
   _cards = cards;
-  grid.innerHTML = cards.map((c,i) => `<div class="course-card" onclick="openDetail(${i})"><div class="card-img" style="background-image:url('${c.img}');"><span class="card-badge">${c.code}</span></div><div class="card-body"><h4>${c.title}</h4><div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div><div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div></div><div class="card-footer"><button class="btn btn-ghost btn-sm">${i18nT('coursePage.viewDetails','View Details →')}</button></div></div>`).join('');
+  renderCards(cards);
 }
 
-function filterCourses(){
-  const q = document.getElementById('courseSearch').value.toLowerCase();
+function renderCards(cards) {
   const grid = document.getElementById('courseGrid');
-  const filtered = _cards.filter(c => c.title.toLowerCase().includes(q) || c.speaker.toLowerCase().includes(q) || c.code.toLowerCase().includes(q));
-  grid.innerHTML = filtered.map((c,i) => {
-    const origIdx = _cards.indexOf(c);
-    return `<div class="course-card" onclick="openDetail(${origIdx})"><div class="card-img" style="background-image:url('${c.img}');"><span class="card-badge">${c.code}</span></div><div class="card-body"><h4>${c.title}</h4><div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div><div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div></div><div class="card-footer"><button class="btn btn-ghost btn-sm">${i18nT('coursePage.viewDetails','View Details →')}</button></div></div>`;
+  const statusLabels = {
+    completed: i18nT('library.completed','Completed'),
+    ongoing: i18nT('library.ongoing','On Going'),
+    upcoming: i18nT('library.upcoming','Upcoming')
+  };
+  grid.innerHTML = cards.map((c,i) => {
+    const photoCount = c.photos.length;
+    return `<div class="course-card" onclick="openLightbox(${_cards.indexOf(c)})">
+      <div class="card-img" style="background-image:url('${c.img}');">
+        <span class="card-badge">${c.code}</span>
+        <span class="card-status ${c.status}">${statusLabels[c.status]}</span>
+      </div>
+      <div class="card-body">
+        <h4>${c.title}</h4>
+        <div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div>
+        <div class="card-meta" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:4px;">
+          <span><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> ${c.time}</span>
+          ${photoCount > 0 ? `<span class="card-photo-count">📷 ${photoCount} ${i18nT('library.photos','photos')}</span>` : `<span class="card-photo-count" style="background:var(--bg);color:var(--ink-faint);">⏳ ${i18nT('library.photosComingSoon','Photos coming soon')}</span>`}
+        </div>
+      </div>
+      <div class="card-footer"><button class="btn btn-ghost btn-sm">${i18nT('library.viewAllPhotos','View All Photos')} →</button></div>
+    </div>`;
   }).join('');
 }
 
-function openDetail(idx){
-  const c = _cards[idx]; if(!c) return;
-  const meeting = courseMeeting.default;
-  const mods = courseModules[c.code] || [];
-  document.getElementById('modalImg').style.backgroundImage = "url('"+c.img+"')";
-  document.getElementById('modalEmoji').textContent = '📚';
-  document.getElementById('modalCode').textContent = c.code;
-  document.getElementById('modalTitle').textContent = c.title;
-  document.getElementById('modalBody').innerHTML = `
-    <div class="m-section"><div class="m-label">${i18nT('modal.speaker','Speaker')}</div><div class="m-info"><b>${c.speaker}</b> — ${c.affil}</div></div>
-    <div class="m-section"><div class="m-label">${i18nT('modal.schedule','Schedule')}</div><div class="m-info"><b>${c.time}</b></div></div>
-    <div class="m-section"><div class="m-label">${i18nT('modal.location','Location')}</div><div class="m-info">${c.location}</div></div>
-    <div class="m-section"><div class="m-label">${i18nT('modal.meetingLink','Meeting Link')}</div>
-      <a href="${meeting.url}" target="_blank" rel="noopener" class="zoom-btn">
-        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>
-        ${i18nT('modal.joinZoom','Join via ipb.link/SAMI2026')}
-        <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
-      </a>
-      <div class="zoom-details">${i18nT('modal.zoomDetails','Slides shared via WhatsApp group and portal samiipb.site one day before session')}</div>
-    </div>
-    ${mods.length ? `<div class="m-section"><div class="m-label">${i18nT('modal.moduleMaterials','Module Materials')}</div><div class="module-list">${mods.map(m => m.locked ? `<div class="module-item locked"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">${i18nT('modal.locked','🔒')}</span></div>` : `<a class="module-item" href="${m.url}" target="_blank"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">${i18nT('modal.download','Download →')}</span></a>`).join('')}</div></div>` : ''}`;
-  document.getElementById('courseModal').classList.add('open');
+let _lightboxIdx = -1;
+function openLightbox(cardIdx) {
+  const c = _cards[cardIdx];
+  if (!c || c.photos.length === 0) return;
+  _lightboxIdx = cardIdx;
+  showLightboxPhoto(0);
+  document.getElementById('lightbox').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
-document.getElementById('modalClose').addEventListener('click', () => { document.getElementById('courseModal').classList.remove('open'); document.body.style.overflow = ''; });
-document.getElementById('courseModal').addEventListener('click', e => { if(e.target === e.currentTarget) { document.getElementById('courseModal').classList.remove('open'); document.body.style.overflow = ''; }});
-document.addEventListener('keydown', e => { if(e.key === 'Escape') { document.getElementById('courseModal').classList.remove('open'); document.body.style.overflow = ''; }});
-
-function initApp() { buildCards(); }
-if (window.i18n) {
-  window.i18n.onLanguageChange(function() { buildCards(); });
+function showLightboxPhoto(photoIdx) {
+  const c = _cards[_lightboxIdx];
+  if (!c || c.photos.length === 0) return;
+  const idx = Math.max(0, Math.min(photoIdx, c.photos.length - 1));
+  _lightboxPhotoIdx = idx;
+  document.getElementById('lightboxImg').src = c.photos[idx];
+  document.getElementById('lightboxCounter').textContent = (idx + 1) + ' ' + i18nT('library.of','of') + ' ' + c.photos.length;
 }
+
+let _lightboxPhotoIdx = 0;
+document.getElementById('lightboxNext').addEventListener('click', function() {
+  const c = _cards[_lightboxIdx];
+  if (c) showLightboxPhoto((_lightboxPhotoIdx + 1) % c.photos.length);
+});
+document.getElementById('lightboxPrev').addEventListener('click', function() {
+  const c = _cards[_lightboxIdx];
+  if (c) showLightboxPhoto((_lightboxPhotoIdx - 1 + c.photos.length) % c.photos.length);
+});
+document.getElementById('lightboxClose').addEventListener('click', function() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+});
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === e.currentTarget) {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  if (e.key === 'ArrowRight') {
+    const c = _cards[_lightboxIdx];
+    if (c) showLightboxPhoto((_lightboxPhotoIdx + 1) % c.photos.length);
+  }
+  if (e.key === 'ArrowLeft') {
+    const c = _cards[_lightboxIdx];
+    if (c) showLightboxPhoto((_lightboxPhotoIdx - 1 + c.photos.length) % c.photos.length);
+  }
+});
+
+// Status filter
+document.querySelectorAll('#statusFilter .filter-chip').forEach(function(el) {
+  el.addEventListener('click', function() {
+    document.querySelectorAll('#statusFilter .filter-chip').forEach(function(e) { e.classList.remove('active'); });
+    this.classList.add('active');
+    applyFilters();
+  });
+});
+
+// Day filter
+document.querySelectorAll('#dayFilter .lib-chip').forEach(function(el) {
+  el.addEventListener('click', function() {
+    document.querySelectorAll('#dayFilter .lib-chip').forEach(function(e) { e.classList.remove('active'); });
+    this.classList.add('active');
+    applyFilters();
+  });
+});
+
+function applyFilters() {
+  const statusFilter = document.querySelector('#statusFilter .filter-chip.active').dataset.filter;
+  const dayFilter = document.querySelector('#dayFilter .lib-chip.active').dataset.day;
+  let filtered = _cards;
+  if (statusFilter !== 'all') {
+    filtered = filtered.filter(function(c) { return c.status === statusFilter; });
+  }
+  if (dayFilter !== 'all') {
+    filtered = filtered.filter(function(c) { return c.dayNum === parseInt(dayFilter); });
+  }
+  renderCards(filtered);
+}
+
+function initApp() {
+  buildCards();
+  if (window.i18n) {
+    window.i18n.onLanguageChange(function() { applyFilters(); });
+  }
+}
+
 if (window.i18n && window.i18n.ready) {
   window.i18n.ready.then(initApp);
 } else {
