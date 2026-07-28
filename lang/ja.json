@@ -2,122 +2,122 @@
   "siteTitle": "The 9th SAMI Summer Course | IPB University",
   "header": {
     "brand": "SAMI",
-    "brandSub": "The 9th Summer Course",
-    "joinNow": "Join Now",
-    "back": "← Back"
+    "brandSub": "第9回サマーコース",
+    "joinNow": "今すぐ参加",
+    "back": "← 戻る"
   },
   "hero": {
-    "badge": "Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20",
+    "badge": "登録：2026年4月28日～7月17日 · 支払期限7月20日",
     "title": "The 9<sup style=\"font-size:0.4em;\">th</sup> <em>SAMI</em> Summer Course",
-    "subtitle": "Sustainable Agrifood Management in Indonesia — hybrid program 26 July – 15 August 2026 at IPB Dramaga, Bogor & Garut. 14 courses from experts, essay contest, and field visits.",
-    "applyNow": "Apply Now",
-    "allCourses": "All Courses",
-    "guideline": "Guideline"
+    "subtitle": "Sustainable Agrifood Management in Indonesia — 2026年7月26日～8月15日、IPB Dramaga（ボゴール＆ガルート）で開催されるハイブリッドプログラム。専門家による14コース、エッセイコンテスト、フィールド訪問。",
+    "applyNow": "今すぐ申し込む",
+    "allCourses": "すべてのコース",
+    "guideline": "ガイドライン"
   },
   "zoomBar": {
     "meetingLink": "Meeting Link: ipb.link/SAMI2026 · Learning portal: samiipb.site",
-    "vbg": "VBG: Virtual Background & Technical Guide",
-    "downloadVbg": "Download VBG"
+    "vbg": "VBG：バーチャル背景＆テクニカルガイド",
+    "downloadVbg": "VBGをダウンロード"
   },
   "menu": {
-    "about": "About Program",
-    "ready": "Getting Ready",
-    "accom": "Accommodations",
+    "about": "プログラムについて",
+    "ready": "準備",
+    "accom": "宿泊",
     "agenda": "Agenda",
-    "essay": "Essay Contest",
-    "programbook": "Program Book",
-    "speakers": "Speaker's Profile",
-    "participants": "Participants",
-    "partners": "Supporting Partners",
-    "gallery": "Gallery",
-    "library": "Course Library"
+    "essay": "エッセイコンテスト",
+    "programbook": "プログラムブック",
+    "speakers": "講演者紹介",
+    "participants": "参加者",
+    "partners": "協力パートナー",
+    "gallery": "ギャラリー",
+    "library": "コースライブラリ"
   },
   "about": {
+    "subtitle": "第9回SAMIサマーコースのプログラム、目的、参加資格をご覧ください。",
     "panel1": {
-      "title": "About SAMI Summer Course",
-      "text1": "SAMI Summer Course is an international academic program held since 2017 by the Department of Management, IPB University. Its goals? To enhance institutional competitiveness, expand global networks, and provide cross-cultural learning experiences through inter-country collaboration.",
-      "text2": "The 9th edition this year runs hybrid from <strong>27 July – 15 August 2026</strong>, with the main location at IPB Dramaga Campus, Bogor. There are <strong>14 courses</strong> on sustainable agrifood management — 12 online courses (2 credits) plus an additional offline track with 2 hybrid courses and field visits (4 credits). There's also an essay contest to sharpen participants' analytical skills.",
-      "theme": "Theme: <strong>\"Building Climate Resilience and Sustainable Agrifood Management through ESG\"</strong>"
+      "title": "SAMIサマーコースについて",
+      "text1": "SAMIサマーコースは、IPB大学経営学部が2017年から開催している国際的なアカデミックプログラムです。目的は、教育機関の競争力強化、グローバルネットワークの拡大、異文化学習体験の提供です。",
+      "text2": "今年の第9回は、<strong>2026年7月27日から8月15日</strong>までハイブリッド形式で開催され、メイン会場はIPB Dramagaキャンパス（ボゴール）です。持続可能なアグリフードマネジメントに関する<strong>14コース</strong>を提供します。",
+      "theme": "テーマ：<strong>「Building Climate Resilience and Sustainable Agrifood Management through ESG」</strong>"
     },
     "panel2": {
-      "title": "Program Objectives",
+      "title": "プログラムの目的",
       "items": [
-        "Enhance participants' knowledge and skills in specific fields of study",
-        "Interactive learning with collaborative approaches",
-        "Expand international networks between participants and host institutions",
-        "Introduce local culture to international participants and strengthen cultural diplomacy"
+        "特定の分野における参加者の知識とスキルの向上",
+        "協力的なアプローチによるインタラクティブな学習",
+        "参加者と開催機関間の国際ネットワークの拡大",
+        "国際参加者への地域文化の紹介と文化外交の強化"
       ]
     },
     "panel3": {
-      "title": "Who Can Join?",
+      "title": "参加資格",
       "items": [
-        "Undergraduate or graduate students...",
-        "Faculty members and researchers...",
-        "Professionals in agriculture, food, environment, or related fields...",
-        "International participants from partner universities..."
+        "学部生または大学院生...",
+        "教員および研究者...",
+        "農業、食品、環境などの専門家...",
+        "パートナー大学からの国際参加者..."
       ]
-    },
-    "subtitle": "第9回SAMIサマーコースのプログラム、目的、参加資格をご覧ください。"
+    }
   },
   "gettingReady": {
-    "title": "Getting Ready for SAMI 2026",
-    "subtitle": "Prepare for online sessions and the in-person experience in Bogor & Garut.",
+    "title": "SAMI 2026の準備",
+    "subtitle": "オンラインセッションとボゴール・ガルートでの対面体験の準備をしましょう。",
     "panel1": {
-      "title": "Before Online Sessions",
+      "title": "オンラインセッション前に",
       "items": [
-        "Test Zoom first to avoid technical issues",
-        "Mute microphone when not speaking, use full name for easy identification",
-        "Slides shared via WhatsApp group one day prior, or via portal samiipb.site",
-        "Use Q&A box or prefix chat with \"[ASK]\" to ask speakers",
-        "Turn on camera and use official virtual background (ipb.link/vbg-sami-2026)"
+        "技術的な問題を避けるため、最初にZoomをテスト",
+        "発言しないときはマイクをミュート、フルネームを使用",
+        "スライドは前日にWhatsAppまたはsamiipb.siteで共有",
+        "Q&Aボックスを使用するか、\"[ASK]\"を先頭につけて質問",
+        "カメラをオンにし、公式バーチャル背景を使用"
       ]
     },
     "panel2": {
-      "title": "Essential Items for Site Visit",
+      "title": "サイト訪問に必要な持ち物",
       "items": [
-        "Passport & travel documents (keep copies on phone, wallet, bag, and suitcase)",
-        "Universal power adapter — Indonesia uses type C/F, 220V, 50Hz",
-        "Personal medication (organizers only provide basic medicine)",
-        "Cash (Rupiah) plus local SIM card or travel WiFi",
-        "Light comfortable clothing, hat, rain jacket/umbrella, comfortable walking shoes"
+        "パスポートと渡航書類（コピーを保管）",
+        "ユニバーサル電源アダプター（インドネシアはC/F型、220V、50Hz）",
+        "個人用医薬品",
+        "現金（ルピア）と現地SIMカードまたはトラベルWiFi",
+        "軽くて快適な服装、帽子、レインジャケット、歩きやすい靴"
       ]
     },
     "panel3": {
-      "title": "Things to Know Before Coming to Indonesia",
+      "title": "インドネシアに行く前に知っておくべきこと",
       "items": [
-        "Currency: Indonesian Rupiah (IDR). Digital wallets (GoPay, OVO) widely used in cities",
-        "Local SIM cards available at airport...",
-        "Timezone: WIB (UTC+7)...",
-        "Weather in July-August: dry season, 24-32°C..."
+        "通貨：インドネシアルピア（IDR）。デジタルウォレットが都市で広く使用されています",
+        "現地SIMカードは空港で入手可能...",
+        "タイムゾーン：WIB（UTC+7）...",
+        "7月～8月の天気：乾季、24～32°C..."
       ]
     }
   },
   "accommodations": {
-    "title": "Accommodations",
-    "subtitle": "Official lodging for SAMI 2026 participants (lecturers & students) during stay in Bogor & Garut.",
+    "title": "宿泊",
+    "subtitle": "ボゴール＆ガルート滞在中のSAMI 2026参加者用宿泊施設。",
     "panel1": {
-      "title": "Bogor — Arrival (Aug 9–10)",
+      "title": "ボゴール — 到着（8月9～10日）",
       "items": [
         "<b>Sienna Residence Bogor</b> (Lecturers) — Jl. Letjen Ibrahim Adjie No. 8, Ciherang, Dramaga, Bogor Regency",
         "<b>Cordova Apartment</b> (Students) — Jl. Cilubang Raya No. 1, Balungbangjaya, West Bogor, ~1.6 km from IPB Dramaga Campus"
       ]
     },
     "panel2": {
-      "title": "Garut — Site Visit (Aug 10–13)",
+      "title": "ガルート — サイト訪問（8月10～13日）",
       "items": [
         "<b>Hotel Harmoni Garut</b> (Lecturers & Students) — Jl. Cipanas Baru No. 78, Pananjung, Tarogong Kaler, Garut",
         "Near Sabda Alam Water Park & Nagara Hot Spring, and Abah Otje Grilled Lamb & Beef Restaurant"
       ]
     },
     "panel3": {
-      "title": "Bogor — Closing (Aug 13–16)",
+      "title": "ボゴール — 閉会（8月13～16日）",
       "items": [
         "<b>Fave Hotel Bogor</b> (Lecturers) — Jl. Cidangiang No. 1, Tegallega, Bogor",
         "<b>Bianco Hotel Bogor</b> (Students) — 15 min walk from Bogor Botanical Garden, near Bogor Square Mall"
       ]
     },
     "panel4": {
-      "title": "Transportation",
+      "title": "交通機関",
       "items": [
         "2 Regular Buses (Alpha), 33-seat, for group site-visit travel",
         "IPB Bus (33-seat) available for campus transfers",
@@ -126,8 +126,8 @@
     }
   },
   "agenda": {
-    "title": "Full Agenda — 12 Days, Bogor & Garut",
-    "subtitle": "Complete day-by-day schedule, from opening on 27 July to departure on 16 August.",
+    "title": "完全スケジュール — 12日間、ボゴール＆ガルート",
+    "subtitle": "7月27日の開会から8月16日の出発までの1日ごとの完全スケジュール。",
     "dayTabs": [
       {
         "day": "Day 1",
@@ -179,17 +179,17 @@
       }
     ],
     "types": {
-      "opening": "Opening",
-      "course": "Course",
-      "sitevisit": "Site Visit"
+      "opening": "開会",
+      "course": "コース",
+      "sitevisit": "サイト訪問"
     }
   },
   "essay": {
-    "title": "SAMI Essay Contest",
-    "subtitle": "The 9th annual SAMI Student Essay Contest, open to all SAMI Summer Course 2026 participants.",
+    "title": "SAMIエッセイコンテスト",
+    "subtitle": "第9回SAMI学生エッセイコンテスト。SAMIサマーコース2026の全参加者が対象。",
     "panel1": {
-      "title": "Theme & Key Details",
-      "theme": "Theme: Building Climate Resilience and Sustainable Agrifood Management through ESG",
+      "title": "テーマと重要事項",
+      "theme": "テーマ：Building Climate Resilience and Sustainable Agrifood Management through ESG",
       "items": [
         "<b>Submission deadline:</b> essays due by August 9, 2026, 10:00 PM Jakarta Time (agenda also lists Aug 12 as essay milestone — check program book for final date)",
         "<b>Final presentation:</b> August 14, 2026 at Start Up Science Technopark, Bogor",
@@ -219,7 +219,7 @@
       ]
     },
     "panel3": {
-      "title": "Award",
+      "title": "賞",
       "items": [
         "<b>1st Prize:</b> e-Certificate + IDR 3,000,000",
         "<b>2nd Prize:</b> e-Certificate + IDR 2,000,000",
@@ -227,7 +227,7 @@
       ]
     },
     "panel4": {
-      "title": "Reviewers",
+      "title": "審査員",
       "rooms": [
         {
           "name": "Room 1",
@@ -261,12 +261,12 @@
     }
   },
   "programBook": {
-    "title": "Program Book",
+    "title": "プログラムブック",
     "subtitle": "Download the complete SAMI 2026 Program Book — agenda, site visit profiles, speaker & reviewer profiles, essay contest rules, accommodation and travel information.",
     "card": {
-      "title": "The 9th SAMI Program Book",
+      "title": "SAMIプログラムブック第9版",
       "description": "Comprehensive guide covering the full 26 July – 15 August 2026 program in Bogor & Garut.",
-      "downloadBtn": "Download (PDF)",
+      "downloadBtn": "ダウンロード（PDF）",
       "githubNote": "PDF also available in GitHub repository: <code>SAMI PROGRAM BOOK.pdf</code>"
     }
   },
@@ -523,11 +523,11 @@
     "joinZoom": "Join via ipb.link/SAMI2026",
     "zoomDetails": "Slides shared via WhatsApp group and portal samiipb.site one day before session",
     "moduleMaterials": "Module Materials",
-    "download": "Download →",
+    "download": "ダウンロード →",
     "locked": "🔒"
   },
   "coursePage": {
-    "title": "All 14 Courses",
+    "title": "全14コース",
     "subtitle": "Explore all SAMI 2026 courses — from online courses to hybrid sessions, from various international experts.",
     "searchPlaceholder": "Search course or speaker...",
     "filterAll": "All",
@@ -538,9 +538,9 @@
     "backToHome": "Back to Home"
   },
   "common": {
-    "loading": "Loading...",
-    "error": "Error loading content",
-    "noData": "No data available"
+    "loading": "読み込み中...",
+    "error": "コンテンツの読み込みエラー",
+    "noData": "データが利用できません"
   },
   "library": {
     "menuLabel": "Course Library",

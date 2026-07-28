@@ -2,256 +2,256 @@
   "siteTitle": "The 9th SAMI Summer Course | IPB University",
   "header": {
     "brand": "SAMI",
-    "brandSub": "The 9th Summer Course",
-    "joinNow": "Join Now",
-    "back": "← Back"
+    "brandSub": "Kursus Musim Panas ke-9",
+    "joinNow": "Sertai Sekarang",
+    "back": "← Kembali"
   },
   "hero": {
-    "badge": "Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20",
+    "badge": "Pendaftaran: 28 Apr – 17 Jul 2026 · Tarikh akhir pembayaran 20 Jul",
     "title": "The 9<sup style=\"font-size:0.4em;\">th</sup> <em>SAMI</em> Summer Course",
-    "subtitle": "Sustainable Agrifood Management in Indonesia — hybrid program 26 July – 15 August 2026 at IPB Dramaga, Bogor & Garut. 14 courses from experts, essay contest, and field visits.",
-    "applyNow": "Apply Now",
-    "allCourses": "All Courses",
-    "guideline": "Guideline"
+    "subtitle": "Sustainable Agrifood Management in Indonesia — program hibrid 26 Julai – 15 Ogos 2026 di IPB Dramaga, Bogor & Garut. 14 kursus dari pakar, pertandingan esei, dan lawatan lapangan.",
+    "applyNow": "Mohon Sekarang",
+    "allCourses": "Semua Kursus",
+    "guideline": "Panduan"
   },
   "zoomBar": {
-    "meetingLink": "Meeting Link: ipb.link/SAMI2026 · Learning portal: samiipb.site",
-    "vbg": "VBG: Virtual Background & Technical Guide",
-    "downloadVbg": "Download VBG"
+    "meetingLink": "Meeting Link: ipb.link/SAMI2026 · Portal pembelajaran: samiipb.site",
+    "vbg": "VBG: Virtual Background & Panduan Teknikal",
+    "downloadVbg": "Muat Turun VBG"
   },
   "menu": {
-    "about": "About Program",
-    "ready": "Getting Ready",
-    "accom": "Accommodations",
+    "about": "Tentang Program",
+    "ready": "Persediaan",
+    "accom": "Penginapan",
     "agenda": "Agenda",
-    "essay": "Essay Contest",
+    "essay": "Pertandingan Esei",
     "programbook": "Program Book",
-    "speakers": "Speaker's Profile",
-    "participants": "Participants",
-    "partners": "Supporting Partners",
-    "gallery": "Gallery",
-    "library": "Course Library"
+    "speakers": "Profil Pembicara",
+    "participants": "Peserta",
+    "partners": "Rakan Pendukung",
+    "gallery": "Galeri",
+    "library": "Perpustakaan Kursus"
   },
   "about": {
+    "subtitle": "Ketahui tentang program Kursus Musim Panas SAMI ke-9, objektif, dan kelayakan penyertaan.",
     "panel1": {
-      "title": "About SAMI Summer Course",
-      "text1": "SAMI Summer Course is an international academic program held since 2017 by the Department of Management, IPB University. Its goals? To enhance institutional competitiveness, expand global networks, and provide cross-cultural learning experiences through inter-country collaboration.",
-      "text2": "The 9th edition this year runs hybrid from <strong>27 July – 15 August 2026</strong>, with the main location at IPB Dramaga Campus, Bogor. There are <strong>14 courses</strong> on sustainable agrifood management — 12 online courses (2 credits) plus an additional offline track with 2 hybrid courses and field visits (4 credits). There's also an essay contest to sharpen participants' analytical skills.",
-      "theme": "Theme: <strong>\"Building Climate Resilience and Sustainable Agrifood Management through ESG\"</strong>"
+      "title": "Tentang SAMI Summer Course",
+      "text1": "SAMI Summer Course adalah program akademik antarabangsa yang diadakan sejak 2017 oleh Department of Management, IPB University. Matlamatnya? Meningkatkan daya saing institusi, memperluas jaringan global, dan memberikan pengalaman pembelajaran silang budaya melalui kolaborasi antara negara.",
+      "text2": "Edisi ke-9 tahun ini berlangsung secara hibrid dari <strong>27 Julai – 15 Ogos 2026</strong>, dengan lokasi utama di Kampus IPB Dramaga, Bogor. Terdapat <strong>14 kursus</strong> mengenai pengurusan agrifood lestari — 12 kursus dalam talian (2 kredit) ditambah trek luar talian dengan 2 kursus hibrid dan lawatan lapangan (4 kredit). Turut diadakan pertandingan esei untuk mengasah kemahiran analisis peserta.",
+      "theme": "Tema: <strong>\"Building Climate Resilience and Sustainable Agrifood Management through ESG\"</strong>"
     },
     "panel2": {
-      "title": "Program Objectives",
+      "title": "Objektif Program",
       "items": [
-        "Enhance participants' knowledge and skills in specific fields of study",
-        "Interactive learning with collaborative approaches",
-        "Expand international networks between participants and host institutions",
-        "Introduce local culture to international participants and strengthen cultural diplomacy"
+        "Meningkatkan pengetahuan dan kemahiran peserta dalam bidang pengajian tertentu",
+        "Pembelajaran interaktif dengan pendekatan kolaboratif",
+        "Memperluas jaringan antarabangsa antara peserta dan institusi tuan rumah",
+        "Memperkenalkan budaya tempatan kepada peserta antarabangsa dan memperkukuh diplomasi budaya"
       ]
     },
     "panel3": {
-      "title": "Who Can Join?",
+      "title": "Siapa Boleh Sertai?",
       "items": [
-        "Undergraduate or graduate students...",
-        "Faculty members and researchers...",
-        "Professionals in agriculture, food, environment, or related fields...",
-        "International participants from partner universities..."
+        "Pelajar prasiswazah atau siswazah...",
+        "Ahli fakulti dan penyelidik...",
+        "Profesional dalam pertanian, makanan, alam sekitar, atau bidang berkaitan...",
+        "Peserta antarabangsa dari universiti rakan..."
       ]
-    },
-    "subtitle": "Ketahui tentang program Kursus Musim Panas SAMI ke-9, objektif, dan kelayakan penyertaan."
+    }
   },
   "gettingReady": {
-    "title": "Getting Ready for SAMI 2026",
-    "subtitle": "Prepare for online sessions and the in-person experience in Bogor & Garut.",
+    "title": "Persediaan untuk SAMI 2026",
+    "subtitle": "Bersedia untuk sesi dalam talian dan pengalaman langsung di Bogor & Garut.",
     "panel1": {
-      "title": "Before Online Sessions",
+      "title": "Sebelum Sesi Dalam Talian",
       "items": [
-        "Test Zoom first to avoid technical issues",
-        "Mute microphone when not speaking, use full name for easy identification",
-        "Slides shared via WhatsApp group one day prior, or via portal samiipb.site",
-        "Use Q&A box or prefix chat with \"[ASK]\" to ask speakers",
-        "Turn on camera and use official virtual background (ipb.link/vbg-sami-2026)"
+        "Uji Zoom dahulu untuk elak masalah teknikal",
+        "Kecualikan mikrofon bila tidak bercakap, guna nama penuh untuk mudah dikenal pasti",
+        "Slide dikongsi melalui WhatsApp group sehari sebelumnya, atau melalui portal samiipb.site",
+        "Guna kotak Q&A atau awali chat dengan \"[ASK]\" untuk bertanya kepada pembicara",
+        "Hidupkan kamera dan gunakan latar belakang maya rasmi (ipb.link/vbg-sami-2026)"
       ]
     },
     "panel2": {
-      "title": "Essential Items for Site Visit",
+      "title": "Barangan Penting untuk Lawatan Lapangan",
       "items": [
-        "Passport & travel documents (keep copies on phone, wallet, bag, and suitcase)",
-        "Universal power adapter — Indonesia uses type C/F, 220V, 50Hz",
-        "Personal medication (organizers only provide basic medicine)",
-        "Cash (Rupiah) plus local SIM card or travel WiFi",
-        "Light comfortable clothing, hat, rain jacket/umbrella, comfortable walking shoes"
+        "Pasport & dokumen perjalanan (simpan salinan di telefon, dompet, beg, dan beg pakaian)",
+        "Adaptor kuasa universal — Indonesia menggunakan jenis C/F, 220V, 50Hz",
+        "Ubat peribadi (penganjur hanya menyediakan ubat asas)",
+        "Tunai (Rupiah) serta kad SIM tempatan atau WiFi perjalanan",
+        "Pakaian ringan yang selesa, topi, jaket hujan/payung, kasut berjalan yang selesa"
       ]
     },
     "panel3": {
-      "title": "Things to Know Before Coming to Indonesia",
+      "title": "Perkara yang Perlu Tahu Sebelum ke Indonesia",
       "items": [
-        "Currency: Indonesian Rupiah (IDR). Digital wallets (GoPay, OVO) widely used in cities",
-        "Local SIM cards available at airport...",
-        "Timezone: WIB (UTC+7)...",
-        "Weather in July-August: dry season, 24-32°C..."
+        "Mata wang: Rupiah Indonesia (IDR). Dompet digital (GoPay, OVO) banyak digunakan di bandar",
+        "Kad SIM tempatan tersedia di lapangan terbang...",
+        "Zon waktu: WIB (UTC+7)...",
+        "Cuaca Julai-Ogos: musim kemarau, 24-32°C..."
       ]
     }
   },
   "accommodations": {
-    "title": "Accommodations",
-    "subtitle": "Official lodging for SAMI 2026 participants (lecturers & students) during stay in Bogor & Garut.",
+    "title": "Penginapan",
+    "subtitle": "Penginapan rasmi untuk peserta SAMI 2026 (pensyarah & pelajar) semasa di Bogor & Garut.",
     "panel1": {
-      "title": "Bogor — Arrival (Aug 9–10)",
+      "title": "Bogor — Ketibaan (Ogos 9–10)",
       "items": [
-        "<b>Sienna Residence Bogor</b> (Lecturers) — Jl. Letjen Ibrahim Adjie No. 8, Ciherang, Dramaga, Bogor Regency",
-        "<b>Cordova Apartment</b> (Students) — Jl. Cilubang Raya No. 1, Balungbangjaya, West Bogor, ~1.6 km from IPB Dramaga Campus"
+        "<b>Sienna Residence Bogor</b> (Pensyarah) — Jl. Letjen Ibrahim Adjie No. 8, Ciherang, Dramaga, Kab. Bogor",
+        "<b>Cordova Apartment</b> (Pelajar) — Jl. Cilubang Raya No. 1, Balungbangjaya, Bogor Barat, ~1.6 km dari Kampus IPB Dramaga"
       ]
     },
     "panel2": {
-      "title": "Garut — Site Visit (Aug 10–13)",
+      "title": "Garut — Lawatan Lapangan (Ogos 10–13)",
       "items": [
-        "<b>Hotel Harmoni Garut</b> (Lecturers & Students) — Jl. Cipanas Baru No. 78, Pananjung, Tarogong Kaler, Garut",
-        "Near Sabda Alam Water Park & Nagara Hot Spring, and Abah Otje Grilled Lamb & Beef Restaurant"
+        "<b>Hotel Harmoni Garut</b> (Pensyarah & Pelajar) — Jl. Cipanas Baru No. 78, Pananjung, Tarogong Kaler, Garut",
+        "Dekat Sabda Alam Water Park & Nagara Hot Spring, dan Restoran Abah Otje Sate Kambing & Daging"
       ]
     },
     "panel3": {
-      "title": "Bogor — Closing (Aug 13–16)",
+      "title": "Bogor — Penutupan (Ogos 13–16)",
       "items": [
-        "<b>Fave Hotel Bogor</b> (Lecturers) — Jl. Cidangiang No. 1, Tegallega, Bogor",
-        "<b>Bianco Hotel Bogor</b> (Students) — 15 min walk from Bogor Botanical Garden, near Bogor Square Mall"
+        "<b>Fave Hotel Bogor</b> (Pensyarah) — Jl. Cidangiang No. 1, Tegallega, Bogor",
+        "<b>Bianco Hotel Bogor</b> (Pelajar) — 15 minit jalan kaki dari Kebun Raya Bogor, dekat Bogor Square Mall"
       ]
     },
     "panel4": {
-      "title": "Transportation",
+      "title": "Pengangkutan",
       "items": [
-        "2 Regular Buses (Alpha), 33-seat, for group site-visit travel",
-        "IPB Bus (33-seat) available for campus transfers",
-        "Pick-up/drop-off at Soekarno-Hatta Airport arranged"
+        "2 Bas Biasa (Alpha), 33 tempat duduk, untuk perjalanan lawatan tapak kumpulan",
+        "Bas IPB (33 tempat duduk) tersedia untuk pemindahan kampus",
+        "Jemputan/penghantaran di Lapangan Terbang Soekarno-Hatta diatur"
       ]
     }
   },
   "agenda": {
-    "title": "Full Agenda — 12 Days, Bogor & Garut",
-    "subtitle": "Complete day-by-day schedule, from opening on 27 July to departure on 16 August.",
+    "title": "Agenda Lengkap — 12 Hari, Bogor & Garut",
+    "subtitle": "Jadual lengkap hari demi hari, dari pembukaan 27 Julai hingga keberangkatan 16 Ogos.",
     "dayTabs": [
       {
-        "day": "Day 1",
+        "day": "Hari 1",
         "date": "Jul 27"
       },
       {
-        "day": "Day 2",
+        "day": "Hari 2",
         "date": "Jul 28"
       },
       {
-        "day": "Day 3",
+        "day": "Hari 3",
         "date": "Jul 29"
       },
       {
-        "day": "Day 4",
+        "day": "Hari 4",
         "date": "Jul 30"
       },
       {
-        "day": "Day 5",
+        "day": "Hari 5",
         "date": "Jul 31"
       },
       {
-        "day": "Day 6",
+        "day": "Hari 6",
         "date": "Aug 10"
       },
       {
-        "day": "Day 7",
+        "day": "Hari 7",
         "date": "Aug 11"
       },
       {
-        "day": "Day 8",
+        "day": "Hari 8",
         "date": "Aug 12"
       },
       {
-        "day": "Day 9",
+        "day": "Hari 9",
         "date": "Aug 13"
       },
       {
-        "day": "Day 10",
+        "day": "Hari 10",
         "date": "Aug 14"
       },
       {
-        "day": "Day 11",
+        "day": "Hari 11",
         "date": "Aug 15"
       },
       {
-        "day": "Day 12",
+        "day": "Hari 12",
         "date": "Aug 16"
       }
     ],
     "types": {
-      "opening": "Opening",
-      "course": "Course",
-      "sitevisit": "Site Visit"
+      "opening": "Pembukaan",
+      "course": "Kursus",
+      "sitevisit": "Lawatan Lapangan"
     }
   },
   "essay": {
-    "title": "SAMI Essay Contest",
-    "subtitle": "The 9th annual SAMI Student Essay Contest, open to all SAMI Summer Course 2026 participants.",
+    "title": "Pertandingan Esei SAMI",
+    "subtitle": "Pertandingan Esei Pelajar SAMI ke-9 tahunan, terbuka kepada semua peserta SAMI Summer Course 2026.",
     "panel1": {
-      "title": "Theme & Key Details",
-      "theme": "Theme: Building Climate Resilience and Sustainable Agrifood Management through ESG",
+      "title": "Tema & Butiran Penting",
+      "theme": "Tema: Building Climate Resilience and Sustainable Agrifood Management through ESG",
       "items": [
-        "<b>Submission deadline:</b> essays due by August 9, 2026, 10:00 PM Jakarta Time (agenda also lists Aug 12 as essay milestone — check program book for final date)",
-        "<b>Final presentation:</b> August 14, 2026 at Start Up Science Technopark, Bogor",
-        "<b>Format:</b> max. 3,000 words (English), MS Word, Times New Roman 12pt, 1.5 spacing, submitted by group with a max. 10-slide presentation (15 min presentation + 15 min Q&A)",
-        "<b>Rewards:</b> up to 3 winning essays receive certificates & cash prizes, and are published in SAMI Proceeding 2026 (ISBN)"
+        "<b>Tarikh akhir penghantaran:</b> esei perlu dihantar selewat-lewatnya 9 Ogos 2026, jam 10:00 malam WIB (agenda juga menyenaraikan 12 Ogos sebagai tarikh penting esei — semak program book untuk tarikh muktamad)",
+        "<b>Pembentangan akhir:</b> 14 Ogos 2026 di Start Up Science Technopark, Bogor",
+        "<b>Format:</b> maks. 3,000 patah perkataan (Bahasa Inggeris), MS Word, Times New Roman 12pt, jarak 1.5, dihantar secara berkumpulan dengan maks. 10 slaid pembentangan (15 minit pembentangan + 15 minit Q&A)",
+        "<b>Hadiah:</b> sehingga 3 esei terbaik menerima sijil & hadiah wang tunai, dan diterbitkan dalam SAMI Proceeding 2026 (ISBN)"
       ]
     },
     "panel2": {
-      "title": "Problem Focus Topics",
+      "title": "Topik Fokus Masalah",
       "topics": [
-        "ESG Financial Risk in Agrifood",
-        "Green Marketing for Sustainable Agrifood",
-        "Sustainable Production under Climate Change",
-        "HR Readiness for Climate Resilience",
-        "ESG Financing and Supply Chain Sustainability",
-        "Consumer Behavior toward ESG Products",
-        "Low-Carbon Agrifood Operations",
-        "ESG Leadership and Organizational Culture",
-        "Sustainable Cost and Profit Management",
-        "Digital Marketing for ESG Agrifood",
-        "Circular Economy in Agrifood Operations",
-        "Green HRM and Employee Engagement",
-        "ESG Performance and Financial Sustainability",
-        "ESG and Agrifood Market Competitiveness",
-        "Climate-Resilient Agrifood Supply Chains",
-        "Integrated ESG Management in Agrifood"
+        "Risiko Kewangan ESG dalam Agrifood",
+        "Pemasaran Hijau untuk Agrifood Lestari",
+        "Pengeluaran Lestari di Bawah Perubahan Iklim",
+        "Kesiapan SDM untuk Ketahanan Iklim",
+        "Pembiayaan ESG dan Kelestarian Rantaian Bekalan",
+        "Tingkah Laku Pengguna terhadap Produk ESG",
+        "Operasi Agrifood Rendah Karbon",
+        "Kepimpinan ESG dan Budaya Organisasi",
+        "Pengurusan Kos dan Untung Lestari",
+        "Pemasaran Digital untuk Agrifood ESG",
+        "Ekonomi Kitaran dalam Operasi Agrifood",
+        "HRM Hijau dan Penglibatan Pekerja",
+        "Prestasi ESG dan Kelestarian Kewangan",
+        "ESG dan Daya Saing Pasaran Agrifood",
+        "Rantaian Bekalan Agrifood Tahan Iklim",
+        "Pengurusan ESG Bersepadu dalam Agrifood"
       ]
     },
     "panel3": {
-      "title": "Award",
+      "title": "Anugerah",
       "items": [
-        "<b>1st Prize:</b> e-Certificate + IDR 3,000,000",
-        "<b>2nd Prize:</b> e-Certificate + IDR 2,000,000",
-        "<b>3rd Prize:</b> e-Certificate + IDR 1,000,000"
+        "<b>Tempat Pertama:</b> e-Sijil + IDR 3,000,000",
+        "<b>Tempat Kedua:</b> e-Sijil + IDR 2,000,000",
+        "<b>Tempat Ketiga:</b> e-Sijil + IDR 1,000,000"
       ]
     },
     "panel4": {
-      "title": "Reviewers",
+      "title": "Penilai",
       "rooms": [
         {
-          "name": "Room 1",
+          "name": "Bilik 1",
           "people": [
             "Dr. Indra R. Sembiring (IPB University)",
             "Dr. Noor Azlin Ismail (Universiti Putra Malaysia)"
           ]
         },
         {
-          "name": "Room 2",
+          "name": "Bilik 2",
           "people": [
             "Prof. Hermann Waibel (University of Hannover)",
             "Aries Setiadi (Center for Indonesian Policy Studies)"
           ]
         },
         {
-          "name": "Room 3",
+          "name": "Bilik 3",
           "people": [
             "Dr. Eko Ruddy Cahyadi (IPB University)",
             "Syazwani Arbaiyah M. S. (FELCRA College, Malaysia)"
           ]
         },
         {
-          "name": "Room 4",
+          "name": "Bilik 4",
           "people": [
             "Nisa Zahra, S.T.P., M.Si. (IPB University)",
             "Dr. Ketwadee Madden (Songkhla Rajabhat University)"
@@ -264,19 +264,19 @@
     "title": "Program Book",
     "subtitle": "Download the complete SAMI 2026 Program Book — agenda, site visit profiles, speaker & reviewer profiles, essay contest rules, accommodation and travel information.",
     "card": {
-      "title": "The 9th SAMI Program Book",
-      "description": "Comprehensive guide covering the full 26 July – 15 August 2026 program in Bogor & Garut.",
+      "title": "Program Book SAMI ke-9",
+      "description": "Panduan komprehensif yang merangkumi program penuh 26 Julai – 15 Ogos 2026 di Bogor & Garut.",
       "downloadBtn": "Download (PDF)",
-      "githubNote": "PDF also available in GitHub repository: <code>SAMI PROGRAM BOOK.pdf</code>"
+      "githubNote": "PDF juga tersedia di repositori GitHub: <code>SAMI PROGRAM BOOK.pdf</code>"
     }
   },
   "speakers": {
     "title": "Speaker's Profile",
-    "subtitle": "Meet the 14 speakers of this year's SAMI Summer Course, from Indonesia, Germany, South Korea, Malaysia, Thailand, and other countries."
+    "subtitle": "Kenali 14 pembicara SAMI Summer Course tahun ini, dari Indonesia, Jerman, Korea Selatan, Malaysia, Thailand, dan negara-negara lain."
   },
   "participants": {
     "title": "Participants",
-    "subtitle": "The 9th SAMI Summer Course brought together participants from 37 universities across 20 countries.",
+    "subtitle": "The 9th SAMI Summer Course menghimpunkan peserta dari 37 universiti di 20 negara.",
     "panel1": {
       "title": "Overview",
       "items": [
@@ -301,7 +301,7 @@
         "Kenyatta University (Kenya)",
         "Gombe State University (Nigeria)",
         "Institut Teknologi Bandung, Universitas Gunadarma (Indonesia)",
-        "and 24 more universities across Tunisia, India, Cameroon & other countries"
+        "dan 24 lagi universiti di Tunisia, India, Cameroon & negara-negara lain"
       ]
     }
   },
@@ -494,25 +494,25 @@
       }
     ],
     "todayLabels": {
-      "programNotStarted": "Program not started",
-      "preProgram": "Pre-program — registration & participant announcement",
-      "essayPrep": "Essay preparation & submission period — submit before 9 August!",
-      "programEnded": "Program finished — participants return to their countries",
-      "noSessionToday": "No sessions today — prepare for next session",
-      "today": "Today",
-      "programEndedLabel": "Program Finished"
+      "programNotStarted": "Program belum dimulakan",
+      "preProgram": "Pra-program — pendaftaran & pengumuman peserta",
+      "essayPrep": "Persediaan esei & tempoh penghantaran — hantar sebelum 9 Ogos!",
+      "programEnded": "Program selesai — peserta kembali ke negara masing-masing",
+      "noSessionToday": "Tiada sesi hari ini — bersedia untuk sesi seterusnya",
+      "today": "Hari Ini",
+      "programEndedLabel": "Program Selesai"
     }
   },
   "footer": {
-    "brandText": "Department of Management, Faculty of Economics and Management, IPB University. Held annually since 2017.",
+    "brandText": "Department of Management, Fakulti Ekonomi dan Pengurusan, IPB University. Diadakan setiap tahun sejak 2017.",
     "program": "Program",
     "email": "sami@apps.ipb.ac.id",
     "website": "samiipb.ac.id",
     "instagram": "@samiipb",
-    "links": "Links",
-    "registration": "Registration",
-    "guideline": "Guideline",
-    "virtualBackground": "Virtual Background",
+    "links": "Pautan",
+    "registration": "Pendaftaran",
+    "guideline": "Panduan",
+    "virtualBackground": "Latar Belakang Maya",
     "copyright": "© 2026 SAMI — IPB University"
   },
   "modal": {
@@ -523,7 +523,7 @@
     "joinZoom": "Join via ipb.link/SAMI2026",
     "zoomDetails": "Slides shared via WhatsApp group and portal samiipb.site one day before session",
     "moduleMaterials": "Module Materials",
-    "download": "Download →",
+    "download": "Muat Turun →",
     "locked": "🔒"
   },
   "coursePage": {
@@ -538,9 +538,9 @@
     "backToHome": "Back to Home"
   },
   "common": {
-    "loading": "Loading...",
-    "error": "Error loading content",
-    "noData": "No data available"
+    "loading": "Memuatkan...",
+    "error": "Ralat memuatkan kandungan",
+    "noData": "Tiada data tersedia"
   },
   "library": {
     "menuLabel": "Course Library",
@@ -559,9 +559,9 @@
     "photosComingSoon": "Photos coming soon",
     "noPhotos": "No photos yet",
     "viewAllPhotos": "View All Photos",
-    "libraryTitle": "Course Library",
-    "photoGallery": "Photo Gallery",
-    "closeGallery": "Close",
-    "of": "of"
+    "libraryTitle": "Perpustakaan Kursus",
+    "photoGallery": "Galeri Foto",
+    "closeGallery": "Tutup",
+    "of": "daripada"
   }
 }

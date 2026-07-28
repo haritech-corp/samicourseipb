@@ -2,45 +2,46 @@
   "siteTitle": "The 9th SAMI Summer Course | IPB University",
   "header": {
     "brand": "SAMI",
-    "brandSub": "The 9th Summer Course",
-    "joinNow": "Join Now",
-    "back": "← Back"
+    "brandSub": "৯ম সামার কোর্স",
+    "joinNow": "এখনই যোগ দিন",
+    "back": "← ফিরে যান"
   },
   "hero": {
-    "badge": "Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20",
+    "badge": "নিবন্ধন: ২৮ এপ্রিল – ১৭ জুলাই ২০২৬ · পেমেন্টের শেষ তারিখ ২০ জুলাই",
     "title": "The 9<sup style=\"font-size:0.4em;\">th</sup> <em>SAMI</em> Summer Course",
-    "subtitle": "Sustainable Agrifood Management in Indonesia — hybrid program 26 July – 15 August 2026 at IPB Dramaga, Bogor & Garut. 14 courses from experts, essay contest, and field visits.",
-    "applyNow": "Apply Now",
-    "allCourses": "All Courses",
-    "guideline": "Guideline"
+    "subtitle": "Sustainable Agrifood Management in Indonesia — ২৬ জুলাই – ১৫ আগস্ট ২০২৬ IPB Dramaga, বগোর ও গারুতে হাইব্রিড প্রোগ্রাম। বিশেষজ্ঞদের ১৪টি কোর্স, প্রবন্ধ প্রতিযোগিতা এবং ফিল্ড ভিজিট।",
+    "applyNow": "এখনই আবেদন করুন",
+    "allCourses": "সব কোর্স",
+    "guideline": "গাইডলাইন"
   },
   "zoomBar": {
     "meetingLink": "Meeting Link: ipb.link/SAMI2026 · Learning portal: samiipb.site",
-    "vbg": "VBG: Virtual Background & Technical Guide",
-    "downloadVbg": "Download VBG"
+    "vbg": "VBG: ভার্চুয়াল ব্যাকগ্রাউন্ড ও টেকনিক্যাল গাইড",
+    "downloadVbg": "VBG ডাউনলোড করুন"
   },
   "menu": {
-    "about": "About Program",
-    "ready": "Getting Ready",
-    "accom": "Accommodations",
+    "about": "প্রোগ্রাম সম্পর্কে",
+    "ready": "প্রস্তুতি",
+    "accom": "আবাসন",
     "agenda": "Agenda",
-    "essay": "Essay Contest",
-    "programbook": "Program Book",
-    "speakers": "Speaker's Profile",
-    "participants": "Participants",
-    "partners": "Supporting Partners",
-    "gallery": "Gallery",
-    "library": "Course Library"
+    "essay": "প্রবন্ধ প্রতিযোগিতা",
+    "programbook": "প্রোগ্রাম বুক",
+    "speakers": "বক্তার প্রোফাইল",
+    "participants": "অংশগ্রহণকারী",
+    "partners": "সহযোগী অংশীদার",
+    "gallery": "গ্যালারি",
+    "library": "কোর্স লাইব্রেরি"
   },
   "about": {
+    "subtitle": "Learn about the 9th SAMI Summer Course program, objectives, and participation eligibility.",
     "panel1": {
-      "title": "About SAMI Summer Course",
-      "text1": "SAMI Summer Course is an international academic program held since 2017 by the Department of Management, IPB University. Its goals? To enhance institutional competitiveness, expand global networks, and provide cross-cultural learning experiences through inter-country collaboration.",
-      "text2": "The 9th edition this year runs hybrid from <strong>27 July – 15 August 2026</strong>, with the main location at IPB Dramaga Campus, Bogor. There are <strong>14 courses</strong> on sustainable agrifood management — 12 online courses (2 credits) plus an additional offline track with 2 hybrid courses and field visits (4 credits). There's also an essay contest to sharpen participants' analytical skills.",
-      "theme": "Theme: <strong>\"Building Climate Resilience and Sustainable Agrifood Management through ESG\"</strong>"
+      "title": "SAMI সামার কোর্স সম্পর্কে",
+      "text1": "SAMI সামার কোর্স IPB বিশ্ববিদ্যালয়ের ম্যানেজমেন্ট বিভাগ দ্বারা 2017 সাল থেকে আয়োজিত একটি আন্তর্জাতিক শিক্ষামূলক প্রোগ্রাম। এর লক্ষ্য? প্রাতিষ্ঠানিক প্রতিযোগিতা বাড়ানো, বৈশ্বিক নেটওয়ার্ক সম্প্রসারণ এবং আন্তঃদেশীয় সহযোগিতার মাধ্যমে ক্রস-কালচারাল শেখার অভিজ্ঞতা প্রদান।",
+      "text2": "এই বছরের ৯ম সংস্করণ <strong>২৭ জুলাই – ১৫ আগস্ট ২০২৬</strong> পর্যন্ত হাইব্রিডভাবে চলে, যার মূল অবস্থান IPB দ্রামাগা ক্যাম্পাস, বগোর। টেকসই কৃষিখাদ্য ব্যবস্থাপনার উপর <strong>১৪টি কোর্স</strong> রয়েছে।",
+      "theme": "থিম: <strong>\"Building Climate Resilience and Sustainable Agrifood Management through ESG\"</strong>"
     },
     "panel2": {
-      "title": "Program Objectives",
+      "title": "প্রোগ্রামের উদ্দেশ্য",
       "items": [
         "Enhance participants' knowledge and skills in specific fields of study",
         "Interactive learning with collaborative approaches",
@@ -49,21 +50,20 @@
       ]
     },
     "panel3": {
-      "title": "Who Can Join?",
+      "title": "কে অংশ নিতে পারে?",
       "items": [
         "Undergraduate or graduate students...",
         "Faculty members and researchers...",
         "Professionals in agriculture, food, environment, or related fields...",
         "International participants from partner universities..."
       ]
-    },
-    "subtitle": "9ম SAMI সামার কোর্স প্রোগ্রাম, উদ্দেশ্য এবং অংশগ্রহণের যোগ্যতা সম্পর্কে জানুন।"
+    }
   },
   "gettingReady": {
-    "title": "Getting Ready for SAMI 2026",
-    "subtitle": "Prepare for online sessions and the in-person experience in Bogor & Garut.",
+    "title": "SAMI ২০২৬-এর জন্য প্রস্তুতি",
+    "subtitle": "বগোর ও গারুতে অনলাইন সেশন এবং সরাসরি অভিজ্ঞতার জন্য প্রস্তুত হন।",
     "panel1": {
-      "title": "Before Online Sessions",
+      "title": "অনলাইন সেশনের আগে",
       "items": [
         "Test Zoom first to avoid technical issues",
         "Mute microphone when not speaking, use full name for easy identification",
@@ -73,7 +73,7 @@
       ]
     },
     "panel2": {
-      "title": "Essential Items for Site Visit",
+      "title": "সাইট ভিজিটের জন্য প্রয়োজনীয় জিনিসপত্র",
       "items": [
         "Passport & travel documents (keep copies on phone, wallet, bag, and suitcase)",
         "Universal power adapter — Indonesia uses type C/F, 220V, 50Hz",
@@ -83,7 +83,7 @@
       ]
     },
     "panel3": {
-      "title": "Things to Know Before Coming to Indonesia",
+      "title": "ইন্দোনেশিয়ায় আসার আগে জানার বিষয়",
       "items": [
         "Currency: Indonesian Rupiah (IDR). Digital wallets (GoPay, OVO) widely used in cities",
         "Local SIM cards available at airport...",
@@ -93,31 +93,31 @@
     }
   },
   "accommodations": {
-    "title": "Accommodations",
+    "title": "আবাসন",
     "subtitle": "Official lodging for SAMI 2026 participants (lecturers & students) during stay in Bogor & Garut.",
     "panel1": {
-      "title": "Bogor — Arrival (Aug 9–10)",
+      "title": "বগোর — আগমন (৯–১০ আগস্ট)",
       "items": [
         "<b>Sienna Residence Bogor</b> (Lecturers) — Jl. Letjen Ibrahim Adjie No. 8, Ciherang, Dramaga, Bogor Regency",
         "<b>Cordova Apartment</b> (Students) — Jl. Cilubang Raya No. 1, Balungbangjaya, West Bogor, ~1.6 km from IPB Dramaga Campus"
       ]
     },
     "panel2": {
-      "title": "Garut — Site Visit (Aug 10–13)",
+      "title": "গারুত — সাইট ভিজিট (১০–১৩ আগস্ট)",
       "items": [
         "<b>Hotel Harmoni Garut</b> (Lecturers & Students) — Jl. Cipanas Baru No. 78, Pananjung, Tarogong Kaler, Garut",
         "Near Sabda Alam Water Park & Nagara Hot Spring, and Abah Otje Grilled Lamb & Beef Restaurant"
       ]
     },
     "panel3": {
-      "title": "Bogor — Closing (Aug 13–16)",
+      "title": "বগোর — সমাপ্তি (১৩–১৬ আগস্ট)",
       "items": [
         "<b>Fave Hotel Bogor</b> (Lecturers) — Jl. Cidangiang No. 1, Tegallega, Bogor",
         "<b>Bianco Hotel Bogor</b> (Students) — 15 min walk from Bogor Botanical Garden, near Bogor Square Mall"
       ]
     },
     "panel4": {
-      "title": "Transportation",
+      "title": "পরিবহন",
       "items": [
         "2 Regular Buses (Alpha), 33-seat, for group site-visit travel",
         "IPB Bus (33-seat) available for campus transfers",
@@ -126,8 +126,8 @@
     }
   },
   "agenda": {
-    "title": "Full Agenda — 12 Days, Bogor & Garut",
-    "subtitle": "Complete day-by-day schedule, from opening on 27 July to departure on 16 August.",
+    "title": "সম্পূর্ণ এজেন্ডা — ১২ দিন, বগোর ও গারুত",
+    "subtitle": "২৭ জুলাই উদ্বোধন থেকে ১৬ আগস্ট প্রস্থান পর্যন্ত সম্পূর্ণ দৈনিক সময়সূচী।",
     "dayTabs": [
       {
         "day": "Day 1",
@@ -179,16 +179,16 @@
       }
     ],
     "types": {
-      "opening": "Opening",
-      "course": "Course",
-      "sitevisit": "Site Visit"
+      "opening": "উদ্বোধন",
+      "course": "কোর্স",
+      "sitevisit": "সাইট ভিজিট"
     }
   },
   "essay": {
-    "title": "SAMI Essay Contest",
-    "subtitle": "The 9th annual SAMI Student Essay Contest, open to all SAMI Summer Course 2026 participants.",
+    "title": "SAMI প্রবন্ধ প্রতিযোগিতা",
+    "subtitle": "৯ম বার্ষিক SAMI ছাত্র প্রবন্ধ প্রতিযোগিতা, SAMI সামার কোর্স ২০২৬-এর সকল অংশগ্রহণকারীর জন্য উন্মুক্ত।",
     "panel1": {
-      "title": "Theme & Key Details",
+      "title": "থিম ও মূল বিবরণ",
       "theme": "Theme: Building Climate Resilience and Sustainable Agrifood Management through ESG",
       "items": [
         "<b>Submission deadline:</b> essays due by August 9, 2026, 10:00 PM Jakarta Time (agenda also lists Aug 12 as essay milestone — check program book for final date)",
@@ -219,7 +219,7 @@
       ]
     },
     "panel3": {
-      "title": "Award",
+      "title": "পুরস্কার",
       "items": [
         "<b>1st Prize:</b> e-Certificate + IDR 3,000,000",
         "<b>2nd Prize:</b> e-Certificate + IDR 2,000,000",
@@ -227,7 +227,7 @@
       ]
     },
     "panel4": {
-      "title": "Reviewers",
+      "title": "পর্যালোচক",
       "rooms": [
         {
           "name": "Room 1",
@@ -261,12 +261,12 @@
     }
   },
   "programBook": {
-    "title": "Program Book",
+    "title": "প্রোগ্রাম বুক",
     "subtitle": "Download the complete SAMI 2026 Program Book — agenda, site visit profiles, speaker & reviewer profiles, essay contest rules, accommodation and travel information.",
     "card": {
-      "title": "The 9th SAMI Program Book",
+      "title": "SAMI প্রোগ্রাম বুক ৯ম সংস্করণ",
       "description": "Comprehensive guide covering the full 26 July – 15 August 2026 program in Bogor & Garut.",
-      "downloadBtn": "Download (PDF)",
+      "downloadBtn": "ডাউনলোড (PDF)",
       "githubNote": "PDF also available in GitHub repository: <code>SAMI PROGRAM BOOK.pdf</code>"
     }
   },
@@ -523,11 +523,11 @@
     "joinZoom": "Join via ipb.link/SAMI2026",
     "zoomDetails": "Slides shared via WhatsApp group and portal samiipb.site one day before session",
     "moduleMaterials": "Module Materials",
-    "download": "Download →",
+    "download": "ডাউনলোড →",
     "locked": "🔒"
   },
   "coursePage": {
-    "title": "All 14 Courses",
+    "title": "সকল ১৪টি কোর্স",
     "subtitle": "Explore all SAMI 2026 courses — from online courses to hybrid sessions, from various international experts.",
     "searchPlaceholder": "Search course or speaker...",
     "filterAll": "All",

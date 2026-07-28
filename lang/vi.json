@@ -2,122 +2,122 @@
   "siteTitle": "The 9th SAMI Summer Course | IPB University",
   "header": {
     "brand": "SAMI",
-    "brandSub": "The 9th Summer Course",
-    "joinNow": "Join Now",
-    "back": "← Back"
+    "brandSub": "Khóa học Mùa hè thứ 9",
+    "joinNow": "Tham gia Ngay",
+    "back": "← Quay lại"
   },
   "hero": {
-    "badge": "Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20",
+    "badge": "Đăng ký: 28 thg 4 – 17 thg 7, 2026 · Hạn thanh toán 20 thg 7",
     "title": "The 9<sup style=\"font-size:0.4em;\">th</sup> <em>SAMI</em> Summer Course",
-    "subtitle": "Sustainable Agrifood Management in Indonesia — hybrid program 26 July – 15 August 2026 at IPB Dramaga, Bogor & Garut. 14 courses from experts, essay contest, and field visits.",
-    "applyNow": "Apply Now",
-    "allCourses": "All Courses",
-    "guideline": "Guideline"
+    "subtitle": "Sustainable Agrifood Management in Indonesia — chương trình kết hợp từ 26 tháng 7 đến 15 tháng 8 năm 2026 tại IPB Dramaga, Bogor & Garut. 14 khóa học từ chuyên gia, cuộc thi tiểu luận và tham quan thực địa.",
+    "applyNow": "Đăng ký Ngay",
+    "allCourses": "Tất cả Khóa học",
+    "guideline": "Hướng dẫn"
   },
   "zoomBar": {
     "meetingLink": "Meeting Link: ipb.link/SAMI2026 · Learning portal: samiipb.site",
-    "vbg": "VBG: Virtual Background & Technical Guide",
-    "downloadVbg": "Download VBG"
+    "vbg": "VBG: Nền ảo và Hướng dẫn Kỹ thuật",
+    "downloadVbg": "Tải VBG"
   },
   "menu": {
-    "about": "About Program",
-    "ready": "Getting Ready",
-    "accom": "Accommodations",
+    "about": "Về Chương trình",
+    "ready": "Chuẩn bị",
+    "accom": "Chỗ ở",
     "agenda": "Agenda",
-    "essay": "Essay Contest",
-    "programbook": "Program Book",
-    "speakers": "Speaker's Profile",
-    "participants": "Participants",
-    "partners": "Supporting Partners",
-    "gallery": "Gallery",
-    "library": "Course Library"
+    "essay": "Cuộc thi Tiểu luận",
+    "programbook": "Sách Chương trình",
+    "speakers": "Hồ sơ Diễn giả",
+    "participants": "Người tham gia",
+    "partners": "Đối tác Hỗ trợ",
+    "gallery": "Thư viện ảnh",
+    "library": "Thư viện Khóa học"
   },
   "about": {
+    "subtitle": "Tìm hiểu về chương trình Khóa học Mùa hè SAMI lần thứ 9, mục tiêu và điều kiện tham gia.",
     "panel1": {
-      "title": "About SAMI Summer Course",
-      "text1": "SAMI Summer Course is an international academic program held since 2017 by the Department of Management, IPB University. Its goals? To enhance institutional competitiveness, expand global networks, and provide cross-cultural learning experiences through inter-country collaboration.",
-      "text2": "The 9th edition this year runs hybrid from <strong>27 July – 15 August 2026</strong>, with the main location at IPB Dramaga Campus, Bogor. There are <strong>14 courses</strong> on sustainable agrifood management — 12 online courses (2 credits) plus an additional offline track with 2 hybrid courses and field visits (4 credits). There's also an essay contest to sharpen participants' analytical skills.",
-      "theme": "Theme: <strong>\"Building Climate Resilience and Sustainable Agrifood Management through ESG\"</strong>"
+      "title": "Về SAMI Summer Course",
+      "text1": "SAMI Summer Course là chương trình học thuật quốc tế được tổ chức từ năm 2017 bởi Khoa Quản lý, Đại học IPB. Mục tiêu? Nâng cao năng lực cạnh tranh của tổ chức, mở rộng mạng lưới toàn cầu và mang đến trải nghiệm học tập đa văn hóa.",
+      "text2": "Phiên bản thứ 9 năm nay được tổ chức theo hình thức kết hợp từ <strong>27 tháng 7 đến 15 tháng 8 năm 2026</strong>, tại Cơ sở IPB Dramaga, Bogor. Có <strong>14 khóa học</strong> về quản lý nông nghiệp thực phẩm bền vững.",
+      "theme": "Chủ đề: <strong>\"Building Climate Resilience and Sustainable Agrifood Management through ESG\"</strong>"
     },
     "panel2": {
-      "title": "Program Objectives",
+      "title": "Mục tiêu Chương trình",
       "items": [
-        "Enhance participants' knowledge and skills in specific fields of study",
-        "Interactive learning with collaborative approaches",
-        "Expand international networks between participants and host institutions",
-        "Introduce local culture to international participants and strengthen cultural diplomacy"
+        "Nâng cao kiến thức và kỹ năng của người tham gia trong các lĩnh vực cụ thể",
+        "Học tập tương tác với phương pháp hợp tác",
+        "Mở rộng mạng lưới quốc tế giữa người tham gia và các tổ chức chủ nhà",
+        "Giới thiệu văn hóa địa phương đến người tham gia quốc tế và tăng cường ngoại giao văn hóa"
       ]
     },
     "panel3": {
-      "title": "Who Can Join?",
+      "title": "Ai Có Thể Tham Gia?",
       "items": [
-        "Undergraduate or graduate students...",
-        "Faculty members and researchers...",
-        "Professionals in agriculture, food, environment, or related fields...",
-        "International participants from partner universities..."
+        "Sinh viên đại học hoặc sau đại học...",
+        "Giảng viên và nhà nghiên cứu...",
+        "Chuyên gia trong nông nghiệp, thực phẩm, môi trường hoặc các lĩnh vực liên quan...",
+        "Người tham gia quốc tế từ các trường đại học đối tác..."
       ]
-    },
-    "subtitle": "Tìm hiểu về chương trình Khóa học Mùa hè SAMI lần thứ 9, mục tiêu và điều kiện tham gia."
+    }
   },
   "gettingReady": {
-    "title": "Getting Ready for SAMI 2026",
-    "subtitle": "Prepare for online sessions and the in-person experience in Bogor & Garut.",
+    "title": "Chuẩn bị cho SAMI 2026",
+    "subtitle": "Chuẩn bị cho các buổi học trực tuyến và trải nghiệm trực tiếp tại Bogor & Garut.",
     "panel1": {
-      "title": "Before Online Sessions",
+      "title": "Trước Buổi Học Trực Tuyến",
       "items": [
-        "Test Zoom first to avoid technical issues",
-        "Mute microphone when not speaking, use full name for easy identification",
-        "Slides shared via WhatsApp group one day prior, or via portal samiipb.site",
-        "Use Q&A box or prefix chat with \"[ASK]\" to ask speakers",
-        "Turn on camera and use official virtual background (ipb.link/vbg-sami-2026)"
+        "Kiểm tra Zoom trước để tránh sự cố kỹ thuật",
+        "Tắt mic khi không nói, sử dụng tên đầy đủ",
+        "Slide được chia sẻ qua WhatsApp một ngày trước hoặc trên samiipb.site",
+        "Sử dụng hộp Q&A hoặc thêm \"[ASK]\" để hỏi diễn giả",
+        "Bật camera và sử dụng nền ảo chính thức"
       ]
     },
     "panel2": {
-      "title": "Essential Items for Site Visit",
+      "title": "Vật Dụng Cần Thiết Cho Chuyến Tham Quan",
       "items": [
-        "Passport & travel documents (keep copies on phone, wallet, bag, and suitcase)",
-        "Universal power adapter — Indonesia uses type C/F, 220V, 50Hz",
-        "Personal medication (organizers only provide basic medicine)",
-        "Cash (Rupiah) plus local SIM card or travel WiFi",
-        "Light comfortable clothing, hat, rain jacket/umbrella, comfortable walking shoes"
+        "Hộ chiếu và giấy tờ du lịch (giữ bản sao)",
+        "Bộ chuyển đổi nguồn đa năng — Indonesia dùng loại C/F, 220V, 50Hz",
+        "Thuốc cá nhân",
+        "Tiền mặt (Rupiah) và SIM địa phương hoặc WiFi du lịch",
+        "Quần áo nhẹ thoải mái, mũ, áo mưa, giày đi bộ thoải mái"
       ]
     },
     "panel3": {
-      "title": "Things to Know Before Coming to Indonesia",
+      "title": "Những Điều Cần Biết Trước Khi Đến Indonesia",
       "items": [
-        "Currency: Indonesian Rupiah (IDR). Digital wallets (GoPay, OVO) widely used in cities",
-        "Local SIM cards available at airport...",
-        "Timezone: WIB (UTC+7)...",
-        "Weather in July-August: dry season, 24-32°C..."
+        "Tiền tệ: Rupiah Indonesia (IDR). Ví điện tử phổ biến ở các thành phố",
+        "SIM địa phương có sẵn tại sân bay...",
+        "Múi giờ: WIB (UTC+7)...",
+        "Thời tiết tháng 7-8: mùa khô, 24-32°C..."
       ]
     }
   },
   "accommodations": {
-    "title": "Accommodations",
-    "subtitle": "Official lodging for SAMI 2026 participants (lecturers & students) during stay in Bogor & Garut.",
+    "title": "Chỗ Ở",
+    "subtitle": "Chỗ ở chính thức cho người tham gia SAMI 2026 tại Bogor & Garut.",
     "panel1": {
-      "title": "Bogor — Arrival (Aug 9–10)",
+      "title": "Bogor — Đến (9–10 Thg 8)",
       "items": [
         "<b>Sienna Residence Bogor</b> (Lecturers) — Jl. Letjen Ibrahim Adjie No. 8, Ciherang, Dramaga, Bogor Regency",
         "<b>Cordova Apartment</b> (Students) — Jl. Cilubang Raya No. 1, Balungbangjaya, West Bogor, ~1.6 km from IPB Dramaga Campus"
       ]
     },
     "panel2": {
-      "title": "Garut — Site Visit (Aug 10–13)",
+      "title": "Garut — Tham Quan (10–13 Thg 8)",
       "items": [
         "<b>Hotel Harmoni Garut</b> (Lecturers & Students) — Jl. Cipanas Baru No. 78, Pananjung, Tarogong Kaler, Garut",
         "Near Sabda Alam Water Park & Nagara Hot Spring, and Abah Otje Grilled Lamb & Beef Restaurant"
       ]
     },
     "panel3": {
-      "title": "Bogor — Closing (Aug 13–16)",
+      "title": "Bogor — Bế Mạc (13–16 Thg 8)",
       "items": [
         "<b>Fave Hotel Bogor</b> (Lecturers) — Jl. Cidangiang No. 1, Tegallega, Bogor",
         "<b>Bianco Hotel Bogor</b> (Students) — 15 min walk from Bogor Botanical Garden, near Bogor Square Mall"
       ]
     },
     "panel4": {
-      "title": "Transportation",
+      "title": "Phương Tiện Di Chuyển",
       "items": [
         "2 Regular Buses (Alpha), 33-seat, for group site-visit travel",
         "IPB Bus (33-seat) available for campus transfers",
@@ -126,8 +126,8 @@
     }
   },
   "agenda": {
-    "title": "Full Agenda — 12 Days, Bogor & Garut",
-    "subtitle": "Complete day-by-day schedule, from opening on 27 July to departure on 16 August.",
+    "title": "Lịch Trình Đầy Đủ — 12 Ngày, Bogor & Garut",
+    "subtitle": "Lịch trình chi tiết từng ngày, từ khai mạc 27 tháng 7 đến khởi hành 16 tháng 8.",
     "dayTabs": [
       {
         "day": "Day 1",
@@ -179,17 +179,17 @@
       }
     ],
     "types": {
-      "opening": "Opening",
-      "course": "Course",
-      "sitevisit": "Site Visit"
+      "opening": "Khai mạc",
+      "course": "Khóa học",
+      "sitevisit": "Tham quan thực địa"
     }
   },
   "essay": {
-    "title": "SAMI Essay Contest",
-    "subtitle": "The 9th annual SAMI Student Essay Contest, open to all SAMI Summer Course 2026 participants.",
+    "title": "Cuộc Thi Tiểu Luận SAMI",
+    "subtitle": "Cuộc thi tiểu luận sinh viên SAMI thường niên lần thứ 9, dành cho tất cả người tham gia SAMI Summer Course 2026.",
     "panel1": {
-      "title": "Theme & Key Details",
-      "theme": "Theme: Building Climate Resilience and Sustainable Agrifood Management through ESG",
+      "title": "Chủ Đề & Chi Tiết Quan Trọng",
+      "theme": "Chủ đề: Building Climate Resilience and Sustainable Agrifood Management through ESG",
       "items": [
         "<b>Submission deadline:</b> essays due by August 9, 2026, 10:00 PM Jakarta Time (agenda also lists Aug 12 as essay milestone — check program book for final date)",
         "<b>Final presentation:</b> August 14, 2026 at Start Up Science Technopark, Bogor",
@@ -219,7 +219,7 @@
       ]
     },
     "panel3": {
-      "title": "Award",
+      "title": "Giải Thưởng",
       "items": [
         "<b>1st Prize:</b> e-Certificate + IDR 3,000,000",
         "<b>2nd Prize:</b> e-Certificate + IDR 2,000,000",
@@ -227,7 +227,7 @@
       ]
     },
     "panel4": {
-      "title": "Reviewers",
+      "title": "Giám Khảo",
       "rooms": [
         {
           "name": "Room 1",
@@ -261,12 +261,12 @@
     }
   },
   "programBook": {
-    "title": "Program Book",
+    "title": "Sách Chương Trình",
     "subtitle": "Download the complete SAMI 2026 Program Book — agenda, site visit profiles, speaker & reviewer profiles, essay contest rules, accommodation and travel information.",
     "card": {
-      "title": "The 9th SAMI Program Book",
+      "title": "Sách Chương Trình SAMI Lần Thứ 9",
       "description": "Comprehensive guide covering the full 26 July – 15 August 2026 program in Bogor & Garut.",
-      "downloadBtn": "Download (PDF)",
+      "downloadBtn": "Tải Xuống (PDF)",
       "githubNote": "PDF also available in GitHub repository: <code>SAMI PROGRAM BOOK.pdf</code>"
     }
   },
@@ -523,11 +523,11 @@
     "joinZoom": "Join via ipb.link/SAMI2026",
     "zoomDetails": "Slides shared via WhatsApp group and portal samiipb.site one day before session",
     "moduleMaterials": "Module Materials",
-    "download": "Download →",
+    "download": "Tải Xuống →",
     "locked": "🔒"
   },
   "coursePage": {
-    "title": "All 14 Courses",
+    "title": "Tất Cả 14 Khóa Học",
     "subtitle": "Explore all SAMI 2026 courses — from online courses to hybrid sessions, from various international experts.",
     "searchPlaceholder": "Search course or speaker...",
     "filterAll": "All",
@@ -538,9 +538,9 @@
     "backToHome": "Back to Home"
   },
   "common": {
-    "loading": "Loading...",
-    "error": "Error loading content",
-    "noData": "No data available"
+    "loading": "Đang tải...",
+    "error": "Lỗi tải nội dung",
+    "noData": "Không có dữ liệu"
   },
   "library": {
     "menuLabel": "Course Library",
