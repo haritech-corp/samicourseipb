@@ -29,7 +29,8 @@
     "speakers": "Profil Pembicara",
     "participants": "Peserta",
     "partners": "Mitra Pendukung",
-    "gallery": "Galeri"
+    "gallery": "Galeri",
+    "library": "Library Kursus"
   },
   "about": {
     "panel1": {
@@ -382,11 +383,34 @@
     "filterOnline": "Online",
     "filterHybrid": "Hybrid",
     "viewDetails": "Lihat Detail →",
+    "viewLibrary": "Lihat Library",
     "backToHome": "Kembali ke Beranda"
   },
   "common": {
     "loading": "Memuat...",
     "error": "Gagal memuat konten",
     "noData": "Tidak ada data tersedia"
+  },
+  "library": {
+    "menuLabel": "Library Kursus",
+    "menuIcon": "📚",
+    "pageTitle": "Kursus <em>Library</em>",
+    "pageSubtitle": "Jelajahi dokumentasi kursus, foto sesi, dan materi dari semua kursus SAMI 2026 — dari yang sudah selesai, berlangsung, hingga yang akan datang.",
+    "filterAll": "Semua",
+    "filterDay": "Hari",
+    "filterCompleted": "Selesai",
+    "filterOngoing": "Berlangsung",
+    "filterUpcoming": "Akan Datang",
+    "completed": "Selesai",
+    "ongoing": "Berlangsung",
+    "upcoming": "Akan Datang",
+    "photos": "foto",
+    "photosComingSoon": "Foto segera hadir",
+    "noPhotos": "Belum ada foto",
+    "viewAllPhotos": "Lihat Semua Foto",
+    "libraryTitle": "Library Kursus",
+    "photoGallery": "Galeri Foto",
+    "closeGallery": "Tutup",
+    "of": "dari"
   }
 }

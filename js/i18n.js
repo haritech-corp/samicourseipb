@@ -30,6 +30,8 @@
   let translations = {};
   let currentLang = DEFAULT_LANG;
   let onLanguageChangeCallbacks = [];
+  let readyPromiseResolve;
+  const readyPromise = new Promise(resolve => { readyPromiseResolve = resolve; });
 
   function detectLanguage() {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -137,6 +139,7 @@
 
     const event = new CustomEvent('languageChanged', { detail: { lang: currentLang } });
     document.dispatchEvent(event);
+    if (readyPromiseResolve) { readyPromiseResolve(); readyPromiseResolve = null; }
   }
 
   function onLanguageChange(callback) {
@@ -159,6 +162,7 @@
     applyTranslations();
     updateLanguageSwitcher();
     initLanguageSwitcher();
+    if (readyPromiseResolve) { readyPromiseResolve(); readyPromiseResolve = null; }
   }
 
   if (document.readyState === 'loading') {
@@ -174,6 +178,7 @@
     onLanguageChange: onLanguageChange,
     languages: LANGUAGES,
     getFlagClass: getFlagClass,
-    applyTranslations: applyTranslations
+    applyTranslations: applyTranslations,
+    ready: readyPromise
   };
 })();

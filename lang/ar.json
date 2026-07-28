@@ -29,7 +29,8 @@
     "speakers": "Speaker's Profile",
     "participants": "Participants",
     "partners": "Supporting Partners",
-    "gallery": "Gallery"
+    "gallery": "Gallery",
+    "library": "Course Library"
   },
   "about": {
     "panel1": {
@@ -382,11 +383,34 @@
     "filterOnline": "Online",
     "filterHybrid": "Hybrid",
     "viewDetails": "View Details →",
+    "viewLibrary": "View Library",
     "backToHome": "Back to Home"
   },
   "common": {
     "loading": "Loading...",
     "error": "Error loading content",
     "noData": "No data available"
+  },
+  "library": {
+    "menuLabel": "Course Library",
+    "menuIcon": "📚",
+    "pageTitle": "Course <em>Library</em>",
+    "pageSubtitle": "Browse course documentation, session photos, and materials from all SAMI 2026 courses — from completed, ongoing, to upcoming sessions.",
+    "filterAll": "All",
+    "filterDay": "Day",
+    "filterCompleted": "Completed",
+    "filterOngoing": "On Going",
+    "filterUpcoming": "Upcoming",
+    "completed": "Completed",
+    "ongoing": "On Going",
+    "upcoming": "Upcoming",
+    "photos": "photos",
+    "photosComingSoon": "Photos coming soon",
+    "noPhotos": "No photos yet",
+    "viewAllPhotos": "View All Photos",
+    "libraryTitle": "Course Library",
+    "photoGallery": "Photo Gallery",
+    "closeGallery": "Close",
+    "of": "of"
   }
 }

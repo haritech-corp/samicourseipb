@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+<script src="js/i18n.js"></script>
 <style>
 :root{
   --primary:#5B9700; --primary-dark:#5B9700; --primary-darker:#5B9700;
@@ -254,10 +256,35 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
   <nav class="nav">
     <a href="#top" class="brand">
       <img class="brand-mark" src="logosami2026.png" alt="SAMI Logo">
-      <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
+      <span class="brand-text"><b data-i18n="header.brand">SAMI</b><span data-i18n="header.brandSub">The 9th Summer Course</span></span>
     </a>
-    <div>
-      <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent" style="padding:7px 14px;font-size:12px;">Join Now<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    <div class="header-right" style="display:flex;align-items:center;gap:10px;">
+      <div class="lang-switcher" style="display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:4px 10px;">
+        <span class="fi fi-us" id="langFlag" style="font-size:16px;border-radius:3px;"></span>
+        <select id="langSwitcher" style="background:transparent;color:#fff;border:none;font-size:12px;font-family:inherit;cursor:pointer;outline:none;max-width:110px;">
+          <option value="en">English</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="ms">Bahasa Melayu</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="th">ไทย</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="ar">العربية</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+          <option value="pt">Português</option>
+          <option value="de">Deutsch</option>
+          <option value="ru">Русский</option>
+          <option value="hi">हिन्दी</option>
+          <option value="bn">বাংলা</option>
+          <option value="tl">Filipino</option>
+          <option value="my">မြန်မာ</option>
+          <option value="km">ខ្មែរ</option>
+          <option value="lo">ລາວ</option>
+        </select>
+      </div>
+      <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent" style="padding:7px 14px;font-size:12px;" data-i18n="header.joinNow">Join Now<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
     </div>
   </nav>
 </header>
@@ -272,13 +299,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
       </svg>
     </div>
     <div class="hero-inner">
-      <span class="hero-badge"><span class="dot"></span>Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20</span>
-      <h1 class="hero-title">The 9<sup style="font-size:0.4em;">th</sup> <em>SAMI</em> Summer Course</h1>
-      <p class="hero-sub">Sustainable Agrifood Management in Indonesia — hybrid program 26 July – 15 August 2026 di IPB Dramaga, Bogor &amp; Garut. Ada 14 kursus dari para ahli, lomba esai, dan kunjungan lapangan.</p>
+      <span class="hero-badge"><span class="dot"></span><span data-i18n="hero.badge">Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20</span></span>
+      <h1 class="hero-title" data-i18n="hero.title">The 9<sup style="font-size:0.4em;">th</sup> <em>SAMI</em> Summer Course</h1>
+      <p class="hero-sub" data-i18n="hero.subtitle">Sustainable Agrifood Management in Indonesia — hybrid program 26 July – 15 August 2026 di IPB Dramaga, Bogor &amp; Garut. Ada 14 kursus dari para ahli, lomba esai, dan kunjungan lapangan.</p>
       <div class="hero-cta-row">
-        <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent">Apply Now<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-        <a href="/course" class="btn btn-outline-light">All Courses<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-        <a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-light">Guideline<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
+        <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent" data-i18n="hero.applyNow">Apply Now<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        <a href="/course" class="btn btn-outline-light" data-i18n="hero.allCourses">All Courses<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        <a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-light" data-i18n="hero.guideline">Guideline<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
       </div>
     </div>
   </section>
@@ -290,10 +317,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
       <!-- ZOOM BAR -->
       <div class="zoom-bar">
         <div class="zoom-bar-left">
-          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg><span><b>Meeting Link:</b> ipb.link/SAMI2026 · Learning portal: samiipb.site</span></div>
-          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg><span><b>VBG:</b> Virtual Background &amp; Technical Guide</span></div>
+          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg><span data-i18n="zoomBar.meetingLink"><b>Meeting Link:</b> ipb.link/SAMI2026 · Learning portal: samiipb.site</span></div>
+          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg><span data-i18n="zoomBar.vbg"><b>VBG:</b> Virtual Background &amp; Technical Guide</span></div>
         </div>
-        <a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light" style="font-size:12px;padding:8px 16px;">Download VBG<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
+        <a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light" style="font-size:12px;padding:8px 16px;" data-i18n="zoomBar.downloadVbg">Download VBG<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
       </div>
       <!-- TIMELINE -->
       <div class="tl-section" id="timelineSection">
@@ -320,9 +347,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
   <section class="course-section" id="courselist">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Course details</span>
-        <h2>Explore All 14 Courses</h2>
-        <p>12 online courses (27–31 July) plus 2 hybrid on-campus courses (10 &amp; 14 August). Click any course card to view details, meeting link, and learning outcomes covered.</p>
+        <span class="eyebrow" data-i18n="courses.sectionTitle">Course details</span>
+        <h2 data-i18n="courses.sectionHeading">Explore All 14 Courses</h2>
+        <p data-i18n="courses.sectionDescription">12 online courses (27–31 July) plus 2 hybrid on-campus courses (10 &amp; 14 August). Click any course card to view details, meeting link, and learning outcomes covered.</p>
       </div>
       <div class="course-grid" id="courseGrid"></div>
     </div>
@@ -332,9 +359,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
   <section class="resources-section" id="resources">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Course materials</span>
-        <h2>Resources</h2>
-        <p>Quick links to the essentials for the 9th SAMI Summer Course.</p>
+        <span class="eyebrow" data-i18n="resources.sectionTitle">Course materials</span>
+        <h2 data-i18n="resources.sectionHeading">Resources</h2>
+        <p data-i18n="resources.sectionDescription">Quick links to the essentials for the 9th SAMI Summer Course.</p>
       </div>
       <div class="resources-grid" id="resourcesGrid"></div>
     </div>
@@ -344,8 +371,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
   <section class="faq-section" id="faq">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Got questions?</span>
-        <h2>Frequently Asked Questions</h2>
+        <span class="eyebrow" data-i18n="faq.sectionTitle">Got questions?</span>
+        <h2 data-i18n="faq.sectionHeading">Frequently Asked Questions</h2>
       </div>
       <div id="faqContainer"></div>
     </div>
@@ -373,16 +400,16 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
       <div class="footer-brand">
         <a href="#top" class="brand" style="color:#fff;">
           <img class="brand-mark" src="logosami2026.png" alt="SAMI Logo">
-          <span class="brand-text"><b>SAMI</b><span>The 9th Summer Course</span></span>
+          <span class="brand-text"><b data-i18n="header.brand">SAMI</b><span data-i18n="header.brandSub">The 9th Summer Course</span></span>
         </a>
-        <p>Department of Management, Faculty of Economics and Management, IPB University. Held annually since 2017.</p>
+        <p data-i18n="footer.brandText">Department of Management, Faculty of Economics and Management, IPB University. Held annually since 2017.</p>
       </div>
       <div class="footer-links">
-        <div class="footer-col"><h5>Program</h5><ul><li><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></li><li><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">samiipb.ac.id</a></li><li><a href="https://instagram.com/samiipb" target="_blank" rel="noopener">@samiipb</a></li></ul></div>
-        <div class="footer-col"><h5>Links</h5><ul><li><a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener">Registration</a></li><li><a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" rel="noopener">Guideline</a></li><li><a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener">Virtual Background</a></li></ul></div>
+        <div class="footer-col"><h5 data-i18n="footer.program">Program</h5><ul><li><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></li><li><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">samiipb.ac.id</a></li><li><a href="https://instagram.com/samiipb" target="_blank" rel="noopener">@samiipb</a></li></ul></div>
+        <div class="footer-col"><h5 data-i18n="footer.links">Links</h5><ul><li><a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener">Registration</a></li><li><a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" rel="noopener">Guideline</a></li><li><a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener">Virtual Background</a></li></ul></div>
       </div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2026 SAMI — IPB University</span></div>
+    <div class="footer-bottom"><span data-i18n="footer.copyright">&copy; 2026 SAMI — IPB University</span></div>
   </div>
 </footer>
 
@@ -487,17 +514,20 @@ const resourcesData = [
   { icon:"📷", name:"Instagram @samiipb", desc:"Updates and program highlights", url:"https://instagram.com/samiipb" }
 ];
 
+function i18nT(key, fallback) { try { if (window.i18n && window.i18n.t) { var t = window.i18n.t(key); if (t !== key) return t; } } catch(e) {} return fallback; }
+
 const menuItems = [
-  { id:'about', icon:'☀️', label:'About Program' }, { id:'ready', icon:'🧳', label:'Getting Ready' },
-  { id:'accom', icon:'🗺️', label:'Accomodations' }, { id:'agenda', icon:'🗓️', label:'Agenda' },
-  { id:'essay', icon:'🏆', label:'Essay Contest' }, { id:'programbook', icon:'📘', label:'Program Book' },
-  { id:'speakers', icon:'👥', label:"Speaker's Profile" }, { id:'participants', icon:'✅', label:'Participants' },
-  { id:'partners', icon:'🤝', label:'Supporting Partners' }, { id:'gallery', icon:'🖼️', label:'Gallery' }
+  { id:'about', icon:'☀️', label:'About Program', key:'menu.about' }, { id:'ready', icon:'🧳', label:'Getting Ready', key:'menu.ready' },
+  { id:'accom', icon:'🗺️', label:'Accomodations', key:'menu.accom' }, { id:'agenda', icon:'🗓️', label:'Agenda', key:'menu.agenda' },
+  { id:'essay', icon:'🏆', label:'Essay Contest', key:'menu.essay' }, { id:'programbook', icon:'📘', label:'Program Book', key:'menu.programbook' },
+  { id:'speakers', icon:'👥', label:"Speaker's Profile", key:'menu.speakers' }, { id:'participants', icon:'✅', label:'Participants', key:'menu.participants' },
+  { id:'partners', icon:'🤝', label:'Supporting Partners', key:'menu.partners' }, { id:'gallery', icon:'🖼️', label:'Gallery', key:'menu.gallery' },
+  { id:'library', icon:'📚', label:'Course Library', key:'menu.library' }
 ];
 
 const courseImgs = {
-  'Course 1':'https://images.unsplash.com/photo-1511497584788-876760111969?w=500&q=80',
-  'Course 2':'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80',
+  'Course 1':'images/course1/photo-1.png',
+  'Course 2':'images/course2/photo-1.png',
   'Course 3':'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=500&q=80',
   'Course 4':'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&q=80',
   'Course 5':'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&q=80',
@@ -538,8 +568,6 @@ const ICON_CHECK = '<svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5
 function initials(name){return name.replace(/^(Prof\.|Dr\.|Assoc\.|Ir\.)\s*/gi,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();}
 
 // ===== MENU =====
-document.getElementById('menuGrid').innerHTML = menuItems.map(m => `<div class="menu-item${m.id==='about'?' active':''}" data-section="${m.id}"><span class="emoji">${m.icon}</span><span class="mlabel">${m.label}</span></div>`).join('');
-
 // ===== SECTION RENDERERS =====
 function renderAbout(){return `<div class="panel-stack"><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>About SAMI Summer Course</div><div class="panel-body"><p style="margin-bottom:10px;">SAMI Summer Course adalah program akademik internasional yang sudah diadakan sejak 2017 oleh Department of Management, IPB University. Tujuannya? Meningkatkan daya saing institusi pendidikan, memperluas jaringan global, dan kasih pengalaman belajar lintas budaya lewat kolaborasi antarnegara.</p><p style="margin-bottom:10px;">Edisi ke-9 tahun ini berlangsung secara hybrid dari <strong>27 Juli – 15 Agustus 2026</strong>, dengan lokasi utama di Kampus IPB Dramaga, Bogor. Ada <strong>14 kursus</strong> seputar sustainable agrifood management — 12 kursus online (2 SKS) plus tambahan track offline dengan 2 kursus hybrid dan kunjungan lapangan (4 SKS). Juga ada lomba esai buat ngasah kemampuan analisis peserta.</p><p>Theme: <strong>"Building Climate Resilience and Sustainable Agrifood Management through ESG"</strong></p></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 20V10M18 20V4M6 20v-6"/></svg>Program Objectives</div><div class="panel-body"><ul class="check-list">${["Nambah wawasan dan skill peserta di bidang keilmuan tertentu","Belajar interaktif dengan pendekatan kolaboratif","Perluas jaringan internasional antara peserta dan institusi tuan rumah","Kenalin budaya lokal ke peserta internasional dan memperkuat diplomasi budaya"].map(i=>`<li>${ICON_CHECK}${i}</li>`).join('')}</ul></div></div><div class="panel"><div class="panel-head"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/><circle cx="12" cy="9" r="4"/></svg>Siapa yang Bisa Ikut?</div><div class="panel-body"><ul class="check-list"><li>${ICON_CHECK}Mahasiswa S1 atau S2 dari jurusan atau universitas mana pun</li><li>${ICON_CHECK}Usia minimal 18 tahun saat program berlangsung</li><li>${ICON_CHECK}Bisa bahasa Inggris (semua sesi pakai bahasa Inggris)</li><li>${ICON_CHECK}Nggak perlu latar belakang khusus, tapi nilai plus kalau tertarik sama sustainability, agrifood, dan ESG</li></ul></div></div><div class="panel"><div class="panel-head alt"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Struktur Program</div><div class="panel-body"><ul class="check-list"><li>${ICON_CHECK}<b>Online Course Track (2 SKS):</b> 12 sesi online langsung, 27–31 Juli 2026, lewat Zoom</li><li>${ICON_CHECK}<b>Online + Site Visit Track (4 SKS):</b> sesi online yang sama plus 2 kursus hybrid di kampus + 9 kunjungan lapangan di Bogor &amp; Garut, 10–15 Agustus 2026</li></ul></div></div><div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="https://ipb.link/submission-sami-2026" target="_blank" class="btn btn-primary">Apply Now</a><a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" class="btn btn-ghost">Program Book</a></div></div>`;}
 
@@ -584,6 +612,7 @@ function renderGallery(){return `<h3>Gallery</h3><p>Photos and memories from SAM
 const sectionRenderers = { about:renderAbout, ready:renderReady, accom:renderAccom, agenda:renderAgenda, essay:renderEssay, programbook:renderProgramBook, speakers:renderSpeakers, participants:renderParticipants, partners:renderPartners, gallery:renderGallery };
 let activeSection = 'about';
 function showSection(id){
+  if(id==='library'){ window.location.href='course/library.html'; return; }
   if(id===activeSection) return;
   activeSection = id;
   document.querySelectorAll('.menu-item').forEach(el=>el.classList.toggle('active',el.dataset.section===id));
@@ -591,7 +620,6 @@ function showSection(id){
   const target = document.getElementById('sec-'+id);
   if(target){if(!target.innerHTML) target.innerHTML = sectionRenderers[id]();target.classList.add('active');if(id==='agenda') setTimeout(bindAgendaTabs,50);}
 }
-document.querySelectorAll('.menu-item').forEach(el=>el.addEventListener('click',()=>showSection(el.dataset.section)));
 function bindAgendaTabs(){
   const tabs = document.getElementById('agendaTabs'), panels = document.getElementById('agendaPanels');
   if(!tabs) return;
@@ -608,7 +636,8 @@ function buildCourseCards(){
       cards.push({code:s.code,title:s.title,speaker:s.speaker,affil:s.affil,time:`${day.date} · ${s.time}`,location:day.location,img,day:day});
     });
   });
-  grid.innerHTML = cards.map((c,i) => `<div class="course-card" onclick="openCourseDetail(${i})"><div class="card-img" style="background-image:url('${c.img}');"><span class="card-badge">${c.code}</span></div><div class="card-body"><h4>${c.title}</h4><div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div><div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div></div><div class="card-footer"><button class="btn btn-ghost btn-sm">View Details →</button></div></div>`).join('');
+  const viewDetails = i18nT('coursePage.viewDetails','View Details →');
+  grid.innerHTML = cards.map((c,i) => `<div class="course-card" onclick="openCourseDetail(${i})"><div class="card-img" style="background-image:url('${c.img}');"><span class="card-badge">${c.code}</span></div><div class="card-body"><h4>${c.title}</h4><div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div><div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div></div><div class="card-footer"><button class="btn btn-ghost btn-sm">${viewDetails}</button></div></div>`).join('');
   window._courseCards = cards;
 }
 
@@ -623,27 +652,27 @@ function openCourseDetail(idx){
   document.getElementById('modalTitle').textContent = c.title;
   document.getElementById('modalBody').innerHTML = `
     <div class="m-section">
-      <div class="m-label">Speaker</div>
+      <div class="m-label">${i18nT('modal.speaker','Speaker')}</div>
       <div class="m-info"><b>${c.speaker}</b> — ${c.affil}</div>
     </div>
     <div class="m-section">
-      <div class="m-label">Schedule</div>
+      <div class="m-label">${i18nT('modal.schedule','Schedule')}</div>
       <div class="m-info"><b>${c.time}</b></div>
     </div>
     <div class="m-section">
-      <div class="m-label">Location</div>
+      <div class="m-label">${i18nT('modal.location','Location')}</div>
       <div class="m-info">${c.location}</div>
     </div>
     <div class="m-section">
-      <div class="m-label">Meeting Link</div>
+      <div class="m-label">${i18nT('modal.meetingLink','Meeting Link')}</div>
       <a href="${meeting.url}" target="_blank" rel="noopener" class="zoom-btn">
         <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg>
-        Join via ipb.link/SAMI2026
+        ${i18nT('modal.joinZoom','Join via ipb.link/SAMI2026')}
         <svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <div class="zoom-details">Slides dibagikan via WhatsApp group dan portal samiipb.site sehari sebelum sesi</div>
+      <div class="zoom-details">${i18nT('modal.zoomDetails','Slides shared via WhatsApp group and portal samiipb.site one day before session')}</div>
     </div>
-    ${mods.length?`<div class="m-section"><div class="m-label">Module Materials</div><div class="module-list">${mods.map(m=>m.locked?`<div class="module-item locked"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">🔒</span></div>`:`<a class="module-item" href="${m.url}" target="_blank"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">Download →</span></a>`).join('')}</div></div>`:''}
+    ${mods.length?`<div class="m-section"><div class="m-label">${i18nT('modal.moduleMaterials','Module Materials')}</div><div class="module-list">${mods.map(m=>m.locked?`<div class="module-item locked"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">${i18nT('modal.locked','🔒')}</span></div>`:`<a class="module-item" href="${m.url}" target="_blank"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">${i18nT('modal.download','Download →')}</span></a>`).join('')}</div></div>`:''}
   `;
   document.getElementById('courseModal').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -705,11 +734,35 @@ function buildTimeline(){
   renderTodayInfo(idx);
 }
 
-showSection('about');
-buildCourseCards();
-buildResources();
-buildFAQ();
-buildTimeline();
+function initApp() {
+  renderMenu();
+  showSection('about');
+  buildCourseCards();
+  buildResources();
+  buildFAQ();
+  buildTimeline();
+  if (window.i18n) {
+    window.i18n.onLanguageChange(function() {
+      renderMenu();
+      showSection(activeSection);
+      buildCourseCards();
+      buildResources();
+      buildFAQ();
+      buildTimeline();
+    });
+  }
+}
+
+function renderMenu() {
+  document.getElementById('menuGrid').innerHTML = menuItems.map(m => `<div class="menu-item${m.id==='about'?' active':''}" data-section="${m.id}"><span class="emoji">${m.icon}</span><span class="mlabel">${i18nT(m.key,m.label)}</span></div>`).join('');
+  document.querySelectorAll('.menu-item').forEach(el => el.addEventListener('click', () => showSection(el.dataset.section)));
+}
+
+if (window.i18n && window.i18n.ready) {
+  window.i18n.ready.then(initApp);
+} else {
+  document.addEventListener('DOMContentLoaded', function() { setTimeout(initApp, 100); });
+}
 </script>
 </body>
 </html>
