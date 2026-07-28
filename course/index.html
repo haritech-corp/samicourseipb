@@ -335,6 +335,9 @@ document.getElementById('courseModal').addEventListener('click', e => { if(e.tar
 document.addEventListener('keydown', e => { if(e.key === 'Escape') { document.getElementById('courseModal').classList.remove('open'); document.body.style.overflow = ''; }});
 
 function initApp() { buildCards(); }
+if (window.i18n) {
+  window.i18n.onLanguageChange(function() { buildCards(); });
+}
 if (window.i18n && window.i18n.ready) {
   window.i18n.ready.then(initApp);
 } else {
