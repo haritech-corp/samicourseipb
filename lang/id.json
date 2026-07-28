@@ -30,7 +30,9 @@
     "participants": "Peserta",
     "partners": "Mitra Pendukung",
     "gallery": "Galeri",
-    "library": "Library Kursus"
+    "library": "Library Kursus",
+    "sectionTitle": "Akses cepat",
+    "sectionHeading": "Semua yang Anda butuhkan, dalam satu tempat"
   },
   "about": {
     "subtitle": "Pelajari tentang program SAMI Summer Course ke-9, tujuan, dan persyaratan partisipasi.",
@@ -563,5 +565,19 @@
     "photoGallery": "Galeri Foto",
     "closeGallery": "Tutup",
     "of": "dari"
+  },
+  "schedule": {
+    "sectionTitle": "Perjalanan program",
+    "sectionHeading": "Jadwal harian Anda",
+    "sectionDescription": "Jelajahi sesi harian — kursus online, kunjungan lapangan, dan acara khusus."
+  },
+  "speakers": {
+    "sectionTitle": "Temui pembicara kami",
+    "sectionHeading": "Belajar dari para ahli terkemuka"
+  },
+  "cta": {
+    "title": "Jadi bagian dari perubahan",
+    "subtitle": "Bergabunglah dengan para pemimpin global dan rekan-rekan dalam membentuk masa depan berkelanjutan untuk sistem agrifood.",
+    "button": "Daftar Sekarang →"
   }
 }

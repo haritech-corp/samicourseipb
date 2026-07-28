@@ -1,9 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1VLNXL97F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N1VLNXL97F');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The 9th SAMI Summer Course | IPB University</title>
+<title data-i18n="siteTitle">The 9th SAMI Summer Course | IPB University</title>
 <link rel="icon" type="image/png" href="logosami2026.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,33 +20,33 @@
 <script src="js/i18n.js"></script>
 <style>
 :root{
-  --primary:#5B9700; --primary-dark:#5B9700; --primary-darker:#5B9700;
+  --primary:#5B9700; --primary-dark:#5B9700; --primary-darker:#497900;
   --primary-light:#5B9700; --primary-lighter:#84DB00; --primary-pale:#DBFFA6;
-  --accent:#F68D23; --accent-dark:#497900; --accent-pale:#EAFFC9;
-  --bg:#F4F7F9; --paper:#FFFFFF; --ink:#5B9700; --ink-soft:#5B9700;
-  --ink-faint:#5B9700; --line:#EAFFC9;
+  --accent:#F68D23; --accent-dark:#497900; --accent-pale:#FFF3E0;
+  --bg:#F4F7F9; --paper:#FFFFFF; --ink:#1a1a1a; --ink-soft:#5a6b5f;
+  --ink-faint:#8a9b8f; --line:#EAFFC9;
   --font-display:'Fraunces',serif; --font-body:'Inter',sans-serif; --font-mono:'IBM Plex Mono',monospace;
   --container:1140px; --radius-s:10px; --radius-m:18px; --radius-l:28px;
   --shadow-sm:0 1px 3px rgba(37,150,190,0.08); --shadow-md:0 4px 16px rgba(37,150,190,0.12);
-  --shadow-lg:0 12px 40px -8px rgba(37,150,190,0.2); --shadow-xl:0 24px 60px -12px rgba(37,150,190,0.25);
+  --shadow-lg:0 12px 40px -8px rgba(37,150,190,0.2);
 }
-*,*::before,*::after{box-sizing:border-box;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:0.001ms!important;animation-iteration-count:1!important;transition-duration:0.001ms!important}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+body{font-family:var(--font-body);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;}
 a{color:inherit;text-decoration:none;}
-ul{margin:0;padding:0;list-style:none;}
-h1,h2,h3,h4{margin:0;font-family:var(--font-display);font-weight:600;letter-spacing:-0.02em;}
+ul{list-style:none;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;letter-spacing:-0.02em;color:var(--primary-darker);}
 p{margin:0;}
-button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
 :focus-visible{outline:2.5px solid var(--primary);outline-offset:3px;border-radius:6px;}
 ::selection{background:var(--primary);color:#fff;}
-.container{max-width:var(--container);margin:0 auto;padding:0 20px;}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);font-weight:500;}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px;}
+.eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);font-weight:500;display:flex;align-items:center;gap:8px;}
 .eyebrow::before{content:"";width:18px;height:2px;background:var(--primary);border-radius:2px;}
-.section-head{max-width:640px;margin-bottom:24px;}
-.section-head h2{font-size:clamp(24px,3.4vw,36px);color:var(--primary-darker);margin-top:8px;line-height:1.15;}
-.section-head p{margin-top:8px;color:var(--ink-soft);font-size:14.5px;}
+.section-head{max-width:640px;margin-bottom:32px;}
+.section-head h2{font-size:clamp(26px,3.4vw,36px);color:var(--primary-darker);margin-top:8px;}
+.section-head p{margin-top:10px;color:var(--ink-soft);font-size:15px;}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 22px;border-radius:50px;font-family:var(--font-body);font-weight:600;font-size:13.5px;border:1.5px solid transparent;transition:all .25s cubic-bezier(.4,0,.2,1);white-space:nowrap;}
 .btn svg{width:14px;height:14px;flex-shrink:0;}
 .btn-primary{background:var(--primary);color:#fff;box-shadow:0 4px 14px rgba(37,150,190,0.3);}
@@ -47,133 +55,182 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .btn-accent:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,150,190,0.35);}
 .btn-outline-light{border-color:rgba(255,255,255,.4);color:#fff;}
 .btn-outline-light:hover{border-color:#fff;background:rgba(255,255,255,.12);transform:translateY(-2px);}
-.btn-ghost{border-color:var(--line);color:var(--ink-soft);}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink-soft);background:var(--paper);}
 .btn-ghost:hover{border-color:var(--primary);color:var(--primary);}
 .btn-sm{padding:8px 16px;font-size:12px;}
 .icon{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
 
-/* HEADER */
-.site-header{position:sticky;top:0;left:0;right:0;z-index:100;background:rgba(73, 163, 0, 0.88);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,0.1);}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;max-width:var(--container);margin:0 auto;}
-.brand{display:flex;align-items:center;gap:10px;color:#fff;}
-.brand-mark{width:32px;height:32px;flex-shrink:0;}
-.brand-text{display:flex;flex-direction:column;line-height:1.15;}
-.brand-text b{font-family:var(--font-display);font-size:16px;font-weight:700;letter-spacing:-.01em;}
-.brand-text span{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--primary-lighter);}
+/* ===== HEADER ===== */
+header{position:sticky;top:0;z-index:100;background:rgba(244,247,249,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+nav.wrap{display:flex;align-items:center;justify-content:space-between;height:72px;}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand-mark{width:34px;height:34px;flex-shrink:0;}
+.brand-text{line-height:1.15;}
+.brand-text .name{font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--primary-dark);letter-spacing:-0.01em;}
+.brand-text .sub{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:14px;font-weight:500;color:var(--ink-soft);transition:color .2s;}
+.nav-links a:hover{color:var(--primary);}
+.header-right{display:flex;align-items:center;gap:12px;}
+.lang-switcher{display:flex;align-items:center;gap:6px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:4px 10px;}
+.lang-switcher select{background:transparent;border:none;font-size:12px;font-family:inherit;cursor:pointer;outline:none;color:var(--ink);max-width:100px;}
+.lang-switcher select option{color:#000;}
+#langFlag{font-size:16px;border-radius:3px;}
+@media(max-width:820px){.nav-links{display:none;}}
 
-/* HERO */
-.hero{position:relative;overflow:hidden;background:linear-gradient(155deg,rgba(73, 163, 0, 0.88) 0%,rgba(64, 122, 32, 0.75) 40%,rgba(255, 234, 127, 0.65) 100%),url('https://images.unsplash.com/photo-1730697897470-0efaee4922de?w=1400&q=80');background-size:cover;background-position:center;color:#fff;padding:44px 0 48px;}
-.hero-pattern{position:absolute;inset:0;opacity:.12;pointer-events:none;}
-.hero-pattern svg{width:100%;height:100%;}
-.hero-inner{position:relative;z-index:1;max-width:var(--container);margin:0 auto;padding:0 20px;}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px 5px 6px;border-radius:50px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--primary-lighter);}
-.hero-badge .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(37,150,190,.25);}
-.hero-title{font-family:var(--font-display);font-weight:300;font-size:clamp(32px,6.5vw,68px);line-height:.92;margin-top:14px;color:#fff;letter-spacing:-.03em;}
-.hero-title em{font-style:italic;font-weight:600;color:var(--accent);}
-.hero-sub{margin-top:10px;max-width:520px;color:rgba(255,255,255,.85);font-size:14px;line-height:1.6;}
-.hero-cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+/* ===== HERO ===== */
+.hero{position:relative;overflow:hidden;background:linear-gradient(155deg,rgba(73,163,0,0.92) 0%,rgba(64,122,32,0.85) 40%,rgba(246,141,35,0.55) 100%),url('https://images.unsplash.com/photo-1730697897470-0efaee4922de?w=1400&q=80');background-size:cover;background-position:center;color:#fff;padding:56px 0 0;}
+.hero-inner{position:relative;z-index:2;}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);padding:7px 16px;border-radius:100px;font-size:12px;font-weight:500;margin-bottom:24px;}
+.badge .dot{width:6px;height:6px;border-radius:50%;background:var(--primary-lighter);}
+.badge b{color:var(--primary-lighter);font-weight:600;}
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.04;color:#fff;max-width:720px;font-weight:600;}
+.hero h1 em{font-style:italic;color:var(--primary-lighter);font-weight:500;}
+.hero p.lead{max-width:540px;margin-top:18px;font-size:16px;color:rgba(255,255,255,0.8);}
+.hero-meta{display:flex;gap:24px;margin-top:22px;flex-wrap:wrap;}
+.hero-meta div{display:flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,0.85);}
+.hero-cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;}
 
-/* MENU */
-.menu-section{padding:28px 0 0;}
-.menu-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:16px;}
-.menu-item{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius-m);padding:12px 6px;text-align:center;cursor:pointer;transition:all .25s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;}
-.menu-item::after{content:'';position:absolute;bottom:0;left:10%;right:10%;height:3px;background:var(--primary);border-radius:3px;transform:scaleX(0);transition:transform .3s ease;}
-.menu-item:hover{border-color:var(--primary-light);transform:translateY(-3px);box-shadow:var(--shadow-md);}
-.menu-item.active{border-color:var(--primary);background:var(--primary-pale);box-shadow:var(--shadow-sm);}
-.menu-item.active::after{transform:scaleX(1);}
-.menu-item .emoji{font-size:22px;display:block;margin-bottom:3px;line-height:1.2;}
-.menu-item .mlabel{font-size:11px;font-weight:600;color:var(--ink-soft);line-height:1.2;display:block;}
-.menu-item.active .mlabel{color:var(--primary-dark);}
-@media(max-width:820px){.menu-grid{grid-template-columns:repeat(3,1fr);}}
-@media(max-width:500px){.menu-grid{grid-template-columns:repeat(2,1fr);}}
+.stat-strip{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,0.12);background:rgba(73,163,0,0.35);margin-top:44px;}
+.stat-strip div{padding:22px 16px;text-align:center;border-left:1px solid rgba(255,255,255,0.08);}
+.stat-strip div:first-child{border-left:none;}
+.stat-strip .num{font-family:var(--font-display);font-size:28px;font-weight:600;color:#fff;}
+.stat-strip .lbl{font-size:12px;color:rgba(255,255,255,0.7);margin-top:2px;}
+@media(max-width:700px){.stat-strip{grid-template-columns:repeat(2,1fr);}}
 
-/* ZOOM BAR */
-.zoom-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:linear-gradient(135deg,var(--primary-darker),var(--primary-dark));border-radius:var(--radius-m);margin-top:18px;box-shadow:0 4px 20px rgba(37,150,190,0.2);}
-.zoom-bar-left{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
-.zoom-item{display:flex;align-items:center;gap:7px;font-size:13px;color:#fff;}
-.zoom-item .icon{color:var(--primary-lighter);width:15px;height:15px;}
-.zoom-item b{font-weight:600;color:#fff;}
-.zoom-item span{color:#fff;}
-@media(max-width:600px){.zoom-bar{flex-direction:column;align-items:stretch;text-align:center;}}
+/* ===== PARTNERS ===== */
+.partners{padding:32px 0;border-bottom:1px solid var(--line);}
+.partners .lbl{text-align:center;font-size:11.5px;color:var(--ink-faint);letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px;font-weight:600;}
+.partner-row{display:flex;justify-content:center;gap:36px;flex-wrap:wrap;align-items:center;}
+.partner-row span{font-weight:600;font-size:15px;color:var(--ink-soft);}
 
-/* CONTENT PANEL */
-@keyframes fadeSlide{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
-.panel-stack{display:flex;flex-direction:column;gap:12px;}
-.panel{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden;}
-.panel-head{padding:11px 16px;background:var(--primary);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px;}
-.panel-head .icon{color:rgba(255,255,255,.8);}
-.panel-head.alt{background:var(--primary-dark);}
-.panel-body{padding:12px 16px;}
-.check-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--ink);padding:5px 0;border-bottom:1px dashed var(--line);}
-.check-list li:last-child{border-bottom:none;}
-.check-list .icon{color:var(--primary);margin-top:2px;width:14px;height:14px;}
+/* ===== QUICK ACCESS ===== */
+.quick{background:var(--primary-pale);padding:64px 0;}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.quick-card{background:var(--paper);border-radius:14px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;border:1.5px solid transparent;transition:all .25s ease;cursor:pointer;}
+.quick-card:hover{border-color:var(--primary);transform:translateY(-3px);box-shadow:var(--shadow-md);}
+.quick-card .left{display:flex;align-items:center;gap:12px;}
+.quick-card .ic{width:40px;height:40px;border-radius:10px;background:var(--primary-pale);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.quick-card span.t{font-size:14px;font-weight:600;color:var(--primary-darker);}
+.quick-card .arrow{color:var(--ink-faint);font-size:18px;}
+@media(max-width:900px){.quick-grid{grid-template-columns:repeat(2,1fr);}}
 
-/* SPEAKERS */
-.speakers-mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;}
-.speaker-mini{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 10px;text-align:center;}
-.sp-avatar{width:38px;height:38px;border-radius:50%;margin:0 auto 6px;background:linear-gradient(150deg,var(--primary),var(--primary-darker));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:13px;}
-.sp-name{font-size:12px;font-weight:700;color:var(--primary-darker);line-height:1.3;}
-.sp-affil{font-size:10.5px;color:var(--ink-faint);margin-top:3px;}
-.sp-course{display:inline-block;margin-top:5px;font-family:var(--font-mono);font-size:8.5px;padding:2px 7px;border-radius:6px;background:var(--primary-pale);color:var(--primary-dark);font-weight:600;}
+.infobar{margin-top:20px;background:var(--primary-darker);border-radius:16px;display:flex;align-items:center;justify-content:space-between;padding:16px 24px;flex-wrap:wrap;gap:12px;}
+.infobar .items{display:flex;gap:28px;flex-wrap:wrap;}
+.infobar .item{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.85);}
+.infobar .item b{color:var(--primary-lighter);font-weight:600;}
+.infobar .btn{background:var(--accent);color:#fff;padding:9px 16px;font-size:12.5px;}
+.infobar .btn:hover{transform:translateY(-2px);}
 
-/* SCHEDULE */
-.day-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px;}
-.day-tab{flex:0 0 auto;padding:7px 13px;border-radius:10px;border:1px solid var(--line);background:var(--paper);font-size:11.5px;font-weight:600;color:var(--ink-soft);white-space:nowrap;display:flex;flex-direction:column;gap:1px;transition:all .15s;}
-.day-tab span{font-family:var(--font-mono);font-weight:500;font-size:9.5px;color:var(--ink-faint);}
-.day-tab.active{background:var(--primary);border-color:var(--primary);color:#fff;}
-.day-tab.active span{color:var(--primary-lighter);}
-.day-panel{display:none;}
-.day-panel.active{display:block;animation:fadeSlide .25s ease;}
-.session-mini{padding:9px 12px;border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:6px;background:var(--bg);}
-.session-mini .s-time{font-family:var(--font-mono);font-size:10.5px;color:var(--primary);font-weight:600;}
-.session-mini .s-code{font-family:var(--font-mono);font-size:9.5px;color:var(--primary);font-weight:600;text-transform:uppercase;}
-.session-mini .s-title{font-size:13px;font-weight:600;color:var(--ink);margin-top:2px;}
-.session-mini .s-speaker{font-size:11.5px;color:var(--ink-soft);margin-top:3px;}
-.session-mini.sitevisit{background:var(--primary-pale);border-color:var(--primary-light);}
-.session-mini.sitevisit .s-code{color:var(--accent-dark);}
-.day-loc{font-family:var(--font-mono);font-size:11px;color:var(--primary);font-weight:600;margin-bottom:6px;}
+/* ===== JOURNEY / SCHEDULE ===== */
+.journey{background:var(--primary-darker);color:#fff;padding:64px 0;}
+.journey .section-head h2{color:#fff;}
+.journey .section-head p{color:rgba(255,255,255,0.55);}
+.journey .eyebrow{color:var(--primary-lighter);}
+.journey .eyebrow::before{background:var(--primary-lighter);}
+.day-rail{display:flex;gap:8px;overflow-x:auto;padding-bottom:12px;scrollbar-width:thin;}
+.day-rail::-webkit-scrollbar{height:5px;}
+.day-rail::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:10px;}
+.day-chip{flex:0 0 auto;min-width:100px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:12px 14px;text-align:left;transition:all .2s ease;position:relative;color:#fff;}
+.day-chip .name{font-size:12.5px;font-weight:600;}
+.day-chip .date{font-family:var(--font-mono);font-size:10.5px;color:rgba(255,255,255,0.5);margin-top:3px;}
+.day-chip.active{background:var(--accent);border-color:var(--accent);color:var(--ink);}
+.day-chip.active .date{color:rgba(0,0,0,0.55);}
+.day-chip:hover:not(.active){border-color:rgba(255,255,255,0.3);}
+.day-chip .done{position:absolute;top:8px;right:8px;width:18px;height:18px;border-radius:50%;background:var(--primary-lighter);color:var(--primary-darker);font-size:10px;display:flex;align-items:center;justify-content:center;font-weight:700;}
 
-/* COURSE CARDS */
-.course-section{padding:36px 0;}
-.course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:16px;}
+.day-panel{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:18px;padding:24px 28px;margin-top:16px;}
+.day-panel-head{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+.day-panel-head .live{width:8px;height:8px;border-radius:50%;background:var(--primary-lighter);}
+.day-panel-head .tag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--primary-lighter);}
+.day-panel-head h3{color:#fff;font-size:20px;font-weight:500;}
+.sess{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-top:1px solid rgba(255,255,255,0.08);gap:12px;flex-wrap:wrap;}
+.sess:first-of-type{border-top:none;}
+.sess .time{font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.5);min-width:110px;}
+.sess .mid{flex:1;min-width:180px;}
+.sess .code{font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--accent);background:rgba(246,141,35,0.15);padding:2px 8px;border-radius:5px;margin-right:8px;text-transform:uppercase;}
+.sess .title{font-size:14px;font-weight:500;color:#fff;}
+.sess .view{font-size:12px;font-weight:600;color:var(--primary-lighter);white-space:nowrap;}
+.empty-day{color:rgba(255,255,255,0.5);font-size:14px;padding:8px 0;}
+
+/* ===== COURSES ===== */
+.courses{padding:64px 0;}
+.course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;}
 .course-card{background:var(--paper);border-radius:var(--radius-m);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);transition:all .35s cubic-bezier(.4,0,.2,1);cursor:pointer;}
 .course-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent;}
 .card-img{height:130px;position:relative;background-size:cover;background-position:center;}
 .card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(0,0,0,.5));}
-.card-badge{position:absolute;top:10px;left:10px;z-index:2;padding:3px 9px;border-radius:6px;background:rgba(255,255,255,.92);backdrop-filter:blur(4px);font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--primary-dark);text-transform:uppercase;}
+.card-badge{position:absolute;top:10px;left:10px;z-index:2;padding:3px 9px;border-radius:6px;background:rgba(255,255,255,.92);font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--primary-darker);text-transform:uppercase;}
 .card-body{padding:14px 16px 10px;}
-.card-body h4{font-size:14px;color:var(--primary-darker);line-height:1.3;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.card-body h4{font-size:14px;color:var(--primary-darker);line-height:1.3;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-family:var(--font-body);}
 .card-speaker{font-size:12px;color:var(--ink-soft);display:flex;align-items:center;gap:5px;margin-bottom:4px;}
-.card-speaker .icon{color:var(--primary-light);width:13px;height:13px;}
 .card-time{font-family:var(--font-mono);font-size:10.5px;color:var(--ink-faint);display:flex;align-items:center;gap:5px;}
-.card-time .icon{color:var(--primary);width:13px;height:13px;}
 .card-footer{padding:0 16px 14px;}
 .card-footer .btn{width:100%;justify-content:center;font-size:12px;padding:9px;}
 @media(max-width:600px){.course-grid{grid-template-columns:1fr;}}
 
-/* MODAL */
+/* ===== SPEAKERS ===== */
+.speakers{background:var(--primary-pale);padding:64px 0;}
+.speaker-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:20px;}
+.speaker{text-align:center;}
+.speaker .av{width:100%;aspect-ratio:1;border-radius:50%;margin-bottom:10px;background:linear-gradient(150deg,var(--primary),var(--primary-darker));}
+.speaker .nm{font-size:13px;font-weight:600;color:var(--primary-darker);}
+.speaker .aff{font-size:11.5px;color:var(--ink-faint);margin-top:2px;}
+
+/* ===== RESOURCES ===== */
+.resources{padding:64px 0;}
+.resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;}
+.resource-card{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-s);transition:all .25s ease;}
+.resource-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow-sm);}
+.resource-card .r-icon{font-size:22px;flex-shrink:0;}
+.resource-card .r-name{font-size:12px;font-weight:600;color:var(--primary-darker);}
+.resource-card .r-desc{font-size:10.5px;color:var(--ink-faint);margin-top:1px;}
+
+/* ===== FAQ ===== */
+.faq{padding:0 0 64px;}
+.faq-item{border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:6px;overflow:hidden;background:var(--paper);}
+.faq-q{padding:11px 14px;font-weight:600;font-size:13.5px;color:var(--primary-darker);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .15s;}
+.faq-q:hover{background:var(--primary-pale);}
+.faq-q .arrow{font-size:11px;transition:transform .25s ease;color:var(--ink-faint);}
+.faq-item.open .faq-q .arrow{transform:rotate(180deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;font-size:13px;color:var(--ink-soft);line-height:1.7;}
+.faq-item.open .faq-a{max-height:400px;padding:2px 14px 12px;}
+
+/* ===== CTA ===== */
+.cta-wrap{padding:0 24px;max-width:var(--container);margin:0 auto;}
+.cta{background:linear-gradient(120deg,var(--primary-dark) 0%,var(--accent-dark) 100%);border-radius:24px;padding:56px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;color:#fff;}
+.cta h2{color:#fff;font-size:28px;}
+.cta p{color:rgba(255,255,255,0.75);margin-top:6px;font-size:15px;max-width:400px;}
+
+/* ===== FOOTER ===== */
+footer{background:var(--primary-darker);color:rgba(255,255,255,0.7);padding:56px 0 24px;margin-top:64px;}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.foot-grid h5{color:#fff;font-family:var(--font-display);font-size:14px;margin-bottom:14px;font-weight:600;}
+.foot-grid ul li{margin-bottom:8px;font-size:13px;}
+.foot-grid ul li a:hover{color:#fff;}
+.foot-bottom{display:flex;justify-content:space-between;padding-top:20px;font-size:12px;flex-wrap:wrap;gap:10px;color:rgba(255,255,255,0.5);}
+@media(max-width:900px){.foot-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr;}.quick-grid{grid-template-columns:1fr;}.cta{padding:36px 24px;}}
+
+/* ===== MODAL ===== */
 .modal-overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(13,79,106,0.5);backdrop-filter:blur(8px);justify-content:center;align-items:center;padding:20px;}
 .modal-overlay.open{display:flex;}
 @keyframes modalIn{from{opacity:0;transform:scale(.95) translateY(20px);}to{opacity:1;transform:scale(1) translateY(0);}}
-.modal-box{background:var(--paper);border-radius:var(--radius-l);max-width:580px;width:100%;max-height:90vh;overflow-y:auto;padding:0;box-shadow:var(--shadow-xl);animation:modalIn .35s cubic-bezier(.4,0,.2,1);}
+.modal-box{background:var(--paper);border-radius:var(--radius-l);max-width:580px;width:100%;max-height:90vh;overflow-y:auto;padding:0;box-shadow:var(--shadow-lg);animation:modalIn .35s cubic-bezier(.4,0,.2,1);}
 .modal-img{height:160px;background-size:cover;background-position:center;position:relative;border-radius:var(--radius-l) var(--radius-l) 0 0;}
 .modal-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(0,0,0,.6));border-radius:var(--radius-l) var(--radius-l) 0 0;}
-.modal-img-content{position:absolute;bottom:16px;left:24px;z-index:2;}
-.modal-img-content .m-emoji{font-size:36px;display:block;margin-bottom:4px;}
+.modal-img-content{position:absolute;bottom:16px;left:24px;z-index:2;color:#fff;}
 .modal-img-content .m-code{font-family:var(--font-mono);font-size:10px;color:var(--primary-lighter);font-weight:600;text-transform:uppercase;display:block;}
 .modal-img-content h3{font-size:18px;color:#fff;margin-top:4px;max-width:90%;}
-.modal-close{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);border:none;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--ink-soft);z-index:3;transition:all .2s;}
+.modal-close{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);border:none;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--ink-soft);z-index:3;transition:all .2s;cursor:pointer;}
 .modal-close:hover{background:#fff;color:var(--primary);}
 .modal-body{padding:20px 24px 24px;}
 .m-section{margin-bottom:16px;}
 .m-label{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:600;margin-bottom:6px;}
 .m-info{font-size:14px;color:var(--ink-soft);line-height:1.6;}
 .m-info b{color:var(--ink);}
-.m-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;}
-.m-tags span{padding:3px 9px;background:var(--primary-pale);color:var(--primary-dark);border-radius:6px;font-size:11.5px;font-weight:500;}
 .zoom-btn{display:flex;align-items:center;gap:10px;padding:12px 18px;background:var(--primary);color:#fff;border-radius:var(--radius-s);font-weight:600;font-size:13.5px;transition:all .2s;}
 .zoom-btn:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(37,150,190,0.3);}
-.zoom-btn .icon{width:18px;height:18px;}
 .zoom-details{font-size:12.5px;color:var(--ink-faint);margin-top:6px;font-family:var(--font-mono);}
 .module-list{display:flex;flex-direction:column;gap:6px;}
 .module-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-s);transition:all .2s;}
@@ -184,55 +241,23 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .module-item.locked{opacity:.45;cursor:not-allowed;pointer-events:none;}
 .module-item.locked .m-dl{color:var(--ink-faint);}
 
-/* RESOURCES */
-.resources-section{padding:0 0 36px;}
-.resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:14px;}
-.resource-card{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-s);transition:all .25s ease;}
-.resource-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow-sm);}
-.resource-card .r-icon{font-size:22px;flex-shrink:0;}
-.resource-card .r-name{font-size:12px;font-weight:600;color:var(--primary-darker);}
-.resource-card .r-desc{font-size:10.5px;color:var(--ink-faint);margin-top:1px;}
-
-/* FAQ */
-.faq-section{padding:0 0 36px;}
-.faq-item{border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:6px;overflow:hidden;background:var(--paper);}
-.faq-q{padding:11px 14px;font-weight:600;font-size:13.5px;color:var(--primary-darker);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .15s;}
-.faq-q:hover{background:var(--primary-pale);}
-.faq-q .arrow{font-size:11px;transition:transform .25s ease;color:var(--ink-faint);}
-.faq-item.open .faq-q .arrow{transform:rotate(180deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;font-size:13px;color:var(--ink-soft);line-height:1.7;}
-.faq-item.open .faq-a{max-height:400px;padding:2px 14px 12px;}
-
-/* FOOTER */
-.site-footer{background:var(--primary-darker);color:rgba(255,255,255,.8);padding:32px 0 18px;}
-.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.1);}
-.footer-brand p{font-size:12px;line-height:1.6;color:rgba(255,255,255,.6);max-width:240px;margin-top:6px;}
-.footer-links{display:flex;gap:28px;}
-.footer-col h5{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:8px;}
-.footer-col ul{display:flex;flex-direction:column;gap:6px;}
-.footer-col a{font-size:12.5px;color:rgba(255,255,255,.85);}
-.footer-col a:hover{color:var(--primary);}
-.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding-top:14px;font-size:11.5px;color:rgba(255,255,255,.5);}
-
-/* TIMELINE */
-.tl-section{margin-top:16px;margin-bottom:2px;}
+/* ===== TIMELINE ===== */
+.tl-section{margin-top:20px;}
 .tl-scroll{display:flex;gap:4px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:thin;scroll-behavior:smooth;}
 .tl-scroll::-webkit-scrollbar{height:4px;}
 .tl-scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px;}
 .tl-phase{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 9px;border-radius:var(--radius-s);border:1.5px solid var(--line);background:var(--paper);min-width:64px;transition:all .3s ease;position:relative;cursor:default;}
 .tl-phase.done{border-color:var(--primary);background:var(--primary-pale);}
 .tl-phase.done::after{content:'✓';position:absolute;top:-5px;right:-5px;width:18px;height:18px;border-radius:50%;background:var(--primary);color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 2px 6px rgba(91,151,0,.3);}
-.tl-phase.active{border-color:var(--accent);background:linear-gradient(135deg,#fff,#FFF3E0);box-shadow:0 0 0 3px rgba(246,141,35,.15),0 4px 12px rgba(246,141,35,.15);animation:tlPulse 2s ease-in-out infinite;}
-@keyframes tlPulse{0%,100%{box-shadow:0 0 0 3px rgba(246,141,35,.15),0 4px 12px rgba(246,141,35,.15);}50%{box-shadow:0 0 0 7px rgba(246,141,35,.08),0 4px 18px rgba(246,141,35,.22);}}
+.tl-phase.active{border-color:var(--accent);background:linear-gradient(135deg,#fff,var(--accent-pale));box-shadow:0 0 0 3px rgba(246,141,35,.15),0 4px 12px rgba(246,141,35,.15);}
 .tl-phase .tl-icon{font-size:17px;line-height:1;}
 .tl-phase .tl-label{font-size:9px;font-weight:700;color:var(--ink-soft);white-space:nowrap;text-align:center;line-height:1.2;}
 .tl-phase .tl-date{font-family:var(--font-mono);font-size:7.5px;color:var(--ink-faint);white-space:nowrap;margin-top:1px;}
 .tl-phase.active .tl-label{color:var(--accent-dark);}
-.tl-phase.active .tl-date{color:var(--accent);font-weight:600;}
 .tl-phase.done .tl-label{color:var(--primary-darker);}
-.tl-today-card{margin-top:10px;padding:12px 16px;background:linear-gradient(135deg,var(--primary-pale),#fff);border:1.5px solid var(--primary);border-radius:var(--radius-s);animation:fadeSlide .4s ease;}
+.tl-today-card{margin-top:10px;padding:12px 16px;background:linear-gradient(135deg,var(--primary-pale),#fff);border:1.5px solid var(--primary);border-radius:var(--radius-s);}
 .tl-today-head{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
-.tl-today-head .tl-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:tlPulse 2s ease-in-out infinite;}
+.tl-today-head .tl-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);}
 .tl-today-head .tl-today-label{font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--primary-dark);text-transform:uppercase;letter-spacing:.06em;}
 .tl-today-head .tl-today-date{font-size:12px;color:var(--ink-soft);font-weight:600;}
 .tl-today-body{display:flex;flex-direction:column;gap:3px;padding-left:16px;}
@@ -244,22 +269,28 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .tl-session.opening{background:var(--primary);border-radius:6px;color:#fff;}
 .tl-session.opening .s-time{color:var(--primary-lighter);}
 .tl-session.opening .s-badge{background:rgba(255,255,255,.15);color:#fff;}
-#langSwitcher option { color: #000; }
+#langSwitcher option{color:#000;}
 main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="nav">
+<header>
+  <nav class="wrap">
     <a href="#top" class="brand">
-      <img class="brand-mark" src="logosami2026.png" alt="SAMI Logo">
-      <span class="brand-text"><b data-i18n="header.brand">SAMI</b><span data-i18n="header.brandSub">The 9th Summer Course</span></span>
+      <img class="brand-mark" src="logosami2026.png" alt="SAMI">
+      <span class="brand-text"><span class="name" data-i18n="header.brand">SAMI</span><span class="sub" data-i18n="header.brandSub">The 9th Summer Course</span></span>
     </a>
-    <div class="header-right" style="display:flex;align-items:center;gap:10px;">
-      <div class="lang-switcher" style="display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:4px 10px;">
+    <div class="nav-links">
+      <a href="#courses">Courses</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="header-right">
+      <div class="lang-switcher">
         <span class="fi fi-us" id="langFlag" style="font-size:16px;border-radius:3px;"></span>
-        <select id="langSwitcher" style="background:transparent;color:#fff;border:none;font-size:12px;font-family:inherit;cursor:pointer;outline:none;max-width:110px;">
+        <select id="langSwitcher">
           <option value="en">English</option>
           <option value="id">Bahasa Indonesia</option>
           <option value="ms">Bahasa Melayu</option>
@@ -282,70 +313,111 @@ main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:
           <option value="lo">ລາວ</option>
         </select>
       </div>
-      <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent" style="padding:7px 14px;font-size:12px;" data-i18n="header.joinNow">Join Now<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="header.joinNow">Join Now<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
     </div>
   </nav>
 </header>
 
 <main>
-  <!-- HERO -->
+  <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-pattern">
-      <svg viewBox="0 0 1200 500" preserveAspectRatio="none">
-        <path d="M-50 380 C 200 280, 350 430, 600 340 S 950 200, 1250 280" stroke="#8BD1E3" stroke-width="0.8" fill="none" opacity="0.3"/>
-        <path d="M-50 460 C 300 400, 400 500, 650 420 S 1000 320, 1250 400" stroke="#50B8D4" stroke-width="0.8" fill="none" opacity="0.25"/>
-      </svg>
-    </div>
-    <div class="hero-inner">
-      <span class="hero-badge"><span class="dot"></span><span data-i18n="hero.badge">Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20</span></span>
-      <h1 class="hero-title" data-i18n="hero.title">The 9<sup style="font-size:0.4em;">th</sup> <em>SAMI</em> Summer Course</h1>
-      <p class="hero-sub" data-i18n="hero.subtitle">Sustainable Agrifood Management in Indonesia — hybrid program 26 July – 15 August 2026 di IPB Dramaga, Bogor &amp; Garut. Ada 14 kursus dari para ahli, lomba esai, dan kunjungan lapangan.</p>
-      <div class="hero-cta-row">
-        <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-accent" data-i18n="hero.applyNow">Apply Now<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-        <a href="/course" class="btn btn-outline-light" data-i18n="hero.allCourses">All Courses<svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-        <a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-light" data-i18n="hero.guideline">Guideline<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
+    <div class="wrap hero-inner">
+      <div class="badge"><span class="dot"></span> <span data-i18n="hero.badge">Registration: Apr 28 – Jul 17, 2026 · Payment deadline: Jul 20</span></div>
+      <h1 data-i18n="hero.title">The 9<sup style="font-size:0.45em;">th</sup> <em>SAMI</em><br>Summer Course</h1>
+      <p class="lead" data-i18n="hero.subtitle">Sustainable Agrifood Management in Indonesia — an international hybrid program bringing together global leaders, experts, and students to advance sustainable agrifood systems.</p>
+      <div class="hero-meta">
+        <div>📅 26 July – 15 August 2026</div>
+        <div>📍 IPB Dramaga, Bogor &amp; Garut, Indonesia</div>
+        <div>🎓 14 courses · essay contest · field visits</div>
       </div>
+      <div class="hero-cta">
+        <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero.applyNow">Apply Now →</a>
+        <a href="#courses" class="btn btn-outline-light" data-i18n="hero.allCourses">Explore Courses</a>
+        <a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-light" data-i18n="hero.guideline">Guideline</a>
+      </div>
+    </div>
+    <div class="stat-strip">
+      <div><div class="num">9</div><div class="lbl">Years Running</div></div>
+      <div><div class="num">14</div><div class="lbl">Courses</div></div>
+      <div><div class="num">40+</div><div class="lbl">Expert Speakers</div></div>
+      <div><div class="num">20+</div><div class="lbl">Countries</div></div>
+      <div><div class="num">1000+</div><div class="lbl">Alumni Worldwide</div></div>
     </div>
   </section>
 
-  <!-- MENU -->
-  <section class="menu-section" id="menuSection">
-    <div class="container">
-      <div class="menu-grid" id="menuGrid"></div>
-      <!-- ZOOM BAR -->
-      <div class="zoom-bar">
-        <div class="zoom-bar-left">
-          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg><span data-i18n="zoomBar.meetingLink"><b>Meeting Link:</b> ipb.link/SAMI2026 · Learning portal: samiipb.site</span></div>
-          <div class="zoom-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg><span data-i18n="zoomBar.vbg"><b>VBG:</b> Virtual Background &amp; Technical Guide</span></div>
-        </div>
-        <a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener" class="btn btn-outline-light" style="font-size:12px;padding:8px 16px;" data-i18n="zoomBar.downloadVbg">Download VBG<svg class="icon" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg></a>
+  <!-- ===== PARTNERS ===== -->
+  <div class="partners">
+    <div class="wrap">
+      <div class="lbl">Organized by IPB University, collaborating with global partners</div>
+      <div class="partner-row">
+        <span>IPB University</span><span>UPM</span><span>JICA</span><span>FAO</span><span>ASEAN Foundation</span>
       </div>
-      <!-- TIMELINE -->
+    </div>
+  </div>
+
+  <!-- ===== MENU / QUICK ACCESS ===== -->
+  <section class="quick" id="quickAccess">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="menu.sectionTitle">Quick access</div>
+        <h2 data-i18n="menu.sectionHeading">Everything you need, in one place</h2>
+      </div>
+      <div class="quick-grid" id="menuGrid"></div>
+      <div class="infobar" id="zoomBar">
+        <div class="items">
+          <div class="item">🔗 <span data-i18n="zoomBar.meetingLink"><b>Meeting Link:</b> ipb.link/SAMI2026 · Learning portal: samiipb.site</span></div>
+          <div class="item">⬇️ <span data-i18n="zoomBar.vbg"><b>VBG:</b> Virtual Background &amp; Technical Guide</span></div>
+        </div>
+        <a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener" class="btn" data-i18n="zoomBar.downloadVbg">Download VBG ⬇</a>
+      </div>
       <div class="tl-section" id="timelineSection">
         <div class="tl-scroll" id="tlScroll"></div>
         <div class="tl-today-card" id="tlTodayCard"></div>
       </div>
-      
     </div>
   </section>
 
-  <!-- COURSE CARDS -->
-  <section class="course-section" id="courselist">
-    <div class="container">
+  <!-- ===== JOURNEY / SCHEDULE ===== -->
+  <section class="journey" id="schedule">
+    <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow" data-i18n="courses.sectionTitle">Course details</span>
-        <h2 data-i18n="courses.sectionHeading">Explore All 14 Courses</h2>
-        <p data-i18n="courses.sectionDescription">12 online courses (27–31 July) plus 2 hybrid on-campus courses (10 &amp; 14 August). Click any course card to view details, meeting link, and learning outcomes covered.</p>
+        <div class="eyebrow" data-i18n="schedule.sectionTitle">Program journey</div>
+        <h2 data-i18n="schedule.sectionHeading">Your day-by-day schedule</h2>
+        <p data-i18n="schedule.sectionDescription">Explore daily sessions — online courses, site visits, and special events.</p>
+      </div>
+      <div class="day-rail" id="dayRail"></div>
+      <div class="day-panel" id="dayPanel"></div>
+    </div>
+  </section>
+
+  <!-- ===== COURSES ===== -->
+  <section class="courses" id="courses">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="courses.sectionTitle">Featured courses</div>
+        <h2 data-i18n="courses.sectionHeading">Explore all 14 courses</h2>
+        <p data-i18n="courses.sectionDescription">12 online courses (27–31 July) plus 2 hybrid on-campus courses (10 &amp; 14 August). Click any card to view details.</p>
       </div>
       <div class="course-grid" id="courseGrid"></div>
     </div>
   </section>
 
-  <!-- RESOURCES -->
-  <section class="resources-section" id="resources">
-    <div class="container">
+  <!-- ===== SPEAKERS ===== -->
+  <section class="speakers" id="speakers">
+    <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow" data-i18n="resources.sectionTitle">Course materials</span>
+        <div class="eyebrow" data-i18n="speakers.sectionTitle">Meet our speakers</div>
+        <h2 data-i18n="speakers.sectionHeading">Learn from leading experts</h2>
+      </div>
+      <div class="speaker-grid" id="speakerGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== RESOURCES ===== -->
+  <section class="resources" id="resources">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="resources.sectionTitle">Course materials</div>
         <h2 data-i18n="resources.sectionHeading">Resources</h2>
         <p data-i18n="resources.sectionDescription">Quick links to the essentials for the 9th SAMI Summer Course.</p>
       </div>
@@ -353,25 +425,35 @@ main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="faq-section" id="faq">
-    <div class="container">
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow" data-i18n="faq.sectionTitle">Got questions?</span>
+        <div class="eyebrow" data-i18n="faq.sectionTitle">Got questions?</div>
         <h2 data-i18n="faq.sectionHeading">Frequently Asked Questions</h2>
       </div>
       <div id="faqContainer"></div>
     </div>
   </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-wrap">
+    <div class="cta">
+      <div>
+        <h2 data-i18n="cta.title">Be part of the change</h2>
+        <p data-i18n="cta.subtitle">Join global leaders and peers in shaping a sustainable future for agrifood systems.</p>
+      </div>
+      <a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" class="btn" style="background:#fff;color:var(--primary-darker);font-weight:700;padding:12px 28px;" data-i18n="cta.button">Apply Now →</a>
+    </div>
+  </div>
 </main>
 
-<!-- MODAL -->
+<!-- ===== MODAL ===== -->
 <div class="modal-overlay" id="courseModal">
   <div class="modal-box">
     <div class="modal-img" id="modalImg">
       <button class="modal-close" id="modalClose">&times;</button>
       <div class="modal-img-content">
-        <span class="m-emoji" id="modalEmoji">📚</span>
         <span class="m-code" id="modalCode">Course</span>
         <h3 id="modalTitle">Title</h3>
       </div>
@@ -380,27 +462,51 @@ main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:
   </div>
 </div>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="#top" class="brand" style="color:#fff;">
-          <img class="brand-mark" src="logosami2026.png" alt="SAMI Logo">
-          <span class="brand-text"><b data-i18n="header.brand">SAMI</b><span data-i18n="header.brandSub">The 9th Summer Course</span></span>
-        </a>
-        <p data-i18n="footer.brandText">Department of Management, Faculty of Economics and Management, IPB University. Held annually since 2017.</p>
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px;">
+          <img class="brand-mark" src="logosami2026.png" alt="SAMI">
+          <span class="brand-text"><span class="name" style="color:#fff;">SAMI</span><span class="sub">The 9th Summer Course</span></span>
+        </div>
+        <p style="font-size:13px;max-width:280px;color:rgba(255,255,255,0.55);" data-i18n="footer.brandText">Department of Management, Faculty of Economics and Management, IPB University. Held annually since 2017.</p>
       </div>
-      <div class="footer-links">
-        <div class="footer-col"><h5 data-i18n="footer.program">Program</h5><ul><li><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></li><li><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">samiipb.ac.id</a></li><li><a href="https://instagram.com/samiipb" target="_blank" rel="noopener">@samiipb</a></li></ul></div>
-        <div class="footer-col"><h5 data-i18n="footer.links">Links</h5><ul><li><a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener">Registration</a></li><li><a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" rel="noopener">Guideline</a></li><li><a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener">Virtual Background</a></li></ul></div>
+      <div>
+        <h5 data-i18n="footer.program">Program</h5>
+        <ul>
+          <li><a href="mailto:sami@apps.ipb.ac.id">sami@apps.ipb.ac.id</a></li>
+          <li><a href="https://sami.ipb.ac.id" target="_blank" rel="noopener">samiipb.ac.id</a></li>
+          <li><a href="https://instagram.com/samiipb" target="_blank" rel="noopener">@samiipb</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.links">Links</h5>
+        <ul>
+          <li><a href="https://ipb.link/submission-sami-2026" target="_blank" rel="noopener" data-i18n="footer.registration">Registration</a></li>
+          <li><a href="https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view?usp=drive_link" target="_blank" rel="noopener" data-i18n="footer.guideline">Guideline</a></li>
+          <li><a href="https://ipb.link/vbg-sami-2026" target="_blank" rel="noopener" data-i18n="footer.virtualBackground">Virtual Background</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>✉️ sami@apps.ipb.ac.id</li>
+          <li>📞 +62 251 862 2642</li>
+          <li>📍 IPB Dramaga, Bogor 16680, West Java, Indonesia</li>
+        </ul>
       </div>
     </div>
-    <div class="footer-bottom"><span data-i18n="footer.copyright">&copy; 2026 SAMI — IPB University</span></div>
+    <div class="foot-bottom">
+      <div data-i18n="footer.copyright">© 2026 SAMI — IPB University. All rights reserved.</div>
+      <div>Privacy Policy &nbsp;|&nbsp; Terms of Use</div>
+    </div>
   </div>
 </footer>
 
 <script>
-// ===== SCHEDULE DATA (from SAMI 2026 Program Book) =====
+// ===== SCHEDULE DATA =====
 const scheduleData = [
   { day:"Day 1", date:"Monday, July 27, 2026", mode:"online", location:"Online · Zoom Meeting", sessions:[
     { time:"07.25–09.00 AM", type:"opening", title:"Opening Ceremony — Institution Profiles, SAMI Course Report, Welcoming & Opening Remarks" },
@@ -435,7 +541,7 @@ const scheduleData = [
   ]},
   { day:"Day 8", date:"Wednesday, August 12, 2026", mode:"hybrid", location:"Garut", sessions:[
     { time:"09.00–11.00 AM", type:"sitevisit", code:"Site Visit 4", title:"Margawati: Center for Sheep & Goat Breeding Development — Sukanegla, Garut" },
-    { time:"01.30–03.30 PM", type:"sitevisit", code:"Site Visit 5", title:"Bestory: Home Industry Production \"Dodol Garut\" — Muara Sanding, Garut" },
+    { time:"01.30–03.30 PM", type:"sitevisit", code:"Site Visit 5", title:"Bestory: Home Industry Production 'Dodol Garut' — Muara Sanding, Garut" },
     { time:"04.00–05.30 PM", type:"sitevisit", code:"Site Visit 6", title:"Sukaregang Market: Local Creative Economy (Leather Products) — Garut Kota" }
   ]},
   { day:"Day 9", date:"Thursday, August 13, 2026", mode:"hybrid", location:"Garut → Bogor", sessions:[
@@ -458,12 +564,12 @@ const scheduleData = [
 const faqData = [
   { q:"Apa itu SAMI Summer Course?", a:"SAMI (Sustainable Agrifood Management in Indonesia) adalah summer course internasional tahunan dari Department of Management, IPB University, udah jalan sejak 2017. Edisi ke-9 (2026) diadakan hybrid 27 Juli – 15 Agustus, dengan 14 kursus tentang sustainable agrifood management, lomba esai, dan kunjungan lapangan di Bogor & Garut." },
   { q:"Ada track apa aja?", a:"Ada dua pilihan: Online Course Track (12 sesi online langsung, 2 SKS) sama Online + Site Visit Track (12 sesi online + 2 kursus hybrid di kampus + kunjungan lapangan, 4 SKS)." },
-  { q:"Kapan periode pendaftarannya?", a:"Pendaftaran dibuka 28 April – 17 Juli 2026, pengumuman 17 Juli, dan batas bayar 20 Juli 2026. Buat detail biaya, cek program book di https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view." },
-  { q:"Gimana cara daftarnya?", a:"Submit aplikasi lewat ipb.link/submission-sami-2026. Baca program book lengkap di https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view." },
+  { q:"Kapan periode pendaftarannya?", a:"Pendaftaran dibuka 28 April – 17 Juli 2026, pengumuman 17 Juli, dan batas bayar 20 Juli 2026. Buat detail biaya, cek program book." },
+  { q:"Gimana cara daftarnya?", a:"Submit aplikasi lewat ipb.link/submission-sami-2026. Baca program book lengkap di link yang tersedia." },
   { q:"Kapan kursus online diadakan?", a:"12 sesi online diadakan 27–31 Juli 2026 lewat Zoom. Slide dibagikan via WhatsApp group sehari sebelumnya, dan juga di portal learning samiipb.site." },
-  { q:"Apa yang dilakukan selama bagian onsite?", a:"Peserta offline tiba di Bogor 9 Agustus, ikut 2 kursus hybrid (10 & 14 Agustus), dan 9 kunjungan lapangan di Bogor & Garut dari 10–15 Agustus — termasuk Kampus IPB Dramaga, Eptilu agrowisata, koperasi kopi Mandalagiri, pusat pengembangan domba Margawati, produksi dodol Bestory, pasar kulit Sukaregang, Candi Cangkuang, IPB Science Technopark, dan Kebun Raya Bogor." },
-  { q:"Apakah dapat sertifikat?", a:"Iya. Peserta yang selesai program dapet Certificate of Completion, Certificate of Participation untuk Essay Contest, dan transkrip SKS (4 SKS untuk full program, 2 SKS untuk online aja) yang dikeluarkan Department of Management IPB University." },
-  { q:"Apakah lomba esainya wajib?", a:"Lomba esai itu bagian dari tugas project. Kelompok ngumpulin esai (maks. 3.000 kata) plus presentasi, dengan presentasi final 14 Agustus di Start Up Science Technopark, Bogor. Tiga esai terbaik dapet sertifikat dan hadiah uang (Juara 1: IDR 3.000.000, Juara 2: IDR 2.000.000, Juara 3: IDR 1.000.000), dan semua esai yang diterbitin di Proceeding SAMI dengan ISBN." },
+  { q:"Apa yang dilakukan selama bagian onsite?", a:"Peserta offline tiba di Bogor 9 Agustus, ikut 2 kursus hybrid (10 & 14 Agustus), dan 9 kunjungan lapangan di Bogor & Garut dari 10–15 Agustus." },
+  { q:"Apakah dapat sertifikat?", a:"Iya. Peserta yang selesai program dapet Certificate of Completion, Certificate of Participation untuk Essay Contest, dan transkrip SKS." },
+  { q:"Apakah lomba esainya wajib?", a:"Lomba esai itu bagian dari tugas project. Tiga esai terbaik dapet sertifikat dan hadiah uang, dan semua esai yang diterbitin di Proceeding SAMI dengan ISBN." },
   { q:"Bahasa pengantarnya apa?", a:"Semua sesi dan esai pakai bahasa Inggris." }
 ];
 
@@ -509,9 +615,7 @@ const courseImgs = {
   'Course 14':'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=500&q=80'
 };
 
-const courseMeeting = {
-  default:{url:'https://ipb.link/SAMI2026', portal:'https://samiipb.site'}
-};
+const courseMeeting = { default:{url:'https://ipb.link/SAMI2026', portal:'https://samiipb.site'} };
 
 const courseModules = {
   'Course 1':[{icon:'📄',name:'Session Slides — Nature-Based Solutions',url:'https://docs.google.com/presentation/d/1pBnKAgKd-EF1Bv1DPfyBg9gjJAWyHG5e/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
@@ -530,28 +634,75 @@ const courseModules = {
   'Course 14':[{icon:'📄',name:'Session Slides — Halal Supply Chain',url:'#',locked:true}]
 };
 
+// ===== JOURNEY / DAY SCHEDULE =====
+const days = scheduleData.map((d, i) => ({
+  id:'d'+i, name:d.day, date:d.date.split(', ').slice(1).join(''), done:false, sessions:d.sessions
+}));
+
+days.unshift({id:'pre', name:'Pre-Program', date:'04/28 – 07/26', done:true, sessions:[]});
+days.push({id:'dep', name:'Departure', date:'08/16', done:false, sessions:[]});
+
+const rail = document.getElementById('dayRail');
+const panel = document.getElementById('dayPanel');
+let currentDay = 2;
+
+function renderDay(idx) {
+  currentDay = idx;
+  const d = days[idx];
+  if (!d) return;
+  document.querySelectorAll('.day-chip').forEach((c,i) => c.classList.toggle('active', i===idx));
+  let html = '<div class="day-panel-head"><span class="live"></span><span class="tag">'+(d.done ? 'Completed' : 'Upcoming')+'</span><h3 style="margin-left:6px;">'+d.name+(d.date?' · '+d.date:'')+'</h3></div>';
+  if (!d.sessions || d.sessions.length === 0) {
+    html += '<div class="empty-day">No scheduled sessions for this day yet.</div>';
+  } else {
+    d.sessions.forEach(s => {
+      const code = s.code || (s.type==='opening'?'Opening':'');
+      html += '<div class="sess"><div class="time">'+s.time+'</div><div class="mid">'+(code?'<span class="code">'+code+'</span>':'')+'<span class="title">'+s.title+'</span></div><a href="#" class="view">View Details →</a></div>';
+    });
+  }
+  panel.innerHTML = html;
+}
+
+days.forEach((d,i) => {
+  const chip = document.createElement('button');
+  chip.className = 'day-chip'+(i===currentDay?' active':'');
+  chip.innerHTML = (d.done ? '<div class="done">✓</div>' : '')+'<div class="name">'+d.name+'</div><div class="date">'+(d.date||'')+'</div>';
+  chip.addEventListener('click', () => renderDay(i));
+  rail.appendChild(chip);
+});
+
 // ===== COURSE CARDS =====
-function buildCourseCards(){
+const speakersList = [];
+
+function buildCourseCards() {
   const grid = document.getElementById('courseGrid'), cards = [];
   scheduleData.forEach(day => {
     day.sessions.forEach(s => {
-      if(s.type!=='course') return;
-      const img = courseImgs[s.code]||'';
-      cards.push({code:s.code,title:s.title,speaker:s.speaker,affil:s.affil,time:`${day.date} · ${s.time}`,location:day.location,img,day:day});
+      if (s.type !== 'course') return;
+      const img = courseImgs[s.code] || '';
+      cards.push({code:s.code, title:s.title, speaker:s.speaker, affil:s.affil, time:day.date+' · '+s.time, location:day.location, img, day:day});
+      if (!speakersList.find(sp => sp.name === s.speaker)) {
+        speakersList.push({name:s.speaker, affil:s.affil, code:s.code});
+      }
     });
   });
-  const viewDetails = i18nT('coursePage.viewDetails','View Details →');
-  grid.innerHTML = cards.map((c,i) => `<div class="course-card" onclick="openCourseDetail(${i})"><div class="card-img" style="background-image:url('${c.img}');"><span class="card-badge">${c.code}</span></div><div class="card-body"><h4>${c.title}</h4><div class="card-speaker"><svg class="icon" viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M5 21c1-3.5 4-6 7-6s6 2.5 7 6"/></svg>${c.speaker}</div><div class="card-time"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${c.time}</div></div><div class="card-footer"><button class="btn btn-ghost btn-sm">${viewDetails}</button></div></div>`).join('');
+  const viewDetails = i18nT('coursePage.viewDetails', 'View Details →');
+  grid.innerHTML = cards.map((c,i) =>
+    '<div class="course-card" onclick="openCourseDetail('+i+')">'+
+      '<div class="card-img" style="background-image:url(\''+c.img+'\');"><span class="card-badge">'+c.code+'</span></div>'+
+      '<div class="card-body"><h4>'+c.title+'</h4><div class="card-speaker">👤 '+c.speaker+'</div><div class="card-time">📅 '+c.time+'</div></div>'+
+      '<div class="card-footer"><button class="btn btn-ghost btn-sm">'+viewDetails+'</button></div>'+
+    '</div>'
+  ).join('');
   window._courseCards = cards;
 }
 
-function openCourseDetail(idx){
+function openCourseDetail(idx) {
   const c = window._courseCards[idx];
-  if(!c) return;
+  if (!c) return;
   const meeting = courseMeeting.default;
-  const mods = courseModules[c.code]||[];
+  const mods = courseModules[c.code] || [];
   document.getElementById('modalImg').style.backgroundImage = "url('"+c.img+"')";
-  document.getElementById('modalEmoji').textContent = '📚';
   document.getElementById('modalCode').textContent = c.code;
   document.getElementById('modalTitle').textContent = c.title;
   document.getElementById('modalBody').innerHTML = `
@@ -576,18 +727,69 @@ function openCourseDetail(idx){
       </a>
       <div class="zoom-details">${i18nT('modal.zoomDetails','Slides shared via WhatsApp group and portal samiipb.site one day before session')}</div>
     </div>
-    ${mods.length?`<div class="m-section"><div class="m-label">${i18nT('modal.moduleMaterials','Module Materials')}</div><div class="module-list">${mods.map(m=>m.locked?`<div class="module-item locked"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">${i18nT('modal.locked','🔒')}</span></div>`:`<a class="module-item" href="${m.url}" target="_blank"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">${i18nT('modal.download','Download →')}</span></a>`).join('')}</div></div>`:''}
+    ${mods.length ? '<div class="m-section"><div class="m-label">'+i18nT('modal.moduleMaterials','Module Materials')+'</div><div class="module-list">'+mods.map(m => m.locked ? '<div class="module-item locked"><span class="m-icon">'+m.icon+'</span><span class="m-name">'+m.name+'</span><span class="m-dl">🔒</span></div>' : '<a class="module-item" href="'+m.url+'" target="_blank"><span class="m-icon">'+m.icon+'</span><span class="m-name">'+m.name+'</span><span class="m-dl">'+i18nT('modal.download','Download →')+'</span></a>').join('')+'</div></div>' : ''}
   `;
   document.getElementById('courseModal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
-document.getElementById('modalClose').addEventListener('click',()=>{document.getElementById('courseModal').classList.remove('open');document.body.style.overflow='';});
-document.getElementById('courseModal').addEventListener('click',e=>{if(e.target===e.currentTarget){document.getElementById('courseModal').classList.remove('open');document.body.style.overflow='';}});
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('courseModal').classList.remove('open');
+  document.body.style.overflow = '';
+});
+document.getElementById('courseModal').addEventListener('click', function(e) {
+  if (e.target === e.currentTarget) {
+    document.getElementById('courseModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+
+// ===== SPEAKERS =====
+function buildSpeakers() {
+  const grid = document.getElementById('speakerGrid');
+  const uniqueSpeakers = [];
+  const seen = new Set();
+  speakersList.forEach(s => {
+    if (!seen.has(s.name)) {
+      seen.add(s.name);
+      uniqueSpeakers.push(s);
+    }
+  });
+  const gradients = [
+    'linear-gradient(135deg,#5B9700,#497900)',
+    'linear-gradient(135deg,#84DB00,#5B9700)',
+    'linear-gradient(135deg,#F68D23,#497900)',
+    'linear-gradient(135deg,#DBFFA6,#5B9700)',
+    'linear-gradient(135deg,#5B9700,#F68D23)',
+    'linear-gradient(135deg,#497900,#84DB00)'
+  ];
+  grid.innerHTML = uniqueSpeakers.map((s, i) =>
+    '<div class="speaker">'+
+      '<div class="av" style="background:'+gradients[i % gradients.length]+';"></div>'+
+      '<div class="nm">'+s.name+'</div>'+
+      '<div class="aff">'+s.affil+'</div>'+
+    '</div>'
+  ).join('');
+}
 
 // ===== RESOURCES =====
-function buildResources(){document.getElementById('resourcesGrid').innerHTML = resourcesData.map(r => `<a class="resource-card" href="${r.url}" target="_blank"><span class="r-icon">${r.icon}</span><div><div class="r-name">${r.name}</div><div class="r-desc">${r.desc}</div></div></a>`).join('');}
-function buildFAQ(){document.getElementById('faqContainer').innerHTML = faqData.map((f, i) => `<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${i18nT('faq.items.'+i+'.q', f.q)}<span class="arrow">▾</span></div><div class="faq-a">${i18nT('faq.items.'+i+'.a', f.a)}</div></div>`).join('');}
+function buildResources() {
+  document.getElementById('resourcesGrid').innerHTML = resourcesData.map(r =>
+    '<a class="resource-card" href="'+r.url+'" target="_blank">'+
+      '<span class="r-icon">'+r.icon+'</span>'+
+      '<div><div class="r-name">'+r.name+'</div><div class="r-desc">'+r.desc+'</div></div>'+
+    '</a>'
+  ).join('');
+}
+
+// ===== FAQ =====
+function buildFAQ() {
+  document.getElementById('faqContainer').innerHTML = faqData.map((f, i) => {
+    const q = i18nT('faq.items.'+i+'.q', f.q);
+    const a = i18nT('faq.items.'+i+'.a', f.a);
+    return '<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle(\'open\')">'+q+'<span class="arrow">▾</span></div><div class="faq-a">'+a+'</div></div>';
+  }).join('');
+}
 
 // ===== TIMELINE =====
 const tlPhases = [
@@ -607,56 +809,89 @@ const tlPhases = [
   {id:'dep',   label:'Departure',      start:'2026-08-16', end:'2026-08-16', icon:'✈️'}
 ];
 
-function getCurrentPhaseIdx(){
+function getCurrentPhaseIdx() {
   const now = new Date(); now.setHours(0,0,0,0);
   const first = new Date(tlPhases[0].start+'T00:00:00');
-  if(now<first) return -1;
-  for(let i=tlPhases.length-1;i>=0;i--){
-    if(now>=new Date(tlPhases[i].start+'T00:00:00')) return i;
+  if (now < first) return -1;
+  for (let i = tlPhases.length-1; i >= 0; i--) {
+    if (now >= new Date(tlPhases[i].start+'T00:00:00')) return i;
   }
   return -1;
 }
 
-function parseScheduleDate(dateStr){return new Date(dateStr.split(', ').slice(1).join(', '));}
+function parseScheduleDate(dateStr) { return new Date(dateStr.split(', ').slice(1).join(', ')); }
 
-function renderTodayInfo(idx){const card=document.getElementById('tlTodayCard');const phase=tlPhases[idx];if(!phase||idx<0){card.innerHTML='<div class="tl-today-head"><span class="tl-today-label">Program akan dimulai</span><span class="tl-today-date">28 April 2026</span></div><div class="tl-today-body"><div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Pendaftaran belum dibuka. Pantau terus informasinya!</div></div>';return;}
-  const now=new Date();const todayStr=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
-  const todaySchedule=scheduleData.find(d=>{const dd=parseScheduleDate(d.date);return dd.toDateString()===now.toDateString();});
-  let html=`<div class="tl-today-head"><span class="tl-dot"></span><span class="tl-today-label">${idx===tlPhases.length-1?'Program Selesai':'Hari Ini'}</span><span class="tl-today-date">${todayStr}</span></div><div class="tl-today-body">`;
-  if(todaySchedule){html+=todaySchedule.sessions.map(s=>{const isSV=s.type==='sitevisit';const isOpen=s.type==='opening';const code=s.code||(isOpen?'Opening':'');return`<div class="tl-session${isSV?' sitevisit':''}${isOpen?' opening':''}"><span class="s-time">${s.time}</span>${code?`<span class="s-badge">${code}</span>`:''}<span>${s.title}</span></div>`;}).join('');}
-  else if(phase.id==='pre'){html+=`<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Persiapan program — pendaftaran & pengumuman peserta</div>`;}
-  else if(phase.id==='essay'){html+=`<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Periode persiapan & pengumpulan esai — submit sebelum 9 Agustus!</div>`;}
-  else if(phase.id==='dep'){html+=`<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Program selesai — peserta kembali ke negara masing-masing</div>`;}
-  else{html+=`<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Tidak ada sesi hari ini — persiapkan diri untuk sesi berikutnya</div>`;}
-  html+='</div>';card.innerHTML=html;
+function renderTodayInfo(idx) {
+  const card = document.getElementById('tlTodayCard');
+  const phase = tlPhases[idx];
+  if (!phase || idx < 0) {
+    card.innerHTML = '<div class="tl-today-head"><span class="tl-today-label">Program not started</span><span class="tl-today-date">28 April 2026</span></div><div class="tl-today-body"><div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Registration opens 28 April 2026. Stay tuned!</div></div>';
+    return;
+  }
+  const now = new Date();
+  const todayStr = now.toLocaleDateString('en-US', {weekday:'long', month:'long', day:'numeric', year:'numeric'});
+  const todaySchedule = scheduleData.find(d => { const dd = parseScheduleDate(d.date); return dd.toDateString() === now.toDateString(); });
+  let html = '<div class="tl-today-head"><span class="tl-dot"></span><span class="tl-today-label">'+(idx === tlPhases.length-1 ? 'Program Finished' : 'Today')+'</span><span class="tl-today-date">'+todayStr+'</span></div><div class="tl-today-body">';
+  if (todaySchedule) {
+    html += todaySchedule.sessions.map(s => {
+      const isSV = s.type === 'sitevisit';
+      const isOpen = s.type === 'opening';
+      const code = s.code || (isOpen ? 'Opening' : '');
+      return '<div class="tl-session'+(isSV?' sitevisit':'')+(isOpen?' opening':'')+'"><span class="s-time">'+s.time+'</span>'+(code?'<span class="s-badge">'+code+'</span>':'')+'<span>'+s.title+'</span></div>';
+    }).join('');
+  } else if (phase.id === 'pre') {
+    html += '<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Pre-program — registration & participant announcement</div>';
+  } else if (phase.id === 'essay') {
+    html += '<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Essay preparation & submission period — submit before 9 August!</div>';
+  } else if (phase.id === 'dep') {
+    html += '<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">Program finished — participants return to their countries</div>';
+  } else {
+    html += '<div style="font-size:13px;color:var(--ink-soft);padding:4px 8px;">No sessions today — prepare for next session.</div>';
+  }
+  html += '</div>';
+  card.innerHTML = html;
 }
 
-function buildTimeline(){
-  const idx=getCurrentPhaseIdx();const scroll=document.getElementById('tlScroll');
-  scroll.innerHTML=tlPhases.map((p,i)=>{let cls='tl-phase';if(i<idx)cls+=' done';else if(i===idx)cls+=' active';return`<div class="${cls}"><span class="tl-icon">${p.icon}</span><span class="tl-label">${p.label}</span><span class="tl-date">${p.start.split('-').slice(1).join('/')}</span></div>`;}).join('');
-  setTimeout(()=>{const a=scroll.querySelector('.tl-phase.active');if(a)a.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});},120);
+function buildTimeline() {
+  const idx = getCurrentPhaseIdx();
+  const scroll = document.getElementById('tlScroll');
+  scroll.innerHTML = tlPhases.map((p,i) => {
+    let cls = 'tl-phase';
+    if (i < idx) cls += ' done';
+    else if (i === idx) cls += ' active';
+    return '<div class="'+cls+'"><span class="tl-icon">'+p.icon+'</span><span class="tl-label">'+p.label+'</span><span class="tl-date">'+p.start.split('-').slice(1).join('/')+'</span></div>';
+  }).join('');
+  setTimeout(() => { const a = scroll.querySelector('.tl-phase.active'); if (a) a.scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'}); }, 120);
   renderTodayInfo(idx);
 }
 
+// ===== MENU =====
+function renderMenu() {
+  document.getElementById('menuGrid').innerHTML = menuItems.map(m =>
+    '<a href="'+m.url+'" class="quick-card"><div class="left"><div class="ic">'+m.icon+'</div><span class="t">'+i18nT(m.key, m.label)+'</span></div><span class="arrow">›</span></a>'
+  ).join('');
+}
+
+// ===== INIT =====
 function initApp() {
-  renderMenu();
+  renderDay(currentDay);
   buildCourseCards();
+  buildSpeakers();
   buildResources();
   buildFAQ();
   buildTimeline();
+  renderMenu();
   if (window.i18n) {
     window.i18n.onLanguageChange(function() {
-      renderMenu();
+      renderDay(currentDay);
       buildCourseCards();
+      buildSpeakers();
       buildResources();
       buildFAQ();
       buildTimeline();
+      renderMenu();
     });
   }
-}
-
-function renderMenu() {
-  document.getElementById('menuGrid').innerHTML = menuItems.map(m => `<a href="${m.url}" class="menu-item"><span class="emoji">${m.icon}</span><span class="mlabel">${i18nT(m.key,m.label)}</span></a>`).join('');
 }
 
 if (window.i18n && window.i18n.ready) {

@@ -30,7 +30,9 @@
     "participants": "Participants",
     "partners": "Supporting Partners",
     "gallery": "Gallery",
-    "library": "Course Library"
+    "library": "Course Library",
+    "sectionTitle": "Quick access",
+    "sectionHeading": "Everything you need, in one place"
   },
   "about": {
     "subtitle": "Learn about the 9th SAMI Summer Course program, objectives, and participation eligibility.",
@@ -413,5 +415,19 @@
     "photoGallery": "Photo Gallery",
     "closeGallery": "Close",
     "of": "of"
+  },
+  "schedule": {
+    "sectionTitle": "Program journey",
+    "sectionHeading": "Your day-by-day schedule",
+    "sectionDescription": "Explore daily sessions — online courses, site visits, and special events."
+  },
+  "speakers": {
+    "sectionTitle": "Meet our speakers",
+    "sectionHeading": "Learn from leading experts"
+  },
+  "cta": {
+    "title": "Be part of the change",
+    "subtitle": "Join global leaders and peers in shaping a sustainable future for agrifood systems.",
+    "button": "Apply Now →"
   }
 }
