@@ -1,0 +1,392 @@
+{
+  "siteTitle": "The 9th SAMI Summer Course | IPB University",
+  "header": {
+    "brand": "SAMI",
+    "brandSub": "The 9th Summer Course",
+    "joinNow": "Join Now",
+    "back": "← Back"
+  },
+  "hero": {
+    "badge": "Registration: Apr 28 – Jul 17, 2026 · Payment deadline Jul 20",
+    "title": "The 9<sup style=\"font-size:0.4em;\">th</sup> <em>SAMI</em> Summer Course",
+    "subtitle": "Sustainable Agrifood Management in Indonesia — hybrid program 26 July – 15 August 2026 at IPB Dramaga, Bogor & Garut. 14 courses from experts, essay contest, and field visits.",
+    "applyNow": "Apply Now",
+    "allCourses": "All Courses",
+    "guideline": "Guideline"
+  },
+  "zoomBar": {
+    "meetingLink": "Meeting Link: ipb.link/SAMI2026 · Learning portal: samiipb.site",
+    "vbg": "VBG: Virtual Background & Technical Guide",
+    "downloadVbg": "Download VBG"
+  },
+  "menu": {
+    "about": "About Program",
+    "ready": "Getting Ready",
+    "accom": "Accommodations",
+    "agenda": "Agenda",
+    "essay": "Essay Contest",
+    "programbook": "Program Book",
+    "speakers": "Speaker's Profile",
+    "participants": "Participants",
+    "partners": "Supporting Partners",
+    "gallery": "Gallery"
+  },
+  "about": {
+    "panel1": {
+      "title": "About SAMI Summer Course",
+      "text1": "SAMI Summer Course is an international academic program held since 2017 by the Department of Management, IPB University. Its goals? To enhance institutional competitiveness, expand global networks, and provide cross-cultural learning experiences through inter-country collaboration.",
+      "text2": "The 9th edition this year runs hybrid from <strong>27 July – 15 August 2026</strong>, with the main location at IPB Dramaga Campus, Bogor. There are <strong>14 courses</strong> on sustainable agrifood management — 12 online courses (2 credits) plus an additional offline track with 2 hybrid courses and field visits (4 credits). There's also an essay contest to sharpen participants' analytical skills.",
+      "theme": "Theme: <strong>\"Building Climate Resilience and Sustainable Agrifood Management through ESG\"</strong>"
+    },
+    "panel2": {
+      "title": "Program Objectives",
+      "items": [
+        "Enhance participants' knowledge and skills in specific fields of study",
+        "Interactive learning with collaborative approaches",
+        "Expand international networks between participants and host institutions",
+        "Introduce local culture to international participants and strengthen cultural diplomacy"
+      ]
+    },
+    "panel3": {
+      "title": "Who Can Join?",
+      "items": [
+        "Undergraduate or graduate students...",
+        "Faculty members and researchers...",
+        "Professionals in agriculture, food, environment, or related fields...",
+        "International participants from partner universities..."
+      ]
+    }
+  },
+  "gettingReady": {
+    "title": "Getting Ready for SAMI 2026",
+    "subtitle": "Prepare for online sessions and the in-person experience in Bogor & Garut.",
+    "panel1": {
+      "title": "Before Online Sessions",
+      "items": [
+        "Test Zoom first to avoid technical issues",
+        "Mute microphone when not speaking, use full name for easy identification",
+        "Slides shared via WhatsApp group one day prior, or via portal samiipb.site",
+        "Use Q&A box or prefix chat with \"[ASK]\" to ask speakers",
+        "Turn on camera and use official virtual background (ipb.link/vbg-sami-2026)"
+      ]
+    },
+    "panel2": {
+      "title": "Essential Items for Site Visit",
+      "items": [
+        "Passport & travel documents (keep copies on phone, wallet, bag, and suitcase)",
+        "Universal power adapter — Indonesia uses type C/F, 220V, 50Hz",
+        "Personal medication (organizers only provide basic medicine)",
+        "Cash (Rupiah) plus local SIM card or travel WiFi",
+        "Light comfortable clothing, hat, rain jacket/umbrella, comfortable walking shoes"
+      ]
+    },
+    "panel3": {
+      "title": "Things to Know Before Coming to Indonesia",
+      "items": [
+        "Currency: Indonesian Rupiah (IDR). Digital wallets (GoPay, OVO) widely used in cities",
+        "Local SIM cards available at airport...",
+        "Timezone: WIB (UTC+7)...",
+        "Weather in July-August: dry season, 24-32°C..."
+      ]
+    }
+  },
+  "accommodations": {
+    "title": "Accommodations",
+    "subtitle": "Official lodging for SAMI 2026 participants (lecturers & students) during stay in Bogor & Garut.",
+    "panel1": {
+      "title": "Bogor — Arrival (Aug 9–10)",
+      "items": [
+        "<b>Sienna Residence Bogor</b> (Lecturers) — Jl. Letjen Ibrahim Adjie No. 8, Ciherang, Dramaga, Bogor Regency",
+        "<b>Cordova Apartment</b> (Students) — Jl. Cilubang Raya No. 1, Balungbangjaya, West Bogor, ~1.6 km from IPB Dramaga Campus"
+      ]
+    },
+    "panel2": {
+      "title": "Garut — Site Visit (Aug 10–13)",
+      "items": [
+        "<b>Hotel Harmoni Garut</b> (Lecturers & Students) — Jl. Cipanas Baru No. 78, Pananjung, Tarogong Kaler, Garut",
+        "Near Sabda Alam Water Park & Nagara Hot Spring, and Abah Otje Grilled Lamb & Beef Restaurant"
+      ]
+    },
+    "panel3": {
+      "title": "Bogor — Closing (Aug 13–16)",
+      "items": [
+        "<b>Fave Hotel Bogor</b> (Lecturers) — Jl. Cidangiang No. 1, Tegallega, Bogor",
+        "<b>Bianco Hotel Bogor</b> (Students) — 15 min walk from Bogor Botanical Garden, near Bogor Square Mall"
+      ]
+    },
+    "panel4": {
+      "title": "Transportation",
+      "items": [
+        "2 Regular Buses (Alpha), 33-seat, for group site-visit travel",
+        "IPB Bus (33-seat) available for campus transfers",
+        "Pick-up/drop-off at Soekarno-Hatta Airport arranged"
+      ]
+    }
+  },
+  "agenda": {
+    "title": "Full Agenda — 12 Days, Bogor & Garut",
+    "subtitle": "Complete day-by-day schedule, from opening on 27 July to departure on 16 August.",
+    "dayTabs": [
+      { "day": "Day 1", "date": "Jul 27" },
+      { "day": "Day 2", "date": "Jul 28" },
+      { "day": "Day 3", "date": "Jul 29" },
+      { "day": "Day 4", "date": "Jul 30" },
+      { "day": "Day 5", "date": "Jul 31" },
+      { "day": "Day 6", "date": "Aug 10" },
+      { "day": "Day 7", "date": "Aug 11" },
+      { "day": "Day 8", "date": "Aug 12" },
+      { "day": "Day 9", "date": "Aug 13" },
+      { "day": "Day 10", "date": "Aug 14" },
+      { "day": "Day 11", "date": "Aug 15" },
+      { "day": "Day 12", "date": "Aug 16" }
+    ],
+    "types": {
+      "opening": "Opening",
+      "course": "Course",
+      "sitevisit": "Site Visit"
+    }
+  },
+  "essay": {
+    "title": "SAMI Essay Contest",
+    "subtitle": "The 9th annual SAMI Student Essay Contest, open to all SAMI Summer Course 2026 participants.",
+    "panel1": {
+      "title": "Theme & Key Details",
+      "theme": "Theme: Building Climate Resilience and Sustainable Agrifood Management through ESG",
+      "items": [
+        "<b>Submission deadline:</b> essays due by August 9, 2026, 10:00 PM Jakarta Time (agenda also lists Aug 12 as essay milestone — check program book for final date)",
+        "<b>Final presentation:</b> August 14, 2026 at Start Up Science Technopark, Bogor",
+        "<b>Format:</b> max. 3,000 words (English), MS Word, Times New Roman 12pt, 1.5 spacing, submitted by group with a max. 10-slide presentation (15 min presentation + 15 min Q&A)",
+        "<b>Rewards:</b> up to 3 winning essays receive certificates & cash prizes, and are published in SAMI Proceeding 2026 (ISBN)"
+      ]
+    },
+    "panel2": {
+      "title": "Problem Focus Topics",
+      "topics": [
+        "ESG Financial Risk in Agrifood",
+        "Green Marketing for Sustainable Agrifood",
+        "Sustainable Production under Climate Change",
+        "HR Readiness for Climate Resilience",
+        "ESG Financing and Supply Chain Sustainability",
+        "Consumer Behavior toward ESG Products",
+        "Low-Carbon Agrifood Operations",
+        "ESG Leadership and Organizational Culture",
+        "Sustainable Cost and Profit Management",
+        "Digital Marketing for ESG Agrifood",
+        "Circular Economy in Agrifood Operations",
+        "Green HRM and Employee Engagement",
+        "ESG Performance and Financial Sustainability",
+        "ESG and Agrifood Market Competitiveness",
+        "Climate-Resilient Agrifood Supply Chains",
+        "Integrated ESG Management in Agrifood"
+      ]
+    },
+    "panel3": {
+      "title": "Award",
+      "items": [
+        "<b>1st Prize:</b> e-Certificate + IDR 3,000,000",
+        "<b>2nd Prize:</b> e-Certificate + IDR 2,000,000",
+        "<b>3rd Prize:</b> e-Certificate + IDR 1,000,000"
+      ]
+    },
+    "panel4": {
+      "title": "Reviewers",
+      "rooms": [
+        {
+          "name": "Room 1",
+          "people": ["Dr. Indra R. Sembiring (IPB University)", "Dr. Noor Azlin Ismail (Universiti Putra Malaysia)"]
+        },
+        {
+          "name": "Room 2",
+          "people": ["Prof. Hermann Waibel (University of Hannover)", "Aries Setiadi (Center for Indonesian Policy Studies)"]
+        },
+        {
+          "name": "Room 3",
+          "people": ["Dr. Eko Ruddy Cahyadi (IPB University)", "Syazwani Arbaiyah M. S. (FELCRA College, Malaysia)"]
+        },
+        {
+          "name": "Room 4",
+          "people": ["Nisa Zahra, S.T.P., M.Si. (IPB University)", "Dr. Ketwadee Madden (Songkhla Rajabhat University)"]
+        }
+      ]
+    }
+  },
+  "programBook": {
+    "title": "Program Book",
+    "subtitle": "Download the complete SAMI 2026 Program Book — agenda, site visit profiles, speaker & reviewer profiles, essay contest rules, accommodation and travel information.",
+    "card": {
+      "title": "The 9th SAMI Program Book",
+      "description": "Comprehensive guide covering the full 26 July – 15 August 2026 program in Bogor & Garut.",
+      "downloadBtn": "Download (PDF)",
+      "githubNote": "PDF also available in GitHub repository: <code>SAMI PROGRAM BOOK.pdf</code>"
+    }
+  },
+  "speakers": {
+    "title": "Speaker's Profile",
+    "subtitle": "Meet the 14 speakers of this year's SAMI Summer Course, from Indonesia, Germany, South Korea, Malaysia, Thailand, and other countries."
+  },
+  "participants": {
+    "title": "Participants",
+    "subtitle": "The 9th SAMI Summer Course brought together participants from 37 universities across 20 countries.",
+    "panel1": {
+      "title": "Overview",
+      "items": [
+        "<b>Total participants:</b> 125, from 37 universities in 20 countries",
+        "<b>Online track:</b> 91 participants, 25 universities, 12 countries — including Indonesia, Malaysia, Thailand, Jordan, Nigeria, Tunisia, India, Kenya, Tanzania, Burkina Faso, Cameroon, Myanmar, Timor-Leste and Rwanda",
+        "<b>Offline (site visit) track:</b> 34 participants, 7 universities, 6 countries — including Indonesia, Malaysia, Oman, Yemen, Tunisia and Pakistan"
+      ]
+    },
+    "panel2": {
+      "title": "Participating Institutions",
+      "items": [
+        "IPB University (Indonesia)",
+        "Universiti Putra Malaysia (UPM)",
+        "Felcra College Malaysia",
+        "Universiti Tun Hussein Onn Malaysia (UTHM)",
+        "UITM Shah Alam",
+        "Songkhla Rajabhat University (Thailand)",
+        "Mutah University (Jordan)",
+        "Sultan Qaboos University (Oman)",
+        "Aube Nouvelle University (Burkina Faso)",
+        "Yezin Agricultural University (Myanmar)",
+        "Kenyatta University (Kenya)",
+        "Gombe State University (Nigeria)",
+        "Institut Teknologi Bandung, Universitas Gunadarma (Indonesia)",
+        "and 24 more universities across Tunisia, India, Cameroon & other countries"
+      ]
+    }
+  },
+  "partners": {
+    "title": "Supporting Partners",
+    "subtitle": "Supported by partners committed to sustainable agrifood development.",
+    "imageAlt": "SAMI 2026 Sponsors"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Photos and memories from SAMI Summer Course programs."
+  },
+  "courses": {
+    "sectionTitle": "Course details",
+    "sectionHeading": "Explore All 14 Courses",
+    "sectionDescription": "12 online courses (27–31 July) plus 2 hybrid on-campus courses (10 & 14 August). Click any course card to view details, meeting link, and learning outcomes covered."
+  },
+  "resources": {
+    "sectionTitle": "Course materials",
+    "sectionHeading": "Resources",
+    "sectionDescription": "Quick links to the essentials for the 9th SAMI Summer Course.",
+    "items": [
+      { "name": "Program Book", "desc": "Full program book & guideline" },
+      { "name": "Registration Form", "desc": "Submit your application here" },
+      { "name": "Virtual Background", "desc": "Official SAMI Zoom backgrounds" },
+      { "name": "Learning Portal", "desc": "samiipb.site — course materials & info" },
+      { "name": "Essay Contest Guideline", "desc": "Rules in program book" },
+      { "name": "Instagram @samiipb", "desc": "Updates and program highlights" }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "Got questions?",
+    "sectionHeading": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What is SAMI Summer Course?",
+        "a": "SAMI (Sustainable Agrifood Management in Indonesia) is an annual international summer course from Department of Management, IPB University, running since 2017. The 9th edition (2026) is held hybrid 27 July – 15 August, with 14 courses on sustainable agrifood management, essay contest, and field visits in Bogor & Garut."
+      },
+      {
+        "q": "What tracks are available?",
+        "a": "Two options: Online Course Track (12 live online sessions, 2 credits) and Online + Site Visit Track (12 online sessions + 2 hybrid courses on campus + field visits, 4 credits)."
+      },
+      {
+        "q": "When is the registration period?",
+        "a": "Registration opens 28 April – 17 July 2026, announcement 17 July, and payment deadline 20 July 2026. For fee details, check the program book at https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view."
+      },
+      {
+        "q": "How to register?",
+        "a": "Submit application via ipb.link/submission-sami-2026. Read the full program book at https://drive.google.com/file/d/1D1NC92bcacJQB1MCXLwprNpfzdUK8Fk0/view."
+      },
+      {
+        "q": "When are online courses held?",
+        "a": "12 online sessions run 27–31 July 2026 via Zoom. Slides shared via WhatsApp group one day prior, and also on learning portal samiipb.site."
+      },
+      {
+        "q": "What happens during the onsite portion?",
+        "a": "Offline participants arrive in Bogor 9 August, attend 2 hybrid courses (10 & 14 August), and 9 field visits in Bogor & Garut from 10–15 August — including IPB Dramaga Campus, Eptilu agrotourism, Mandalagiri coffee cooperative, Margawati sheep/goat center, Bestory dodol production, Sukaregang leather market, Cangkuang Temple, IPB Science Technopark, and Bogor Botanical Garden."
+      },
+      {
+        "q": "Is there a certificate?",
+        "a": "Yes. Participants who complete the program receive Certificate of Completion, Certificate of Participation for Essay Contest, and credit transcripts (4 credits for full program, 2 credits for online only) issued by Department of Management IPB University."
+      },
+      {
+        "q": "Is the essay contest mandatory?",
+        "a": "The essay contest is part of the project assignment. Groups submit essays (max. 3,000 words) plus presentation, with final presentation 14 August at Start Up Science Technopark, Bogor. Top 3 essays get certificates & cash prizes (1st: IDR 3,000,000, 2nd: IDR 2,000,000, 3rd: IDR 1,000,000), and all accepted essays published in SAMI Proceeding with ISBN."
+      },
+      {
+        "q": "What is the language of instruction?",
+        "a": "All sessions and essays use English."
+      }
+    ]
+  },
+  "timeline": {
+    "phases": [
+      { "id": "pre", "label": "Pre-Program", "start": "2026-04-28", "end": "2026-07-26", "icon": "📋" },
+      { "id": "day1", "label": "Day 1: Opening", "start": "2026-07-27", "end": "2026-07-27", "icon": "🚀" },
+      { "id": "day2", "label": "Day 2", "start": "2026-07-28", "end": "2026-07-28", "icon": "💻" },
+      { "id": "day3", "label": "Day 3", "start": "2026-07-29", "end": "2026-07-29", "icon": "💻" },
+      { "id": "day4", "label": "Day 4", "start": "2026-07-30", "end": "2026-07-30", "icon": "💻" },
+      { "id": "day5", "label": "Day 5", "start": "2026-07-31", "end": "2026-07-31", "icon": "💻" },
+      { "id": "essay", "label": "Essay Prep", "start": "2026-08-01", "end": "2026-08-09", "icon": "📝" },
+      { "id": "day6", "label": "Day 6: Hybrid", "start": "2026-08-10", "end": "2026-08-10", "icon": "🏛️" },
+      { "id": "day7", "label": "Day 7", "start": "2026-08-11", "end": "2026-08-11", "icon": "🏞️" },
+      { "id": "day8", "label": "Day 8", "start": "2026-08-12", "end": "2026-08-12", "icon": "🏞️" },
+      { "id": "day9", "label": "Day 9", "start": "2026-08-13", "end": "2026-08-13", "icon": "🏛️" },
+      { "id": "day10", "label": "Day 10: Closing", "start": "2026-08-14", "end": "2026-08-14", "icon": "🏆" },
+      { "id": "day11", "label": "Day 11", "start": "2026-08-15", "end": "2026-08-15", "icon": "🌿" },
+      { "id": "dep", "label": "Departure", "start": "2026-08-16", "end": "2026-08-16", "icon": "✈️" }
+    ],
+    "todayLabels": {
+      "programNotStarted": "Program not started",
+      "preProgram": "Pre-program — registration & participant announcement",
+      "essayPrep": "Essay preparation & submission period — submit before 9 August!",
+      "programEnded": "Program finished — participants return to their countries",
+      "noSessionToday": "No sessions today — prepare for next session",
+      "today": "Today",
+      "programEndedLabel": "Program Finished"
+    }
+  },
+  "footer": {
+    "brandText": "Department of Management, Faculty of Economics and Management, IPB University. Held annually since 2017.",
+    "program": "Program",
+    "email": "sami@apps.ipb.ac.id",
+    "website": "samiipb.ac.id",
+    "instagram": "@samiipb",
+    "links": "Links",
+    "registration": "Registration",
+    "guideline": "Guideline",
+    "virtualBackground": "Virtual Background",
+    "copyright": "© 2026 SAMI — IPB University"
+  },
+  "modal": {
+    "speaker": "Speaker",
+    "schedule": "Schedule",
+    "location": "Location",
+    "meetingLink": "Meeting Link",
+    "joinZoom": "Join via ipb.link/SAMI2026",
+    "zoomDetails": "Slides shared via WhatsApp group and portal samiipb.site one day before session",
+    "moduleMaterials": "Module Materials",
+    "download": "Download →",
+    "locked": "🔒"
+  },
+  "coursePage": {
+    "title": "All 14 Courses",
+    "subtitle": "Explore all SAMI 2026 courses — from online courses to hybrid sessions, from various international experts.",
+    "searchPlaceholder": "Search course or speaker...",
+    "filterAll": "All",
+    "filterOnline": "Online",
+    "filterHybrid": "Hybrid",
+    "viewDetails": "View Details →",
+    "backToHome": "Back to Home"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error loading content",
+    "noData": "No data available"
+  }
+}
