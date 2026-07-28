@@ -3,6 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://samiipb.site/</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/"/>
@@ -11,6 +12,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/about.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/about.html"/>
@@ -19,6 +21,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/agenda.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/agenda.html"/>
@@ -27,6 +30,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/speakers.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/speakers.html"/>
@@ -35,6 +39,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/ready.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/ready.html"/>
@@ -43,6 +48,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/accom.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/accom.html"/>
@@ -51,6 +57,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/essay.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/essay.html"/>
@@ -59,6 +66,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/programbook.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/programbook.html"/>
@@ -67,6 +75,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/participants.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/participants.html"/>
@@ -75,22 +84,17 @@
   </url>
   <url>
     <loc>https://samiipb.site/partners.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/partners.html"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://samiipb.site/partners.html?lang=id"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://samiipb.site/partners.html"/>
   </url>
-  <url>
-    <loc>https://samiipb.site/gallery.html</loc>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/gallery.html"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://samiipb.site/gallery.html?lang=id"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://samiipb.site/gallery.html"/>
-  </url>
+
   <url>
     <loc>https://samiipb.site/course/</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/course/"/>
@@ -99,6 +103,7 @@
   </url>
   <url>
     <loc>https://samiipb.site/course/library.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://samiipb.site/course/library.html"/>

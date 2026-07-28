@@ -23,13 +23,19 @@
 <meta property="og:title" content="Course Library — The 9th SAMI Summer Course | IPB University">
 <meta property="og:description" content="Browse course documentation, session photos, and materials from all SAMI 2026 courses — from completed, ongoing, to upcoming sessions. Access slides and resources.">
 <meta property="og:image" content="https://samiipb.site/logosami2026.png">
-<meta property="og:site_name" content="SAMI Summer Course">
+    <meta property="og:image:width" content="633">
+    <meta property="og:image:height" content="633">
+    <meta property="og:site_name" content="SAMI Summer Course">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Course Library — The 9th SAMI Summer Course | IPB University">
 <meta name="twitter:description" content="Browse course documentation, session photos, and materials from all SAMI 2026 courses — from completed, ongoing, to upcoming sessions. Access slides and resources.">
-<meta name="twitter:image" content="https://samiipb.site/logosami2026.png">
-<link rel="alternate" href="https://samiipb.site/course/library.html" hreflang="x-default">
+    <meta name="twitter:image" content="https://samiipb.site/logosami2026.png">
+    <meta name="twitter:site" content="@samiipb">
+    <meta name="theme-color" content="#5B9700">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="alternate" href="https://samiipb.site/course/library.html" hreflang="x-default">
 <link rel="alternate" href="https://samiipb.site/course/library.html" hreflang="en">
 <link rel="alternate" href="https://samiipb.site/course/library.html?lang=id" hreflang="id">
 <link rel="alternate" href="https://samiipb.site/course/library.html?lang=ms" hreflang="ms">
@@ -56,6 +62,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
 <script src="../js/i18n.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://samiipb.site/" },
+    { "@type": "ListItem", "position": 2, "name": "Course Library", "item": "https://samiipb.site/course/library.html" }
+  ]
+}
+</script>
 <style>
 :root{--primary:#5B9700;--primary-dark:#5B9700;--primary-darker:#5B9700;--primary-light:#5B9700;--primary-lighter:#84DB00;--primary-pale:#DBFFA6;--accent:#F68D23;--accent-dark:#497900;--accent-pale:#EAFFC9;--bg:#F4F7F9;--paper:#FFFFFF;--ink:#5B9700;--ink-soft:#5B9700;--ink-faint:#5B9700;--line:#EAFFC9;--font-display:'Fraunces',serif;--font-body:'Inter',sans-serif;--font-mono:'IBM Plex Mono',monospace;--container:1140px;--radius-s:10px;--radius-m:18px;--radius-l:28px;--shadow-sm:0 1px 3px rgba(37,150,190,0.08);--shadow-md:0 4px 16px rgba(37,150,190,0.12);--shadow-lg:0 12px 40px -8px rgba(37,150,190,0.2);}
 *,*::before,*::after{box-sizing:border-box;}
@@ -326,8 +342,8 @@ const courseModules = {
   'Course 3':[{icon:'📄',name:'Session Slides — Ecolabels & Blue Food Systems',url:'https://drive.google.com/file/d/1iMvQvlJ6qKc5Pvi2IqEL8l-B70aPmSK9/view'}],
   'Course 4':[{icon:'📄',name:'Session Slides — Circular Economy',url:'https://docs.google.com/presentation/d/1sSB-sUyG6LzkFg6P5jndX2Fq5cXb_2IP/edit'}],
   'Course 5':[{icon:'📄',name:'Session Slides — ESG Reporting',url:'https://drive.google.com/file/d/17AIK3jryh2iCwMyxZgVHh_8wHTlG5MUJ/view'}],
-  'Course 6':[{icon:'📄',name:'Session Slides — Geopolitics & Supply Chain',url:'#',locked:true}],
-  'Course 7':[{icon:'📄',name:'Session Slides — Geopark Tourism',url:'#',locked:true}],
+  'Course 6':[{icon:'📄',name:'Session Slides — Geopolitics & Supply Chain',url:'https://docs.google.com/presentation/d/1cgFMFUHeXE9x8XBtPhg5B9RxVCkuvV2Y/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
+  'Course 7':[{icon:'📄',name:'Session Slides — Geopark Tourism',url:'https://docs.google.com/presentation/d/1uJFndVzSpHm8m-S9I88SIIXJYj62Vp8t/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
   'Course 8':[{icon:'📄',name:'Session Slides — ESG Governance & Policy',url:'#',locked:true}],
   'Course 9':[{icon:'📄',name:'Session Slides — Supply Chain ESG Strategy',url:'#',locked:true}],
   'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'#',locked:true}],
