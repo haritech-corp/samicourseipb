@@ -584,7 +584,7 @@ document.getElementById('courseModal').addEventListener('click',e=>{if(e.target=
 
 // ===== RESOURCES =====
 function buildResources(){document.getElementById('resourcesGrid').innerHTML = resourcesData.map(r => `<a class="resource-card" href="${r.url}" target="_blank"><span class="r-icon">${r.icon}</span><div><div class="r-name">${r.name}</div><div class="r-desc">${r.desc}</div></div></a>`).join('');}
-function buildFAQ(){document.getElementById('faqContainer').innerHTML = faqData.map(f => `<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${f.q}<span class="arrow">▾</span></div><div class="faq-a">${f.a}</div></div>`).join('');}
+function buildFAQ(){document.getElementById('faqContainer').innerHTML = faqData.map((f, i) => `<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">${i18nT('faq.items.'+i+'.q', f.q)}<span class="arrow">▾</span></div><div class="faq-a">${i18nT('faq.items.'+i+'.a', f.a)}</div></div>`).join('');}
 
 // ===== TIMELINE =====
 const tlPhases = [
