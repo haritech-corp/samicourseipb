@@ -310,9 +310,14 @@
     "subtitle": "Didukung oleh mitra yang berkomitmen pada pengembangan agrifood berkelanjutan.",
     "imageAlt": "Sponsor SAMI 2026"
   },
-  "gallery": {
-    "title": "Galeri",
-    "subtitle": "Foto dan kenangan dari program SAMI Summer Course."
+  "notes": {
+    "title": "Catatan Saya",
+    "placeholder": "Catat materi selama kursus...",
+    "autoSaved": "Tersimpan otomatis",
+    "clear": "Hapus",
+    "clearConfirm": "Hapus semua catatan?",
+    "cleared": "Catatan dihapus",
+    "badge": "!"
   },
   "courses": {
     "sectionTitle": "Detail kursus",

@@ -55,7 +55,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
-<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.2/dist/feather.min.js"></script>
 <script src="js/i18n.js"></script>
 <script type="application/ld+json">
 {
@@ -96,8 +95,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .hero-title{font-family:var(--font-display);font-weight:300;font-size:clamp(28px,5vw,52px);line-height:.92;color:#fff;letter-spacing:-.03em;margin-bottom:8px;}
 .hero-title em{font-style:italic;font-weight:600;color:var(--accent);}
 .hero-sub{margin-top:8px;max-width:520px;margin-left:auto;margin-right:auto;color:rgba(255,255,255,.85);font-size:14px;line-height:1.5;}
-.hero-home{display:inline-flex;align-items:center;gap:4px;margin-top:10px;color:var(--primary-lighter);font-size:12px;}
-.hero-home:hover{color:#fff;}
+
 .menu-section{padding:24px 0 0;}
 .menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;}
 .menu-item{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 4px;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius-m);transition:all .25s;position:relative;overflow:hidden;color:var(--ink-soft);}
@@ -105,7 +103,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .menu-item:hover{border-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md);color:var(--primary);}
 .menu-item.active{border-color:var(--primary);background:var(--primary-pale);box-shadow:var(--shadow-sm);color:var(--primary);}
 .menu-item.active::after{transform:scaleX(1);}
-.menu-item i{width:20px;height:20px;}
+.menu-item .emoji{font-size:22px;display:block;margin-bottom:3px;line-height:1.2;}
 .menu-item .mlabel{font-size:10px;font-weight:600;line-height:1.2;text-align:center;}
 @media(max-width:820px){.menu-grid{grid-template-columns:repeat(auto-fill,minmax(90px,1fr));}}
 @media(max-width:500px){.menu-grid{grid-template-columns:repeat(auto-fill,minmax(72px,1fr));}}
@@ -133,6 +131,7 @@ main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:
       <span class="brand-text"><b data-i18n="header.brand">SAMI</b><span data-i18n="header.brandSub">The 9th Summer Course</span></span>
     </a>
     <div style="display:flex;align-items:center;gap:10px;">
+      <a href="/" class="btn btn-outline-light" style="font-size:13px;padding:8px 18px;" data-i18n="header.back">← Back</a>
       <div class="lang-switcher" style="display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:4px 10px;">
         <span class="fi fi-us" id="langFlag" style="font-size:16px;border-radius:3px;"></span>
         <select id="langSwitcher" style="background:transparent;color:#fff;border:none;font-size:12px;font-family:inherit;cursor:pointer;outline:none;max-width:110px;"> <option value="en">English</option>
@@ -164,9 +163,9 @@ main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:
   <div class="hero-inner">
     <h1 class="hero-title" data-i18n="menu.speakers">Speaker's Profile</h1>
     <p class="hero-sub" data-i18n="speakers.subtitle">Meet the 14 speakers of this year's SAMI Summer Course, from Indonesia, Germany, South Korea, Malaysia, Thailand, and other countries.</p>
-    <a href="/" class="hero-home" data-i18n="header.back">← Back to Home</a>
   </div>
 </section>
+
 <section class="menu-section">
   <div class="container">
     <div class="menu-grid" id="menuGrid"></div>
@@ -186,22 +185,20 @@ main{animation:pageFade 0.45s ease}@keyframes pageFade{from{opacity:0;transform:
 <script>
 function i18nT(key, fallback) { try { if (window.i18n && window.i18n.t) { var t = window.i18n.t(key); if (t !== key) return t; } } catch(e) {} return fallback; }
 const menuItems = [
-  { id:'about', icon:'info', label:'About Program', key:'menu.about', url:'/about.html' },
-  { id:'ready', icon:'briefcase', label:'Getting Ready', key:'menu.ready', url:'/ready.html' },
-  { id:'accom', icon:'home', label:'Accommodations', key:'menu.accom', url:'/accom.html' },
-  { id:'agenda', icon:'calendar', label:'Agenda', key:'menu.agenda', url:'/agenda.html' },
-  { id:'essay', icon:'award', label:'Essay Contest', key:'menu.essay', url:'/essay.html' },
-  { id:'programbook', icon:'book-open', label:'Program Book', key:'menu.programbook', url:'/programbook.html' },
-  { id:'speakers', icon:'users', label:"Speaker's Profile", key:'menu.speakers', url:'/speakers.html' },
-  { id:'participants', icon:'user-check', label:'Participants', key:'menu.participants', url:'/participants.html' },
-  { id:'partners', icon:'handshake', label:'Supporting Partners', key:'menu.partners', url:'/partners.html' },
-  { id:'gallery', icon:'image', label:'Gallery', key:'menu.gallery', url:'/gallery.html' },
-  { id:'library', icon:'book', label:'Course Library', key:'menu.library', url:'/course/library.html' }
+  { id:'about', icon:'☀️', label:'About Program', key:'menu.about', url:'/about.html' },
+  { id:'ready', icon:'🧳', label:'Getting Ready', key:'menu.ready', url:'/ready.html' },
+  { id:'accom', icon:'🗺️', label:'Accommodations', key:'menu.accom', url:'/accom.html' },
+  { id:'agenda', icon:'🗓️', label:'Agenda', key:'menu.agenda', url:'/agenda.html' },
+  { id:'essay', icon:'🏆', label:'Essay Contest', key:'menu.essay', url:'/essay.html' },
+  { id:'programbook', icon:'📘', label:'Program Book', key:'menu.programbook', url:'/programbook.html' },
+  { id:'speakers', icon:'👥', label:"Speaker's Profile", key:'menu.speakers', url:'/speakers.html' },
+  { id:'participants', icon:'✅', label:'Participants', key:'menu.participants', url:'/participants.html' },
+  { id:'partners', icon:'🤝', label:'Supporting Partners', key:'menu.partners', url:'/partners.html' },
+  { id:'library', icon:'📚', label:'Course Library', key:'menu.library', url:'/course/library.html' }
 ];
 const currentSection = 'speakers';
 function renderMenu() {
-  document.getElementById('menuGrid').innerHTML = menuItems.map(m => '<a href="' + m.url + '" class="menu-item' + (m.id === currentSection ? ' active' : '') + '"><i data-feather="' + m.icon + '"></i><span class="mlabel">' + i18nT(m.key, m.label) + '</span></a>').join('');
-  if (typeof feather !== 'undefined') feather.replace();
+  document.getElementById('menuGrid').innerHTML = menuItems.map(m => '<a href="' + m.url + '" class="menu-item' + (m.id === currentSection ? ' active' : '') + '"><span class="emoji">' + m.icon + '</span><span class="mlabel">' + i18nT(m.key, m.label) + '</span></a>').join('');
 }
 const speakersData = [
   { name:"Prof. Ho Sang Kang", affil:"Seoul National University (SNU), South Korea", course:"Course 1" },
@@ -226,8 +223,7 @@ function renderContent() {
 function initApp() {
   renderMenu();
   renderContent();
-  if (typeof feather !== 'undefined') feather.replace();
-  if (window.i18n) { window.i18n.onLanguageChange(function() { renderMenu(); renderContent(); if (typeof feather !== 'undefined') feather.replace(); }); }
+  if (window.i18n) { window.i18n.onLanguageChange(function() { renderMenu(); renderContent(); }); }
 }
 if (window.i18n && window.i18n.ready) { window.i18n.ready.then(initApp); } else { document.addEventListener('DOMContentLoaded', function() { setTimeout(initApp, 100); }); }
 </script>

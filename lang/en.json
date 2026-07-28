@@ -262,9 +262,14 @@
     "subtitle": "Supported by partners committed to sustainable agrifood development.",
     "imageAlt": "SAMI 2026 Sponsors"
   },
-  "gallery": {
-    "title": "Gallery",
-    "subtitle": "Photos and memories from SAMI Summer Course programs."
+  "notes": {
+    "title": "My Notes",
+    "placeholder": "Take notes during courses...",
+    "autoSaved": "Auto-saved",
+    "clear": "Clear",
+    "clearConfirm": "Clear all notes?",
+    "cleared": "Notes cleared",
+    "badge": "!"
   },
   "courses": {
     "sectionTitle": "Course details",
