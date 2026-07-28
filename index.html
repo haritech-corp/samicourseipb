@@ -90,9 +90,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 /* ZOOM BAR */
 .zoom-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:linear-gradient(135deg,var(--primary-darker),var(--primary-dark));border-radius:var(--radius-m);margin-top:18px;box-shadow:0 4px 20px rgba(37,150,190,0.2);}
 .zoom-bar-left{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
-.zoom-item{display:flex;align-items:center;gap:7px;font-size:13px;}
+.zoom-item{display:flex;align-items:center;gap:7px;font-size:13px;color:#fff;}
 .zoom-item .icon{color:var(--primary-lighter);width:15px;height:15px;}
 .zoom-item b{font-weight:600;color:#fff;}
+.zoom-item span{color:#fff;}
 @media(max-width:600px){.zoom-bar{flex-direction:column;align-items:stretch;text-align:center;}}
 
 /* CONTENT PANEL */
@@ -243,6 +244,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .tl-session.opening{background:var(--primary);border-radius:6px;color:#fff;}
 .tl-session.opening .s-time{color:var(--primary-lighter);}
 .tl-session.opening .s-badge{background:rgba(255,255,255,.15);color:#fff;}
+#langSwitcher option { color: #000; }
 </style>
 </head>
 <body>
