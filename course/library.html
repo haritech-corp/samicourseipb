@@ -141,6 +141,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .card-photo-count{display:inline-flex;align-items:center;gap:4px;background:var(--primary-pale);padding:2px 8px;border-radius:6px;color:var(--primary-dark);font-weight:600;font-size:10px;}
 .card-footer{padding:0 16px 14px;}
 .card-footer .btn{width:100%;justify-content:center;font-size:12px;padding:9px;}
+.card-footer .video-btn{margin-top:8px;}
 
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
 .gallery-item{aspect-ratio:4/3;border-radius:var(--radius-s);overflow:hidden;border:2px solid var(--line);transition:all .25s;cursor:pointer;position:relative;}
@@ -347,11 +348,26 @@ const courseModules = {
   'Course 7':[{icon:'📄',name:'Session Slides — Geopark Tourism',url:'https://docs.google.com/presentation/d/1uJFndVzSpHm8m-S9I88SIIXJYj62Vp8t/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
   'Course 8':[{icon:'📄',name:'Session Slides — ESG Governance & Policy',url:'https://drive.google.com/file/d/10imPa012R3kBE8WBNjJ6jAXWyPTXbwhc/view?usp=drive_link'}],
   'Course 9':[{icon:'📄',name:'Session Slides — Supply Chain ESG Strategy',url:'https://docs.google.com/presentation/d/1g4s4mOIRoDsH_x04n6aIzE1ldTymngOd/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
-  'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'#',locked:true}],
-  'Course 11':[{icon:'📄',name:'Session Slides — Climate Governance',url:'#',locked:true}],
-  'Course 12':[{icon:'📄',name:'Session Slides — Sustainable Finance',url:'#',locked:true}],
+  'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'https://drive.google.com/file/d/1k0UMhAHmWvTyXpuT326C21EmcLLub3S3/view?usp=drive_link'}],
+  'Course 11':[{icon:'📄',name:'Session Slides — Climate Governance',url:'https://drive.google.com/file/d/11MdMK-cTG3vw9zDrpsXzZogO-IxTJs-4/view?usp=drive_link'}],
+  'Course 12':[{icon:'📄',name:'Session Slides — Sustainable Finance',url:'https://drive.google.com/file/d/1LwaYC4SSajG8b9HuqaobQ5_3c1i6-5MM/view?usp=drive_link'}],
   'Course 13':[{icon:'📄',name:'Session Slides — Sustainable Agrifood Systems',url:'#',locked:true}],
   'Course 14':[{icon:'📄',name:'Session Slides — Halal Supply Chain',url:'#',locked:true}]
+};
+
+const courseVideos = {
+  'Course 1':'https://drive.google.com/file/d/1ecGNb6SV5I3PtdFinsJYrNTRV5biAXAB/view?usp=drive_link',
+  'Course 2':'https://drive.google.com/file/d/1uUTiADPpLZsDqabQOCwXRoGAjyJjJRZQ/view?usp=drive_link',
+  'Course 3':'https://drive.google.com/file/d/1RkApcFgUtf6t-S9oeN0YMnUmYf_cqFFF/view?usp=drive_link',
+  'Course 4':'https://drive.google.com/file/d/1RdNhN5drE73iHbF0eGHZyudfzVu5yxrG/view?usp=drive_link',
+  'Course 5':'https://drive.google.com/file/d/1CU1djpRH0s2YepR_wPuzz0iquRfi38g9/view?usp=drive_link',
+  'Course 6':'https://drive.google.com/file/d/1wNDjkWewYz-vOjlMtdQsZONcGj_zykBz/view?usp=drive_link',
+  'Course 7':'https://drive.google.com/file/d/1JCZ2WG8QkbwwIz4vKhWpnJcLsoEL33TG/view?usp=drive_link',
+  'Course 8':'https://drive.google.com/file/d/1WhPtDxiUC-Xee61nUKD0Ca5paTYNChog/view?usp=drive_link',
+  'Course 9':'https://drive.google.com/file/d/1I0x-L4EBwkDh5Gc0bfVvgUidTeZzEcGc/view?usp=drive_link',
+  'Course 10':'https://drive.google.com/file/d/1gW_-wRHg4ChQDsi-hy25vINAtR24_MUX/view?usp=drive_link',
+  'Course 11':'https://drive.google.com/file/d/1-YLdelQsz-pvJA6TXGeT1lNRwgUzPR3v/view?usp=drive_link',
+  'Course 12':'https://drive.google.com/file/d/13f26qAZIkJk0jWXIu64VJ-jjGhl569Xy/view?usp=drive_link'
 };
 
 const courseMeeting = {default:{url:'https://ipb.link/SAMI2026', portal:'https://samiipb.site'}};
@@ -452,7 +468,10 @@ function renderCards(cards) {
           ${photoCount > 0 ? `<span class="card-photo-count">📷 ${photoCount} ${i18nT('library.photos','photos')}</span>` : `<span class="card-photo-count" style="background:var(--bg);color:var(--ink-faint);">⏳ ${i18nT('library.photosComingSoon','Photos coming soon')}</span>`}
         </div>
       </div>
-      <div class="card-footer"><button class="btn btn-ghost btn-sm">${i18nT('library.viewAllPhotos','View All Photos')} →</button></div>
+      <div class="card-footer">
+        <button class="btn btn-ghost btn-sm">${i18nT('library.viewAllPhotos','View All Photos')} →</button>
+        ${courseVideos[c.code]?`<a class="btn btn-primary btn-sm video-btn" href="${courseVideos[c.code]}" target="_blank" rel="noopener" onclick="event.stopPropagation()"><svg class="icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>${i18nT('modal.watchVideo','Watch Video')}</a>`:''}
+      </div>
     </div>`;
   }).join('');
 }

@@ -729,11 +729,26 @@ const courseModules = {
   'Course 7':[{icon:'📄',name:'Session Slides — Geopark Tourism',url:'https://docs.google.com/presentation/d/1uJFndVzSpHm8m-S9I88SIIXJYj62Vp8t/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
   'Course 8':[{icon:'📄',name:'Session Slides — ESG Governance & Policy',url:'https://drive.google.com/file/d/10imPa012R3kBE8WBNjJ6jAXWyPTXbwhc/view?usp=drive_link'}],
   'Course 9':[{icon:'📄',name:'Session Slides — Supply Chain ESG Strategy',url:'https://docs.google.com/presentation/d/1g4s4mOIRoDsH_x04n6aIzE1ldTymngOd/edit?usp=drive_link&ouid=101703077662020715317&rtpof=true&sd=true'}],
-  'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'#',locked:true}],
-  'Course 11':[{icon:'📄',name:'Session Slides — Climate Governance',url:'#',locked:true}],
-  'Course 12':[{icon:'📄',name:'Session Slides — Sustainable Finance',url:'#',locked:true}],
+  'Course 10':[{icon:'📄',name:'Session Slides — ESG Business Models',url:'https://drive.google.com/file/d/1k0UMhAHmWvTyXpuT326C21EmcLLub3S3/view?usp=drive_link'}],
+  'Course 11':[{icon:'📄',name:'Session Slides — Climate Governance',url:'https://drive.google.com/file/d/11MdMK-cTG3vw9zDrpsXzZogO-IxTJs-4/view?usp=drive_link'}],
+  'Course 12':[{icon:'📄',name:'Session Slides — Sustainable Finance',url:'https://drive.google.com/file/d/1LwaYC4SSajG8b9HuqaobQ5_3c1i6-5MM/view?usp=drive_link'}],
   'Course 13':[{icon:'📄',name:'Session Slides — Sustainable Agrifood Systems',url:'#',locked:true}],
   'Course 14':[{icon:'📄',name:'Session Slides — Halal Supply Chain',url:'#',locked:true}]
+};
+
+const courseVideos = {
+  'Course 1':'https://drive.google.com/file/d/1ecGNb6SV5I3PtdFinsJYrNTRV5biAXAB/view?usp=drive_link',
+  'Course 2':'https://drive.google.com/file/d/1uUTiADPpLZsDqabQOCwXRoGAjyJjJRZQ/view?usp=drive_link',
+  'Course 3':'https://drive.google.com/file/d/1RkApcFgUtf6t-S9oeN0YMnUmYf_cqFFF/view?usp=drive_link',
+  'Course 4':'https://drive.google.com/file/d/1RdNhN5drE73iHbF0eGHZyudfzVu5yxrG/view?usp=drive_link',
+  'Course 5':'https://drive.google.com/file/d/1CU1djpRH0s2YepR_wPuzz0iquRfi38g9/view?usp=drive_link',
+  'Course 6':'https://drive.google.com/file/d/1wNDjkWewYz-vOjlMtdQsZONcGj_zykBz/view?usp=drive_link',
+  'Course 7':'https://drive.google.com/file/d/1JCZ2WG8QkbwwIz4vKhWpnJcLsoEL33TG/view?usp=drive_link',
+  'Course 8':'https://drive.google.com/file/d/1WhPtDxiUC-Xee61nUKD0Ca5paTYNChog/view?usp=drive_link',
+  'Course 9':'https://drive.google.com/file/d/1I0x-L4EBwkDh5Gc0bfVvgUidTeZzEcGc/view?usp=drive_link',
+  'Course 10':'https://drive.google.com/file/d/1gW_-wRHg4ChQDsi-hy25vINAtR24_MUX/view?usp=drive_link',
+  'Course 11':'https://drive.google.com/file/d/1-YLdelQsz-pvJA6TXGeT1lNRwgUzPR3v/view?usp=drive_link',
+  'Course 12':'https://drive.google.com/file/d/13f26qAZIkJk0jWXIu64VJ-jjGhl569Xy/view?usp=drive_link'
 };
 
 // ===== COURSE CARDS =====
@@ -783,6 +798,7 @@ function openCourseDetail(idx){
       <div class="zoom-details">${i18nT('modal.zoomDetails','Slides shared via WhatsApp group and portal samiipb.site one day before session')}</div>
     </div>
     ${mods.length?`<div class="m-section"><div class="m-label">${i18nT('modal.moduleMaterials','Module Materials')}</div><div class="module-list">${mods.map(m=>m.locked?`<div class="module-item locked"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">${i18nT('modal.locked','🔒')}</span></div>`:`<a class="module-item" href="${m.url}" target="_blank"><span class="m-icon">${m.icon}</span><span class="m-name">${m.name}</span><span class="m-dl">${i18nT('modal.download','Download →')}</span></a>`).join('')}</div></div>`:''}
+    ${courseVideos[c.code]?`<div class="m-section"><div class="m-label">${i18nT('modal.videoLabel','Session Video')}</div><a href="${courseVideos[c.code]}" target="_blank" rel="noopener" class="btn btn-primary"><svg class="icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>${i18nT('modal.watchVideo','Watch Video')}</a></div>`:''}
   `;
   document.getElementById('courseModal').classList.add('open');
   document.body.style.overflow = 'hidden';

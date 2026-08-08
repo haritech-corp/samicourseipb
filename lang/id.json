@@ -529,7 +529,9 @@
     "zoomDetails": "Slide dibagikan via WhatsApp group dan portal samiipb.site sehari sebelum sesi",
     "moduleMaterials": "Materi Modul",
     "download": "Unduh →",
-    "locked": "🔒"
+    "locked": "🔒",
+    "videoLabel": "Video Sesi",
+    "watchVideo": "Tonton Video"
   },
   "coursePage": {
     "title": "Semua 14 Kursus",

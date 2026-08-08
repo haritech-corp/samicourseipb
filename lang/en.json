@@ -379,7 +379,9 @@
     "zoomDetails": "Slides shared via WhatsApp group and portal samiipb.site one day before session",
     "moduleMaterials": "Module Materials",
     "download": "Download →",
-    "locked": "🔒"
+    "locked": "🔒",
+    "videoLabel": "Session Video",
+    "watchVideo": "Watch Video"
   },
   "coursePage": {
     "title": "All 14 Courses",
